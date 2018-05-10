@@ -566,6 +566,7 @@ class VipController extends BaseController
     }*/
 
 
+
     public function bill(){
         $vipid = self::$WAP['vipid'];
         $data = self::$WAP['vip'];
@@ -590,6 +591,30 @@ class VipController extends BaseController
         $this->assign('data_pay',$data_pay);
         $this->display();
     }
+
+    public function feedback(){
+        $this->display();
+    }
+    public function feedback_ajax(){
+        $user = self::$WAP['vip'];
+        $feedback=$_POST['feedback'];
+        //var_dump($feedback);die;
+        $data['uid'] = $user['id'];
+        $data['name'] = $user['nickname'];
+        $data['mobile'] = $user['mobile'];
+        $data['content'] = $feedback;
+        $res = M('Feedback')->add($data);
+        if($res){
+            $result['state_code']=1;
+            $result['msg']='提交成功';
+            $this->ajaxReturn($result);
+        }else{
+            $result['state_code']=2;
+            $result['msg']='提交成功';
+            $this->ajaxReturn($result);
+        }
+    }
+
 
     public function agency(){
         $this->display();
@@ -625,16 +650,12 @@ class VipController extends BaseController
                         $result['msg']='申请失败';
                         $this->ajaxReturn($result);
                     }
-
                 }else{
                     $result['state_code']=2;
                     $result['msg']='次号码未注册';
                     $this->ajaxReturn($result);
                 }
             }
-
-
-
         }else{
             $result['state_code']=2;
             $result['msg']='体验馆未开';

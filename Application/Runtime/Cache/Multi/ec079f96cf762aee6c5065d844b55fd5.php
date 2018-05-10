@@ -216,7 +216,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="form-group">
+                <!--    <div class="form-group">
                         <label class="col-lg-2 control-label">是否免邮费</label>
                         <div class="col-lg-4">
                             <label>
@@ -225,7 +225,7 @@
                                 <span class="text darkorange">&nbsp;&nbsp;&larr;重要：启用后纯免邮商品免邮费。</span>
                             </label>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="form-group">
                         <label class="col-lg-2 control-label">开启自定义销量</label>
                         <div class="col-lg-4">

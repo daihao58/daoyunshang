@@ -7,7 +7,7 @@ return array(
     //插件预加载地址
     //'AUTOLOAD_NAMESPACE' => array('Addons' => './Addons/'),
     // 允许访问的模块列表
-    'DEFAULT_MODULE' => 'Multi', // 默认模块
+    'DEFAULT_MODULE' => 'App', // 默认模块
     'MODULE_ALLOW_LIST' => array('Home', 'Admin','Multi', 'App'), //允许访问的模块
     
 

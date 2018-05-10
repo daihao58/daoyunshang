@@ -51,6 +51,7 @@
 			<input type="hidden" name="totalnum" value="<?php echo ($totalnum); ?>">
 			<input type="hidden" name="totalprice" value="<?php echo ($totalprice); ?>">
 			<input type="hidden" name="totalprice_bate" value="<?php echo ($totalprice_bate); ?>">
+			<input type="hidden" name="yf" value="<?php echo ($yf); ?>">
 			<textarea name="items" style="display: none;"><?php echo ($allitems); ?></textarea>
 			<input type="hidden" name="isyf" value="<?php echo ($isyf); ?>">
 		</div>
@@ -79,8 +80,8 @@
 			<p class=" ads_ortt3 fonts85 ovflw">
 			    <span class="fr ">共<?php echo ($totalnum); ?>件商品&nbsp;&nbsp;&nbsp;&nbsp;商品：
     			    <em class="fonts18 color3">￥<b class="totalprice"><?php echo ($totalprice); ?></b></em>
-					<!--&nbsp;&nbsp;&nbsp;&nbsp;
-    			    邮费：<em class="fonts18 color3">￥<b><?php echo ($yf); ?></b></em> -->
+					&nbsp;&nbsp;&nbsp;&nbsp;
+    			    邮费：<em class="fonts18 color3">￥<b><?php echo ($yf); ?></b></em>
 			    </span>
 			</p>
 		</div>
@@ -128,7 +129,7 @@
 					</a>
 				</div>
 				<a href="#" class="fr ads-btn fonts9 back3" id="orderconfirm">确认</a>
-				<span class="fr ads-sum"><em class="fonts9">商品:</em><em class="fonts1">￥<b class="totalprice"><?php echo ($totalprice); ?></b></em><!--&nbsp;&nbsp;&nbsp;&nbsp;邮费:<em class="fonts18 color3">￥<b><?php echo ($yf); ?></b></em>--></span>
+				<span class="fr ads-sum"><em class="fonts9">总计:</em><em class="fonts1">￥<b class="totalprice"><?php echo ($totalprice); ?></b></em><!--&nbsp;&nbsp;&nbsp;&nbsp;邮费:<em class="fonts18 color3">￥<b><?php echo ($yf); ?></b></em>--></span>
 		</div>
 		<script type="text/javascript">
 			var sid="<?php echo ($sid); ?>";

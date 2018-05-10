@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -12,37 +12,37 @@
     <meta name="keywords" content=" " />
     <meta name="description" content=" " />
     <!-- <link rel="icon" href="favicon.ico" /> -->
-    <link rel="stylesheet" href="__PUBLIC__/App/css/iconfont/iconfont.css">
-    <link rel="stylesheet" href="__PUBLIC__/App/css/style2.css">
-    <link rel="stylesheet" href="__PUBLIC__/App/css/layout.css">
-    <link rel="stylesheet" href="__PUBLIC__/App/css/style.css" >
+    <link rel="stylesheet" href="/Public/App/css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="/Public/App/css/style2.css">
+    <link rel="stylesheet" href="/Public/App/css/layout.css">
+    <link rel="stylesheet" href="/Public/App/css/style.css" >
 </head>
-<script type="text/javascript" src="__PUBLIC__/App/js/zepto.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/App/gmu/gmu.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/App/gmu/app-basegmu.js"></script>
+<script type="text/javascript" src="/Public/App/js/zepto.min.js"></script>
+<script type="text/javascript" src="/Public/App/gmu/gmu.min.js"></script>
+<script type="text/javascript" src="/Public/App/gmu/app-basegmu.js"></script>
 <body>
 <div class="page page-bill">
     <!-- 标题栏 -->
     <header class="bar bar-header">
         <a href="/App/Vip/index" class="iconfont icon-back bar-btn pull-left"></a>
-        <h1 class="title">代理挂靠</h1>
+        <h1 class="title">客户服务</h1>
         <a href="/App/Shop/index" class="iconfont icon-home-head bar-btn pull-right"></a>
     </header>
 
     <!-- content -->
     <section class="content">
         <ul class="list-block mt-0 borTop-0">
-            <li class="item-content">
+          <!--  <li class="item-content">
                 <div class="item-title label">姓名</div>
                 <input type="text" value="" name="aname" placeholder="请填写姓名" class="item-input t-r">
             </li>
             <li class="item-content">
                 <div class="item-title label">手机号</div>
                 <input type="text" value="" name="amobile" placeholder="请填写手机" class="item-input t-r">
-            </li>
-   <!--         <li>
-                <textarea placeholder="请填写详细信息" rows="4"></textarea>
             </li>-->
+            <li>
+                <textarea name="feedback" placeholder="请填写您的建议" rows="4"></textarea>
+            </li>
         </ul>
         <!-- 提交 -->
         <div class="plr-14 ptb-30"><button class="button button-big sub">提交</button></div>
@@ -51,22 +51,18 @@
 
 <script>
     $(".sub").click(function(){
-        var aname = $("[name='aname']").val();
-        var amobile = $("[name='amobile']").val();
+        var feedback = $("[name='feedback']").val();
 
-        if(aname==''){
-            zbb_msg('请输入姓名');
-        }else if(amobile==''){
-            zbb_msg('请输入手机号');
+        if(feedback==''){
+            zbb_msg('请填写您的建议');
         }else{
             var fun=function(){
                 window.location.reload();
             }
             $.ajax({
-                url:"{:U('App/Vip/agency_ajax')}",
+                url:"<?php echo U('App/Vip/feedback_ajax');?>",
                 data:{
-                    aname:aname,
-                    amobile:amobile,
+                    feedback:feedback,
                 },
                 type:'post',
                 dataType: "json",

@@ -133,16 +133,30 @@
                     </a>
                 </li>
                 <li>
+                    <a href="/App/Vip/collection" class="item-content">
+                        <div class="item-media"><i class="iconfont icon-addr" style="color: #10b8ff"></i></div>
+                        <div class="item-title">我的收藏</div>
+                        <i class="more-link"></i>
+                    </a>
+                </li>
+                <li>
                     <a href="/App/Vip/address" class="item-content">
                         <div class="item-media"><i class="iconfont icon-addr" style="color: #10b8ff"></i></div>
                         <div class="item-title">收货地址</div>
                         <i class="more-link"></i>
                     </a>
                 </li>
+                <li>
+                    <a href="/App/Vip/feedback" class="item-content">
+                        <div class="item-media"><i class="iconfont icon-addr" style="color: #10b8ff"></i></div>
+                        <div class="item-title">客户服务</div>
+                        <i class="more-link"></i>
+                    </a>
+                </li>
                 <?php if($data['experience_hall'] == 1): ?><li>
                         <a href="/App/Vip/agency" class="item-content">
                             <div class="item-media"><i class="iconfont icon-agency" style="color: #ff8c44"></i></div>
-                            <div class="item-title">挂靠申请</div>
+                            <div class="item-title">代理挂靠</div>
                             <i class="more-link"></i>
                         </a>
                     </li>

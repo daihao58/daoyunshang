@@ -995,22 +995,27 @@ class ShopController extends BaseController
                 $data['cprice'] = $data['cprice'] -$djq['money'];
             }*/
             //邮费逻辑
-//            if (self::$WAP['shopset']['isyf']) {
-//                if ($data['totalprice'] >= self::$WAP['shopset']['yftop']) {
-//                    $data['yf'] = 0;
-//                } else {
-//                    if($data['isyf'] == 0){
-//                        $data['yf'] = 0;
-//                    }else{
-//                        $data['yf'] = self::$WAP['shopset']['yf'];
-//                    }
-//                    $data['payprice'] = $data['payprice'] + $data['yf'];
-//                }
-//
-//            } else {
-//                $data['yf'] = 0;
-//            }
-            $data['yf'] = 0;
+   /*         if (self::$WAP['shopset']['isyf']) {
+                if ($data['totalprice'] >= self::$WAP['shopset']['yftop']) {
+                    $data['yf'] = 0;
+                } else {
+                    if($data['isyf'] == 0){
+                        $data['yf'] = 0;
+                    }else{
+                        $data['yf'] = self::$WAP['shopset']['yf'];
+                    }
+                    $data['payprice'] = $data['payprice'] + $data['yf'];
+                }
+
+            } else {
+                $data['yf'] = 0;
+            }*/
+
+
+
+
+            $data['yf'] = $data['yf'];
+            //var_dump($data['yf']);die;
             $re = $morder->add($data);
             if ($re) {
                 $old = $morder->where('id=' . $re)->setField('oid', date('YmdHis') . '-' . $re);
@@ -1083,9 +1088,9 @@ class ShopController extends BaseController
             foreach ($cache as $k => &$v) {
                 //sku模型
                 $goods = $mgoods->where('id=' . $v['goodsid'])->find();
-                if($goods['ismy'] == 1){
+               /* if($goods['ismy'] == 1){
                     $ismy = $ismy - 1;
-                }
+                }*/
                 $pic = $this->getPic($goods['pic']);
                 if ($v['sku']) {
                     //取商品数据				
@@ -1243,14 +1248,13 @@ class ShopController extends BaseController
             $this->assign('djq', $djq);
             $youfei = M('Shop_set')->where("id='".session('shop_id')."'")->find();
             //邮费逻辑
+            //var_dump($youfei);die;
             if ($youfei['isyf']) {
-                if($ismy == 0){
-                    $this->assign('isyf', 0);
-                    $yf = 0;
-                }else{
-                    $this->assign('isyf', 1);
-                    $yf = $totalprice >= self::$WAP['shopset']['yftop'] ? 0 : self::$WAP['shopset']['yf'];
-                }
+
+                $this->assign('isyf', 1);
+                $yf = $totalprice >= $_SESSION['SHOP']['set']['yftop'] ? 0 : $_SESSION['SHOP']['set']['yf'];
+                $totalprice=$totalprice+$yf;
+                //var_dump($yf);die;
                 $this->assign('yf', $yf);
                 $this->assign('yftop', $youfei['yftop']);
             } else {
