@@ -1,0 +1,1557 @@
+[ 2018-04-17T08:43:05+08:00 ] 127.0.0.1 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003055s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005871s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1523894400 AND 1523980799 LIMIT 1   [ RunTime:0.0147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1523808000 AND 1523894399 LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1523894400 AND 1523980799 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1523808000 AND 1523894399 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_syslog` [ RunTime:0.0170s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1523894400 AND 1523980799 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1523808000 AND 1523894399 LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [2] Division by zero E:\wamp64\www\daoyunshang\Application\Admin\Controller\IndexController.class.php 第 138 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_log_tj` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=960 ) LIMIT 1   [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1170 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=986 ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=962 ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=962 ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_tx` [ RunTime:0.0141s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `wfx_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.200444s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.642647s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.562506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.199405s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.544995s ]
+INFO: [ action_end ] --END-- [ RunTime:0.545195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023993s ]
+
+[ 2018-04-17T15:51:51+08:00 ] 127.0.0.1 /admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined index: uid E:\wamp64\www\daoyunshang\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002824s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004354s ]
+INFO: [ action_end ] --END-- [ RunTime:0.004513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002611s ]
+
+[ 2018-04-17T15:51:51+08:00 ] 127.0.0.1 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0129s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.012474s ]
+INFO: [ action_end ] --END-- [ RunTime:0.012781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004100s ]
+
+[ 2018-04-17T15:52:05+08:00 ] 127.0.0.1 /admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003180s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_user` WHERE `username` = 'daihao' AND `userpass` = 'e10adc3949ba59abbe56e057f20f883e' AND `type` = 1 LIMIT 1   [ RunTime:0.0162s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `username` = 'daihao' AND `userpass` = 'e10adc3949ba59abbe56e057f20f883e' AND `type` = 1 LIMIT 1   [ RunTime:0.0124s ]
+
+[ 2018-04-17T15:52:05+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_user_oath` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_user_oath`  [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000510s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003011s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005503s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004547s ]
+
+[ 2018-04-17T15:52:05+08:00 ] 127.0.0.1 /Admin/Employee/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002125s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: breadhtml E:\wamp64\www\daoyunshang\Application\Runtime\Cache\Admin\f259bce1158f32a7248b68a6490c7c06.php 第 2 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002805s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005598s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003846s ]
+
+[ 2018-04-17T15:52:12+08:00 ] 127.0.0.1 /Admin/Employee/vipCenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002357s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004885s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0142s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\EmployeeController.class.php 第 361 行.
+SQL: SELECT * FROM `wfx_vip` WHERE `employee` = 19 LIMIT 0,20   [ RunTime:0.0228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `employee` = 19 LIMIT 1   [ RunTime:0.0157s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\EmployeeController.class.php on line 388 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.152906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087350s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.067979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.150548s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005259s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002743s ]
+
+[ 2018-04-17T15:52:13+08:00 ] 127.0.0.1 /Admin/Employee/tuijianma
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003264s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.043847s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009589s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.035423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.041957s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006461s ]
+INFO: [ action_end ] --END-- [ RunTime:0.006661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003750s ]
+
+[ 2018-04-17T15:52:15+08:00 ] 127.0.0.1 /Admin/Employee/vipCenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002791s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\EmployeeController.class.php 第 361 行.
+SQL: SELECT * FROM `wfx_vip` WHERE `employee` = 19 LIMIT 0,20   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `employee` = 19 LIMIT 1   [ RunTime:0.0145s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\EmployeeController.class.php on line 388 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.066639s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009962s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.058086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.065361s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003927s ]
+INFO: [ action_end ] --END-- [ RunTime:0.004049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002176s ]
+
+[ 2018-04-17T15:52:31+08:00 ] 127.0.0.1 /Admin/Employee/vipCenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002825s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0155s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\EmployeeController.class.php 第 361 行.
+SQL: SELECT * FROM `wfx_vip` WHERE `employee` = 19 LIMIT 0,20   [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `employee` = 19 LIMIT 1   [ RunTime:0.0171s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\EmployeeController.class.php on line 388 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.071186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010469s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.062113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.069872s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004005s ]
+INFO: [ action_end ] --END-- [ RunTime:0.004127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002662s ]
+
+[ 2018-04-17T15:52:36+08:00 ] 127.0.0.1 /Admin/Employee/tuijianma
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003103s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.038539s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006771s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.031946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.035736s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005472s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002734s ]
+
+[ 2018-04-17T16:39:15+08:00 ] 127.0.0.1 /Admin/Public/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0199s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0142s ]
+
+[ 2018-04-17T16:39:15+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0136s ]
+NOTIC: [8] Undefined index: uid E:\wamp64\www\daoyunshang\Application\Admin\Controller\PublicController.class.php 第 49 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003262s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003228s ]
+INFO: [ action_end ] --END-- [ RunTime:0.003388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002715s ]
+
+[ 2018-04-17T16:39:16+08:00 ] 127.0.0.1 /Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0134s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007657s ]
+INFO: [ action_end ] --END-- [ RunTime:0.007928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004004s ]
+
+[ 2018-04-17T16:39:25+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002687s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_user` WHERE `username` = 'admin' AND `userpass` = '21232f297a57a5a743894a0e4a801fc3' AND `type` = 1 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `username` = 'admin' AND `userpass` = '21232f297a57a5a743894a0e4a801fc3' AND `type` = 1 LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2018-04-17T16:39:25+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `wfx_user_oath` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_user_oath`  [ RunTime:0.0118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000544s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000772s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003208s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005284s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003746s ]
+
+[ 2018-04-17T16:39:26+08:00 ] 127.0.0.1 /Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001758s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002898s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1523894400 AND 1523980799 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1523808000 AND 1523894399 LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1523894400 AND 1523980799 LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1523808000 AND 1523894399 LIMIT 1   [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_syslog` [ RunTime:0.0132s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1523894400 AND 1523980799 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1523808000 AND 1523894399 LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [2] Division by zero E:\wamp64\www\daoyunshang\Application\Admin\Controller\IndexController.class.php 第 138 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_log_tj` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=960 ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1170 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=986 ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=962 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=962 ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `status` = 5 LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_tx` [ RunTime:0.0127s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `wfx_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000433s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.595315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089602s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.511375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.598211s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005047s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002762s ]
+
+[ 2018-04-17T16:39:31+08:00 ] 127.0.0.1 /Admin/Normal/vipList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002005s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003465s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_employee`  [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0136s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 44 行.
+SQL: SELECT * FROM `wfx_vip` LIMIT 0,20   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0150s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0124s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 58 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php 第 63 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0139s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\NormalController.class.php on line 64 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant 尾页 - assumed '尾页' E:\wamp64\www\daoyunshang\ThinkPHP\Library\Util\Pagecms.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.397661s ]
+NOTIC: [8] Undefined variable: search E:\wamp64\www\daoyunshang\Application\Runtime\Cache\Admin\0fefa25c9f3fc179a45fcc4257ed5bd8.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011886s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.388074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.396699s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005395s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002786s ]
+
+[ 2018-04-17T16:39:34+08:00 ] 127.0.0.1 /Admin/Vip/vipRebornList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003250s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003009s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_employee`  [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0127s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 235 行.
+SQL: SELECT * FROM `wfx_vip` WHERE `plv` = 1 AND `pid` = 0 AND `isfx` = 0 AND `total_xxlink` = 0 LIMIT 0,20   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `plv` = 1 AND `pid` = 0 AND `isfx` = 0 AND `total_xxlink` = 0 LIMIT 1   [ RunTime:0.0132s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php on line 268 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.087166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010173s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.078147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.085432s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004593s ]
+INFO: [ action_end ] --END-- [ RunTime:0.004733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002257s ]
+
+[ 2018-04-17T16:39:36+08:00 ] 127.0.0.1 /Admin/Vip/vipAllocList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002684s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_employee`  [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0127s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 323 行.
+SQL: SELECT * FROM `wfx_vip` WHERE `plv` = 1 LIMIT 0,20   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0125s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0121s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0122s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0118s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 15 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0122s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0118s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `plv` = 1 LIMIT 1   [ RunTime:0.0153s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php on line 355 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.347861s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010189s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.338800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.346428s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004730s ]
+INFO: [ action_end ] --END-- [ RunTime:0.004863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2018-04-17T16:39:54+08:00 ] 127.0.0.1 /Admin/Vip/vipAllocList/p/6?search=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003086s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_employee`  [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `plv` = 1 LIMIT 100,20   [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0141s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0148s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0148s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `plv` = 1 LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php on line 355 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.446353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009625s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.438096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.444696s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004397s ]
+INFO: [ action_end ] --END-- [ RunTime:0.004531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002432s ]
+
+[ 2018-04-17T16:40:00+08:00 ] 127.0.0.1 /Admin/Vip/vipAllocList/p/1?search=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001844s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003297s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_employee`  [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `plv` = 1 LIMIT 0,20   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0139s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0126s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0137s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0132s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0126s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined offset: 15 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0138s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0134s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 349 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `plv` = 1 LIMIT 1   [ RunTime:0.0143s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php on line 355 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.372087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009683s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.362859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.369455s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004843s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002111s ]
+
+[ 2018-04-17T16:41:28+08:00 ] 127.0.0.1 /Admin/Vip/vipSet/id/955
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001510s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003564s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=955 ) LIMIT 1   [ RunTime:0.0119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.141530s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126329s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.016447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.139335s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004986s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002135s ]
+
+[ 2018-04-17T16:50:50+08:00 ] 127.0.0.1 /Admin/Vip/vipSet/id/955
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003432s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=955 ) LIMIT 1   [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.026577s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010198s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.017568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.024564s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006151s ]
+INFO: [ action_end ] --END-- [ RunTime:0.006400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002435s ]
+
+[ 2018-04-17T16:51:06+08:00 ] 127.0.0.1 /Admin/Vip/vipSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002648s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005656s ]
+SQL: UPDATE `wfx_vip` SET `score`='790',`money`='0.00',`isfx`='0',`total_xxlink`='238',`total_xxsub`='0',`total_xxbuy`='0',`total_xxyj`='0' WHERE `id` = 955 [ RunTime:0.0160s ]
+
+[ 2018-04-17T16:51:09+08:00 ] 127.0.0.1 /Admin/Vip/vipList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002779s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_employee`  [ RunTime:0.0382s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0131s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 383 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 395 行.
+SQL: SELECT * FROM `wfx_vip` LIMIT 0,20   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0125s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0123s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0126s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0123s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0124s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0123s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0121s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0118s ]
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 414 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0134s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php on line 415 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant 尾页 - assumed '尾页' E:\wamp64\www\daoyunshang\ThinkPHP\Library\Util\Pagecms.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.471034s ]
+NOTIC: [8] Undefined variable: plv E:\wamp64\www\daoyunshang\Application\Runtime\Cache\Admin\749beb32de2ab4786077c3e0cb80130c.php 第 33 行.
+NOTIC: [8] Undefined variable: search E:\wamp64\www\daoyunshang\Application\Runtime\Cache\Admin\749beb32de2ab4786077c3e0cb80130c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131888s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.370078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.499335s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.008306s ]
+INFO: [ action_end ] --END-- [ RunTime:0.008498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002788s ]
+
+[ 2018-04-17T17:03:49+08:00 ] 127.0.0.1 /Admin/Vip/vipSet/id/955
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003400s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=955 ) LIMIT 1   [ RunTime:0.0145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011345s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.019063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.027250s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005135s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002320s ]
+
+[ 2018-04-17T17:03:53+08:00 ] 127.0.0.1 /Admin/Vip/vipSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002464s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004318s ]
+SQL: UPDATE `wfx_vip` SET `score`='790',`money`='0.00',`isfx`='1',`total_xxlink`='238',`total_xxsub`='0',`total_xxbuy`='0',`total_xxyj`='0' WHERE `id` = 955 [ RunTime:0.0160s ]
+
+[ 2018-04-17T17:04:39+08:00 ] 127.0.0.1 /Admin/Vip/vipList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003026s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_employee`  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0126s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 383 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 395 行.
+SQL: SELECT * FROM `wfx_vip` LIMIT 0,20   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0124s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0121s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0122s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0126s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0122s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0122s ]
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 414 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php on line 415 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant 尾页 - assumed '尾页' E:\wamp64\www\daoyunshang\ThinkPHP\Library\Util\Pagecms.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.354548s ]
+NOTIC: [8] Undefined variable: plv E:\wamp64\www\daoyunshang\Application\Runtime\Cache\Admin\749beb32de2ab4786077c3e0cb80130c.php 第 33 行.
+NOTIC: [8] Undefined variable: search E:\wamp64\www\daoyunshang\Application\Runtime\Cache\Admin\749beb32de2ab4786077c3e0cb80130c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024806s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.343743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.365672s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005793s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002361s ]
+
+[ 2018-04-17T17:04:41+08:00 ] 127.0.0.1 /Admin/Vip/vipSet/id/958
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002737s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004175s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=958 ) LIMIT 1   [ RunTime:0.0131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010085s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.018524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.024615s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007378s ]
+INFO: [ action_end ] --END-- [ RunTime:0.007597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002742s ]
+
+[ 2018-04-17T17:04:43+08:00 ] 127.0.0.1 /Admin/Vip/vipList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002833s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_employee`  [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 383 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 395 行.
+SQL: SELECT * FROM `wfx_vip` LIMIT 0,20   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0125s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0123s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0116s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 12 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0121s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0122s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 14 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 17 E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 409 行.
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0118s ]
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php 第 414 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [2] Missing argument 6 for Admin\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\Admin\Controller\VipController.class.php on line 415 and defined E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map E:\wamp64\www\daoyunshang\Application\Admin\Controller\BaseController.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant 尾页 - assumed '尾页' E:\wamp64\www\daoyunshang\ThinkPHP\Library\Util\Pagecms.class.php 第 118 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.347043s ]
+NOTIC: [8] Undefined variable: plv E:\wamp64\www\daoyunshang\Application\Runtime\Cache\Admin\749beb32de2ab4786077c3e0cb80130c.php 第 33 行.
+NOTIC: [8] Undefined variable: search E:\wamp64\www\daoyunshang\Application\Runtime\Cache\Admin\749beb32de2ab4786077c3e0cb80130c.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025500s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.336318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.359116s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007838s ]
+INFO: [ action_end ] --END-- [ RunTime:0.008060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003083s ]
+
+[ 2018-04-17T17:05:53+08:00 ] 127.0.0.1 /Admin/Vip/vipSet/id/955
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003302s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=955 ) LIMIT 1   [ RunTime:0.0144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028671s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009525s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.018809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.025105s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004828s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002427s ]
+

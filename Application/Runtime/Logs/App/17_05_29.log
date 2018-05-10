@@ -1,0 +1,851 @@
+[ 2017-05-29T01:59:49+08:00 ] 111.206.36.146 /App/Baseoa/index?code=001qbBv705y1GK1kZYs7032nv70qbBv4&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-05-29T09:30:33+08:00 ] 111.206.36.132 /App/Baseoa/index?code=071mQHLV0dcdoY1Wo5OV0BqpLV0mQHL8&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+
+[ 2017-05-29T13:22:51+08:00 ] 219.133.40.15 /App/Shop/index/shopid/21/ppid/145?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000173s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000285s ]
+
+[ 2017-05-29T13:22:51+08:00 ] 219.133.40.15 /App/Shop/index/shopid/21/ppid/145?from=timeline&code=011mQY3j0R4YSl1ZhI3j0SQW3j0mQY3I&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-GE6EliA4ICuueZDTD6cjU' LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2017-05-29T13:22:51+08:00 ] 219.133.40.15 /App/Baseoa/index
+ERR: Cron:天天返现 Runat 2017-05-29 13:22:51 Use 0.085239 s
+
+[ 2017-05-29T13:22:51+08:00 ] 219.133.40.15 /App/Baseoa/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.086185s ]
+INFO: [ action_end ] --END-- [ RunTime:0.086259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2017-05-29T13:23:00+08:00 ] 61.151.218.119 /App/Shop/index/shopid/21/ppid/145?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000174s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000286s ]
+
+[ 2017-05-29T13:23:00+08:00 ] 219.133.40.15 /App/Baseoa/index?code=081rWMoF0eteli2RE9qF0Eg4pF0rWMoY&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-GE6EliA4ICuueZDTD6cjU' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 145 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wfx_vip` SET `pid`='0',`plv`='1',`path`='0',`mobile`=NULL,`password`=NULL,`name`=NULL,`email`=NULL,`money`='0.00',`score`='60',`exp`='60',`cur_exp`='10',`levelid`='1',`openid`='oAqURw3mkOswdsW8ReeLVH1FlVJ0',`nickname`='阿拉古索',`sex`='0',`city`='',`province`='',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/Oarwlw09Zj5QbNVgUhQwoajFKhXvCic15H37iaZqPKiajDGsCiaLdicMjY8RKH05x3QzcaarxlQetZe6ziaZt2RodtfwpicDPufEIEF/0',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1495877126',`cctime`='1495877126',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='0',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='4',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='0',`ticket`=NULL,`continue_sign`='0' WHERE `id` = 145 [ RunTime:0.0281s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_message` [ RunTime:0.0011s ]
+SQL: INSERT INTO `wfx_vip_message` (`pids`,`title`,`content`,`ctime`) VALUES ('145','你获得一份推荐奖励！','推荐新用户奖励：<br>新用户：红粉<br>奖励内容：<br>10个积分<br>10点经验<br>此奖励已自动打入您的帐户！感谢您的支持！','1496035380') [ RunTime:0.0003s ]
+SQL: UPDATE `wfx_vip` SET `pid`='0',`plv`='1',`path`='0',`mobile`=NULL,`password`=NULL,`name`=NULL,`email`=NULL,`money`='0.00',`score`='60',`exp`='60',`cur_exp`='10',`levelid`='1',`openid`='oAqURw3mkOswdsW8ReeLVH1FlVJ0',`nickname`='阿拉古索',`sex`='0',`city`='',`province`='',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/Oarwlw09Zj5QbNVgUhQwoajFKhXvCic15H37iaZqPKiajDGsCiaLdicMjY8RKH05x3QzcaarxlQetZe6ziaZt2RodtfwpicDPufEIEF/0',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1495877126',`cctime`='1495877126',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='0',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='5',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='0',`ticket`=NULL,`continue_sign`='0' WHERE `id` = 145 [ RunTime:0.0327s ]
+SQL: SHOW COLUMNS FROM `wfx_wx_customer` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_wx_customer` WHERE `type` = 'up' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_vip_level` ORDER BY exp  [ RunTime:0.0002s ]
+SQL: INSERT INTO `wfx_vip` (`pid`,`path`,`plv`,`employee`,`openid`,`nickname`,`sex`,`city`,`province`,`country`,`headimgurl`,`score`,`exp`,`cur_exp`,`levelid`,`ctime`,`cctime`) VALUES ('145','0-145','2','0','oAqURw-GE6EliA4ICuueZDTD6cjU','红粉','0','','','CN','http://wx.qlogo.cn/mmopen/TTQibyKjrickxbzUk7X7oRGPWH0Fz1iaeBR28zl2q4ib0qQchy6UWrydIDBu0JWUJNiam996X9TKz5iaWC6prcqoA9dw/0','10','10','10','1','1496035380','1496035380') [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log` [ RunTime:0.0013s ]
+SQL: INSERT INTO `wfx_vip_log` (`ip`,`vipid`,`ctime`,`openid`,`nickname`,`event`,`score`,`exp`,`type`) VALUES ('219.133.40.15','339','1496035380','oAqURw-GE6EliA4ICuueZDTD6cjU','红粉','会员注册','10','10','4') [ RunTime:0.0099s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000563s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-05-29T13:23:01+08:00 ] 219.133.40.15 /App/Shop/index/shopid/21/ppid/145?from=timeline&code=011mQY3j0R4YSl1ZhI3j0SQW3j0mQY3I&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-GE6EliA4ICuueZDTD6cjU' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 228 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 229 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 232 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: actname /alidata/www/wemall/Application/Runtime/Cache/App/b56b8082e02b1b878a28f8cba0cac826.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000506s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2017-05-29T13:50:14+08:00 ] 111.206.36.145 /App/Shop/index/shopid/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000202s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000354s ]
+
+[ 2017-05-29T19:36:34+08:00 ] 111.206.36.9 /App/Baseoa/index?code=031c8VRa13O9ps0h85Ra12OzRa1c8VRU&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-05-29T20:01:28+08:00 ] 101.226.125.122 /App/Shop/index/shopid/21/ppid/71?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000176s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000320s ]
+
+[ 2017-05-29T20:01:29+08:00 ] 101.226.125.122 /App/Shop/index/shopid/21/ppid/71?from=timeline&code=021J3pvU1l399U0USArU16TbvU1J3pv2&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw638Djlq0AaND-yb_dHn6oM' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 228 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 229 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 232 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: actname /alidata/www/wemall/Application/Runtime/Cache/App/b56b8082e02b1b878a28f8cba0cac826.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000417s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-05-29T20:01:29+08:00 ] 101.226.125.122 /App/Shop/index/shopid/21/ppid/71?from=timeline&code=021J3pvU1l399U0USArU16TbvU1J3pv2&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw638Djlq0AaND-yb_dHn6oM' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 228 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 229 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 232 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: actname /alidata/www/wemall/Application/Runtime/Cache/App/b56b8082e02b1b878a28f8cba0cac826.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000420s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-05-29T20:01:36+08:00 ] 101.226.125.122 /App/Shop/goods/sid/0/id/30/ppid/209
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw638Djlq0AaND-yb_dHn6oM' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wfx_shop_goods` SET `clicks`=clicks+1 WHERE ( id=30 ) [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_skuattr_item` [ RunTime:0.0009s ]
+SQL: SELECT `path`,`name` FROM `wfx_shop_skuattr_item` WHERE ( pid=17 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0009s ]
+SQL: SELECT `sku`,`skuattr`,`price`,`num`,`hdprice`,`hdnum` FROM `wfx_shop_goods_sku` WHERE `goodsid` = 30 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('214','213','212','211','')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 210 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0009s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 209 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000422s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2017-05-29T20:01:38+08:00 ] 101.226.33.219 /App/Shop/index/shopid/21/ppid/71?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000176s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000302s ]
+
+[ 2017-05-29T20:01:41+08:00 ] 101.226.125.122 /App/Shop/index/shopid/21/ppid/71?from=timeline
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw638Djlq0AaND-yb_dHn6oM' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 228 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 229 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 232 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: actname /alidata/www/wemall/Application/Runtime/Cache/App/b56b8082e02b1b878a28f8cba0cac826.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000445s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2017-05-29T20:01:45+08:00 ] 101.226.33.238 /App/Shop/goods/sid/0/id/30/ppid/209
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000177s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000304s ]
+
+[ 2017-05-29T20:01:47+08:00 ] 101.226.125.122 /App/Shop/index/shopid/21/type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw638Djlq0AaND-yb_dHn6oM' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `cid` = 1 AND `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 228 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 229 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 232 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: actname /alidata/www/wemall/Application/Runtime/Cache/App/b56b8082e02b1b878a28f8cba0cac826.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000432s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-05-29T20:01:48+08:00 ] 101.226.125.122 /App/Shop/index/shopid/21/type/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw638Djlq0AaND-yb_dHn6oM' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 228 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 229 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 232 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: actname /alidata/www/wemall/Application/Runtime/Cache/App/b56b8082e02b1b878a28f8cba0cac826.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000417s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-05-29T20:01:51+08:00 ] 101.226.125.122 /App/Shop/index/shopid/21/type/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw638Djlq0AaND-yb_dHn6oM' LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `cid` = 2 AND `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 228 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 229 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 232 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: actname /alidata/www/wemall/Application/Runtime/Cache/App/b56b8082e02b1b878a28f8cba0cac826.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000486s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-05-29T20:01:57+08:00 ] 101.226.89.116 /App/Shop/index/shopid/21/type/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000168s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000279s ]
+
+[ 2017-05-29T20:01:58+08:00 ] 140.207.185.107 /App/Shop/index/shopid/21/type/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000179s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000287s ]
+
+[ 2017-05-29T20:09:58+08:00 ] 101.226.33.206 /App/Shop/index/shopid/21/type/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000170s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000280s ]
+

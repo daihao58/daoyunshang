@@ -1,0 +1,10 @@
+[ 2018-05-08T14:54:30+08:00 ] 127.0.0.1 /home/user/sendmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001816s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:User
+

@@ -1,0 +1,1590 @@
+[ 2017-05-20T10:17:43+08:00 ] 112.124.19.15 /wfx/App/Shop/cashback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+ERR: 无法加载控制器:Wfx
+
+[ 2017-05-20T16:26:04+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2017-05-20T16:26:09+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-05-20T16:26:10+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2017-05-20T16:26:11+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-05-20T16:26:12+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-05-20T16:26:12+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-05-20T16:26:12+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-05-20T16:26:15+08:00 ] 58.216.156.134 /Multi/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-05-20T16:26:15+08:00 ] 58.216.156.134 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: usid /alidata/www/wemall/Application/Multi/Controller/PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000412s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-05-20T16:26:15+08:00 ] 58.216.156.134 /Multi/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000473s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-05-20T16:26:16+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-05-20T16:26:25+08:00 ] 61.151.226.189 /Multi/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-05-20T16:26:25+08:00 ] 61.151.226.189 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: usid /alidata/www/wemall/Application/Multi/Controller/PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000422s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-05-20T16:27:23+08:00 ] 58.216.156.134 /Multi/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000526s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2017-05-20T16:27:26+08:00 ] 58.216.156.134 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_user` WHERE `username` = '1' AND `userpass` = 'c4ca4238a0b923820dcc509a6f75849b' AND `type` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `username` = '1' AND `userpass` = 'c4ca4238a0b923820dcc509a6f75849b' AND `type` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-05-20T16:27:26+08:00 ] 58.216.156.134 /Multi/Public/shopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Multi\Model\ShopSetModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /alidata/www/wemall/Application/Multi/Model/ShopSetModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `user_id` = 2 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Multi\Model\UploadImgModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /alidata/www/wemall/Application/Multi/Model/UploadImgModel.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE ( 1=1 AND id='190' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: limit /alidata/www/wemall/ThinkPHP/Library/Think/Db/Driver.class.php 第 950 行.
+SQL: SELECT * FROM `wfx_shop_set` WHERE `user_id` = 2 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000462s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-05-20T16:27:36+08:00 ] 180.153.201.28 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: usid /alidata/www/wemall/Application/Multi/Controller/PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000418s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-05-20T16:27:50+08:00 ] 58.216.156.134 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-05-20T16:27:50+08:00 ] 58.216.156.134 /Multi/Public/shopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Multi\Model\ShopSetModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /alidata/www/wemall/Application/Multi/Model/ShopSetModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `user_id` = 2 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Multi\Model\UploadImgModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /alidata/www/wemall/Application/Multi/Model/UploadImgModel.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE ( 1=1 AND id='190' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: limit /alidata/www/wemall/ThinkPHP/Library/Think/Db/Driver.class.php 第 950 行.
+SQL: SELECT * FROM `wfx_shop_set` WHERE `user_id` = 2 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000468s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2017-05-20T16:27:57+08:00 ] 58.216.156.134 /Multi/Public/switchShop/id/20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Multi\Model\ShopSetModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /alidata/www/wemall/Application/Multi/Model/ShopSetModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-05-20T16:27:57+08:00 ] 58.216.156.134 /Multi/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_user_oath` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_user_oath`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000422s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-05-20T16:27:58+08:00 ] 58.216.156.134 /Multi/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_syslog` [ RunTime:0.0015s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Division by zero /alidata/www/wemall/Application/Multi/Controller/IndexController.class.php 第 138 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_log_tj` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 AND `shop_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `status` = 5 AND `shop_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 AND `shop_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_tx` [ RunTime:0.0020s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `wfx_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.044106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025965s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.026093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.051669s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000458s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-05-20T16:28:00+08:00 ] 101.226.51.229 /Multi/Public/shopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-20T16:28:00+08:00 ] 101.226.51.229 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: usid /alidata/www/wemall/Application/Multi/Controller/PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000394s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-05-20T16:28:03+08:00 ] 58.216.156.134 /Multi/Shop/goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: p /alidata/www/wemall/Application/Multi/Controller/ShopController.class.php 第 99 行.
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `shop_id` = 20 LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_goods` WHERE `shop_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 6 for Multi\Controller\BaseController::getPage(), called in /alidata/www/wemall/Application/Multi/Controller/ShopController.class.php on line 109 and defined /alidata/www/wemall/Application/Multi/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /alidata/www/wemall/Application/Multi/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010780s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007418s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011601s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000426s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-05-20T16:28:05+08:00 ] 58.216.156.134 /Multi/Shop/goodsSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_shop_label`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 4 for appTree(), called in /alidata/www/wemall/Application/Multi/Controller/ShopController.class.php on line 169 and defined /alidata/www/wemall/Application/Common/Common/function.php 第 293 行.
+NOTIC: [8] Undefined variable: map /alidata/www/wemall/Application/Common/Common/function.php 第 295 行.
+SQL: SELECT `id`,`pid`,`name`,`sorts`,concat(path,'-',id) as bpath FROM `wfx_shop_cate` ORDER BY sorts desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018148s ]
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 24 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 35 行.
+NOTIC: [8] Undefined index: _child /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 36 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 35 行.
+NOTIC: [8] Undefined index: _child /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 36 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 35 行.
+NOTIC: [8] Undefined index: _child /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 36 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 46 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 53 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 64 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 75 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 86 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 96 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 102 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 108 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 118 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 126 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 134 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 141 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 148 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 159 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 168 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 169 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 177 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 186 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 187 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 195 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 206 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 206 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 210 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 215 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 221 行.
+NOTIC: [8] Undefined variable: cache /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 230 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016186s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.019942s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000477s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-05-20T16:28:07+08:00 ] 101.226.51.226 /Multi/Public/switchShop/id/20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-05-20T16:28:07+08:00 ] 101.226.51.226 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: usid /alidata/www/wemall/Application/Multi/Controller/PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000439s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-05-20T16:32:34+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-05-20T16:32:55+08:00 ] 58.216.156.134 /Multi/Upload/doupimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /alidata/www/wemall/ThinkPHP/Library/Util/Upload.class.php 第 171 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /alidata/www/wemall/ThinkPHP/Library/Util/Upload.class.php 第 171 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /alidata/www/wemall/ThinkPHP/Library/Util/Upload.class.php 第 171 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /alidata/www/wemall/ThinkPHP/Library/Util/Upload.class.php 第 171 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /alidata/www/wemall/ThinkPHP/Library/Util/Upload.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: INSERT INTO `wfx_upload_img` (`name`,`ext`,`type`,`savename`,`savepath`) VALUES ('506aa32a46745e5b2c4f93bcf1ebc514.jpg','jpg','img','591fff37391a8.jpg','img/2017-05-20/') [ RunTime:0.0576s ]
+SQL: INSERT INTO `wfx_upload_img` (`name`,`ext`,`type`,`savename`,`savepath`) VALUES ('555.jpg','jpg','img','591fff373963b.jpg','img/2017-05-20/') [ RunTime:0.1142s ]
+SQL: INSERT INTO `wfx_upload_img` (`name`,`ext`,`type`,`savename`,`savepath`) VALUES ('ca46cc166c25f76fe2a1076c99515bde.jpg','jpg','img','591fff3739a41.jpg','img/2017-05-20/') [ RunTime:0.0082s ]
+SQL: INSERT INTO `wfx_upload_img` (`name`,`ext`,`type`,`savename`,`savepath`) VALUES ('ed7308ce1f8e2e3bf2be1a9e9c2ae5f7.jpg','jpg','img','591fff3739da9.jpg','img/2017-05-20/') [ RunTime:0.0086s ]
+SQL: INSERT INTO `wfx_upload_img` (`name`,`ext`,`type`,`savename`,`savepath`) VALUES ('fd65701025d034b2c7eca34774b0423d.jpg','jpg','img','591fff373a2a6.jpg','img/2017-05-20/') [ RunTime:0.0169s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000616s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-05-20T16:32:55+08:00 ] 58.216.156.134 /Multi/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_user_oath` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_user_oath`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000405s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-05-20T16:32:55+08:00 ] 58.216.156.134 /Multi/Upload/getmoreimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-05-20T16:33:07+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-05-20T16:33:14+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-05-20T16:33:17+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-05-20T16:33:22+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+
+[ 2017-05-20T16:33:36+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-05-20T16:33:46+08:00 ] 58.216.156.134 /Multi/Index/appImgviewer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('202')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+
+[ 2017-05-20T16:33:49+08:00 ] 58.216.156.134 /Multi/Index/appImgviewer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('206205204203')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-05-20T16:33:52+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-05-20T16:34:01+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-05-20T16:34:06+08:00 ] 58.216.156.134 /Multi/Index/appImgviewer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('206205')  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+
+[ 2017-05-20T16:34:10+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+
+[ 2017-05-20T16:34:22+08:00 ] 58.216.156.134 /Multi/Upload/getmoreimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0748s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 8,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-05-20T16:34:32+08:00 ] 58.216.156.134 /Multi/Index/appImgviewer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('206')  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-05-20T16:34:37+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-05-20T16:34:41+08:00 ] 58.216.156.134 /Multi/Index/appImgviewer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('206205')  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+
+[ 2017-05-20T16:34:44+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-05-20T16:34:47+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+
+[ 2017-05-20T16:34:50+08:00 ] 58.216.156.134 /Multi/Upload/indeximg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_upload_img` ORDER BY id desc LIMIT 0,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-05-20T16:40:04+08:00 ] 58.216.156.134 /Multi/Shop/goodsSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+SQL: INSERT INTO `wfx_shop_goods` (`id`,`cid`,`name`,`indexpic`,`listpic`,`pic`,`album`,`unit`,`price`,`oprice`,`fx1rate`,`fx2rate`,`fx3rate`,`num`,`issku`,`ismy`,`issells`,`dissells`,`lid`,`sorts`,`summary`,`content`,`shop_id`) VALUES ('0','24','【纯玩】安吉中南百草原1日游','206205204203202','202','','','元/人','158','188','3','1','1','9999','0','0','0','0','1,','1','游览中南百草原景区，拥有森林、草原、湿地、竹海、野生动物等资源。
+观四大表演，赏绚丽樱花，送欢乐世界摩天轮。
+给你足够的时间，尽情游玩，深度体验，植物，动物，人类的自然和谐。','&lt;ul style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;quot;Microsoft Yahei&amp;quot;, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(46, 153, 0); margin-right: 10px;&quot;&gt;第1天&lt;/strong&gt;&amp;nbsp;常州&lt;img src=&quot;/Public/Admin/ueditor/php/upload//img/62721495269472.png&quot; class=&quot;ml5 mr5&quot; style=&quot;border: 0px; vertical-align: middle; margin-left: 5px; margin-right: 5px;&quot;/&gt;安吉&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul style=&quot;margin: 0px; padding: 0px;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;span class=&quot;tripIcon tripIcon_xc&quot; style=&quot;display: block; position: absolute; text-align: center; background: url(&amp;quot;../images/general_infor_theme.png&amp;quot;) 0px -533px no-repeat; width: 14px; height: 22px; left: 12px; top: 2px;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;label class=&quot;fl&quot; style=&quot;float: left; font-size: 14px; font-weight: bold; font-family: &amp;quot;microsoft yahei&amp;quot;; color: rgb(102, 102, 102); margin-right: 10px; line-height: 24px;&quot;&gt;行程描述&lt;/label&gt;&lt;/p&gt;&lt;p&gt;6:30客运中心二楼常州集散中心出发，7：00湖塘乐购出发，游览【中南百草原】景区拥有森林、草原、湿地、竹海、野生动物等资源。景区分为植物世界、动物王国和休闲运动天堂三大主题。景区植被覆盖率达95%，是天然的绿色大氧吧；动物园内可观赏到老虎、狮子、金钱豹、孔雀等几十种珍奇野生动物，同时游客可以领略到狮虎献艺、海狮杂技等精彩表演；此外，景区还有浙江省唯一的BMX训练基地和跑马、驾山地车、登山攀岩、高空溜索、水上漂流等各类运动场地；以及浙北地区唯一一个大型游乐场——中南欢乐世界（自由选择、费用自理）欢乐风火轮、大摆锤、激流勇进等多个丰富多彩的项目组成，游客可在此体验到极致的欢乐与刺激。 除游乐、观赏项目外，景区还设有中南旅游饭店、烧烤场，供应竹乡特色菜肴和自产野味，鲜香可口。而座落于涌泉湖畔的度假酒店则堪称世外桃源，绿树成荫，环境优美。感受美景一览无余……&lt;br/&gt;赠送表演：&lt;br/&gt;古罗马竞技场（狮虎表演）9：15、10:30、12:45、14:00、15.15.&amp;nbsp;&lt;br/&gt;阿瓦山寨表演9:00、9:50、10:30、12:30、13:30、15:00、16:10.&lt;br/&gt;高山海洋馆（海狮表演）8:45、10:00、11:05、13:00、14:30、15:40&lt;br/&gt;音乐庄园-原始呼唤10:30、14:00&lt;br/&gt;赠送摩天轮游玩一次&lt;br/&gt;下午返回！&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;img src=&quot;/Public/Admin/ueditor/php/upload//img/17371495269487.jpg&quot;/&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;img src=&quot;/Public/Admin/ueditor/php/upload//img/73761495269496.jpg&quot;/&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;clearfix&quot;&gt;&lt;p&gt;早餐：&lt;span class=&quot;po_dining_diy&quot;&gt;敬请自理&lt;/span&gt;&amp;nbsp;午餐：&lt;span class=&quot;po_dining_diy&quot;&gt;敬请自理&lt;/span&gt;&amp;nbsp;晚餐：&lt;span class=&quot;po_dining_diy&quot;&gt;敬请自理&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span class=&quot;tripIcon tripIcon_zs&quot; style=&quot;display: block; position: absolute; text-align: center; background: url(&amp;quot;../images/general_infor_theme.png&amp;quot;) -60px -533px no-repeat; width: 15px; height: 20px; left: 11px; top: 4px;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;clearfix&quot;&gt;&lt;p&gt;&lt;label class=&quot;fl&quot; style=&quot;float: left; font-size: 14px; font-weight: bold; font-family: &amp;quot;microsoft yahei&amp;quot;; color: rgb(102, 102, 102); margin-right: 10px; line-height: 24px;&quot;&gt;住宿&lt;/label&gt;&lt;/p&gt;&lt;p&gt;无&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;预订须知&lt;/p&gt;&lt;p&gt;【游客须知】:&lt;br/&gt;关于游览：&amp;nbsp;&lt;br/&gt;1、此线路成人价格已含车费、导服、景点第一大门票，住宿（二日游或以上）。如持特殊证件者，如导游证、伤残证、记者证等也可选择按儿童价格报名只占车位，二日游现补房差，当天证件若景区认可有效，则按景区执行标准入园；若无效，门票请自行景区现补，导游不代为购买。谢谢配合。&amp;nbsp;&lt;br/&gt;2、儿童价格收费仅含车位、导服、旅行社责任保险。如在游览景点时超高，需自行补交超高部分门票。&amp;nbsp;&lt;br/&gt;3、行程中所有景点仅含景区大门票，景区内娱乐设施及小门票请视情况自行选择是否参加,我社导游不负责代为购买。&amp;nbsp;&lt;br/&gt;5、景区游客众多，偶有排队等候现象敬请谅解。&amp;nbsp;&lt;br/&gt;8、请游客参加漂流、乘船、景交时严格按规定戴安全帽，穿救生衣，漂流途中双手握紧皮筏扶手，头部严谨伸出筏外，禁止人员跳入水中嬉戏；因漂流比较惊险刺激景区建议（1.2米以下儿童及55周岁以上老人）不宜参加。&amp;nbsp;&lt;br/&gt;7、旅行社不推荐游客参加人身安全不确定的活动，旅行社禁止游客进行江、河、湖、海的游泳活动。&amp;nbsp;&lt;br/&gt;关于交通：&amp;nbsp;&lt;br/&gt;1、根据省公安厅最新公告及新的道路交通安全法规定，不占座的儿童标准为80公分下怀抱婴儿，80公分以上儿童必须按相关法规占座并支付车费，否则，我社导游有权依据新交通法规的规定和为了车上其他客人的生命财产安全拒绝此儿童参加本次旅游活动。一切后果和损失自负。&amp;nbsp;&lt;br/&gt;2、我社所用车辆均为具有营运资质的空调车，所有座位价格一致，不存在座位次序先后的差别问题，届时将有权视游客人数多少决定所 用车辆类型。&amp;nbsp;&lt;br/&gt;3、请游客准时到达上车地点（过时不侯，敬请体谅），以便我社的导游工作顺利开展，谢谢配合。&amp;nbsp;&lt;br/&gt;&lt;br/&gt;友情提醒：&amp;nbsp;&lt;br/&gt;1、 游客应妥善保管好随身携带财物，保管不妥引起遗失及损坏，旅行社不承担赔偿责任。购物时请把握好商品的质量与价格。&amp;nbsp;&lt;br/&gt;2、 我社已足额缴纳旅行社责任险，建议另行自行购买旅游人身意外险。&amp;nbsp;&lt;br/&gt;3、 紧急报警电话110，急救中心电话120。我社投诉电话：88888110，常州市旅游局投诉电话：:0519-8163333&amp;nbsp;&lt;br/&gt;4、 按照《旅游法》的规定，在旅游期间，导游增加任何规定行程以外的景点、购物点，都是违法行为，游客应坚决抵制，不要参与和配合，如发生游客参与和配合导游加点的行为，视为游客违约，旅行社可解除与您的旅游服务合同，且不退还任何费用。后续产生的任何争议，旅行社也均不承担赔偿和违约责任；同时，旅行社因此受到的处罚和损失，将全部由您承担。&amp;nbsp;&lt;br/&gt;其他约定：&amp;nbsp;&lt;br/&gt;1、由于旅行社组织的是散客拼团线路，未成年人及老年人必须有成年家人陪伴同行，体弱多病及孕妇不建议参团，否则由此造成的不便或问题，我社不承担责任。旅游者在购买（签订合同之时起）、接受旅游服务时，应当向我社如实告知与旅游活动相关的个人健康信息，遵守旅游活动中的安全警示规定；不得欺骗隐瞒，游客因上述原因造成了身体不适而发生任何意外，旅行社不承担责任。&amp;nbsp;&lt;br/&gt;2、此团满30人开班，未满人数旅行社在48小时通知游客延期或全额退款。如果游客有异议，则按照旅游法的规定执行。&amp;nbsp;&lt;br/&gt;3、凡遇人力不可抗拒因素（自然灾害、政治因素等）及各地交通、国家政策或者旅行社、旅行辅助人已尽合理注意、告知义务，但仍不能避免的事件，致影响行程，不可归责于旅行社之事由，如雷电、洪灾、地震、台风等等，均按旅游法第六十七条之规定执行；同时由于以上原因，旅行社有权根据团队具体情况调整景点游览顺序。&amp;nbsp;&lt;br/&gt;4、游客不得以任何理由拒绝上车而耽搁行程或从事严重影响其他旅游者权益的活动，不听劝阻，不能制止的，旅行社可解除旅游合同，或以旅游者自动离团处理，因之而产生的一切后果由游客自负；&amp;nbsp;&lt;br/&gt;5、旅游结束前请如实填写导游提供的《意见反馈表》，对没有填写而事后提出意见和投诉原则上我社不予受理。投诉有效期：90天。请合理维护你的权利。&amp;nbsp;&lt;br/&gt;※此须知将作为合同附件与《江苏省国内旅游组团合同》不可分割的一部分，请仔细阅读后如无疑意请您签字确认。&amp;nbsp;&lt;br/&gt;祝您旅途愉快！&lt;/p&gt;&lt;p&gt;签约付款&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;签约方式||：&lt;/span&gt;&lt;br/&gt;传真签约：双方在合同上签字盖章后，通过传真进行签约。&lt;br/&gt;常州签约中心：常州市钟楼区五星街道平岗小学西 景尚路1号&lt;br/&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;付款方式：&lt;/span&gt;&lt;br/&gt;【网上支付】：支付宝支付、信用卡支付、网银支付、微信支付&lt;br/&gt;【门市支付】：门市现金支付、转账支票、刷卡。&lt;br/&gt;【对公汇款】：通过银行将相关款项汇至指定账户，户名及账号请咨询400-828-9828.&lt;br/&gt;【发票说明】：按照国家相关规定，本产品提供“旅游费”发票和“服务代办”发票，不提供其他类目发票，具体请咨询400-828-9828。&lt;/p&gt;','20') [ RunTime:0.5251s ]
+
+[ 2017-05-20T16:40:04+08:00 ] 58.216.156.134 /Multi/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.1610s ]
+SQL: SHOW COLUMNS FROM `wfx_user_oath` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_user_oath`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000474s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-05-20T16:42:57+08:00 ] 58.216.156.134 /Multi/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_user_oath` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_user_oath`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000462s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-05-20T16:42:57+08:00 ] 58.216.156.134 /Multi/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( subscribe=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `ctime` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE ( status=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_order` WHERE `ctime` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_syslog` [ RunTime:0.0009s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1495209600 AND 1495295999 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(fxyj) AS tp_sum FROM `wfx_fx_syslog` WHERE `ctime` BETWEEN 1495123200 AND 1495209599 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Division by zero /alidata/www/wemall/Application/Multi/Controller/IndexController.class.php 第 138 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 0 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE `isfx` = 1 AND `isfxgd` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip` WHERE ( isfxgd=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log_sub` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_vip_log_sub` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_fx_syslog` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_log_tj` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_fx_log_tj` ORDER BY ctime desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `ispay` = 1 AND `status` = 2 ORDER BY ctime desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 AND `shop_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(totalprice) AS tp_sum FROM `wfx_shop_order` WHERE `status` = 5 AND `shop_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(totalnum) AS tp_sum FROM `wfx_shop_order` WHERE `ispay` = 1 AND `shop_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_tx` [ RunTime:0.0009s ]
+SQL: SELECT SUM(txprice) AS tp_sum FROM `wfx_vip_tx` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.039207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019524s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.021997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.041063s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000418s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-05-20T16:43:02+08:00 ] 58.216.156.134 /Multi/Shop/goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: p /alidata/www/wemall/Application/Multi/Controller/ShopController.class.php 第 99 行.
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `shop_id` = 20 LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_goods` WHERE `shop_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 6 for Multi\Controller\BaseController::getPage(), called in /alidata/www/wemall/Application/Multi/Controller/ShopController.class.php on line 109 and defined /alidata/www/wemall/Application/Multi/Controller/BaseController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: map /alidata/www/wemall/Application/Multi/Controller/BaseController.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.029993s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007637s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011516s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000464s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-05-20T16:43:27+08:00 ] 58.216.156.134 /Multi/Shop/goodsSet/id/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_label`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 4 for appTree(), called in /alidata/www/wemall/Application/Multi/Controller/ShopController.class.php on line 169 and defined /alidata/www/wemall/Application/Common/Common/function.php 第 293 行.
+NOTIC: [8] Undefined variable: map /alidata/www/wemall/Application/Common/Common/function.php 第 295 行.
+SQL: SELECT `id`,`pid`,`name`,`sorts`,concat(path,'-',id) as bpath FROM `wfx_shop_cate` ORDER BY sorts desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016924s ]
+NOTIC: [8] Undefined index: _child /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 36 行.
+NOTIC: [8] Undefined index: _child /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 36 行.
+NOTIC: [8] Undefined index: _child /alidata/www/wemall/Application/Runtime/Cache/Multi/ec079f96cf762aee6c5065d844b55fd5.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014866s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.018386s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000455s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-05-20T16:44:36+08:00 ] 58.216.156.134 /Multi/Shop/goodsSet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+SQL: UPDATE `wfx_shop_goods` SET `cid`='24',`name`='【纯玩】安吉中南百草原1日游',`indexpic`='206205204203202',`listpic`='202',`pic`='',`album`='',`unit`='元/人',`price`='158',`oprice`='188',`fx1rate`='3',`fx2rate`='1',`fx3rate`='1',`num`='9999',`issku`='0',`ismy`='0',`issells`='0',`dissells`='0',`lid`='1,',`sorts`='1',`summary`='游览中南百草原景区，拥有森林、草原、湿地、竹海、野生动物等资源。
+观四大表演，赏绚丽樱花，送欢乐世界摩天轮。
+给你足够的时间，尽情游玩，深度体验，植物，动物，人类的自然和谐。',`content`='&lt;ul style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;quot;Microsoft Yahei&amp;quot;, tahoma, arial, &amp;quot;Hiragino Sans GB&amp;quot;, 宋体, sans-serif; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(46, 153, 0); margin-right: 10px;&quot;&gt;第1天&lt;/strong&gt;&amp;nbsp;常州→安吉&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span class=&quot;tripIcon tripIcon_xc&quot; style=&quot;display: block; position: absolute; text-align: center; background: url(&amp;quot;../images/general_infor_theme.png&amp;quot;) 0px -533px no-repeat; width: 14px; height: 22px; left: 12px; top: 2px;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;label class=&quot;fl&quot; style=&quot;float: left; font-size: 14px; font-weight: bold; font-family: &amp;quot;microsoft yahei&amp;quot;; color: rgb(102, 102, 102); margin-right: 10px; line-height: 24px;&quot;&gt;行程描述&lt;/label&gt;&lt;/p&gt;&lt;p&gt;6:30客运中心二楼常州集散中心出发，7：00湖塘乐购出发，游览【中南百草原】景区拥有森林、草原、湿地、竹海、野生动物等资源。景区分为植物世界、动物王国和休闲运动天堂三大主题。景区植被覆盖率达95%，是天然的绿色大氧吧；动物园内可观赏到老虎、狮子、金钱豹、孔雀等几十种珍奇野生动物，同时游客可以领略到狮虎献艺、海狮杂技等精彩表演；此外，景区还有浙江省唯一的BMX训练基地和跑马、驾山地车、登山攀岩、高空溜索、水上漂流等各类运动场地；以及浙北地区唯一一个大型游乐场——中南欢乐世界（自由选择、费用自理）欢乐风火轮、大摆锤、激流勇进等多个丰富多彩的项目组成，游客可在此体验到极致的欢乐与刺激。 除游乐、观赏项目外，景区还设有中南旅游饭店、烧烤场，供应竹乡特色菜肴和自产野味，鲜香可口。而座落于涌泉湖畔的度假酒店则堪称世外桃源，绿树成荫，环境优美。感受美景一览无余……&lt;br/&gt;赠送表演：&lt;br/&gt;古罗马竞技场（狮虎表演）9：15、10:30、12:45、14:00、15.15.&amp;nbsp;&lt;br/&gt;阿瓦山寨表演9:00、9:50、10:30、12:30、13:30、15:00、16:10.&lt;br/&gt;高山海洋馆（海狮表演）8:45、10:00、11:05、13:00、14:30、15:40&lt;br/&gt;音乐庄园-原始呼唤10:30、14:00&lt;br/&gt;赠送摩天轮游玩一次&lt;br/&gt;下午返回！&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;img src=&quot;/Public/Admin/ueditor/php/upload//img/17371495269487.jpg&quot;/&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;img src=&quot;/Public/Admin/ueditor/php/upload//img/73761495269496.jpg&quot;/&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;早餐：&lt;span class=&quot;po_dining_diy&quot;&gt;敬请自理&lt;/span&gt;&amp;nbsp;午餐：&lt;span class=&quot;po_dining_diy&quot;&gt;敬请自理&lt;/span&gt;&amp;nbsp;晚餐：&lt;span class=&quot;po_dining_diy&quot;&gt;敬请自理&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span class=&quot;tripIcon tripIcon_zs&quot; style=&quot;display: block; position: absolute; text-align: center; background: url(&amp;quot;../images/general_infor_theme.png&amp;quot;) -60px -533px no-repeat; width: 15px; height: 20px; left: 11px; top: 4px;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;label class=&quot;fl&quot; style=&quot;float: left; font-size: 14px; font-weight: bold; font-family: &amp;quot;microsoft yahei&amp;quot;; color: rgb(102, 102, 102); margin-right: 10px; line-height: 24px;&quot;&gt;住宿&lt;/label&gt;&lt;/p&gt;&lt;p&gt;无&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;预订须知&lt;/p&gt;&lt;p&gt;【游客须知】:&lt;br/&gt;关于游览：&amp;nbsp;&lt;br/&gt;1、此线路成人价格已含车费、导服、景点第一大门票，住宿（二日游或以上）。如持特殊证件者，如导游证、伤残证、记者证等也可选择按儿童价格报名只占车位，二日游现补房差，当天证件若景区认可有效，则按景区执行标准入园；若无效，门票请自行景区现补，导游不代为购买。谢谢配合。&amp;nbsp;&lt;br/&gt;2、儿童价格收费仅含车位、导服、旅行社责任保险。如在游览景点时超高，需自行补交超高部分门票。&amp;nbsp;&lt;br/&gt;3、行程中所有景点仅含景区大门票，景区内娱乐设施及小门票请视情况自行选择是否参加,我社导游不负责代为购买。&amp;nbsp;&lt;br/&gt;5、景区游客众多，偶有排队等候现象敬请谅解。&amp;nbsp;&lt;br/&gt;8、请游客参加漂流、乘船、景交时严格按规定戴安全帽，穿救生衣，漂流途中双手握紧皮筏扶手，头部严谨伸出筏外，禁止人员跳入水中嬉戏；因漂流比较惊险刺激景区建议（1.2米以下儿童及55周岁以上老人）不宜参加。&amp;nbsp;&lt;br/&gt;7、旅行社不推荐游客参加人身安全不确定的活动，旅行社禁止游客进行江、河、湖、海的游泳活动。&amp;nbsp;&lt;br/&gt;关于交通：&amp;nbsp;&lt;br/&gt;1、根据省公安厅最新公告及新的道路交通安全法规定，不占座的儿童标准为80公分下怀抱婴儿，80公分以上儿童必须按相关法规占座并支付车费，否则，我社导游有权依据新交通法规的规定和为了车上其他客人的生命财产安全拒绝此儿童参加本次旅游活动。一切后果和损失自负。&amp;nbsp;&lt;br/&gt;2、我社所用车辆均为具有营运资质的空调车，所有座位价格一致，不存在座位次序先后的差别问题，届时将有权视游客人数多少决定所 用车辆类型。&amp;nbsp;&lt;br/&gt;3、请游客准时到达上车地点（过时不侯，敬请体谅），以便我社的导游工作顺利开展，谢谢配合。&amp;nbsp;&lt;br/&gt;&lt;br/&gt;友情提醒：&amp;nbsp;&lt;br/&gt;1、 游客应妥善保管好随身携带财物，保管不妥引起遗失及损坏，旅行社不承担赔偿责任。购物时请把握好商品的质量与价格。&amp;nbsp;&lt;br/&gt;2、 我社已足额缴纳旅行社责任险，建议另行自行购买旅游人身意外险。&amp;nbsp;&lt;br/&gt;3、 紧急报警电话110，急救中心电话120。我社投诉电话：88888110，常州市旅游局投诉电话：:0519-8163333&amp;nbsp;&lt;br/&gt;4、 按照《旅游法》的规定，在旅游期间，导游增加任何规定行程以外的景点、购物点，都是违法行为，游客应坚决抵制，不要参与和配合，如发生游客参与和配合导游加点的行为，视为游客违约，旅行社可解除与您的旅游服务合同，且不退还任何费用。后续产生的任何争议，旅行社也均不承担赔偿和违约责任；同时，旅行社因此受到的处罚和损失，将全部由您承担。&amp;nbsp;&lt;br/&gt;其他约定：&amp;nbsp;&lt;br/&gt;1、由于旅行社组织的是散客拼团线路，未成年人及老年人必须有成年家人陪伴同行，体弱多病及孕妇不建议参团，否则由此造成的不便或问题，我社不承担责任。旅游者在购买（签订合同之时起）、接受旅游服务时，应当向我社如实告知与旅游活动相关的个人健康信息，遵守旅游活动中的安全警示规定；不得欺骗隐瞒，游客因上述原因造成了身体不适而发生任何意外，旅行社不承担责任。&amp;nbsp;&lt;br/&gt;2、此团满30人开班，未满人数旅行社在48小时通知游客延期或全额退款。如果游客有异议，则按照旅游法的规定执行。&amp;nbsp;&lt;br/&gt;3、凡遇人力不可抗拒因素（自然灾害、政治因素等）及各地交通、国家政策或者旅行社、旅行辅助人已尽合理注意、告知义务，但仍不能避免的事件，致影响行程，不可归责于旅行社之事由，如雷电、洪灾、地震、台风等等，均按旅游法第六十七条之规定执行；同时由于以上原因，旅行社有权根据团队具体情况调整景点游览顺序。&amp;nbsp;&lt;br/&gt;4、游客不得以任何理由拒绝上车而耽搁行程或从事严重影响其他旅游者权益的活动，不听劝阻，不能制止的，旅行社可解除旅游合同，或以旅游者自动离团处理，因之而产生的一切后果由游客自负；&amp;nbsp;&lt;br/&gt;5、旅游结束前请如实填写导游提供的《意见反馈表》，对没有填写而事后提出意见和投诉原则上我社不予受理。投诉有效期：90天。请合理维护你的权利。&amp;nbsp;&lt;br/&gt;※此须知将作为合同附件与《江苏省国内旅游组团合同》不可分割的一部分，请仔细阅读后如无疑意请您签字确认。&amp;nbsp;&lt;br/&gt;祝您旅途愉快！&lt;/p&gt;&lt;p&gt;签约付款&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;签约方式||：&lt;/span&gt;&lt;br/&gt;传真签约：双方在合同上签字盖章后，通过传真进行签约。&lt;br/&gt;常州签约中心：常州市钟楼区五星街道平岗小学西 景尚路1号&lt;br/&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;付款方式：&lt;/span&gt;&lt;br/&gt;【网上支付】：支付宝支付、信用卡支付、网银支付、微信支付&lt;br/&gt;【门市支付】：门市现金支付、转账支票、刷卡。&lt;br/&gt;【对公汇款】：通过银行将相关款项汇至指定账户，户名及账号请咨询400-828-9828.&lt;br/&gt;【发票说明】：按照国家相关规定，本产品提供“旅游费”发票和“服务代办”发票，不提供其他类目发票，具体请咨询400-828-9828。&lt;/p&gt;' WHERE `id` = 26 [ RunTime:0.2014s ]
+
+[ 2017-05-20T16:44:36+08:00 ] 58.216.156.134 /Multi/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_user_oath` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_user_oath`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000432s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+

@@ -1,0 +1,1075 @@
+[ 2017-04-27T11:15:26+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001743s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001868s ]
+
+[ 2017-04-27T11:15:36+08:00 ] 101.226.51.230 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000173s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000296s ]
+
+[ 2017-04-27T11:17:07+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002464s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001746s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001872s ]
+
+[ 2017-04-27T11:17:17+08:00 ] 101.226.33.204 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000255s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000438s ]
+
+[ 2017-04-27T11:17:17+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000171s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000304s ]
+
+[ 2017-04-27T11:17:24+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000168s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000278s ]
+
+[ 2017-04-27T11:17:27+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000166s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000276s ]
+
+[ 2017-04-27T11:19:32+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000164s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000275s ]
+
+[ 2017-04-27T11:20:04+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000173s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000290s ]
+
+[ 2017-04-27T11:25:35+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000182s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000292s ]
+
+[ 2017-04-27T11:25:39+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000168s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000274s ]
+
+[ 2017-04-27T13:15:39+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000172s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000293s ]
+
+[ 2017-04-27T13:15:49+08:00 ] 101.226.66.173 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000167s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000282s ]
+
+[ 2017-04-27T13:18:07+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000169s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000293s ]
+
+[ 2017-04-27T14:33:36+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000194s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000312s ]
+
+[ 2017-04-27T14:33:37+08:00 ] 58.216.156.134 /App?code=0518ZlGZ0k7vo22q8FJZ0xNdGZ08ZlGz&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-27T14:33:37+08:00 ] 58.216.156.134 /App/Baseoa/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000463s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-04-27T14:33:39+08:00 ] 58.216.156.134 /App/Baseoa/index?code=041GFA630gBdaG1ZaH330DEB630GFA6U&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `weight` > 0  [ RunTime:0.0002s ]
+SQL: SELECT SUM(weight) AS tp_sum FROM `wfx_employee` WHERE `weight` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_vip_level` ORDER BY exp  [ RunTime:0.0002s ]
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'continue_sign' doesn't have a default value
+
+[ 2017-04-27T14:33:47+08:00 ] 180.153.214.197 /App/Baseoa/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000460s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-04-27T14:43:55+08:00 ] 58.216.156.134 /App/Baseoa/index?code=041GFA630gBdaG1ZaH330DEB630GFA6U&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000693s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2017-04-27T14:43:55+08:00 ] 58.216.156.134 /App/Baseoa/index?code=041GFA630gBdaG1ZaH330DEB630GFA6U&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: oaurl /alidata/www/wemall/Application/App/Controller/BaseoaController.class.php 第 239 行.
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000678s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2017-04-27T14:43:56+08:00 ] 58.216.156.134 /App/Baseoa/index?code=041GFA630gBdaG1ZaH330DEB630GFA6U&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: oaurl /alidata/www/wemall/Application/App/Controller/BaseoaController.class.php 第 239 行.
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000583s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-04-27T14:43:56+08:00 ] 58.216.156.134 /App/Baseoa/index?code=041GFA630gBdaG1ZaH330DEB630GFA6U&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: oaurl /alidata/www/wemall/Application/App/Controller/BaseoaController.class.php 第 239 行.
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000560s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2017-04-27T14:43:58+08:00 ] 58.216.156.134 /App/Baseoa/index?code=041GFA630gBdaG1ZaH330DEB630GFA6U&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: oaurl /alidata/www/wemall/Application/App/Controller/BaseoaController.class.php 第 239 行.
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000628s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-04-27T14:44:22+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000171s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000308s ]
+
+[ 2017-04-27T14:44:22+08:00 ] 58.216.156.134 /App?code=0216GrOd0MqtHy1TPmPd0u4rOd06GrOp&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-04-27T14:44:22+08:00 ] 58.216.156.134 /App/Baseoa/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006908s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000555s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-04-27T14:44:25+08:00 ] 58.216.156.134 /App/Baseoa/index?code=011rqK1e1sXKKv0guH0e1wgW1e1rqK19&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `weight` > 0  [ RunTime:0.0002s ]
+SQL: SELECT SUM(weight) AS tp_sum FROM `wfx_employee` WHERE `weight` > 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_vip_level` ORDER BY exp  [ RunTime:0.0002s ]
+SQL: INSERT INTO `wfx_vip` (`pid`,`path`,`plv`,`employee`,`openid`,`nickname`,`sex`,`city`,`province`,`country`,`headimgurl`,`score`,`exp`,`cur_exp`,`levelid`,`ctime`,`cctime`) VALUES ('0','0','1','0','oDDijt7EZBo7sTKQ52vrMV9EWZ5s','No Pain No Gain','1','','','CN','http://wx.qlogo.cn/mmopen/lm0HT5udAZkp6H8QvbUnXxvHJysBXEiaGN5qs03qS201S8P6RuiaHQ34yclNvwvcic4NbY5cA9l7MHXcFIswoLia51iawEnoadYt3/0','100','20','20','1','1493275465','1493275465') [ RunTime:0.1759s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_card` [ RunTime:0.0019s ]
+SQL: INSERT INTO `wfx_vip_card` (`type`,`vipid`,`money`,`usemoney`,`cardno`,`cardpwd`,`status`,`ctime`,`stime`,`etime`) VALUES ('2','8','10','100','3280853251','0MZA3C6NNY','1','1493275465','1493275465','1493880265') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log` [ RunTime:0.0016s ]
+SQL: INSERT INTO `wfx_vip_log` (`ip`,`vipid`,`ctime`,`openid`,`nickname`,`event`,`score`,`exp`,`type`) VALUES ('58.216.156.134','8','1493275465','oDDijt7EZBo7sTKQ52vrMV9EWZ5s','No Pain No Gain','会员注册','100','20','4') [ RunTime:0.0498s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000548s ]
+INFO: [ action_end ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2017-04-27T14:44:25+08:00 ] 58.216.156.134 /App?code=0216GrOd0MqtHy1TPmPd0u4rOd06GrOp&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:44:32+08:00 ] 101.226.69.246 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000175s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000295s ]
+
+[ 2017-04-27T14:51:39+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:51:51+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:53:35+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:53:36+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:53:37+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:53:37+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:53:37+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:53:37+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:54:31+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:54:31+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:54:31+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T14:54:32+08:00 ] 58.216.156.134 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oDDijt7EZBo7sTKQ52vrMV9EWZ5s' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-04-27T19:29:58+08:00 ] 101.226.125.119 /App
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 94 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000177s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000298s ]
+

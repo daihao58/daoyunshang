@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="yes" name="apple-touch-fullscreen" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<title></title>
+	<meta name="keywords" content=" " />
+	<meta name="description" content=" " />
+	<link rel="stylesheet" href="__PUBLIC__/App/css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="__PUBLIC__/App/css/layout.css">
+	<link rel="stylesheet" href="__PUBLIC__/App/css/style.css">
+</head>
+<style>
+	.pages a,
+	.pages span {
+		display: inline-block;
+		padding: 2px 5px;
+		margin: 0 1px;
+		border: 1px solid #f0f0f0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	.pages a,
+	.pages li {
+		display: inline-block;
+		list-style: none;
+		text-decoration: none;
+		color: #58A0D3;
+	}
+
+	.pages a.first,
+	.pages a.prev,
+	.pages a.next,
+	.pages a.end {
+		margin: 0;
+	}
+
+	.pages a:hover {
+		border-color: #50A8E6;
+	}
+
+	.pages span.current {
+		background: #50A8E6;
+		color: #FFF;
+		font-weight: 700;
+		border-color: #50A8E6;
+	}
+</style>
+<body>
+<div class="page page-prodList">
+	<!-- 标题栏 -->
+	<header class="bar bar-header">
+		<a href="{:U('App/Shop/index',array('shopid'=>21))}" class="iconfont icon-back bar-btn pull-left"></a>
+		<h1 class="title">分类</h1>
+		<a href="{:U('App/Shop/index',array('shopid'=>21))}" class="iconfont icon-home-head bar-btn pull-right"></a>
+	</header>
+
+	<!-- 左边一级导航 -->
+	<div class="left-menu-bar">
+		<ul class="tab-links">
+			<volist name="shop_cate" id="vo">
+				<li class='l-menu-it <if condition="$cid eq $vo['id']">cur<else /></if>'>
+					<a href="{:U('App/Shop/goods_kind',array('sid'=>0,'cid'=>$vo['id']))}">{$vo.name}</a>
+				</li>
+			</volist>
+		</ul>
+	</div>
+
+	<!-- content -->
+	<section class="content">
+		<!-- 排序 -->
+		<div class="rank-block">
+			<ul class="row">
+				<li class="col-33" id="comprehensive">
+					<a class='rank-item <if condition="$order_num eq 1">cur<else /></if> '>综合<i class="trian"></i></a>
+				</li>
+				<li class="col-33" id="price">
+					<a class='rank-item <if condition="($order_num eq 2) and ($price_order eq asc)">cur <elseif condition="($order_num eq 2) and ($price_order eq desc)" />cur asce<else /></if> '>价格<i class="trian trian-double"></i></a>
+					<input type="text" value="{$price_order}" name="price_order" id="price_order" style="display: none">
+				</li>
+				<!-- 第一次点降序 -->
+				<!-- <li class="col-33">
+                    <a class="rank-item cur">价格<i class="trian trian-double"></i></a>
+                </li> -->
+				<!-- 第二次点升序 -->
+				<!-- <li class="col-33">
+                    <a class="rank-item cur asce">价格<i class="trian trian-double"></i></a>
+                </li> -->
+				<li class="col-33" id="time">
+					<a class='rank-item <if condition="$order_num eq 3">cur<else /></if> '>最新<i class="trian"></i></a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="products-list mt-10">
+			<ul class="row">
+
+				<volist name="goods_list" id="vo">
+					<li class="col-50 mt-12">
+						<a href="{:U('App/Shop/goods',array('sid'=>0,'id'=>$vo['id'],'ppid'=>$_SESSION['WAP']['vipid']))}" class="link-wrap">
+							<div class="prod-img">
+								<img src="{$vo.imgurl}" alt="" width="125px" height="110px">
+							</div>
+							<h4 class="t-e mt-8">{$vo.name}</h4>
+							<p class="color-ora mt-8">￥{$vo.price}</p>
+						</a>
+					</li>
+				</volist>
+			</ul>
+		</div>
+		<div class="pages">
+			{$page}
+		</div>
+	</section>
+</div>
+<script src="__PUBLIC__/App/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="__PUBLIC__/App/js/jquery-3.2.1.min.js"></script>
+
+
+<script type="text/javascript">
+	$("#price").click(function(){
+		var con =$(".left-menu-bar .cur a").attr('href');
+		var price_order=$("#price_order").val();
+		var pir_href=con+"/price/"+price_order
+		window.location.href=pir_href;
+	});
+
+	$("#time").click(function(){
+		var con =$(".left-menu-bar .cur a").attr('href');
+
+		var time_href=con+"/time/desc";
+		window.location.href=time_href;
+	});
+	$("#comprehensive").click(function(){
+		var con =$(".left-menu-bar .cur a").attr('href');
+
+		var comprehensive_href=con+"/comprehensive/desc";
+		window.location.href=comprehensive_href;
+	});
+
+</script>
+</body>
+</html>

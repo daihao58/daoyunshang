@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+.popup {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.4);
+	z-index: 99999;
+}
+
+.popup-cnt {
+	position: absolute;
+	top: 50%;
+	left: 18%;
+	right: 18%;
+	text-align: center;
+	-webkit-transform: translateY(-60%);
+	transform: translateY(-60%);
+}
+
+.popup-cnt .close-btn {
+	position: absolute;
+	top: -16px;
+	right: -14px;
+	width: 28px;
+	height: 28px;
+	background: #fff url(../images/close-1.png) no-repeat center center;
+	background-size: 60% 60%;
+	border-radius: 50%;
+}
+
+.popup-cnt .close-btn.btn-2 {
+	background-image: url(../images/close-2.png);
+}
+
+.popup-cnt img {
+	max-width: 100%;
+}
+
+.popup-cnt .ok-btn {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 2px;
+	height: 40px;
+	border-radius: 10px;
+	z-index: 22;
+}

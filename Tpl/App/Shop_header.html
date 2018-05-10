@@ -1,0 +1,186 @@
+<style>
+	.dtl-shp{position: relative;}
+	.dtl-shp b{position: absolute; padding: 4px; font-size: 0.5em; line-height: 0.5em; background: #FF0000; color: #FFFFFF; right: 0px; border-radius: 30px;}
+	.telnone{display:none}
+	/*.yemianX{display:block;float:right;margin-right:10%;}
+	#kefudianhua div.order-foot p{display:block;width:100%;margin: 20px auto;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;}
+	#kefudianhua div.order-foot div.bddh{margin: 20px auto;text-align: center;width: 90%; height: 42px;border-radius: 6px;background-color: #f80;color: #fff;font-size: 14px;line-height: 42px;}
+	.form-control{width:90%;height:40px;padding-left:5px;padding-right:5px;border:1px solid #d9d9d9;}
+	.left{width:60%;float:left;}
+	.btn-red{
+		background: #fd7708;
+		border-radius: 6px;
+		width: 50%;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		border: none;
+		color: #fff;
+		font-size: 18px;
+		font-family: "Microsoft Yahei";
+		margin-top:10px;
+
+	}
+	.btn-quxiao{
+		background: #999999;
+	}*/
+	.telnone {
+		display:none;
+		position:fixed;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width:100%;
+		height:100%;
+		bottom:0;
+		z-index:1000;
+		background-color:rgba(0,0,0,0.3);
+	}
+	
+	#kefudianhua div.order-foot {
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		width: 310px;
+		height: 335px;
+		margin-left: -155px;
+		margin-top: -180px;
+		text-align:left;
+		padding: 192px 12px 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;	
+		background: url('/Public/App/img/popbg.png') no-repeat top center;
+		background-size: 100% auto;
+	}	
+	
+	.form-control {
+		width: 100%;
+		height: 42px;
+		line-height: 1;
+		font-size: 14px;
+		border: 2px solid #c53227;
+		border-radius: 8px;
+		padding: 12px 8px;
+		-webkit-appearance: none;			 
+		appearance: none;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	#kefudianhua .state {
+		margin-bottom: 4px;
+		color: #fff;
+		font-size: 12px;
+	}
+	
+	.btn-red-div {
+		position:absolute;
+		left: 12px;
+		right: 12px;
+		bottom: 16px;
+	}
+	
+	#kefudianhua .btn-red {		
+		width: 46%;
+		height: 38px;
+		border-radius: 20px;
+		text-align: center;
+		color: #fff;
+		border: none;
+		font-size: 14px;
+		background-color: #ff4200;
+	}
+	
+	#kefudianhua .btn-quxiao {		
+		background-color: #ff9400;
+	}
+	
+	.fr {
+		float: right;
+	}
+	
+</style>
+<div  id="kefudianhua"  class="telnone">
+	<!--<div class="order-foot " style="height:232px;background-color:white;text-align:left;padding-left:10px;margin-top:25%;">
+		<p style="font-size: 12px;padding-top:10px;"><span id="telquxiao" class="yemianX">X</span></p>
+		<p style="font-size: 12px;padding-top:10px;">为了确保能更好的为您提供服务</p>
+		<p style="color: #23cc77;font-size: 16px;margin-top:0px;">请绑定客服推荐号</p>
+		<p style="margin-top:0px;"><input type="text" class="form-control" name="tuijianma" placeholder="输入员工推荐号" data-bv-notempty="true" data-bv-notempty-message="不能为空"></p>
+		<p style="margin-top:0px;width:90%;"><button onclick="qxbangdong()"  class="btn-red btn-quxiao">取消</button><button class="btn-red" onclick="querenbangdong()">确认绑定</button></p>
+	</div>-->
+	
+	<div class="order-foot">
+		<p class="state">如无人推荐则由平台客服提供服务。</p>
+		<p><input type="text" class="form-control" name="tuijianma" placeholder="输入员工推荐号" data-bv-notempty="true" data-bv-notempty-message="不能为空"></p>
+		<p class="btn-red-div"><button onclick="qxbangdong()"  class="btn-red btn-quxiao">无推荐人</button><button class="btn-red fr" onclick="querenbangdong()">确认绑定</button></p>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+        <php>
+        if($_SESSION['WAP']['vip']['employee'] ==0  && $_SESSION['WAP']['vip']['pid']==0 ){
+        </php>
+            $('#kefudianhua').show();
+            <php>
+        }
+        </php>
+    });
+    $('#telquxiao').click(function(){
+        $('#kefudianhua').hide();
+    });
+    function querenbangdong(){
+	    var vipid1="{$_SESSION.WAP.vipid}";
+        var tuijianma=$("[name='tuijianma']").val();
+
+        if(!vipid1){
+            var fun=function(){
+                window.location.href=loginback;
+            }
+            App_gmuMsg('您还未登录，2秒后自动跳转登陆界面！',fun);
+            return false;
+        }
+        if(tuijianma ==''){
+            alert('推荐码不能为空');
+            return false;
+        }
+        $.post(
+            "{:U('App/Yanzheng/vipAlloc')}",
+            {
+                "vipid1": vipid1,
+                "code":tuijianma
+            },
+            function(data){
+                if(data.res==0){
+                    alert(data.msg);
+                    return false;
+                }else{
+                    alert(data.msg);
+                    $('#kefudianhua').hide();
+                    return false;
+                }
+
+            },
+            'json'
+		);
+    }
+    function qxbangdong(){
+        var vipid2="{$_SESSION.WAP.vipid}";
+        if(!vipid2){
+            var fun=function(){
+                window.location.href=loginback;
+            }
+            App_gmuMsg('您还未登录，2秒后自动跳转登陆界面！',fun);
+            return false;
+        }
+        $.post(
+            "{:U('App/Yanzheng/vipAllocquxiao')}",
+            {
+                "vipid1": vipid2
+            },
+            function(data){
+                $('#kefudianhua').hide();
+            },
+            'json'
+        );
+    }
+
+</script>

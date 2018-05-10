@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title></title>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <link rel="stylesheet" href="__PUBLIC__/App/css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/layout.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/style.css">
+</head>
+<script src="__PUBLIC__/App/js/jquery-3.2.1.min.js"></script>
+<script src="__PUBLIC__/App/js/swiper-3.4.2.jquery.min.js"></script>
+<body>
+<div class="page page-user page-current" id="page-user">
+    <!-- 标题栏 -->
+    <header class="bar bar-header">
+        <h1 class="title">我的</h1>
+        <a href="/App/Vip/message" class="iconfont icon-msg bar-btn pull-right"></a>
+    </header>
+
+    <!-- 工具栏 -->
+    <include file="./Tpl/App/Shop_footer.html" />
+
+    <!--内容区-->
+    <div class="content">
+        <!-- 用户信息 -->
+        <div class="user-block">
+            <div class="bg-semiCir"></div>
+            <div class="user-infor">
+                <span class="portrait" style="background-image: url({$data.headimgurl});"></span>
+                <p class="user-name">{$data.nickname}</p>
+                <p class="user-level mt-12"><i class="iconfont icon-vip1"></i><span>{$data.fxname}</span></p>
+            </div>
+            <a href="" class="iconfont icon-right"></a>
+        </div>
+
+        <!-- 主要功能 -->
+        <div class="card-block">
+            <ul class="menu-nav row">
+                <li class="col-25 nav-tjm">
+                    <i class="m-nav-icon"></i>
+                    <p class="font-12">推荐码</p>
+                </li>
+                <li class="col-25 nav-jf">
+                    <p class="font-12">89ktrt</p>
+                </li>
+             <!--   <li class="col-25 nav-tyg">
+                    <a href="">
+                        <i class="m-nav-icon"></i>
+                        <p class="font-12">体验馆</p>
+                    </a>
+                </li>-->
+                <li class="col-25 nav-jf">
+                    <i class="m-nav-icon"></i>
+                    <p class="font-12">积分</p>
+                </li>
+                <li class="col-25 nav-jf">
+                    <p class="font-12">{$data.score}</p>
+                </li>
+              <!--  <li class="col-25 nav-xjb">
+                    <a href="">
+                        <i class="m-nav-icon"></i>
+                        <p class="font-12">现金币</p>
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+
+        <!-- 收藏 -->
+        <div class="list-block media-list mt-20 borTop-0">
+            <ul>
+                <li>
+                    <a href="#" class="item-content">
+                        <div class="item-media"><i class="iconfont icon-bill" style="color: #ff4178"></i></div>
+                        <div class="item-title">现金币</div>
+                        <span style="display: inline-block; float: right">{$data.money}</span>
+                    </a>
+                </li>
+              <!--  <li>
+                    <a href="#" class="item-content">
+                        <div class="item-media"><i class="iconfont icon-bill" style="color: #ff4178"></i></div>
+                        <div class="item-title">体验馆</div>
+                        <span>{$data.experience_hall}</span>
+                    </a>
+                </li>-->
+                <li>
+                    <a href="/App/Vip/bill/type/1" class="item-content">
+                        <div class="item-media"><i class="iconfont icon-bill" style="color: #ff4178"></i></div>
+                        <div class="item-title">账单查询</div>
+                        <i class="more-link"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/App/Vip/address" class="item-content">
+                        <div class="item-media"><i class="iconfont icon-addr" style="color: #10b8ff"></i></div>
+                        <div class="item-title">收货地址</div>
+                        <i class="more-link"></i>
+                    </a>
+                </li>
+                <if condition="$data['experience_hall'] eq 1">
+                    <li>
+                        <a href="/App/Vip/agency" class="item-content">
+                            <div class="item-media"><i class="iconfont icon-agency" style="color: #ff8c44"></i></div>
+                            <div class="item-title">挂靠申请</div>
+                            <i class="more-link"></i>
+                        </a>
+                    </li>
+                    <else />
+                </if>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+</script>
+</body>

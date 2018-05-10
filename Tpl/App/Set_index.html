@@ -1,0 +1,319 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"/>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <link href="http://static.uu1.com/Wap/css/mbbest.css" rel="stylesheet" type="text/css">
+    <link href="http://static.uu1.com/Wap/css/header.css" rel="stylesheet" type="text/css">
+    <link href="http://static.uu1.com/Wap/css/text.css" rel="stylesheet" type="text/css">
+    <link href="http://static.uu1.com/Wap/css/common.css" rel="stylesheet" type="text/css">
+
+    <title>图片分享</title>
+</head>
+
+<body>
+<link href="http://static.uu1.com/Wap/css/mbbest.css" rel="stylesheet" type="text/css">
+<style>
+    body {
+        background-color: #fff;
+    }
+    .back-grey{display: none}
+    .back-grey i{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        top: 0;
+        left: 0;
+    }
+
+    .tips {position: fixed;top:5%;  left:5%;}
+    .new-img{  position: fixed;  z-index: 3;  width: 90%;  }
+    .tips b{z-index: 4;position: relative;background-color: white; font-size:18px;top:-3px;white-space: nowrap;}
+
+    .inp-phone {
+        position: relative;
+        margin-bottom: 28px;
+        padding-left: 96px;
+        font-size: 18px;
+    }
+
+    .inp-phone-label {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        display: inline-block;
+
+    }
+    input{
+        width: 100%;
+        padding:6px;
+        border-radius: 4px;
+        border:1px solid #ccc;
+        font-size: 14px;
+    }
+    .but{
+        width: 45%;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 16px;
+        border: none;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        border-radius: 4px;
+        color: white;
+        background-color: orange;
+    }
+
+    .but2{  float: right;  }
+</style>
+
+<!--小蜜蜂原图-->
+<div style="position: relative;top:3%; padding-left: 5%;">
+    <img id="xmf-img" src="{$lines_info}" style=" width: 95%;display: none">
+    <img id="xmf-img-none" src="{$lines_info}" style="display: none">
+</div>
+<!--<div style="position: relative;top:7%;padding: 0 5% 5% 5% ">-->
+<!--<div class="inp-phone"><label class="inp-phone-label">手机号码:</label><input type="text" name="phone" value=""></div>-->
+<!--<button class="but1 but" onclick="dis_confirm();">合成图片</button>-->
+<!--<button class="but2 but" onclick='show_merge()'>分享图片</button>-->
+<!--</div>-->
+
+
+<!--二维码绘制区域-->
+<div style="display: none">
+    <div id="qrcode"></div>
+    <img id="qrcode_img" src=""  width="50">
+</div>
+
+<!--合成图片区域-->
+<div style="display: none">
+    <canvas id="myCanvas"></canvas>
+</div>
+
+<!--背景蒙层-->
+<div class="back-grey">
+    <i onclick="$('.back-grey').hide()"></i>
+    <div class="tips">
+        <img id="new-img" class="new-img" src="" >
+        <b>长按图片以保存</b>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="http://static.uu1.com/Web/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="http://static.uu1.com/Wap/js/jqueryqr.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+
+
+
+
+    var dis_id='';
+    var roleid='';
+    var flag=0;
+
+    function dis_confirm() {
+
+        var phone =$("input[name='phone']").val();
+        var telReg1 = phone.match(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/);
+        if (!telReg1) {
+            showError('请输入正确的手机号!');
+            return;
+        }
+
+        $.ajax({
+            url:"{:U('Set/dis_confirm')}",
+            type: "post",
+            data:{"phone": phone},
+            async:false,
+            success:function (data) {
+                draw_qrcode();
+            }
+        });
+    }
+
+    //合成图片并展示
+    function show_merge() {
+
+        draw_qrcode();
+        pic_merge();
+        $(".back-grey").show();
+
+    }
+
+
+    //绘制二维码
+    function draw_qrcode() {
+        $('#qrcode').qrcode({
+            render  : "canvas",
+            text    : "http://{$_SERVER['HTTP_HOST']}__ROOT__/App/Shop/goods/ppid/{$_SESSION['WAP']['vipid']}/id/{$lineid}",
+            typeNumber  : -1,      //计算模式
+            correctLevel    : 0,//纠错等级
+            background      : "#ffffff",//背景颜色
+            foreground      : "#000000" //前景颜色
+        });
+        var canvas = document.getElementsByTagName('canvas')[0];
+        var imgSrc = canvas.toDataURL("image/png");
+        document.getElementById('qrcode_img').src = imgSrc;
+    }
+
+    //图片合并
+    function pic_merge() {
+        var c = document.getElementById("myCanvas");
+        var pic_width =$("#xmf-img-none").width();
+        var pic_height =$("#xmf-img-none").height();
+
+        c.width = pic_width;
+        c.height = pic_height;
+        var ctx = c.getContext("2d"); //设置2D画布
+        var img1 = document.getElementById("xmf-img");
+        var img2 = document.getElementById("qrcode_img");
+        ctx.drawImage(img1,0,0,pic_width,pic_height);
+        ctx.drawImage(img2,895,35,235,235);
+        //设置字体样式
+        ctx.font = "30px Courier New";
+        //设置字体填充颜色
+        ctx.fillStyle = "black";
+        ctx.fillText('[长按图片查看详情]',885,310);
+        //保存
+        var imgSrc2 = c.toDataURL("image/png");
+        document.getElementById('new-img').src = imgSrc2;
+    }
+
+    function showError(msg){
+        $(document.body).append("<div class='error_box'>"+msg +"</div>");//<br>亲~~2秒后自动消失哦!
+        setTimeout("$('.error_box').remove();",1000);
+    }
+    $(function(){
+        show_merge();
+        setTimeout('show_merge()', 1000);
+    });
+
+</script>
+<!--新版分享特效-->
+
+<script>
+
+    var share_url = "http://{$_SERVER['HTTP_HOST']}__ROOT__/App/Shop/goods/ppid/{$_SESSION['WAP']['vipid']}/id/{$lineid}";
+    var share_title="{$cache.name}";
+    var share_content="{$cache.summary}";
+    var share_img = "http://{$_SERVER['HTTP_HOST']}__ROOT__{$lines_info}";
+    wx.config({
+        debug: false,
+        appId: "{$jsapi['appId']}",
+        timestamp: "{$jsapi['timestamp']}",
+        nonceStr: "{$jsapi['nonceStr']}",
+        signature: "{$jsapi['signature']}",
+        jsApiList: [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'hideMenuItems',
+            'showMenuItems',
+            'hideAllNonBaseMenuItem',
+            'showAllNonBaseMenuItem',
+//      'translateVoice',
+//      'startRecord',
+//      'stopRecord',
+//      'onRecordEnd',
+//      'playVoice',
+//      'pauseVoice',
+//      'stopVoice',
+//      'uploadVoice',
+//      'downloadVoice',
+//      'chooseImage',
+//      'previewImage',
+//      'uploadImage',
+//      'downloadImage',
+//      'getNetworkType',
+//      'openLocation',
+//      'getLocation',
+//      'hideOptionMenu',
+//      'showOptionMenu',
+//      'closeWindow',
+//      'scanQRCode',
+//      'chooseWXPay',
+//      'openProductSpecificView',
+//      'addCard',
+//      'chooseCard',
+//      'openCard'
+        ]
+    });
+    wx.ready(function () {
+        //开启菜单
+        wx.showOptionMenu();
+        //隐藏菜单
+        //wx.hideOptionMenu();
+        //分享给朋友
+        wx.onMenuShareAppMessage({
+            title: share_title,
+            desc: share_content,
+            link: share_url,
+            imgUrl: share_img,
+            trigger: function (res) {
+                //alert('用户点击发送给朋友');
+            },
+            success: function (res) {
+                //alert('已分享');
+            },
+            cancel: function (res) {
+                //alert('已取消');
+            },
+            fail: function (res) {
+                //alert(JSON.stringify(res));
+            }
+        });
+        //分享到朋友圈
+        wx.onMenuShareTimeline({
+            title: share_title,
+            link: share_url,
+            imgUrl: share_img,
+            trigger: function (res) {
+                //alert('用户点击分享到朋友圈');
+            },
+            success: function (res) {
+                //alert('已分享');
+            },
+            cancel: function (res) {
+                //alert('已取消');
+            },
+            fail: function (res) {
+                //alert(JSON.stringify(res));
+            }
+        });
+        //分享到QQ
+        wx.onMenuShareQQ({
+            title: share_title,
+            desc: share_content,
+            link: share_url,
+            imgUrl: share_img,
+            trigger: function (res) {
+                //alert('用户点击分享到QQ');
+            },
+            complete: function (res) {
+                //alert(JSON.stringify(res));
+            },
+            success: function (res) {
+                //alert('已分享');
+            },
+            cancel: function (res) {
+                //alert('已取消');
+            },
+            fail: function (res) {
+                //alert(JSON.stringify(res));
+            }
+        });
+    });
+</script>
+</body>
+</html>

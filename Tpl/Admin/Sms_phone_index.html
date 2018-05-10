@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="widget">
+            <div class="widget-header bg-blue">
+                <i class="widget-icon fa fa-arrow-down"></i>
+                <span class="widget-caption">短信记录列表</span>
+                <div class="widget-buttons">
+                    <a href="#" data-toggle="maximize">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                    <a href="#" data-toggle="collapse">
+                        <i class="fa fa-minus"></i>
+                    </a>
+                    <a href="#" data-toggle="dispose">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="widget-body">
+                <div class="table-toolbar">
+                    <!--<a href="{:U('Admin/Employee/employeeSet/')}" class="btn btn-primary" data-loader="App-loader" data-loadername="设置分组">-->
+                    <!--<i class="fa fa-plus"></i>新增员工-->
+                    <!--</a>-->
+                    <div class="pull-right">
+                    <form id="App-search">
+                    <label style="margin-bottom: 0px;">
+                    <input name="name" type="search" placeholder="请输入手机号" class="form-control input-sm" value="{$name}">
+                    </label>
+                    <a href="{:U('Admin/Sms/phone_index/')}" class="btn btn-success" data-loader="App-loader" data-loadername="短信记录列表" data-search="App-search">
+                    <i class="fa fa-search"></i>搜索
+                    </a>
+                    </form>
+                    </div>
+                </div>
+                <table id="App-table" class="table table-bordered table-hover">
+                    <thead class="bordered-darkorange">
+                    <tr role="row">
+                        <th>手机号</th>
+                        <th>短信内容</th>
+                        <th>发送时间</th>
+                        <th>状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="cache" id="vo">
+                        <tr id="item{$vo.id}">
+                            <td class=" sorting_1">
+                                {$vo.phone}
+                            </td>
+                            <td class=" ">{$vo.content} </td>
+                            <td class=" ">{$vo.send_time}</td>
+                            <td class=" ">  <switch name="vo.status">
+                                <case value="1">有效</case>
+                                <case value="2">过期</case>
+                                <case value="3">验证</case>
+                                <default />
+                            </switch></td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+                <div class="row DTTTFooter">
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--面包屑导航封装-->
+<div id="tmpbread" style="display: none;">{$breadhtml}</div>
+<script type="text/javascript">
+    setBread($('#tmpbread').html());
+</script>
+<!--/面包屑导航封装-->
+<!--全选特效封装/全部删除-->
+
+<!--/全选特效封装-->

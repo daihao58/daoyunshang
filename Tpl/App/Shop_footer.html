@@ -1,0 +1,36 @@
+		<div class="insert1"></div>
+		<div class="ui-nav">
+			<!--<ul class="ui-navul ovflw">
+				<li><a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" id="fthome"><span class="iconfont">&#xe6b8</span><p class="ui-navtt">首页</p></a></li>
+				<li><a href="{:U('App/Shop/orderList',array('sid'=>0))}" id="ftorder"><span class="iconfont">&#xe699</span><p class="ui-navtt">订单</p></a></li>
+				&lt;!&ndash; <li><a href="{:U('App/Shop/basket',array('sid'=>0,'lasturl'=>$footlasturl))}" id="ftbasket"><span class="iconfont">&#xe6af</span><p class="ui-navtt">购物车</p></a></li>&ndash;&gt;
+				<li><a href="tel:{$service_tel}" id="ftorder"><span class="iconfont">&#xe6ff</span><p class="ui-navtt">客服</p></a></li>
+				<li><a href="{:U('App/Vip/index')}" id="ftvip"><span class="iconfont">&#xe686</span><p class="ui-navtt">个人中心</p></a></li>
+			</ul>-->
+			<nav class="bar bar-nav">
+				<a href="/App/Shop/index" class="nav-item <if condition='$moren_tb eq "shouye" '>cur<else /></if> ">
+					<i class="iconfont icon-home-s"></i>
+					<span class="tab-label">首页</span>
+				</a>
+				<a href="/App/Shop/orderList/sid/0" class="nav-item <if condition='$moren_tb eq "dingdan" '>cur<else /></if> ">
+					<i class="iconfont icon-order"></i>
+					<span class="tab-label">订单</span>
+				</a>
+				<a href="{:U('App/Shop/basket/',array('sid'=>0,'lasturl'=>$lasturl))}" class="nav-item">
+					<i class="iconfont icon-cart"></i>
+					<span class="tab-label">购物车</span>
+				</a>
+				<a href="tel:{$_SESSION['SHOP']['set']['phone']}" class="nav-item">
+					<i class="iconfont icon-online"></i>
+					<span class="tab-label">客服</span>
+				</a>
+				<a href="/App/Vip/index" class="nav-item <if condition='$moren_tb eq "wode" '>cur<else /></if> ">
+					<i class="iconfont icon-user"></i>
+					<span class="tab-label">我的</span>
+				</a>
+			</nav>
+		</div>
+		<script type="text/javascript">
+			 var actname="{$actname}";
+			 $('#'+actname).css('color','#19a5f3');
+		</script>

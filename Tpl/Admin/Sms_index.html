@@ -1,0 +1,81 @@
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="widget">
+            <div class="widget-header bg-blue">
+                <i class="widget-icon fa fa-arrow-down"></i>
+                <span class="widget-caption">短信模版列表</span>
+                <div class="widget-buttons">
+                    <a href="#" data-toggle="maximize">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                    <a href="#" data-toggle="collapse">
+                        <i class="fa fa-minus"></i>
+                    </a>
+                    <a href="#" data-toggle="dispose">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="widget-body">
+                <div class="table-toolbar">
+                    <!--<a href="{:U('Admin/Employee/employeeSet/')}" class="btn btn-primary" data-loader="App-loader" data-loadername="设置分组">-->
+                        <!--<i class="fa fa-plus"></i>新增员工-->
+                    <!--</a>-->
+                    <!--<div class="pull-right">-->
+                        <!--<form id="App-search">-->
+                            <!--<label style="margin-bottom: 0px;">-->
+                                <!--<input name="name" type="search" class="form-control input-sm" value="{$name}">-->
+                            <!--</label>-->
+                            <!--<a href="{:U('Admin/Employee/employeeList/')}" class="btn btn-success" data-loader="App-loader" data-loadername="管理员列表" data-search="App-search">-->
+                                <!--<i class="fa fa-search"></i>搜索-->
+                            <!--</a>-->
+                        <!--</form>-->
+                    <!--</div>-->
+                </div>
+                <table id="App-table" class="table table-bordered table-hover">
+                    <thead class="bordered-darkorange">
+                        <tr role="row">
+                            <th>模板类型</th>
+                            <th>添加时间</th>
+                            <th>短信模板</th>
+                            <th>有效时间</th>
+                            <!--<th>操作</th>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <volist name="cache" id="vo">
+                            <tr id="item{$vo.id}">
+                                <td class=" sorting_1">
+                                    <switch name="vo.type">
+                                        <case value="1">注册</case>
+                                        <case value="2">登录</case>
+                                        <case value="3">找回密码</case>
+                                        <default />
+                                    </switch>
+                                </td>
+                                <td class=" ">{$vo.create_time} </td>
+                                <td class=" ">{$vo.content}</td>
+                                <td class=" ">{$vo.active_time}分钟</td>
+                                <!--<td class="center ">-->
+                                    <!--<a href="{:U('Admin/Sms/dxSet/',array('id'=>$vo['id']))}" class="btn btn-success btn-xs" data-loader="App-loader" data-loadername="编辑"><i class="fa fa-edit"></i> 编辑</a>-->
+                                <!--</td>-->
+                            </tr>
+                        </volist>
+                    </tbody>
+                </table>
+                <div class="row DTTTFooter">
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--面包屑导航封装-->
+<div id="tmpbread" style="display: none;">{$breadhtml}</div>
+<script type="text/javascript">
+setBread($('#tmpbread').html());
+</script>
+<!--/面包屑导航封装-->
+<!--全选特效封装/全部删除-->
+
+<!--/全选特效封装-->

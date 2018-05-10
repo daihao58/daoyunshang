@@ -1,0 +1,44 @@
+[ 2017-05-05T13:12:13+08:00 ] 58.216.156.134 /App/Shop/Index?shopid=20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: employee /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 34 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 46 行.
+NOTIC: [8] Undefined index: sqmode /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 95 行.
+NOTIC: [8] Undefined index: ppid /alidata/www/wemall/Application/App/Controller/BaseController.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 20 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('15')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 20 ORDER BY sorts desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 160 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 20  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 167 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=20 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 159 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: vip /alidata/www/wemall/Application/App/Controller/ShopController.class.php 第 189 行.
+ERR: 模板不存在:./Tpl/App/Shop_Index.html
+

@@ -1,0 +1,917 @@
+[ 2018-05-05T09:18:26+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001683s ]
+
+[ 2018-05-05T09:18:26+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001391s ]
+
+[ 2018-05-05T09:18:26+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+
+[ 2018-05-05T09:18:26+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001830s ]
+
+[ 2018-05-05T09:18:26+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001887s ]
+
+[ 2018-05-05T09:18:26+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001770s ]
+
+[ 2018-05-05T09:18:26+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001949s ]
+
+[ 2018-05-05T09:18:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+
+[ 2018-05-05T09:18:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001704s ]
+
+[ 2018-05-05T09:18:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001457s ]
+
+[ 2018-05-05T09:18:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+
+[ 2018-05-05T09:18:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-05-05T09:18:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+
+[ 2018-05-05T09:18:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+
+[ 2018-05-05T10:07:12+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002109s ]
+
+[ 2018-05-05T10:07:12+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+
+[ 2018-05-05T10:07:12+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+
+[ 2018-05-05T10:07:12+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001344s ]
+
+[ 2018-05-05T10:07:12+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+
+[ 2018-05-05T10:07:12+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001571s ]
+
+[ 2018-05-05T10:07:12+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+
+[ 2018-05-05T10:07:16+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+
+[ 2018-05-05T10:07:19+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+
+[ 2018-05-05T10:07:21+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001958s ]
+
+[ 2018-05-05T10:07:22+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+
+[ 2018-05-05T13:08:34+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+
+[ 2018-05-05T14:07:19+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+
+[ 2018-05-05T14:07:19+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+
+[ 2018-05-05T14:07:19+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001302s ]
+
+[ 2018-05-05T14:07:19+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+
+[ 2018-05-05T14:07:19+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+
+[ 2018-05-05T14:07:19+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001678s ]
+
+[ 2018-05-05T14:07:19+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+
+[ 2018-05-05T14:07:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000352s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002395s ]
+
+[ 2018-05-05T14:07:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+
+[ 2018-05-05T14:07:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005240s ]
+
+[ 2018-05-05T14:07:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001116s ]
+
+[ 2018-05-05T14:07:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002021s ]
+
+[ 2018-05-05T14:07:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001770s ]
+
+[ 2018-05-05T14:07:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001134s ]
+
+[ 2018-05-05T14:07:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+
+[ 2018-05-05T14:07:35+08:00 ] 127.0.0.1 /Public/App/css/appslider.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0236s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-05-05T14:07:35+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-05-05T14:07:35+08:00 ] 127.0.0.1 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: usid E:\wamp64\www\daoyunshang\Application\Multi\Controller\PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002570s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005887s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006449s ]
+INFO: [ action_end ] --END-- [ RunTime:0.006703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004484s ]
+
+[ 2018-05-05T14:07:35+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+
+[ 2018-05-05T14:07:35+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+
+[ 2018-05-05T14:07:35+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001179s ]
+
+[ 2018-05-05T14:07:41+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001628s ]
+
+[ 2018-05-05T14:09:45+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+
+[ 2018-05-05T14:10:05+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+
+[ 2018-05-05T14:10:18+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001810s ]
+
+[ 2018-05-05T14:10:28+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001672s ]
+
+[ 2018-05-05T14:10:30+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+
+[ 2018-05-05T14:10:30+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+
+[ 2018-05-05T14:10:31+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001590s ]
+
+[ 2018-05-05T14:10:31+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+
+[ 2018-05-05T14:10:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+
+[ 2018-05-05T14:10:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+
+[ 2018-05-05T14:10:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000314s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005299s ]
+
+[ 2018-05-05T14:10:49+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008549s ]
+
+[ 2018-05-05T14:10:49+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001861s ]
+
+[ 2018-05-05T14:10:53+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002440s ]
+
+[ 2018-05-05T14:10:57+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001655s ]
+
+[ 2018-05-05T14:10:57+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+
+[ 2018-05-05T14:10:57+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+
+[ 2018-05-05T14:10:57+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001654s ]
+
+[ 2018-05-05T14:10:57+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001425s ]
+
+[ 2018-05-05T14:10:57+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+
+[ 2018-05-05T14:10:57+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+
+[ 2018-05-05T14:10:58+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001219s ]
+
+[ 2018-05-05T14:10:59+08:00 ] 127.0.0.1 /Public/App/css/appslider.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002723s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-05-05T14:10:59+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+
+[ 2018-05-05T14:11:00+08:00 ] 127.0.0.1 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: usid E:\wamp64\www\daoyunshang\Application\Multi\Controller\PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000469s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002712s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005769s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006441s ]
+INFO: [ action_end ] --END-- [ RunTime:0.006709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003642s ]
+
+[ 2018-05-05T14:11:00+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+
+[ 2018-05-05T14:11:00+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004715s ]
+
+[ 2018-05-05T14:11:00+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+
+[ 2018-05-05T14:11:05+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003184s ]
+
+[ 2018-05-05T14:11:08+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+
+[ 2018-05-05T14:11:09+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+
+[ 2018-05-05T14:11:10+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001990s ]
+
+[ 2018-05-05T14:13:31+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+
+[ 2018-05-05T14:14:32+08:00 ] 127.0.0.1 /Public/App/css/appslider.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-05-05T14:14:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002575s ]
+
+[ 2018-05-05T14:14:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001495s ]
+
+[ 2018-05-05T14:14:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+
+[ 2018-05-05T14:14:32+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+
+[ 2018-05-05T14:14:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+
+[ 2018-05-05T14:14:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001893s ]
+
+[ 2018-05-05T14:14:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+
+[ 2018-05-05T14:14:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001667s ]
+
+[ 2018-05-05T14:14:34+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+
+[ 2018-05-05T14:14:34+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+
+[ 2018-05-05T14:14:34+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004610s ]
+
+[ 2018-05-05T14:22:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001456s ]
+
+[ 2018-05-05T14:22:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+
+[ 2018-05-05T14:22:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001491s ]
+
+[ 2018-05-05T14:22:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+
+[ 2018-05-05T14:22:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001968s ]
+
+[ 2018-05-05T14:22:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002770s ]
+
+[ 2018-05-05T14:22:33+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+
+[ 2018-05-05T14:22:34+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+
+[ 2018-05-05T14:22:39+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+
+[ 2018-05-05T14:22:39+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001109s ]
+
+[ 2018-05-05T14:22:39+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+
+[ 2018-05-05T14:22:39+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+
+[ 2018-05-05T14:22:39+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+
+[ 2018-05-05T14:22:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001931s ]
+
+[ 2018-05-05T14:22:40+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001639s ]
+
+[ 2018-05-05T14:31:47+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001673s ]
+
+[ 2018-05-05T17:15:50+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002554s ]
+
+[ 2018-05-05T17:15:50+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004054s ]
+
+[ 2018-05-05T17:15:50+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001715s ]
+
+[ 2018-05-05T17:15:50+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+
+[ 2018-05-05T17:15:50+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003714s ]
+
+[ 2018-05-05T17:15:50+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001517s ]
+
+[ 2018-05-05T17:15:50+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+
+[ 2018-05-05T17:15:51+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005220s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2018-05-05T17:15:51+08:00 ] 127.0.0.1 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: usid E:\wamp64\www\daoyunshang\Application\Multi\Controller\PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001750s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003647s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004920s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002959s ]
+
+[ 2018-05-05T17:15:55+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+
+[ 2018-05-05T17:15:56+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010208s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0137s ]
+
+[ 2018-05-05T17:15:56+08:00 ] 127.0.0.1 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0142s ]
+NOTIC: [8] Undefined index: usid E:\wamp64\www\daoyunshang\Application\Multi\Controller\PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004658s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006246s ]
+INFO: [ action_end ] --END-- [ RunTime:0.006562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004524s ]
+
+[ 2018-05-05T17:15:57+08:00 ] 127.0.0.1 /Public/App/css/appslider.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002821s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2018-05-05T17:15:57+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-05-05T17:15:58+08:00 ] 127.0.0.1 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined index: usid E:\wamp64\www\daoyunshang\Application\Multi\Controller\PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000444s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003029s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005933s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004101s ]
+INFO: [ action_end ] --END-- [ RunTime:0.004305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002990s ]
+
+[ 2018-05-05T17:15:58+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002470s ]
+
+[ 2018-05-05T17:15:58+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006582s ]
+
+[ 2018-05-05T17:15:58+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002648s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ad510.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ac9c9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003318s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Upload/img/2018-04-26/5ae18821ace8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002754s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6d43.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001184s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce662e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002996s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce68e1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002126s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0147s ]
+
+[ 2018-05-05T17:16:04+08:00 ] 127.0.0.1 /Multi/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_cms_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_cms_set` LIMIT 1   [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0139s ]
+NOTIC: [8] Undefined index: usid E:\wamp64\www\daoyunshang\Application\Multi\Controller\PublicController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002703s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005557s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006501s ]
+INFO: [ action_end ] --END-- [ RunTime:0.006752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004696s ]
+
+[ 2018-05-05T17:16:06+08:00 ] 127.0.0.1 /Upload/img/2018-04-27/5ae27e5ce6ac6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+

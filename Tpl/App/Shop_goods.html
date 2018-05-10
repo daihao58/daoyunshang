@@ -1,0 +1,717 @@
+<!doctype html>
+<html>
+<head>
+	<title>{$cache.name}</title>
+	<meta charset="utf-8" />
+	<!--页面优化-->
+	<meta name="MobileOptimized" content="320">
+	<!--默认宽度320-->
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<!--viewport 等比 不缩放-->
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--删除苹果菜单-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!--默认颜色-->
+	<meta name="apple-mobile-web-app-title" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<!--加载全部后 显示-->
+	<meta content="telephone=no" name="format-detection" />
+	<!--不识别电话-->
+	<meta content="email=no" name="format-detection" />
+	<link rel="stylesheet" href="__PUBLIC__/App/css/style2.css" />
+	<link rel="stylesheet" href="__PUBLIC__/App/css/appslider.css" />
+	<!--组件依赖js begin-->
+	<script src="__PUBLIC__/App/js/zepto.min.js"></script>
+	<!--组件依赖js end-->
+	<script type="text/javascript" src="__PUBLIC__/App/gmu/gmu.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/App/gmu/app-basegmu.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/App/js/appslider.min.js"></script>
+
+	<link rel="stylesheet" href="__PUBLIC__/App/ydy/css/style.css" />
+
+	<!--追入购物车角标-->
+	<style>
+		.dtl-shp{position: relative;}
+		.dtl-shp b{position: absolute; padding: 4px; font-size: 0.5em; line-height: 0.5em; background: #FF0000; color: #FFFFFF; right: 0px; border-radius: 30px;}
+
+		/*2017-6-13修改弹框样式*/
+		.telnone {
+			display:none;
+			position:fixed;
+			width:100%;
+			height:100%;
+			bottom:0;
+			z-index:1000;
+			background-color:rgba(0,0,0,0.3);
+			padding: 0 5%;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		#kefudianhua div.order-foot {
+			position:relative;
+			background-color:white;
+			text-align:left;
+			padding: 18px 14px;
+			margin-top:25%;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+
+		}
+
+		#kefudianhua div.order-foot > p {
+			margin: 12px 0 !important;
+			-webkit-margin-before: 1em;
+			-webkit-margin-after: 1em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+		}
+
+		#kefudianhua div.order-foot .state {
+			font-size: 14px;
+		}
+
+		#kefudianhua div.order-foot div.bddh{
+			margin: 20px auto;
+			text-align: center;
+			width: 90%;
+			height: 42px;
+			border-radius: 6px;
+			background-color: #f80;
+			color: #fff;
+			font-size: 14px;
+			line-height: 42px;
+		}
+
+		#kefudianhua .close-btn {
+			position: absolute;
+			top: 6px;
+			right: 14px;
+			width: 16px;
+			height: 16px;
+			background: url('/Public/App/img/guanbi.png') no-repeat center center;
+			background-size: 100%;
+		}
+
+		.form-control{
+			font-size: 14px;
+			width: 100%;
+			height:40px;
+			padding: 16px 8px;
+			padding-left:5px;
+			padding-right:5px;
+			border:1px solid #d9d9d9;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			-webkit-appearance: none;
+			appearance: none;
+		}
+
+		.left{
+			width:60%;
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+		}
+
+		.send_pwd{
+			float: right;
+			width:40%;
+			font-size: 14px;
+			height:40px;
+			line-height: 40px;
+			display:block;
+			background-color:#aaa;
+			color:white;
+			line-height:40px;
+			text-align:center;
+			border-bottom-right-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+
+		.btn-red{
+			background: #fd7708;
+			border-radius: 4px;
+			width: 48%;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			border: none;
+			color: #fff;
+			font-size: 14px;
+			font-family: "Microsoft Yahei";
+		}
+
+		.btn-quxiao{
+			background: #aaa;
+		}
+
+		.fr {
+			float: right
+		}
+
+		.fengxiangwenjian{display:block;position:fixed;width:20px;height:20px;background: rgba(0,0,0,0.3); font-size:12px; color:#fff; padding:5px 10px; z-index:9999; right:10px; top:10px; border-radius:5px; }
+		.fanhui{left:10px;}
+	</style>
+</head>
+<body class="back1">
+
+<div class="mr-b back2">
+
+	<notempty name="appalbum">
+		<div id="App-slider">
+			<ul>
+				<foreach name="appalbum" item="vo">
+					<li><a href="#"><img src="{$vo.imgurl}"></a></li>
+				</foreach>
+			</ul>
+			<div class="dot">
+				<foreach name="appalbum" item="vo">
+					<span></span>
+				</foreach>
+			</div>
+			<!--<a id="zuoleft" class="fengxiangwenjian fanhui" href="{:U('App/Shop/index',array('shopid'=>$shopid))}"><img src="__PUBLIC__/App/img/fanhui.png" width="17.5" height="17.5"></a>
+
+			<if condition="$cache.adpic neq ''">
+				<a id="youright" class="fengxiangwenjian" href="{:U('App/Set/index',array('id'=>$cache['id']))}"><img src="__PUBLIC__/App/img/fenxiang.png" width="17.5" height="17.5"></a>
+			</if>-->
+		</div>
+	</notempty>
+	<empty name="appalbum">
+		<notempty name="apppic">
+			<img src="{$apppic.imgurl}" width="100%">
+		</notempty>
+	</empty>
+	<div class="dtl-c border-b1 ovflw fonts9">
+		<div class="dtl-tt color6 ">{$cache.name}</div>
+		<div class="dtl-prc border-b1">
+			<em class="dtl-prc1 color3">￥<i id="goods-price">{$cache.price}</i></em><em class="color3"></em>&nbsp;&nbsp;<em class="dtl-prc2">￥{$cache.oprice}</em>
+			<em class="fr dtl-sel">已售<eq name="cache.issells" value="1">{$cache.dissells}<else/>{$cache.sells}</eq></em>
+		</div>
+	<!--	<div class="dtl-lbl ovflw">
+			<volist name="cache.label" id="vo">
+				<neq name="vo" value="">
+					<span class='fl margin2'><i class="iconfont">&#xe657</i>&nbsp;{$vo}</span>
+				</neq>
+			</volist>
+		</div>-->
+	</div>
+</div>
+
+<div class="dtl-prt back2 mr-b fonts9 border-t1 border-b1">
+	<eq name="cache.issku" value="1">
+		<div id="sku-wrap">
+			<foreach name="skuinfo" item="vo">
+				<div class="sku" data-attr="">
+					<p class="dtl-pty">{$vo.attrlabel}：</p>
+					<div class="dtl-col ovflw">
+						<foreach name="vo.allitems" item="vo2">
+							<notempty name="vo2.checked">
+								<span data-attr = "{$vo2.path}" style="display: inline-block;margin-bottom: 8px">{$vo2.name}</span>
+							</notempty>
+						</foreach>
+					</div>
+				</div>
+			</foreach>
+		</div>
+	</eq>
+	<p class="dtl-pty">数量：</p>
+	<div class="ovflw dtl_num fl">
+		<a href="#" class="dtl_mar1" style="width: 15%" id="goods-dec">-</a>
+		<input type="text" value="1" style="width:30%" class="fl dtl_input dtl_mar1" id="goods-total" disabled="disabled"/>
+		<a href="#" class="" style="width: 15%" id="goods-add">+</a>
+	</div>
+	<span class="fr dtl-sy">剩余：<em id="goods-num">{$cache.num}</em>件</span>
+	<span id="finalsku" data-sku = "" data-skuattr="" style="display: none;"></span>
+	<div class="clr"></div>
+</div>
+
+<div class="dtl-prt back2 fonts9 border-t1">
+	{$cache.content|htmlspecialchars_decode}
+</div>
+<div class="insert"></div>
+<div class="dtl-ft ovflw">
+	<div class=" fl dtl-icon dtl-bck ovflw">
+		<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="">
+			<i class="iconfont">&#xe679</i>
+		</a>
+	</div>
+	<div class="dtl-btns">
+		<a href="#" class="fl dtl-btn dtl-buy" id="fastbuy">立即购买</a>
+		<a href="#" class="fl dtl-btn dtl-bke" id="addtocart">加入购物车</a>
+	</div>
+	<div class=" fr dtl-icon ovflw dtl-shp">
+		<a href="{:U('App/Shop/basket/',array('sid'=>0,'lasturl'=>$lasturl))}" class="" id="basket">
+			<i class="iconfont">&#xe6af</i><b id="basketnum">{$basketnum}<empty name="basketnum">0</empty></b>
+		</a>
+	</div>
+</div>
+<div  id="kefudianhua"  class="telnone">
+	<div class="order-foot">
+		<div class="close-btn" id="guanbid"></div>
+		<p class="state">为了确保能更好的为您提供服务,<span style="color: #23cc77;">请绑定您的手机</span></p>
+		<p><input type="text" class="form-control" name="mobile" placeholder="输入您的手机号" data-bv-notempty="true" data-bv-notempty-message="不能为空"></p>
+		<p><input type="text" class="form-control left" name="sms" placeholder="输入验证码" data-bv-notempty="true" data-bv-notempty-message="不能为空"><a href="javascript:getSms()" class="send_pwd">获取动态密码</a></p>
+		<p><button id="telquxiao" class="btn-red btn-quxiao">取消</button><button class="btn-red fr" onclick="loginByCode()">确认绑定</button></p>
+	</div>
+</div>
+<!--全局封装-->
+<script type="text/javascript">
+	var goodsid="{$cache.id}";
+	var issku="{$cache.issku}";
+	var vipid="{$_SESSION.WAP.vipid}";
+	var vipmobile="{$_SESSION.WAP.vip.mobile}";
+
+	var loginback="{$loginback}";
+</script>
+<!--封装图集-->
+<notempty name="appalbum">
+	<script type="text/javascript">
+		Zepto(function($){
+			$('#App-slider').swipeSlide({
+				autoSwipe : true,
+				lazyLoad : false,
+				speed : 3000
+			},function(i){
+				$('#App-slider .dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+			});
+		});
+	</script>
+</notempty>
+<!--封装SKU-->
+<script type="text/javascript">
+	var goodsid="{$cache.id}";
+	var skujson=$.parseJSON('{$skujson}');
+	var skuwrap=$('#sku-wrap');
+	var allsku=$('.sku');
+	var allskuattr=$('.sku span');
+	var finalsku=$('#finalsku');
+	var goodsprice=$('#goods-price');
+	var goodsnum=$('#goods-num');
+	$(allskuattr).on('click',function(){
+		var fasku=$(this).parent().parent('.sku');
+		var fa=$(this).parent();
+		var son=$(fa).find('span');
+		$(fasku).data('attr',$(this).data('attr'));
+		$(son).css({'background':'#FFFFFF','color':'#636363','border':'1px solid #e5e5e5'});
+		$(this).css({'background':'#f7194d','color':'#FFFFFF','border':'1px solid #f7194d'});
+		var str='';
+		var totalsku=0;
+		var totalattr=0;
+		$(allsku).each(function(){
+			var dt=$(this).data('attr');
+			if(dt){
+				str=str+dt+'-';
+				totalattr=totalattr+1;
+			}
+			totalsku=totalsku+1;
+		});
+		str=str.substring(0,str.length-1);
+		if(totalsku==totalattr){
+			str=goodsid+'-'+str;
+			$tmpsku=skujson[str];
+			$(finalsku).data('sku',$tmpsku['sku']);
+			$(finalsku).data('skuattr',$tmpsku['skuattr']);
+			$(goodsnum).html($tmpsku['num']);
+//			$(goodsprice).html($tmpsku['price']);
+		}
+
+	});
+</script>
+<!--封装购物车-->
+<script type="text/javascript">
+	$(window).scroll( function() {
+		if(window.document.body.scrollTop>=100){
+			$('#zuoleft').hide();
+			$('#youright').hide();
+		}
+		else{
+			$('#zuoleft').show();
+			$('#youright').show();
+		}
+	} );
+
+
+	$('#telquxiao').click(function(){
+		$('#kefudianhua').hide();
+	});
+	$('#guanbid').click(function(){
+		$('#kefudianhua').hide();
+	});
+	var goodsnum=$('#goods-num');
+	var goodsdec=$('#goods-dec');
+	var goodsadd=$('#goods-add');
+	var goodstotal=$('#goods-total');
+	var goodsprice=$('#goods-price');
+	var addtocart=$('#addtocart');
+	var fastbuy=$('#fastbuy');
+	var basketnum=$('#basketnum');
+	$(goodsadd).on('click',function(){
+		var num=Number($(goodstotal).val());
+		var left=Number($(goodsnum).html());
+		var total=(num+1)<=left?(num+1):left;
+		$(goodstotal).val(total);
+		return false;
+	});
+	$(goodsdec).on('click',function(){
+		var num=Number($(goodstotal).val());
+		var total=(num-1)>=1?(num-1):1;
+		$(goodstotal).val(total);
+		return false;
+	});
+	$(addtocart).on('click',function(){
+		var goodsnum=Number($('#goods-num').html());
+		var num=Number($(goodstotal).val());
+		var finalsku=$('#finalsku');
+		//sku模式
+		if(issku=='1'){
+			if(goodsnum-num<=0){
+				App_gmuMsg('该属性产品库存不足！请调整购买数量或选择其他属性！');
+				return false;
+			}
+			if(!$(finalsku).data('sku')){
+				App_gmuMsg('请选择产品属性！');
+				return false;
+			}
+		}else{
+			if(goodsnum-num<=0){
+				App_gmuMsg('该产品库存不足！请调整购买量或选择其他产品！');
+				return false;
+			}
+		}
+		if(!vipid || vipmobile == ''){
+			var fun=function(){
+				window.location.href=loginback;
+			}
+			App_gmuMsg('您还未登录，2秒后自动跳转登陆界面！',fun);
+			return false;
+		}
+		var sku=$(finalsku).data('sku');
+		var skuattr=$(finalsku).data('skuattr');
+		var price=$(goodsprice).html();
+		var num=$(goodstotal).val();
+		var dt={'sid':0,'goodsid':goodsid,'vipid':vipid,'sku':sku,'num':num};
+		$.ajax({
+			type:"post",
+			url:"{:U('App/Shop/addtobasket')}",
+			dataType:'json',
+			data:dt,
+			success:function(info){if(info['status']){App_gmuMsg(info['msg']);$(basketnum).html(info['total']);}else{App_gmuMsg('发生未知错误,请重新尝试！');}return false;},
+			error:function(xh,obj){
+				App_gmuMsg('通讯失败，请重试！');
+			}
+		});
+		return false;
+	});
+	//立刻购买特效
+	$(fastbuy).on('click',function(){
+		var goodsnum=Number($('#goods-num').html());
+		var num=Number($(goodstotal).val());
+		var finalsku=$('#finalsku');
+		//sku模式
+		if(issku=='1'){
+			if(goodsnum-num<=0){
+				App_gmuMsg('该属性产品库存不足！请调整购买量或选择其他属性！');
+				return false;
+			}
+			if(!$(finalsku).data('sku')){
+				App_gmuMsg('请选择产品属性！');
+				return false;
+			}
+		}else{
+			if(goodsnum-num<=0){
+				App_gmuMsg('该产品库存不足！请调整购买量或选择其他属性！');
+				return false;
+			}
+		}
+		if(!vipid || vipmobile == ''){
+			var fun=function(){
+				window.location.href=loginback;
+			}
+			App_gmuMsg('您还未登录，2秒后自动跳转登陆界面！',fun);
+			return false;
+		}
+		var sku=$(finalsku).data('sku');
+		var skuattr=$(finalsku).data('skuattr');
+		var price=$(goodsprice).html();
+		var num=$(goodstotal).val();
+//				alert(vipid);
+		var vipidd={'vipid':vipid};
+		$.ajax({
+			type:"post",
+			url:"{:U('App/yanzheng/yzphone')}",
+			dataType:'json',
+			data:vipidd,
+			success:function(info){
+				if(info.res==3){
+					App_gmuMsg(info.msg);
+					return false;
+				}else if(info.res==0){
+//					$('#kefudianhua').show();
+					window.location.href="{:U('App/Vip/login')}";
+				}else if(info.res==1){
+
+					var dt={'sid':0,'goodsid':goodsid,'vipid':vipid,'sku':sku,'num':num};
+					//保证订单生成页的返回
+					var orderurl="{:U('App/Shop/orderMake',array('sid'=>0,'lasturl'=>$lasturl))}";
+					var fun=function(){
+						window.location.href=orderurl;
+					}
+					$.ajax({
+						type:"post",
+						url:"{:U('App/Shop/fastbuy')}",
+						dataType:'json',
+						data:dt,
+						success:function(info){
+							if(info['status']){
+								App_gmuMsg2(info['msg'],fun);
+							}else{
+								App_gmuMsg('发生未知错误,请重新尝试！');
+							}
+							return false;
+						},
+						error:function(xh,obj){
+							App_gmuMsg('通讯失败，请重试123！');
+						}
+					});
+
+
+				}
+			},
+		});
+		return false;
+	});
+	//验证码60秒
+	var countdown=60;
+	function settime() {
+		if (countdown == 0) {
+			$(".send_pwd").attr("href",'javascript:getSms()');
+			$(".send_pwd").text("获取验证码");
+			countdown = 60;
+			return ;
+		} else {
+			$(".send_pwd").attr("href", 'javascript:void(0)');
+			$(".send_pwd").text("重新发送(" + countdown + ")");
+			countdown--;
+		}
+		setTimeout(function() {
+			settime()
+		},1000)
+	}
+
+	//获得手机动态验证码
+	function getSms(){
+		var phone = $("[name='mobile']").val();
+		if(phone==''){
+			alert('请输入手机号！');
+			return ;
+		}else{
+			var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+			if(!myreg.test(phone)) {
+				alert('手机号非法！');
+				return ;
+			}
+		}
+		$.post(
+				"{:U('App/Yanzheng/getSms')}",
+				{
+					"phone": phone,
+					"gettype":7
+				},
+				function(data){
+					settime();
+				},
+				'json'
+		);
+	}
+	function loginByCode(){
+		var phone = $("[name='mobile']").val();
+		var code= $("[name='sms']").val();
+		if(phone==''){
+			alert('请输入手机号！');
+			return ;
+		}else{
+			var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+			if(!myreg.test(phone)) {
+				alert('手机号非法！');
+				return ;
+			}
+		}
+		//验证手机是否可以绑定
+		$.post(
+				"{:U('App/Yanzheng/validatePhone')}",
+				{
+					"phone": phone
+
+				},
+				function(data){
+					if(data.res==1){
+						//验证验证信息是否过期
+						$.post(
+								"{:U('App/Yanzheng/valmobile')}",
+								{
+									"phone": phone,
+									"code":code
+								},
+								function(data1){
+									if(data1.res==1){
+										$.post(
+												"{:U('App/Yanzheng/bangding')}",
+												{
+													"phone": phone,
+													"vipid":vipid
+												},
+												function(data2){
+													if(data2.res==1){
+														App_gmuMsg(data2.msg);
+														window.location.reload();
+													}else{
+														App_gmuMsg(data2.msg);
+														return false;
+														//window.location.reload();
+													}
+												},
+												'json'
+										);
+									}else{
+										App_gmuMsg(data1.msg);
+										return false;
+										//window.location.reload();
+									}
+								},
+								'json'
+						);
+					}else{
+						App_gmuMsg(data.msg);
+						return false;
+						//window.location.reload();
+					}
+				},
+				'json'
+		);
+	}
+
+
+</script>
+<!--通用分享-->
+<!--新版分享特效-->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+	var share_url = "http://{$_SERVER['HTTP_HOST']}__ROOT__/App/Shop/goods/ppid/{$_SESSION['WAP']['vipid']}/id/{$cache.id}";
+	var share_title="{$cache.name}";
+	var share_content="{$cache.summary}";
+	//	var share_img="{$_SESSION['WAP']['shopset']['url']}{$apppic.imgurl}";
+	var share_img = "http://{$_SERVER['HTTP_HOST']}__ROOT__{$apppic.imgurl}";
+
+	wx.config({
+		debug: false,
+		appId: "{$jsapi['appId']}",
+		timestamp: "{$jsapi['timestamp']}",
+		nonceStr: "{$jsapi['nonceStr']}",
+		signature: "{$jsapi['signature']}",
+		jsApiList: [
+			'checkJsApi',
+			'onMenuShareTimeline',
+			'onMenuShareAppMessage',
+			'onMenuShareQQ',
+			'onMenuShareWeibo',
+			'hideMenuItems',
+			'showMenuItems',
+			'hideAllNonBaseMenuItem',
+			'showAllNonBaseMenuItem',
+//      'translateVoice',
+//      'startRecord',
+//      'stopRecord',
+//      'onRecordEnd',
+//      'playVoice',
+//      'pauseVoice',
+//      'stopVoice',
+//      'uploadVoice',
+//      'downloadVoice',
+//      'chooseImage',
+//      'previewImage',
+//      'uploadImage',
+//      'downloadImage',
+//      'getNetworkType',
+//      'openLocation',
+//      'getLocation',
+//      'hideOptionMenu',
+//      'showOptionMenu',
+//      'closeWindow',
+//      'scanQRCode',
+//      'chooseWXPay',
+//      'openProductSpecificView',
+//      'addCard',
+//      'chooseCard',
+//      'openCard'
+		]
+	});
+
+	wx.ready(function () {
+		//开启菜单
+		wx.showOptionMenu();
+		//隐藏菜单
+		//wx.hideOptionMenu();
+		//分享给朋友
+		wx.onMenuShareAppMessage({
+			title: share_title,
+			desc: share_content,
+			link: share_url,
+			imgUrl: share_img,
+			trigger: function (res) {
+				//alert('用户点击发送给朋友');
+			},
+			success: function (res) {
+				//alert('已分享');
+			},
+			cancel: function (res) {
+				//alert('已取消');
+			},
+			fail: function (res) {
+				//alert(JSON.stringify(res));
+			}
+		});
+		//分享到朋友圈
+		wx.onMenuShareTimeline({
+			title: share_title,
+			link: share_url,
+			imgUrl: share_img,
+			trigger: function (res) {
+				//alert('用户点击分享到朋友圈');
+			},
+			success: function (res) {
+				//alert('已分享');
+			},
+			cancel: function (res) {
+				//alert('已取消');
+			},
+			fail: function (res) {
+				//alert(JSON.stringify(res));
+			}
+		});
+		//分享到QQ
+		wx.onMenuShareQQ({
+			title: share_title,
+			desc: share_content,
+			link: share_url,
+			imgUrl: share_img,
+			trigger: function (res) {
+				//alert('用户点击分享到QQ');
+			},
+			complete: function (res) {
+				//alert(JSON.stringify(res));
+			},
+			success: function (res) {
+				//alert('已分享');
+			},
+			cancel: function (res) {
+				//alert('已取消');
+			},
+			fail: function (res) {
+				//alert(JSON.stringify(res));
+			}
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+[ 2018-04-17T10:20:27+08:00 ] 127.0.0.1 /App/Shop/index/shopid/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001947s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0212s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002974s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009901s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010295s ]
+
+[ 2018-04-17T10:20:34+08:00 ] 127.0.0.1 /App/Shop/index/shopid/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0198s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001562s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003234s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001815s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002177s ]
+
+[ 2018-04-17T10:20:47+08:00 ] 127.0.0.1 /App/Shop/index/shopid/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0235s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0199s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001545s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003069s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001698s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002120s ]
+
+[ 2018-04-17T10:23:44+08:00 ] 127.0.0.1 /App/Shop/index/shopid/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0190s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002808s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001626s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001982s ]
+
+[ 2018-04-17T10:47:19+08:00 ] 127.0.0.1 /App/Shop/index/shopid/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: employee E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 45 行.
+NOTIC: [8] Undefined index: code E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 55 行.
+NOTIC: [8] Undefined index: sqmode E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002723s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001643s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002130s ]
+

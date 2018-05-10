@@ -1,0 +1,28 @@
+[ 2017-05-18T20:00:58+08:00 ] 122.192.15.52 /Home/Wxpay/pay/oid/20170518200056-26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `wfx_set` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `oid` = '20170518200056-26' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant CURLOP_TIMEOUT - assumed 'CURLOP_TIMEOUT' /alidata/www/wemall/ThinkPHP/Library/Util/Wx/Wxpaysdk.class.php 第 234 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /alidata/www/wemall/ThinkPHP/Library/Util/Wx/Wxpaysdk.class.php 第 234 行.
+NOTIC: [2] curl_close(): 34 is not a valid cURL handle resource /alidata/www/wemall/ThinkPHP/Library/Util/Wx/Wxpaysdk.class.php 第 253 行.
+NOTIC: [8] Undefined index: prepay_id /alidata/www/wemall/ThinkPHP/Library/Util/Wx/Wxpaysdk.class.php 第 61 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+
