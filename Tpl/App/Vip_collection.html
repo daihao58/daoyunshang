@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title></title>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="__PUBLIC__/App/css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/style2.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/layout.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/style.css" >
+</head>
+<script type="text/javascript" src="__PUBLIC__/App/js/zepto.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/App/gmu/gmu.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/App/gmu/app-basegmu.js"></script>
+<body>
+<div class="page page-user-follow">
+    <!-- 标题栏 -->
+    <header class="bar bar-header">
+        <a href="user.html" class="iconfont icon-back bar-btn pull-left"></a>
+        <h1 class="title">我的收藏</h1>
+        <a href="index.html" class="iconfont icon-home-head bar-btn pull-right"></a>
+    </header>
+
+    <!-- content -->
+    <section class="content">
+        <div class="list-block media-list mt-0">
+            <ul>
+                <volist name="data" id="vo">
+                    <li class="item-content">
+                        <div class="item-media">
+                            <a href="/App/Shop/goods/sid/0/id/{$vo.good_id}/ppid/{$vo.uid}"><img src="{$vo.imgurl}" alt=""></a> <!--两个a标签都要加链接-->
+                        </div>
+                        <div class="item-title">
+                            <a href="/App/Shop/goods/sid/0/id/{$vo.good_id}/ppid/{$vo.uid}">
+                                <h4 class="t-e">{$vo.title}</h4>
+                                <p class="t-e-2 color-light font-12 mt-4">{$vo.des}</p>
+                            </a> <!--两个a标签都要加链接-->
+                            <p class="color-light font-12 mt-12">
+                                <span>2018-05-12</span>
+                                <button class="pull-right" onclick="quxiao({$vo.id})"><i class="iconfont icon-delete mr-4"></i>取消</button>
+                            </p>
+                        </div>
+                    </li>
+                </volist>
+
+            </ul>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript">
+    function quxiao(id){
+        var id = id;
+        var fun=function(){
+            window.location.reload();
+        }
+        $.ajax({
+            type:"post",
+            url:"{:U('App/Vip/quxiao')}",
+            dataType:'json',
+            data:{
+                id:id,
+            },
+            success: function(data){
+                //console.log(data);
+                if(data.state_code==1){
+                    zbb_msg(data.msg,fun);
+
+                }else{
+                    zbb_msg(data.msg);
+                }
+            },
+            error:function(xh,obj){
+                App_gmuMsg('通讯失败，请重试！');
+            }
+        });
+    }
+</script>
+</body>
+
+</html>

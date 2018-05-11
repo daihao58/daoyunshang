@@ -416,16 +416,16 @@ em, i {
 
 /* === Pages === */
 .page {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #f4f8ff
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	background-color: #f4f8ff
 }
 /* === line === */
-.bar-nav:before, .bar-footer:before, .bar-header-secondary:after, .content-block:before, .content-block:after,
-.list-block:before, .list-block:after, .list-block .item-content:after, .list-title:after, .bor-t:before, .bor-b:after,
+.bar-nav:before, .bar-footer:before, .bar-header-secondary:after, .content-block:before, .content-block:after, 
+.list-block:before, .list-block:after, .list-block .item-content:after, .list-title:after, .bor-t:before, .bor-b:after, 
 .list-block .item-link.list-button:after, .buttons-tab:before, .buttons-tab:after {
 	content: '';
 	position: absolute;
@@ -442,7 +442,7 @@ em, i {
 	transform-origin: 50% 0%;
 }
 
-.bar-header-secondary:after, .content-block:after, .list-block:after, .list-block .item-content:after,
+.bar-header-secondary:after, .content-block:after, .list-block:after, .list-block .item-content:after, 
 .bor-b:after, .list-block .item-link.list-button:after,  .list-title:after, .buttons-tab:after {
 	bottom: 0;
 	-webkit-transform-origin: 50% 100%;
@@ -466,7 +466,7 @@ em, i {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	.bar-nav:before, .bar-footer:before, .bar-header-secondary:after, .content-block:before, .content-block:after, .list-block .item-content:after,
+	.bar-nav:before, .bar-footer:before, .bar-header-secondary:after, .content-block:before, .content-block:after, .list-block .item-content:after, 
 	.list-block:before,	.list-block:after, .list-title:after, .bor-t:before, .bor-b:after,
 	.list-block .item-link.list-button:after, .buttons-tab:before, .buttons-tab:after {
 		-webkit-transform: scaleY(0.5);
@@ -484,24 +484,24 @@ em, i {
 }
 
 .bd-1 {
-	position: relative;
-	border: 1px solid transparent
+  	position: relative;
+  	border: 1px solid transparent
 }
 
 .bd-1:before {
 	box-sizing: border-box;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 200%;
-	height: 200%;
-	border-radius: .2rem;
+  	content: '';
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 200%;
+ 	height: 200%;
+ 	border-radius: .2rem;
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
-	border: 1px solid #ddd;
-	-webkit-transform-origin: left top;
-	transform-origin: left top;
+  	border: 1px solid #ddd;   
+  	-webkit-transform-origin: left top;
+  	transform-origin: left top;  
 }
 
 /* === Content ===*/
@@ -675,7 +675,7 @@ a.search-head {
 }
 
 .bar-nav, .bar-footer {
-	bottom: 0;
+	bottom: 0;	
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -686,7 +686,7 @@ a.search-head {
 
 .bar-nav .nav-button {
 	-webkit-flex: 3 0 0%;
-	flex: 3 0 0%;
+	flex: 3 0 0%;	
 }
 
 .bar-nav .nav-item {
@@ -703,10 +703,10 @@ a.search-head {
 
 .bar-nav .nav-item .iconfont {
 	display: block;
-	position: relative;
+	position: relative;	
 	top: .25rem;
-	height: 1.2rem;
-	font-size: 1.1rem;
+	height: 1.2rem;	
+	font-size: 1.1rem;	
 	line-height: 1.2rem;
 }
 
@@ -775,7 +775,7 @@ a.search-head {
 	position: relative;
 	padding-right: .85rem;
 	color: #999;
-	font-size: .6rem;
+	font-size: .6rem;	
 }
 
 .more-link:before {
@@ -916,6 +916,12 @@ a.search-head {
 	width: 80%;
 }
 
+.list-block.media-list .item-media img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 .list-block.media-list .item-title-row {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -945,7 +951,7 @@ a.search-head {
 	background-color: #1eb4d2;
 	text-align: center;
 	border-radius: .25rem;
-	white-space: nowrap;
+	white-space: nowrap;	
 	text-overflow: ellipsis;
 	cursor: pointer;
 }
@@ -1110,12 +1116,12 @@ a.search-head {
 
 .mtb-14 {
 	margin-top: .7rem!important;
-	margin-bottom: .7rem!important;
+	margin-bottom: .7rem!important;	
 }
 
 .mtb-15 {
 	margin-top: .75rem!important;
-	margin-bottom: .75rem!important;
+	margin-bottom: .75rem!important;	
 }
 
 .mr-4 {
@@ -1144,17 +1150,17 @@ a.search-head {
 
 .plr-4 {
 	padding-left: .2rem;
-	padding-right: .2rem;
+	padding-right: .2rem;	
 }
 
 .plr-10 {
 	padding-left: .5rem;
-	padding-right: .5rem;
+	padding-right: .5rem;	
 }
 
 .plr-14 {
 	padding-left: .7rem;
-	padding-right: .7rem;
+	padding-right: .7rem;	
 }
 
 .pb-10 {
@@ -1204,12 +1210,12 @@ a.search-head {
 
 .ptb-8 {
 	padding-top: .4rem;
-	padding-bottom: .4rem;
+	padding-bottom: .4rem;	
 }
 
 .ptb-14 {
 	padding-top: .7rem;
-	padding-bottom: .7rem;
+	padding-bottom: .7rem;	
 }
 
 .ptb-30 {
@@ -1218,9 +1224,9 @@ a.search-head {
 }
 
 .align-top {
-	-webkit-box-align: start!important;
-	-webkit-align-items: flex-start!important;
-	align-items: flex-start!important;
+  -webkit-box-align: start!important;
+  -webkit-align-items: flex-start!important;
+  align-items: flex-start!important;
 }
 
 .over-hid {
@@ -1233,47 +1239,47 @@ a.link-green {
 }
 
 .color-dark {
-	color: #333!important;
+  color: #333!important;
 }
 
 .color-gray {
-	color: #666!important;
+  color: #666!important;
 }
 
 .color-light {
-	color: #999!important;
+  color: #999!important;
 }
 
 .color-ora {
-	color: #ff8000!important;
+  color: #ff8000!important;
 }
 
 .color-green {
-	color: #22cc76!important;
+  color: #22cc76!important;
 }
 
 .color-red {
-	color: red!important;
+  color: red!important;
 }
 
 .color-blue {
-	color: #1eb6d4!important;
+  color: #1eb6d4!important;
 }
 
 .t-c {
-	text-align: center;
+  text-align: center;
 }
 
 .t-l {
-	text-align: left;
+  text-align: left;
 }
 
 .t-r {
-	text-align: right;
+  text-align: right;
 }
 
 .t-j {
-	text-align: justify;
+  text-align: justify;
 }
 
 .t-e {
@@ -1396,7 +1402,7 @@ a.link-green {
 }
 
 .price {
-	margin-left: -2px;
+	margin-left: -2px; 
 	font-size: .9rem;
 	font-weight: 600;
 	line-height: 1rem;
@@ -1409,7 +1415,7 @@ a.link-green {
 
 .trian {
 	position: relative;
-	display: inline-block;
+	display: inline-block;	
 	height: .2rem;
 	margin-left: .25rem;
 	margin-top: -.1rem;
@@ -1421,10 +1427,10 @@ a.link-green {
 
 .trian:before {
 	display: block;
-	content: ' ';
+	content: ' ';	
 	border: .2rem solid transparent;
-	border-top-color: #bbb;
-
+	border-top-color: #bbb;	
+	
 }
 
 .trian-double {

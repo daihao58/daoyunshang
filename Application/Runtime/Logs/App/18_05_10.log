@@ -15274,3 +15274,2118 @@ INFO: [ app_begin ] --END-- [ RunTime:0.009037s ]
 NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
 ERR: 无法加载控制器:Public
 
+[ 2018-05-10T17:24:09+08:00 ] 127.0.0.1 /App/Vip/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004134s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0179s ]
+NOTIC: [8] Undefined index: oaurl E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0336s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_message` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `wfx_vip_message`  [ RunTime:0.1502s ]
+SQL: SELECT * FROM `wfx_vip_message` WHERE `id` IN ('','900')  [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_vip_log` WHERE ( vipid=964 and type=5 )  [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_card` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip_card` WHERE `etime` >= 1525881600 AND `vipid` = 964 AND `status` = 1 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0132s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id= 2 ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=980 ) LIMIT 1   [ RunTime:0.2394s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: lasturl E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\a18ac47877ff27f7f441cda9c1d7167a.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002322s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004719s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.008437s ]
+INFO: [ action_end ] --END-- [ RunTime:0.008609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004577s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012393s ]
+
+[ 2018-05-10T17:24:09+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006517s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:24:09+08:00 ] 127.0.0.1 /App/Vip/agency
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: oaurl E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001881s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003901s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007114s ]
+INFO: [ action_end ] --END-- [ RunTime:0.007278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004153s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011028s ]
+
+[ 2018-05-10T17:24:11+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004113s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:24:12+08:00 ] 127.0.0.1 /App/Vip/feedback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001990s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0290s ]
+NOTIC: [8] Undefined index: oaurl E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0235s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002620s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004481s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007148s ]
+INFO: [ action_end ] --END-- [ RunTime:0.007306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003692s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009883s ]
+
+[ 2018-05-10T17:24:14+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010635s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:24:15+08:00 ] 127.0.0.1 /App/Vip/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0159s ]
+NOTIC: [8] Undefined index: oaurl E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0131s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_address` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `wfx_vip_address` WHERE ( vipid=964 )  [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: orderURL E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b8cc1dade56a61bf9671d9439481d12f.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003202s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006261s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006108s ]
+INFO: [ action_end ] --END-- [ RunTime:0.006265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002650s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007360s ]
+
+[ 2018-05-10T17:24:16+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007995s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:24:17+08:00 ] 127.0.0.1 /App/Vip/collection
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0152s ]
+NOTIC: [8] Undefined index: oaurl E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0129s ]
+ERR: 非法操作:collection
+
+[ 2018-05-10T17:27:27+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003334s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:27:30+08:00 ] 127.0.0.1 /App/Shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0124s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc LIMIT 0,2   [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0119s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0121s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0209s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0192s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0174s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0121s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 1  [ RunTime:0.0118s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 269 LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 268 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_artical` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_artical` WHERE `shop_id` = 21  [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 2 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 3 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 274 LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 4 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 5 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001228s ]
+NOTIC: [8] Undefined variable: lasturl E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 49 行.
+NOTIC: [8] Undefined variable: actname E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002333s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004267s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.010508s ]
+INFO: [ action_end ] --END-- [ RunTime:0.010724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.034337s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.019472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.054295s ]
+
+[ 2018-05-10T17:27:30+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003599s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:27:32+08:00 ] 127.0.0.1 /App/Shop/goods_kind/sid/0/cid/12/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0136s ]
+NOTIC: [8] Undefined index: search_key E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_cate`  [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0139s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 321 行.
+NOTIC: [8] Undefined variable: paixu E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 355 行.
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `shop_id` = 21 AND `cid` = 12 LIMIT 0,20   [ RunTime:0.0555s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_goods` WHERE `shop_id` = 21 AND `cid` = 12 LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [2] Missing argument 6 for App\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php on line 357 and defined E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 313 行.
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0132s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 257 LIMIT 1   [ RunTime:0.0161s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 259 LIMIT 1   [ RunTime:0.0223s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000632s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005467s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007462s ]
+INFO: [ action_end ] --END-- [ RunTime:0.007664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004323s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010375s ]
+
+[ 2018-05-10T17:27:32+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:27:33+08:00 ] 127.0.0.1 /App/Shop/goods/sid/0/id/41/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=41 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `wfx_shop_goods` SET `clicks`=clicks+1 WHERE ( id=41 ) [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_skuattr_item` [ RunTime:0.0134s ]
+SQL: SELECT `path`,`name` FROM `wfx_shop_skuattr_item` WHERE ( pid=28 )  [ RunTime:0.0131s ]
+SQL: SELECT `path`,`name` FROM `wfx_shop_skuattr_item` WHERE ( pid=29 )  [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0139s ]
+SQL: SELECT `sku`,`skuattr`,`price`,`num`,`hdprice`,`hdnum` FROM `wfx_shop_goods_sku` WHERE `goodsid` = 41 AND `status` = 1  [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('270','269','268','')  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0134s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE `sid` = 0 AND `shop_id` = 0 AND `vipid` = 964 [ RunTime:0.0127s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 LIMIT 1   [ RunTime:0.0126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 582 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 583 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 584 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 585 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003497s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.039065s ]
+INFO: [ action_end ] --END-- [ RunTime:0.039297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008255s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017007s ]
+
+[ 2018-05-10T17:27:49+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004173s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:27:50+08:00 ] 127.0.0.1 /App/Shop/goods/sid/0/id/42/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: UPDATE `wfx_shop_goods` SET `clicks`=clicks+1 WHERE ( id=42 ) [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0143s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('275','274','273','')  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0131s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE `sid` = 0 AND `shop_id` = 0 AND `vipid` = 964 [ RunTime:0.0125s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 LIMIT 1   [ RunTime:0.0131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined variable: skujson E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 258 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 582 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 583 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 584 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 585 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003111s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005115s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.049426s ]
+INFO: [ action_end ] --END-- [ RunTime:0.049965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006873s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.008533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015889s ]
+
+[ 2018-05-10T17:27:52+08:00 ] 127.0.0.1 /App/yanzheng/yzphone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0173s ]
+NOTIC: [8] Undefined index: oaurl E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=964 ) LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2018-05-10T17:27:52+08:00 ] 127.0.0.1 /App/Shop/fastbuy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0166s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0140s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE `sid` = 0 AND `shop_id` = 0 AND `vipid` = 964 [ RunTime:0.0142s ]
+SQL: INSERT INTO `wfx_shop_basket` (`sid`,`goodsid`,`vipid`,`sku`,`num`) VALUES ('0','42','964','','1') [ RunTime:0.0211s ]
+
+[ 2018-05-10T17:27:55+08:00 ] 127.0.0.1 /App/Shop/orderMake/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0164s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964  [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0136s ]
+NOTIC: [8] Undefined variable: sku E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 1170 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_address` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_vip_address` WHERE ( vipid=964 ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_card` [ RunTime:0.0159s ]
+SQL: SELECT `id`,`money` FROM `wfx_vip_card` WHERE `type` = 2 AND `vipid` = 964 AND `status` = 1 AND `usetime` = 0 AND `etime` > 1525944475 AND `usemoney` < 22  [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id='21' ) LIMIT 1   [ RunTime:0.0145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Undefined index: xqname E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\c946eae99dc6521cb9e60e35b5352416.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002528s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004541s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.037837s ]
+INFO: [ action_end ] --END-- [ RunTime:0.038073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009683s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.011927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022323s ]
+
+[ 2018-05-10T17:28:03+08:00 ] 127.0.0.1 /App/Shop/orderMake/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0167s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0141s ]
+SQL: INSERT INTO `wfx_shop_order` (`sid`,`paytype`,`vipid`,`vipopenid`,`vipname`,`vipaddress`,`vipmobile`,`totalnum`,`totalprice`,`totalprice_bate`,`yf`,`items`,`msg`,`ispay`,`status`,`ctime`,`payprice`,`shop_id`) VALUES ('0','money','964','oAqURw-pNerSw5MwR3iRebhLg_QY','潘超','321283199505063316','15295121323','1','27','20','5','a:1:{i:0;a:14:{s:2:\"id\";s:3:\"284\";s:3:\"sid\";s:1:\"0\";s:5:\"vipid\";s:3:\"964\";s:7:\"goodsid\";s:2:\"42\";s:3:\"sku\";s:0:\"\";s:3:\"num\";s:1:\"1\";s:7:\"shop_id\";s:1:\"0\";s:5:\"skuid\";i:0;s:4:\"name\";s:6:\"123123\";s:7:\"skuattr\";N;s:3:\"pic\";s:40:\"/Upload/img/2018-04-27/5ae27e5ce68e1.png\";s:5:\"price\";s:2:\"22\";s:6:\"cprice\";s:2:\"22\";s:5:\"total\";i:22;}}','','0','1','1525944483','27','21') [ RunTime:0.0158s ]
+SQL: UPDATE `wfx_shop_order` SET `oid`='20180510172803-90' WHERE ( id=90 ) [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order_syslog` [ RunTime:0.0135s ]
+SQL: INSERT INTO `wfx_shop_order_syslog` (`oid`,`msg`,`type`,`ctime`,`shop_id`) VALUES ('90','订单创建成功','1','1525944483','21') [ RunTime:0.0182s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0135s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 [ RunTime:0.0156s ]
+
+[ 2018-05-10T17:28:04+08:00 ] 127.0.0.1 /App/Shop/pay/sid/0/orderid/90
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0163s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE ( id=90 ) LIMIT 1   [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=964 ) LIMIT 1   [ RunTime:0.0143s ]
+SQL: UPDATE `wfx_vip` SET `money`='7026' WHERE ( id=964 ) [ RunTime:0.0165s ]
+SQL: UPDATE `wfx_shop_order` SET `shop_id`='21',`sid`='0',`oid`='20180510172803-90',`djqid`='0',`totalprice`='27',`totalprice_bate`='20',`totalnum`='1',`payprice`='27',`paytype`='money',`paytime`='1525944483',`aliaccount`=NULL,`yf`='5',`ispay`='1',`vipid`='964',`vipopenid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`vipname`='潘超',`vipmobile`='15295121323',`vipaddress`='321283199505063316',`vipxqname`=NULL,`vipxqid`=NULL,`msg`='',`kfmsg`=NULL,`ctime`='1525944483',`ntime`=NULL,`dtime`=NULL,`etime`=NULL,`changetime`=NULL,`changemsg`=NULL,`changeadmin`=NULL,`closetime`=NULL,`closemsg`=NULL,`closeadmin`=NULL,`tuihuoprice`=NULL,`tuihuosqtime`='0',`tuihuotime`=NULL,`tuihuokd`=NULL,`tuihuokdnum`=NULL,`tuihuomsg`=NULL,`tuihuoadmin`=NULL,`status`='2',`fahuokd`=NULL,`fahuokdnum`=NULL,`items`='a:1:{i:0;a:14:{s:2:\"id\";s:3:\"284\";s:3:\"sid\";s:1:\"0\";s:5:\"vipid\";s:3:\"964\";s:7:\"goodsid\";s:2:\"42\";s:3:\"sku\";s:0:\"\";s:3:\"num\";s:1:\"1\";s:7:\"shop_id\";s:1:\"0\";s:5:\"skuid\";i:0;s:4:\"name\";s:6:\"123123\";s:7:\"skuattr\";N;s:3:\"pic\";s:40:\"/Upload/img/2018-04-27/5ae27e5ce68e1.png\";s:5:\"price\";s:2:\"22\";s:6:\"cprice\";s:2:\"22\";s:5:\"total\";i:22;}}',`cprice`=NULL WHERE `id` = 90 [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_syslog_sells` [ RunTime:0.0149s ]
+SQL: UPDATE `wfx_shop_goods` SET `num`=num-1 WHERE ( id=42 ) [ RunTime:0.0234s ]
+SQL: UPDATE `wfx_shop_goods` SET `sells`=sells+1 WHERE ( id=42 ) [ RunTime:0.0153s ]
+SQL: UPDATE `wfx_shop_goods` SET `dissells`=dissells+1 WHERE ( id=42 ) [ RunTime:0.0161s ]
+SQL: INSERT INTO `wfx_shop_syslog_sells` (`oid`,`vipid`,`vipopenid`,`vipname`,`ctime`,`num`,`goodsid`,`goodsname`,`skuid`,`skuattr`,`price`,`total`) VALUES ('90','964','oAqURw-pNerSw5MwR3iRebhLg_QY','潘超','1525944483','1','42','123123','0','0','22','22') [ RunTime:0.0163s ]
+NOTIC: [2048] Declaration of Common\Model\ShopOrderModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\wamp64\www\daoyunshang\Application\Common\Model\ShopOrderModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `id` = 90 LIMIT 1   [ RunTime:0.0146s ]
+NOTIC: [2048] Declaration of Common\Model\ShopGoodsModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\wamp64\www\daoyunshang\Application\Common\Model\ShopGoodsModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` = 42 LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order_log` [ RunTime:0.0142s ]
+SQL: INSERT INTO `wfx_shop_order_log` (`oid`,`msg`,`ctime`) VALUES ('90','余额-付款成功','1525944484') [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order_syslog` [ RunTime:0.0149s ]
+SQL: INSERT INTO `wfx_shop_order_syslog` (`oid`,`msg`,`ctime`,`type`) VALUES ('90','余额-付款成功','1525944484','2') [ RunTime:0.0171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000605s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002320s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004155s ]
+SQL: SHOW COLUMNS FROM `wfx_wx_template` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `wfx_wx_template` WHERE `templateidshort` = 'OPENTM200444326' LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=964 ) LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_fx_dslog` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_shop_set` LIMIT 1   [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=980 ) LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `id` IN ('90')  [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_shop_goods`  [ RunTime:0.0880s ]
+SQL: SELECT `cid` FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=357 ) LIMIT 1   [ RunTime:0.0149s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `id` IN ('90')  [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_shop_goods`  [ RunTime:0.0865s ]
+SQL: SELECT `cid` FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0142s ]
+SQL: INSERT INTO `wfx_fx_dslog` (`oid`,`fxprice`,`ctime`,`fxyj`,`from`,`fromname`,`to`,`toname`,`status`) VALUES ('90','22','1525944484','22','964','HaO','980','HaO','1'),('90','22','1525944484','22','964','HaO','357','⑨隐','1') [ RunTime:0.0189s ]
+SQL: SELECT `id` FROM `wfx_vip` WHERE ( isfxgd=1 )  [ RunTime:0.0162s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004476s ]
+INFO: [ action_end ] --END-- [ RunTime:0.004629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003226s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007910s ]
+
+[ 2018-05-10T17:28:06+08:00 ] 127.0.0.1 /App/Shop/orderList/sid/0/type/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003841s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0154s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `sid` = 0 AND `vipid` = 964 AND `status` = 2 ORDER BY ctime desc  [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined variable: lasturl E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\00b22b9dd15f2cc7f3a1d890cd5f5bcb.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004619s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.028919s ]
+INFO: [ action_end ] --END-- [ RunTime:0.029241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012910s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.010267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023703s ]
+
+[ 2018-05-10T17:28:08+08:00 ] 127.0.0.1 /App/Shop/orderDetail/sid/0/orderid/90
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002882s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0136s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_order` WHERE `sid` = 0 AND `id` = 90 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_order_log` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_shop_order_log` WHERE ( oid=90 )  [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002535s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005584s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006915s ]
+INFO: [ action_end ] --END-- [ RunTime:0.007119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003814s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010832s ]
+
+[ 2018-05-10T17:28:13+08:00 ] 127.0.0.1 /App/Vip/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0152s ]
+NOTIC: [8] Undefined index: oaurl E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0133s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_message` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_vip_message`  [ RunTime:0.1427s ]
+SQL: SELECT * FROM `wfx_vip_message` WHERE `id` IN ('','900')  [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_log` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_vip_log` WHERE ( vipid=964 and type=5 )  [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_card` [ RunTime:0.0129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_vip_card` WHERE `etime` >= 1525881600 AND `vipid` = 964 AND `status` = 1 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0133s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id= 2 ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( id=980 ) LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Undefined variable: lasturl E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\a18ac47877ff27f7f441cda9c1d7167a.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002872s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005284s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005907s ]
+INFO: [ action_end ] --END-- [ RunTime:0.006080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002600s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006943s ]
+
+[ 2018-05-10T17:28:13+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010328s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:28:15+08:00 ] 127.0.0.1 /App/Shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0154s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0137s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc LIMIT 0,2   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0124s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0139s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 1  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 269 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 268 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_artical` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_artical` WHERE `shop_id` = 21  [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 2 LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 3 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 274 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 4 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 5 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: lasturl E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 49 行.
+NOTIC: [8] Undefined variable: actname E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002188s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004149s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.040073s ]
+INFO: [ action_end ] --END-- [ RunTime:0.040367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006196s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.016144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022907s ]
+
+[ 2018-05-10T17:28:15+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:28:17+08:00 ] 127.0.0.1 /App/Shop/goods_kind/sid/0/cid/12/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0141s ]
+NOTIC: [8] Undefined index: search_key E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_shop_cate`  [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 321 行.
+NOTIC: [8] Undefined variable: paixu E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 355 行.
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `shop_id` = 21 AND `cid` = 12 LIMIT 0,20   [ RunTime:0.0564s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_goods` WHERE `shop_id` = 21 AND `cid` = 12 LIMIT 1   [ RunTime:0.0159s ]
+NOTIC: [2] Missing argument 6 for App\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php on line 357 and defined E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 313 行.
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0144s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 257 LIMIT 1   [ RunTime:0.0137s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 259 LIMIT 1   [ RunTime:0.0142s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0147s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002510s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005309s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.005663s ]
+INFO: [ action_end ] --END-- [ RunTime:0.005882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002730s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006836s ]
+
+[ 2018-05-10T17:28:17+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002713s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:28:19+08:00 ] 127.0.0.1 /App/Shop/goods/sid/0/id/42/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: UPDATE `wfx_shop_goods` SET `clicks`=clicks+1 WHERE ( id=42 ) [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0124s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('275','274','273','')  [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0131s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE `sid` = 0 AND `shop_id` = 0 AND `vipid` = 964 [ RunTime:0.0124s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 LIMIT 1   [ RunTime:0.0123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined variable: skujson E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 258 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 582 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 583 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 584 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 585 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003650s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.013507s ]
+INFO: [ action_end ] --END-- [ RunTime:0.013817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021205s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.020329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.041961s ]
+
+[ 2018-05-10T17:28:26+08:00 ] 127.0.0.1 /App/Shop/index/shopid/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0144s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0119s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0114s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0119s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc LIMIT 0,2   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0117s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0116s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0115s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0121s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0115s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0123s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0124s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0115s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 1  [ RunTime:0.0118s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 269 LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 268 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_artical` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_artical` WHERE `shop_id` = 21  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 2 LIMIT 1   [ RunTime:0.0114s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 3 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 274 LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 4 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0173s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 5 LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Undefined variable: lasturl E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 49 行.
+NOTIC: [8] Undefined variable: actname E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002967s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005642s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.011977s ]
+INFO: [ action_end ] --END-- [ RunTime:0.012345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010994s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.032510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.044037s ]
+
+[ 2018-05-10T17:28:26+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003551s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:28:34+08:00 ] 127.0.0.1 /App/Shop/goods_kind/sid/0/cid/12/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0132s ]
+NOTIC: [8] Undefined index: search_key E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_shop_cate`  [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0137s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 321 行.
+NOTIC: [8] Undefined variable: paixu E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 355 行.
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `shop_id` = 21 AND `cid` = 12 LIMIT 0,20   [ RunTime:0.0527s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_goods` WHERE `shop_id` = 21 AND `cid` = 12 LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [2] Missing argument 6 for App\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php on line 357 and defined E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 313 行.
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 257 LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 259 LIMIT 1   [ RunTime:0.0127s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004507s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.008018s ]
+INFO: [ action_end ] --END-- [ RunTime:0.008222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003060s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.004802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008146s ]
+
+[ 2018-05-10T17:28:34+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000164s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003249s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:28:36+08:00 ] 127.0.0.1 /App/Shop/goods/sid/0/id/42/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: UPDATE `wfx_shop_goods` SET `clicks`=clicks+1 WHERE ( id=42 ) [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0128s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('275','274','273','')  [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0127s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE `sid` = 0 AND `shop_id` = 0 AND `vipid` = 964 [ RunTime:0.0131s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 LIMIT 1   [ RunTime:0.0123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined variable: skujson E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 258 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 582 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 583 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 584 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 585 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002157s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004629s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.031031s ]
+INFO: [ action_end ] --END-- [ RunTime:0.032074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007053s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.008288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015770s ]
+
+[ 2018-05-10T17:29:36+08:00 ] 127.0.0.1 /App/Shop/addtobasket
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0155s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `goodsid` = 42 LIMIT 1   [ RunTime:0.0127s ]
+SQL: INSERT INTO `wfx_shop_basket` (`sid`,`goodsid`,`vipid`,`sku`,`num`,`shop_id`) VALUES ('0','42','964','','1','21') [ RunTime:0.0146s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 LIMIT 1   [ RunTime:0.0139s ]
+
+[ 2018-05-10T17:29:37+08:00 ] 127.0.0.1 /App/Shop/basket/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0159s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `shop_id` = 21  [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0144s ]
+NOTIC: [8] Undefined variable: sku E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 640 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000528s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003220s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005927s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.014674s ]
+INFO: [ action_end ] --END-- [ RunTime:0.015060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011463s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.010664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022617s ]
+
+[ 2018-05-10T17:29:38+08:00 ] 127.0.0.1 /App/Shop/delbasket/sid/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002681s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0157s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0131s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE ( id=285 ) [ RunTime:0.0150s ]
+
+[ 2018-05-10T17:29:39+08:00 ] 127.0.0.1 /App/Shop/basket/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `shop_id` = 21  [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000852s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002823s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007688s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.021226s ]
+INFO: [ action_end ] --END-- [ RunTime:0.021569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007063s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.021742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029255s ]
+
+[ 2018-05-10T17:30:35+08:00 ] 127.0.0.1 /App/Shop/addtobasket
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004350s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0161s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `goodsid` = 42 LIMIT 1   [ RunTime:0.0135s ]
+SQL: UPDATE `wfx_shop_basket` SET `sid`='0',`vipid`='964',`goodsid`='42',`sku`='',`num`='2',`shop_id`='21' WHERE `id` = 287 [ RunTime:0.0167s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2018-05-10T17:30:36+08:00 ] 127.0.0.1 /App/Shop/basket/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0124s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0163s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `shop_id` = 21  [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0125s ]
+NOTIC: [8] Undefined variable: sku E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 640 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004590s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007532s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.032940s ]
+INFO: [ action_end ] --END-- [ RunTime:0.033845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008537s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016318s ]
+
+[ 2018-05-10T17:30:51+08:00 ] 127.0.0.1 /App/Shop/basket/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002681s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0162s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `shop_id` = 21  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [8] Undefined variable: sku E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 640 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006724s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.009377s ]
+INFO: [ action_end ] --END-- [ RunTime:0.009686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006781s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014497s ]
+
+[ 2018-05-10T17:33:21+08:00 ] 127.0.0.1 /App/Shop/basket/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002328s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0124s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `shop_id` = 21  [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: sku E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 640 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001723s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003762s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.011736s ]
+INFO: [ action_end ] --END-- [ RunTime:0.012015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009197s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.018660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028300s ]
+
+[ 2018-05-10T17:33:27+08:00 ] 127.0.0.1 /App/Shop/basket/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002227s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0119s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `shop_id` = 21  [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0116s ]
+NOTIC: [8] Undefined variable: sku E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 640 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003441s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006681s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.023563s ]
+INFO: [ action_end ] --END-- [ RunTime:0.023846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006027s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.014432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020926s ]
+
+[ 2018-05-10T17:33:28+08:00 ] 127.0.0.1 /App/Shop/basket/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002660s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0129s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `shop_id` = 21  [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [8] Undefined variable: sku E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 640 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002741s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005630s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.011526s ]
+INFO: [ action_end ] --END-- [ RunTime:0.011804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010406s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.023741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.034617s ]
+
+[ 2018-05-10T17:34:16+08:00 ] 127.0.0.1 /App/Shop/basket/sid/0/lasturl/L0FwcC9TaG9wL2dvb2RzL2lkLzQy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003271s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_level` [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0292s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0167s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 AND `shop_id` = 21  [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0153s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [8] Undefined variable: sku E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 640 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002744s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004730s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.011356s ]
+INFO: [ action_end ] --END-- [ RunTime:0.011615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005769s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.022891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029093s ]
+
+[ 2018-05-10T17:34:57+08:00 ] 127.0.0.1 /App/Shop/index/shopid/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002606s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0161s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0179s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc LIMIT 0,2   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0172s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0170s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0158s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0168s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0126s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0128s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0134s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 1  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 269 LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 268 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wfx_artical` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_artical` WHERE `shop_id` = 21  [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 2 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 3 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 274 LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 4 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 5 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000855s ]
+NOTIC: [8] Undefined variable: lasturl E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 49 行.
+NOTIC: [8] Undefined variable: actname E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003957s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006776s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.009309s ]
+INFO: [ action_end ] --END-- [ RunTime:0.009903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025816s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.017479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.043785s ]
+
+[ 2018-05-10T17:34:57+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004267s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:34:59+08:00 ] 127.0.0.1 /App/Shop/goods_kind/sid/0/cid/12/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: search_key E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_shop_cate`  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0144s ]
+NOTIC: [8] Undefined index: p E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 321 行.
+NOTIC: [8] Undefined variable: paixu E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 355 行.
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `shop_id` = 21 AND `cid` = 12 LIMIT 0,20   [ RunTime:0.0547s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wfx_shop_goods` WHERE `shop_id` = 21 AND `cid` = 12 LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [2] Missing argument 6 for App\Controller\BaseController::getPage(), called in E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php on line 357 and defined E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 313 行.
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 257 LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 259 LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 362 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002656s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005401s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.010179s ]
+INFO: [ action_end ] --END-- [ RunTime:0.010438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004102s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.007613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012051s ]
+
+[ 2018-05-10T17:34:59+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005386s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:35:01+08:00 ] 127.0.0.1 /App/Shop/goods/sid/0/id/42/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0245s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=42 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `wfx_shop_goods` SET `clicks`=clicks+1 WHERE ( id=42 ) [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0131s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('275','274','273','')  [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0202s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE `sid` = 0 AND `shop_id` = 0 AND `vipid` = 964 [ RunTime:0.0126s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 LIMIT 1   [ RunTime:0.0137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: skujson E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 258 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 582 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 583 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 584 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 585 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004763s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.010023s ]
+INFO: [ action_end ] --END-- [ RunTime:0.010239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016080s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.028996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.048540s ]
+
+[ 2018-05-10T17:40:20+08:00 ] 127.0.0.1 /App/Shop/index/shopid/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0161s ]
+NOTIC: [8] Undefined index: ppid E:\wamp64\www\daoyunshang\Application\App\Controller\BaseController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0132s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_group` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `wfx_shop_group` WHERE `shop_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `id` IN ('-10000000000')  [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE `status` = 1 AND `shop_id` = 21 ORDER BY sorts desc LIMIT 0,2   [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 225 LIMIT 1   [ RunTime:0.0138s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_cate` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_shop_cate` WHERE `shop_id` = 21  [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0136s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0150s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0139s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0157s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0136s ]
+NOTIC: [2] Illegal string offset 'imgurl' E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+NOTIC: [8] Uninitialized string offset: 0 E:\wamp64\www\daoyunshang\Application\App\Controller\ShopController.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wfx_shop_ads` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 1  [ RunTime:0.0149s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 270 LIMIT 1   [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 269 LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 268 LIMIT 1   [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wfx_artical` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `wfx_artical` WHERE `shop_id` = 21  [ RunTime:0.0165s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 2 LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 271 LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 3 LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 274 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 4 LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 272 LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wfx_shop_ads` WHERE (  shop_id=21 ) AND `kind` = 5 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `id` = 964 LIMIT 1   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wfx_employee` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_employee` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0143s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Undefined variable: lasturl E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 49 行.
+NOTIC: [8] Undefined variable: actname E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\b56b8082e02b1b878a28f8cba0cac826.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002725s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005670s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.011201s ]
+INFO: [ action_end ] --END-- [ RunTime:0.011490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005004s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.049724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.055178s ]
+
+[ 2018-05-10T17:40:20+08:00 ] 127.0.0.1 /Public/App/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007367s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Public
+
+[ 2018-05-10T17:40:23+08:00 ] 127.0.0.1 /App/Shop/goods/sid/0/id/41/ppid/964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `openid` = 'oAqURw-pNerSw5MwR3iRebhLg_QY' LIMIT 1   [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `wfx_shop_goods` WHERE ( id=41 ) LIMIT 1   [ RunTime:0.0139s ]
+SQL: UPDATE `wfx_shop_goods` SET `clicks`=clicks+1 WHERE ( id=41 ) [ RunTime:0.0158s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_label` [ RunTime:0.0145s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `wfx_shop_label` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wfx_vip` WHERE (  id='964'  ) LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_skuattr_item` [ RunTime:0.0147s ]
+SQL: SELECT `path`,`name` FROM `wfx_shop_skuattr_item` WHERE ( pid=28 )  [ RunTime:0.0146s ]
+SQL: SELECT `path`,`name` FROM `wfx_shop_skuattr_item` WHERE ( pid=29 )  [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_goods_sku` [ RunTime:0.0150s ]
+SQL: SELECT `sku`,`skuattr`,`price`,`num`,`hdprice`,`hdnum` FROM `wfx_shop_goods_sku` WHERE `goodsid` = 41 AND `status` = 1  [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `wfx_upload_img` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` IN ('270','269','268','')  [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wfx_upload_img` WHERE `id` = 273 LIMIT 1   [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `wfx_shop_basket` [ RunTime:0.0141s ]
+SQL: DELETE FROM `wfx_shop_basket` WHERE `sid` = 0 AND `shop_id` = 0 AND `vipid` = 964 [ RunTime:0.0139s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `wfx_shop_basket` WHERE `sid` = 0 AND `vipid` = 964 LIMIT 1   [ RunTime:0.0143s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 582 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 583 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 584 行.
+NOTIC: [8] Undefined variable: jsapi E:\wamp64\www\daoyunshang\Application\Runtime\Cache\App\53ff55a9284988d205aff13e5a85d20c.php 第 585 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004204s ]
+INFO: [ action_end ] --START--
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.009406s ]
+INFO: [ action_end ] --END-- [ RunTime:0.009662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006371s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.029730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.036838s ]
+

@@ -639,11 +639,39 @@ class ShopController extends BaseController
                         $cache[$k]['name'] = $goods['name'];
                         $cache[$k]['skuattr'] = $sku['skuattr'];
                         $cache[$k]['num'] = $v['num'] > $goods['num'] ? $goods['num'] : $v['num'];
-                        $cache[$k]['price'] = $goods['price'];
-                        $cache[$k]['total'] = $goods['num'];
+
                         $cache[$k]['pic'] = $pic['imgurl'];
                         $totalnum = $totalnum + $cache[$k]['num'];
-                        $totalprice = $totalprice + $cache[$k]['price'] * $cache[$k]['num'];
+
+
+                        if($user_vip['fx_level']==1){
+                            $cache[$k]['price'] = $goods['price_gold'];
+                            $cache[$k]['total'] = $v['num'] * $goods['price_gold'];
+                            $totalprice = $totalprice + $goods['price_gold'] * $cache[$k]['num'];
+
+                            $totalprice_bate = $totalprice_bate + $goods['price_gold_bate'] * $cache[$k]['num'];
+                        }elseif($user_vip['fx_level']==2){
+                            $cache[$k]['price'] = $goods['price_ceo'];
+                            $cache[$k]['total'] = $v['num'] * $goods['price_ceo'];
+                            $totalprice = $totalprice + $goods['price_ceo'] * $cache[$k]['num'];
+
+                            $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
+                        }elseif($user_vip['fx_level']==3){
+                            $cache[$k]['price'] = $goods['price_center'];
+                            $cache[$k]['total'] = $v['num'] * $goods['price_center'];
+                            $totalprice = $totalprice + $goods['price_center'] * $cache[$k]['num'];
+
+                            $totalprice_bate = $totalprice_bate + $goods['price_center_bate'] * $cache[$k]['num'];
+                        }else{
+                            $cache[$k]['price'] = $goods['price'];
+                            $cache[$k]['total'] = $v['num'] *$goods['price'];;
+                            $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
+
+                            $totalprice_bate = $totalprice_bate + $goods['price'] * $cache[$k]['num'];
+
+                        }
+
+
                     } else {
                         //无库存删除
                         $todelids = $todelids . $v['id'] . ',';
@@ -669,6 +697,48 @@ class ShopController extends BaseController
         $this->assign('totalprice_bate', $totalprice_bate);
         $this->assign('totalnum', $totalnum);
         $this->display();
+    }
+
+    //收藏
+    public function shoucang(){
+        $vip = session("WAP");
+        $vip = $vip['vip'];
+
+        $good_id=$_POST['goodsid'];
+        $good=M('Shop_goods')->find($good_id);
+        $map['uid'] = $vip['id'];;
+        $map['good_id'] =$good_id;
+        $sc_res=M('Collection')->where($map)->select();
+        if($sc_res){
+            $res=M('Collection')->where($map)->delete();
+            if($res){
+                $result['state_code']=1;
+                $result['msg']='取消收藏';
+                $this->ajaxReturn($result);
+            }else{
+                $result['state_code']=2;
+                $result['msg']='取消失败';
+                $this->ajaxReturn($result);
+            }
+        }else{
+            $data['good_id']=$good_id;
+            $data['title']= $good['name'];
+            $data['img']= $good['listpic'];
+            $data['des']= $good['promotional'];
+            $data['uid']= $vip['id'];
+            $data['time'] = date("Y-m-d H:s:i");
+            $res=M('Collection')->add($data);
+            if($res){
+                $result['state_code']=1;
+                $result['msg']='收藏成功';
+                $this->ajaxReturn($result);
+            }else{
+                $result['state_code']=2;
+                $result['msg']='收藏失败';
+                $this->ajaxReturn($result);
+            }
+        }
+
     }
 
     //添加购物车

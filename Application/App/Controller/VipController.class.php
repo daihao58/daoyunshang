@@ -615,6 +615,31 @@ class VipController extends BaseController
         }
     }
 
+    public function collection(){
+        $user = self::$WAP['vip'];
+        $data=M('Collection')->where("uid = {$user['id']}")->order('time desc')->select();
+
+        foreach ($data as $k => $v) {
+            $listpic = $this->getPic($v['img']);
+            $data[$k]['imgurl'] = $listpic['imgurl'];
+        }
+        $this->assign('data',$data);
+        $this->display();
+    }
+
+    public function quxiao(){
+        $id=$_POST['id'];
+        $res=M('Collection')->delete($id);
+        if($res){
+            $result['state_code']=1;
+            $result['msg']='取消收藏';
+            $this->ajaxReturn($result);
+        }else{
+            $result['state_code']=2;
+            $result['msg']='取消失败';
+            $this->ajaxReturn($result);
+        }
+    }
 
     public function agency(){
         $this->display();

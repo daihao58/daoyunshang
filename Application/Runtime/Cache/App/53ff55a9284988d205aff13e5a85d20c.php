@@ -211,8 +211,10 @@
 		<a href="<?php echo U('App/Shop/index',array('shopid'=>$shopid));?>" class="">
 			<i class="iconfont">&#xe679</i>
 		</a>
+		<a href="#" class="" id="shoucang">收藏</a>
 	</div>
 	<div class="dtl-btns">
+
 		<a href="#" class="fl dtl-btn dtl-buy" id="fastbuy">立即购买</a>
 		<a href="#" class="fl dtl-btn dtl-bke" id="addtocart">加入购物车</a>
 	</div>
@@ -252,6 +254,32 @@
 			});
 		});
 	</script><?php endif; ?>
+
+<!--收藏-->
+<script type="text/javascript">
+	$("#shoucang").on('click',function(){
+		var goodsid="<?php echo ($cache["id"]); ?>";
+		$.ajax({
+			type:"post",
+			url:"<?php echo U('App/Shop/shoucang');?>",
+			dataType:'json',
+			data:{
+				goodsid:goodsid,
+			},
+			success: function(data){
+				//console.log(data);
+				if(data.state_code==1){
+					zbb_msg(data.msg);
+				}else{
+					zbb_msg(data.msg);
+				}
+			},
+			error:function(xh,obj){
+				App_gmuMsg('通讯失败，请重试！');
+			}
+		});
+	});
+</script>
 <!--封装SKU-->
 <script type="text/javascript">
 	var goodsid="<?php echo ($cache["id"]); ?>";

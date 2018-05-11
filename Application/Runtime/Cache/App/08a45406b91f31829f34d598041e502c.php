@@ -25,7 +25,7 @@
     <!-- 标题栏 -->
     <header class="bar bar-header">
         <a href="/App/Vip/index" class="iconfont icon-back bar-btn pull-left"></a>
-        <h1 class="title">挂靠申请</h1>
+        <h1 class="title">代理挂靠</h1>
         <a href="/App/Shop/index" class="iconfont icon-home-head bar-btn pull-right"></a>
     </header>
 
