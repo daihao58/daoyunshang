@@ -23,7 +23,7 @@
     <!-- 标题栏 -->
     <header class="bar bar-header">
         <form action="/App/Shop/goods_kind" method="get">
-            <a href="#" class="search-head"><input type="text" name="search_key" placeholder="请输入关键词"></a>
+            <a href="#" class="search-head"><i class="iconfont icon-search pr-4"></i><input type="text" name="search_key" placeholder="请输入关键词"></a>
         </form>
     </header>
 
@@ -40,7 +40,6 @@
                     <foreach name="indexalbum" item="vo">
                         <li class="swiper-slide"><a href="{$vo.url}"> <img src="{$vo.imgurl}" alt=""></a></li>
                     </foreach>
-
                 </ul>
             </div>
         </div>
@@ -57,63 +56,6 @@
                         </a>
                     </li>
                 </volist>
-
-
-
-                <!--<li class="col-20">
-                    <a href="products.html#/bjsp" class="nav-lk"  id="lk-bjsp">
-                        <i class="nav-icon"></i>
-                        <span>保健食品</span>
-                    </a>
-                </li>
-                <li class="col-20">
-                    <a href="products.html#/dlq" class="nav-lk" id="lk-dlq">
-                        <i class="nav-icon"></i>
-                        <span>代理区</span>
-                    </a>
-                </li>
-                <li class="col-20">
-                    <a href="products.html#/mrhf" class="nav-lk" id="lk-mrhf">
-                        <i class="nav-icon"></i>
-                        <span>美容护肤</span>
-                    </a>
-                </li>
-                <li class="col-20">
-                    <a href="products.html#/rhcp" class="nav-lk" id="lk-rhcp">
-                        <i class="nav-icon"></i>
-                        <span>日化产品</span>
-                    </a>
-                </li>
-                <li class="col-20">
-                    <a href="products.html#/jsxl" class="nav-lk" id="lk-jsxl">
-                        <i class="nav-icon"></i>
-                        <span>酒水系列</span>
-                    </a>
-                </li>
-                <li class="col-20">
-                    <a href="products.html#/jkqx" class="nav-lk"  id="lk-jkqx">
-                        <i class="nav-icon"></i>
-                        <span>健康器械</span>
-                    </a>
-                </li>
-                <li class="col-20">
-                    <a href="products.html#/zcpz" class="nav-lk" id="lk-zcpz">
-                        <i class="nav-icon"></i>
-                        <span>资产配置</span>
-                    </a>
-                </li>
-                <li class="col-20">
-                    <a href="products.html#/ylmr" class="nav-lk" id="lk-ylmr">
-                        <i class="nav-icon"></i>
-                        <span>医疗美容</span>
-                    </a>
-                </li>-->
-               <!-- <li class="col-20">
-                    <a href="products.html#/qt" class="nav-lk" id="lk-qt">
-                        <i class="nav-icon"></i>
-                        <span>其他</span>
-                    </a>
-                </li>-->
             </ul>
             <!-- 公告 -->
             <div class="news-list mt-12 bor-t">
@@ -123,9 +65,6 @@
                         <volist name="notice" id="vo">
                             <li class="swiper-slide"><a href=" {$url}{:U('App/Artical/index' , array('id'=>$vo['id']))}">{$vo.title}</a></li>
                         </volist>
-
-                        <!--<li class="swiper-slide"><a href="">访问量过万啦啦！</a></li>
-                        <li class="swiper-slide"><a href="">版本更新呀呀呀呀！</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -135,36 +74,16 @@
         <div class="hotRecom-block content-block">
             <div class="row">
                 <div class="col-33 recom-wrap-left">
-                   <!-- <a class="link-wrap" style="background-image: url(__PUBLIC__/App/images/hotRecom-hsh.png)">
-                        <i class="tag">惠生活</i>
-                        <h4>克丽美容SPA</h4>
-                        <span class="type-tag">医疗美容</span>
-                    </a>-->
-                    <a href="{$main_left['url']}"><img src="{$main_left['img_url']}" ></a>
+                    <a href="{$main_left['url']}" style="background-image: url('{$main_left['img_url']}')" class="recom-lkImg"></a>
                 </div>
                 <div class="col-66 recom-wrap-right-top">
-                   <!-- <a class="link-wrap" style="background-image: url(__PUBLIC__/App/images/hotRecom-bml.png)">
-                        <i class="tag">变美丽</i>
-                        <h4>自然堂滋养系列</h4>
-                        <span class="type-tag">美容护肤</span>
-                    </a>-->
-                    <a href="{$main_right_top['url']}"><img src="{$main_right_top['img_url']}" ></a>
+                    <a href="{$main_right_top['url']}" style="background-image: url('{$main_right_top['img_url']}')" class="recom-lkImg"></a>
                 </div>
                 <div class="col-33 recom-wrap-right-bottom-left">
-                   <!-- <a class="link-wrap" style="background-image: url(__PUBLIC__/App/images/hotRecom-gpw.png)">
-                        <i class="tag">高品位</i>
-                        <h4>张裕<br>解百纳</h4>
-                        <span class="type-tag">酒水系列</span>
-                    </a>-->
-                    <a href="{$main_right_bottom_left['url']}"><img src="{$main_right_bottom_left['img_url']}" ></a>
+                    <a href="{$main_right_bottom_left['url']}" style="background-image: url('{$main_right_bottom_left['img_url']}')" class="recom-lkImg"></a>
                 </div>
                 <div class="col-33 recom-wrap-right-bottom-right">
-                   <!-- <a class="link-wrap" style="background-image: url(__PUBLIC__/App/images/hotRecom-xjk.png)">
-                        <i class="tag">享健康</i>
-                        <h4>养生堂口服液</h4>
-                        <span class="type-tag">保健食品</span>
-                    </a>-->
-                    <a href="{$main_right_bottom_right['url']}"><img src="{$main_right_bottom_right['img_url']}" ></a>
+                    <a href="{$main_right_bottom_right['url']}" style="background-image: url('{$main_right_bottom_right['img_url']}')" class="recom-lkImg"></a>
                 </div>
             </div>
         </div>
@@ -185,17 +104,6 @@
                         </a>
                     </li>
                 </volist>
-
-               <!-- <li>
-                    <a href="" class="item-content">
-                        <div class="item-media"><img src="__PUBLIC__/App/images/data2.jpg" alt=""></div>
-                        <div class="item-inner">
-                            <h4 class="t-e">自然套水润系列超值套盒</h4>
-                            <p class="mt-10 font-12 color-light t-e">超值超级礼包，8.8折</p>
-                            <p class="mt-18 price"><sub>￥</sub>1056</p>
-                        </div>
-                    </a>
-                </li>-->
             </ul>
         </div>
         <br><br>
@@ -205,15 +113,19 @@
 <script src="__PUBLIC__/App/js/swiper-3.4.2.jquery.min.js"></script>
 <script>
     $(function() {
-        new Swiper('#bannerTop', {
-            speed: 500,
-            autoplay: 3000,
-            autoplayDisableOnInteraction: false,
-            centeredSlides : true,
-            slidesPerView: 3,
-            spaceBetween : 15,
-            loop: true
-        })
+        if ($('#bannerTop .swiper-slide').length < 2) {
+            $('#bannerTop').css('width', '90%')
+        } else {
+            new Swiper('#bannerTop', {
+                speed: 500,
+                autoplay: 3000,
+                autoplayDisableOnInteraction: false,
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: 15,
+                loop: true
+            })
+        }
 
         new Swiper('#newsList', {
             direction: 'vertical',
