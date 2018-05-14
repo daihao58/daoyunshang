@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
@@ -8,27 +8,22 @@ time, mark, audio, video, input {
     padding: 0;
     border: none;
     outline: 0;
-
     font: inherit;
     vertical-align: baseline;
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: "iconfont";
-    src: url('../iconfont/iconfont.eot'); /* IE9*/
-    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */ url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../iconfont/iconfont.woff') format('woff'),
+    url('../iconfont/iconfont.ttf') format('truetype'),
+    url('../iconfont/iconfont.svg#iconfont') format('svg');
+} */
 
-.iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0px;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+
+/* html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
     -webkit-text-size-adjust: none;
 }
 
@@ -54,6 +49,10 @@ a {
 img {
     width: 100%;
     border: none;
+} */
+
+.iconfont {
+    font-size: inherit
 }
 
 .ovflw {
@@ -704,15 +703,17 @@ img {
 }
 
 .dtl-col {
+    font-size: .6rem;
     margin-bottom: 10px;
 }
 
 .dtl-col span {
+    display: inline-block;
+    line-height: 1;
     color: #636363;
     border: 1px solid #eeeeee;
     padding: 5px 15px;
-    margin-right: 10px;
-    float: left;
+    margin-right: 10px;    
 }
 
 /*.dtl_num a{display: block;line-height: 20px;padding: 2px 0;width: 10%;float: left;text-align: center;border: 1px solid #eeeeee;font-size: 22px;color: #c2c2c2;background: #fbfbfa;}
@@ -751,20 +752,15 @@ img {
 }
 
 .dtl-ft {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: 2.2rem;
     width: 100%;
-    
-    margin: 0 auto;
+    padding: 5px 0;
     border-top: 1px solid #eeeeee;
-    background: -webkit-linear-gradient(#f8f8f8, #ececec);
-    background: -moz-linear-gradient(#f8f8f8, #ececec);
-    background: -o-linear-gradient(#f8f8f8, #ececec);
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#ececec));
-    background: linear-gradient(#f8f8f8, #ececec);
+    background-color: #fff;
     opacity: 0.95;
     z-index: 100;
-    padding: 5px 0;
 }
 
 .dtl-ft a {
@@ -850,32 +846,25 @@ img {
     line-height: 18px;
 }
 
-.ads-lst {
-    padding: 0 10px;
+.ads_orinfol {
+    position: relative;
+    min-height: 2.5rem;
+    padding-right: 20%;
 }
 
 .ads_or_img {
-    width: 33%;
-    margin-right: 5px;
+    width: 4rem;
+    margin-right: .65rem
 }
 
-.ads_orinfo h3 {
+.ads_orinfol h3 {
     font-weight: normal;
-    font-size: 0.89em;
     line-height: 17px;
     height: 38px;
 }
 
-.ads_orinfo {
-    position: relative;
-}
-
-.ads_orinfol {
-    width: 78%;
-}
-
 .ads_orprice {
-    top: 10px;
+    top: .75rem;
     position: absolute;
     right: 0;
 }
@@ -893,7 +882,7 @@ img {
 }
 
 .ads-tt {
-    padding: 10px 0;
+    padding: .7rem 0 .6rem;
 }
 
 .ads_ortt3 {
@@ -1019,15 +1008,13 @@ img {
     line-height: 20px;
 }
 
-.ads-cc {
-    margin-top: 52px;
-}
-
 .ads-tabs {
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
     width: 100%;
-    background: #fbfbfb;
-    position: fixed;
-    top: 0;
+    height: 2.2rem;
+    background: #fff;
     z-index: 100;
 }
 
@@ -1037,14 +1024,18 @@ img {
     width: 25%;
     color: #7b7b7b;
     background: #fff;
-    line-height: 42px;
-    font-size: 0.8em;
+    line-height: 2.2rem;
+    font-size: 0.65rem;
 }
 
-.ads-tabs a span.active {
+.ads-tabs span.active {
     color: #26b1fe;
     border-bottom: 2px solid #26b1fe;
-    padding: 12px 20px;
+    padding: 11px 20px;
+}
+
+.ads-tabs + .content {
+    top: 4.4rem;
 }
 
 /** 个人中心  **/
@@ -1052,8 +1043,7 @@ img {
     width: 100%;
     height: auto;
     padding: 10px 0 10px 0;
-
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .home-tx {
@@ -1069,7 +1059,7 @@ img {
     position: relative;
     line-height: 21px;
     padding: 7px 20px 5px 10px;
-    font-size: 1.05em;
+    font-size: 1.05rem;
 }
 
 .home-info p {
@@ -1084,7 +1074,7 @@ img {
 .home-jf {
     line-height: 20px;
     background: #f84a7b;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     padding: 1px 4px;
     border-radius: 4px;
 }
@@ -1096,7 +1086,7 @@ img {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 45px;
     margin-top: 7px;
-    font-size: 0.6em;
+    font-size: 0.6rem;
     border: 1px solid #5dd0ff;
     position: relative;
 }
@@ -1113,7 +1103,7 @@ img {
 }
 
 .home-yq i {
-    font-size: 2em !important;
+    font-size: 2rem !important;
     color: #c0ff00;
     line-height: 45px;
 }
@@ -1129,7 +1119,7 @@ img {
 }
 
 .icon {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     color: #FFFFFF;
     padding: 4px;
     border-radius: 3px;
@@ -1173,25 +1163,27 @@ img {
 
 .home-tt {
     line-height: 28px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+}
+
+.home-cz, .home-rz{
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    margin-left: 4px;
+    font-size: .65rem;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
 }
 
 .home-cz {
     background: #26b1fe;
-    color: #FFFFFF;
-    line-height: 28px;
-    padding: 6px 12px;
-    border-radius: 3px;
-    margin-right: 3px;
 }
 
 .home-rz {
-    background: red;
-    color: #FFFFFF;
-    line-height: 20px;
-    padding: 6px 12px;
-    border-radius: 3px;
-    margin-right: 3px;
+    background: #f7194d;
 }
 
 
@@ -1206,7 +1198,7 @@ img {
 
 .icon-r {
     line-height: 28px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: #535353;
 }
 
@@ -1232,7 +1224,7 @@ img {
     line-height: 15px;
     margin-top: 6px;
     color: #fff;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     text-align: center;
     font-weight: normal;
     float: left;
@@ -1244,7 +1236,7 @@ img {
     padding: 5px 0;
 }
 
-.home-item a {
+.home-itrem a {
     color: #ffffff;
     display: block;
 }
@@ -1258,11 +1250,11 @@ img {
 }
 
 .home-item span {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .home-item p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 .insert4 {
@@ -1289,17 +1281,17 @@ img {
 .ads-h3 {
     color: #343434;
     line-height: 28px;
-    font-size: 1.05em;
+    font-size: 1.05rem;
 }
 
 .ads-p {
     color: #666666;
     line-height: 18px;
-    font-size: 0.85em;
+    font-size: 0.85rem;
 }
 
 .achos-icon {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 50px;
     display: none;
 }
@@ -1343,7 +1335,7 @@ img {
 }
 
 .odrd_cc p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     line-height: 25px;
 }
 
@@ -1397,7 +1389,7 @@ img {
 /** 修改资料 **/
 .add-hd {
     line-height: 20px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     padding: 12px 10px;
 }
 
@@ -1418,9 +1410,18 @@ img {
 }
 
 /** 购物车 **/
+.page-basket .content {
+    bottom: 4.4rem;
+}
+
 .bsk-hd {
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    width: 100%;
+    height: 2.2rem;
     padding: 15px 10px;
-    font-size: 0.9em;
+    background-color: #fff;
 }
 
 .bak-sum {
@@ -1454,28 +1455,22 @@ img {
 }
 
 .bsk-del i {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     line-height: 56px;
 }
 
 .bsk-img {
     width: 28%;
-    margin-right: 5px;
-}
-
-.bsk-tt {
-    font-size: 0.85em;
-    line-height: 18px;
+    margin-right: 12px;
 }
 
 .bsk-sx {
-    font-size: 0.8em;
     color: #C1C1C1;
     line-height: 18px;
 }
 
 .bsk-prc {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     line-height: 18px;
 }
 
@@ -1869,4 +1864,10 @@ img {
 .indexiconsoff {
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.page-basket .quant-select {
+    position: absolute;
+    bottom: .6rem;
+    right: 0
 }
