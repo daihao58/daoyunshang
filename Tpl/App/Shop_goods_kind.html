@@ -104,7 +104,7 @@
 
 				<volist name="goods_list" id="vo">
 					<li class="col-50 mt-12">
-						<a href="{:U('App/Shop/goods',array('sid'=>0,'id'=>$vo['id'],'ppid'=>$_SESSION['WAP']['vipid']))}" class="link-wrap">
+						<a href="{:U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vo['id'],'ppid'=>$_SESSION['WAP']['vipid']))}" class="link-wrap">
 							<div class="prod-img">
 								<img src="{$vo.imgurl}" alt="" width="125px" height="110px">
 							</div>

@@ -389,6 +389,8 @@ class ShopController extends BaseController
 		$vip = session("WAP");
 		$vip = $vip['vip'];
 
+
+
         //回头恢复
 		/*$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxc987766182edaaaf&secret=43f2122c03de556f4b3f837f3d13b2a3";
 		$result_str = file_get_contents($url);
@@ -520,6 +522,8 @@ class ShopController extends BaseController
         $this->assign('loginback', $loginback);
         $this->assign('lasturl', $backurl);
         $this->assign('shopid', session("shop_id"));
+        $cid=$_GET['cid'];
+        $this->assign('cid',$cid);
         $this->display();
     }
 
@@ -696,6 +700,10 @@ class ShopController extends BaseController
         $this->assign('totalprice', $totalprice);
         $this->assign('totalprice_bate', $totalprice_bate);
         $this->assign('totalnum', $totalnum);
+
+        $moren_tb='gouwuche';
+        $this->assign('moren_tb', $moren_tb);
+
         $this->display();
     }
 

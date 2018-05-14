@@ -190,16 +190,16 @@
 	<div class="page page-prodDetails">
 		<!-- 标题栏 -->
 		<header class="bar bar-header">
-			<a href="#" class="iconfont icon-back bar-btn pull-left"></a>
-			<h1 class="title">礼亲堂那曲冬虫夏草礼亲堂那曲冬虫夏草</h1>
-			<a href="#" class="iconfont icon-home-head bar-btn pull-right"></a>
+			<a href="{:U('App/Shop/goods_kind',array('shopid'=>$shopid,'cid'=>$cid))}" class="iconfont icon-back bar-btn pull-left"></a>
+			<h1 class="title">{$cache.name}</h1>
+			<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="iconfont icon-home-head bar-btn pull-right"></a>
 		</header>
 
 		<!-- 工具栏 -->
 		<nav class="bar bar-nav">
-			<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="nav-item">
+			<a href="#" class="nav-item" id="shoucang">
 				<span class="iconfont icon-follow"></span>
-				<span class="tab-label" id="shoucang">收藏</span>
+				<span class="tab-label" >收藏</span>
 			</a>
 			<a href="{:U('App/Shop/basket/',array('sid'=>0,'lasturl'=>$lasturl))}" id="basket" class="nav-item">
 				<span class="iconfont icon-cart"></span>
