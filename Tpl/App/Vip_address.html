@@ -23,51 +23,60 @@
     <link rel="stylesheet" href="__PUBLIC__/App/css/layout.css" />
     <link rel="stylesheet" href="__PUBLIC__/App/css/style2.css" />
     <script type="text/javascript" src="__PUBLIC__/App/js/zepto.min.js"></script>
+    <style>
+        .list-block .button {
+            padding: 0 .8rem;
+            height: 1.6rem;
+            line-height: 1.6rem;
+            font-size: .65rem;
+        }
+    </style>
 </head>
 
-<body class="back1">
-    <div class="ovflw back2">
-        <ul class="achos-ul ovflw">
-            <volist name="data" id="vo">
-                <li class="ovflw border-b1">
-                    <a href="{:U('App/Vip/addressSet',array('id'=>$vo['id']))}" class="ovflw vipaddress" data-id="{$vo.id}">
-                        <h3 class="ads-h3">{$vo.name}&nbsp;&nbsp;{$vo.mobile}<span style="float:right;border:1px solid red;color:white;border-radius:3px;background-color:red;padding: 2px 15px;margin:0 5px;"><i class="iconfont">&#xe645</i>选择</span></h3>
-                        <p class="ads-p">{$vo.address}</p>
-                    </a>
-                </li>
-            </volist>
-        </ul>
-    </div>
-    <div class="insert1"></div>
-    <div class="dtl-ft ovflw">
-        <div class=" fl dtl-icon dtl-bck ovflw">
-            <a onclick="javscript: window.history.go(-1)" id="addressback">
-                <i class="iconfont">&#xe679</i>
-            </a>
+<body>
+    <div class="page">
+        <footer class="bar bar-footer">
+            <a href="{:U('App/Vip/addressSet')}" class="nav-button font-16">新增联系人</a>
+        </footer>
+        <div class="content">
+            <ul class="list-block mt-0">
+                <volist name="data" id="vo">
+                    <li>
+                        <a href="{:U('App/Vip/addressSet',array('id'=>$vo['id']))}" class="vipaddress item-content" data-id="{$vo.id}">
+                            <div>
+                                <h3>{$vo.name}&nbsp;&nbsp;&nbsp;&nbsp;{$vo.mobile}</h3>
+                                <p class="color-light font-12 mt-10">{$vo.address}</p>
+                            </div>
+                            <div>
+                                <span class="button">选择</span>
+                            </div>
+                        </a>
+                    </li>
+                </volist>
+            </ul>
         </div>
-        <a href="{:U('App/Vip/addressSet')}" class="fr ads-btn fonts9 back3">新增联系人</a>
     </div>
     <script type="text/javascript">
-    //拦截选择地址
-    var vipaddress = $('.vipaddress');
-    var addressback = $('#addressback');
-    var orderurl = "{$_SESSION['WAP']['orderURL']}";
-    $(vipaddress).on('click', function() {
-        var id = $(this).data('id');
-        if (orderurl) {
-            var tourl = orderurl + '/vipadd/' + id;
-            window.location.href = tourl;
-            return false;
-        }
-    });
-    //拦截地址返回
-    $(addressback).on('click', function() {
-        if (orderurl) {
-            var tourl = orderurl;
-            window.location.href = tourl;
-            return false;
-        }
-    });
+        //拦截选择地址
+        var vipaddress = $('.vipaddress');
+        var addressback = $('#addressback');
+        var orderurl = "{$_SESSION['WAP']['orderURL']}";
+        $(vipaddress).on('click', function () {
+            var id = $(this).data('id');
+            if (orderurl) {
+                var tourl = orderurl + '/vipadd/' + id;
+                window.location.href = tourl;
+                return false;
+            }
+        });
+        //拦截地址返回
+        $(addressback).on('click', function () {
+            if (orderurl) {
+                var tourl = orderurl;
+                window.location.href = tourl;
+                return false;
+            }
+        });
     </script>
     <!--通用分享-->
     <include file="./Tpl/App/Shop_share.html" />

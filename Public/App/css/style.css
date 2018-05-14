@@ -248,7 +248,6 @@
 /* 热门推荐 */
 .hotRecom-block .row {
 	height: 11.5rem;
-	overflow-y: auto
 }
 
 .hotRecom-block .row {
@@ -574,6 +573,10 @@
 /* =========== 会员中心 =========== */
 .page-user {
 	background-color: #fff
+}
+
+.page-user .content {
+	overflow: hidden;
 }
 
 .page-user .user-block {

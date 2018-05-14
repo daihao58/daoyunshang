@@ -50,11 +50,6 @@ img {
     width: 100%;
     border: none;
 } */
-
-.iconfont {
-    font-size: inherit
-}
-
 .ovflw {
     overflow: hidden;
 }
@@ -939,10 +934,10 @@ img {
     border-bottom: 1px dashed #e8e6dd;
 }
 
-.ads_pay span {
+/* .ads_pay span {
     font-size: 1.6em;
     color: #cfcfcf;
-}
+} */
 
 .ads_pay_p1 {
     color: #382003;
