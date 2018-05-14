@@ -1122,7 +1122,7 @@ class ShopController extends BaseController
         } else {
             //非提交状态
             $sid = $_GET['sid'] <> '' ? $_GET['sid'] : $this->diemsg(0, '缺少SID参数');//sid可以为0
-            $lasturl = $_GET['lasturl'] ? $_GET['lasturl'] : $this->diemsg(0, '缺少LastURL参数');
+            $lasturl = $_GET['lasturl'] ? $_GET['lasturl'] : '';
             $basketlasturl = base64_decode($lasturl);
             $basketurl = U('App/Shop/basket', array('sid' => $sid, 'lasturl' => $lasturl));
             $backurl = base64_encode($basketurl);
