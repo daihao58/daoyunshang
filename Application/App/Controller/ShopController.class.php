@@ -1521,11 +1521,26 @@ class ShopController extends BaseController
         }
     }
 
+    //自动收货
+    public function auto_receipt(){
+
+        $map['_string'] = 'paytime<unix_timestamp(DATE_ADD(now(),INTERVAL -5 day))';
+        $map['status']=3;
+
+        $data=M('Shop_order')->where($map)->select();
+        //var_dump($data);die;
+        foreach($data as $k =>$v){
+            $this->orderOK(0,$v['id']);
+        }
+    }
+
+
     //确认收货
-    public function orderOK()
+    public function orderOK($sid,$orderid)
     {
-        $sid = I('sid') <> '' ? I('sid') : $this->diemsg(0, '缺少SID参数');//sid可以为0
-        $orderid = I('orderid') <> '' ? I('orderid') : $this->diemsg(0, '缺少ORDERID参数');
+        $sid = I('sid') <> '' ? I('sid') : $sid;//sid可以为0
+        $orderid = I('orderid') <> '' ? I('orderid') : $orderid;
+        //var_dump($orderid);die;
         $bkurl = U('App/Shop/orderDetail', array('sid' => $sid, 'orderid' => $orderid));
         $backurl = base64_encode($bkurl);
         $loginurl = U('App/Vip/login', array('backurl' => $backurl));
