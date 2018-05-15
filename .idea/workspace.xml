@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc3faad-8f38-41d9-97b0-66c37fe1df3c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/App/00b22b9dd15f2cc7f3a1d890cd5f5bcb.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/App/00b22b9dd15f2cc7f3a1d890cd5f5bcb.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/App/Controller/ShopController.class.php" afterPath="$PROJECT_DIR$/Application/App/Controller/ShopController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/App/53ff55a9284988d205aff13e5a85d20c.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/App/53ff55a9284988d205aff13e5a85d20c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/App/a18ac47877ff27f7f441cda9c1d7167a.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/App/a18ac47877ff27f7f441cda9c1d7167a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/App/aabee5edc8dc1b5904121c87020327f0.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/App/aabee5edc8dc1b5904121c87020327f0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/App/b058f95e029955b88f37bcbf0777137a.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/App/b058f95e029955b88f37bcbf0777137a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Multi/025033060675e1926e3f44071a54fff0.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Multi/025033060675e1926e3f44071a54fff0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/App/Artical_index.html" afterPath="$PROJECT_DIR$/Tpl/App/Artical_index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/App/Shop_goods.html" afterPath="$PROJECT_DIR$/Tpl/App/Shop_goods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/App/Shop_orderDetail.html" afterPath="$PROJECT_DIR$/Tpl/App/Shop_orderDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/App/Vip_index.html" afterPath="$PROJECT_DIR$/Tpl/App/Vip_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/Multi/Public_login.html" afterPath="$PROJECT_DIR$/Tpl/Multi/Public_login.html" />
     </list>
     <ignored path="daoyunshang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,53 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Shop_goods.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shop_goods.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tpl/App/Shop_goods.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8461537">
-              <caret line="191" column="8" selection-start-line="191" selection-start-column="8" selection-end-line="195" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.33633092">
+              <caret line="360" column="42" selection-start-line="360" selection-start-column="42" selection-end-line="360" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shop_orderDetail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tpl/App/Shop_orderDetail.html">
+      <file leaf-file-name="ShopController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/App/Controller/ShopController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.192307">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Artical_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tpl/App/Artical_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
-              <folding>
-                <marker date="1526362000715" expanded="true" signature="1000:1073" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Public_login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tpl/Multi/Public_login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21402878">
-              <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vip_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tpl/App/Vip_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="40" column="59" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="59" />
+            <state vertical-scroll-proportion="-5.857143">
+              <caret line="395" column="31" selection-start-line="395" selection-start-column="27" selection-end-line="395" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -103,7 +62,6 @@
         <option value="$PROJECT_DIR$/Tpl/App/Shop_footer.html" />
         <option value="$PROJECT_DIR$/Tpl/App/Vip_collection.html" />
         <option value="$PROJECT_DIR$/Tpl/App/Shop_auto_receipt.html" />
-        <option value="$PROJECT_DIR$/Application/App/Controller/ShopController.class.php" />
         <option value="$PROJECT_DIR$/Tpl/App/Vip_addressSet.html" />
         <option value="$PROJECT_DIR$/Tpl/App/Vip_address.html" />
         <option value="$PROJECT_DIR$/Public/App/gmu/app-basegmu.js" />
@@ -111,11 +69,12 @@
         <option value="$PROJECT_DIR$/Tpl/App/Shop_orderMake.html" />
         <option value="$PROJECT_DIR$/Application/App/Controller/VipController.class.php" />
         <option value="$PROJECT_DIR$/Tpl/App/Vip_agency.html" />
-        <option value="$PROJECT_DIR$/Tpl/App/Shop_goods.html" />
         <option value="$PROJECT_DIR$/Tpl/App/Shop_orderDetail.html" />
         <option value="$PROJECT_DIR$/Tpl/App/Artical_index.html" />
         <option value="$PROJECT_DIR$/Tpl/App/Vip_index.html" />
         <option value="$PROJECT_DIR$/Tpl/Multi/Public_login.html" />
+        <option value="$PROJECT_DIR$/Application/App/Controller/ShopController.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/App/Shop_goods.html" />
       </list>
     </option>
   </component>
@@ -497,6 +456,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33269963">
           <caret line="1143" column="21" selection-start-line="1143" selection-start-column="20" selection-end-line="1143" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -511,14 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/App/Controller/ShopController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30755395">
-          <caret line="1680" column="21" selection-start-line="1680" selection-start-column="21" selection-end-line="1680" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -648,26 +600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/App/Shop_goods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8461537">
-          <caret line="191" column="8" selection-start-line="191" selection-start-column="8" selection-end-line="195" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/App/Shop_orderDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.192307">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/App/Vip_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -692,8 +628,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/Multi/Public_login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21402878">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.27517986">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/App/Vip_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33269963">
+          <caret line="40" column="59" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/App/Controller/ShopController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.857143">
+          <caret line="395" column="31" selection-start-line="395" selection-start-column="27" selection-end-line="395" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/App/Shop_goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33633092">
+          <caret line="360" column="42" selection-start-line="360" selection-start-column="42" selection-end-line="360" selection-end-column="42" />
           <folding />
         </state>
       </provider>

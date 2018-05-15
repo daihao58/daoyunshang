@@ -197,7 +197,7 @@
 
 		<!-- 工具栏 -->
 		<nav class="bar bar-nav">
-			<a href="#" class="nav-item cur" id="shoucang">
+			<a href="#" class="nav-item <?php if($sfsc == 1): ?>cur<?php else: endif; ?>" id="shoucang">
 				<span class="iconfont icon-follow"></span>
 				<span class="tab-label" >收藏</span>
 			</a>
@@ -331,6 +331,11 @@
 	<!--收藏-->
 	<script type="text/javascript">
 		$("#shoucang").on('click', function () {
+			if($("#shoucang").hasClass("cur")){
+				$("#shoucang").removeClass('cur');
+			}else{
+				$("#shoucang").addClass('cur');
+			}
 			var goodsid = "<?php echo ($cache["id"]); ?>";
 			$.ajax({
 				type: "post",

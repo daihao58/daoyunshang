@@ -19,6 +19,7 @@
 		<meta content="telephone=no" name="format-detection" />
 		<!--不识别电话-->
 		<meta content="email=no" name="format-detection" />
+		<link rel="stylesheet" href="/Public/App/css/layout.css" />
 		<link rel="stylesheet" href="/Public/App/css/style2.css" />
 		<script type="text/javascript" src="/Public/App/js/zepto.min.js"></script>
 	</head>

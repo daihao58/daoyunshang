@@ -389,7 +389,12 @@ class ShopController extends BaseController
 		$vip = session("WAP");
 		$vip = $vip['vip'];
 
-
+        $map_shoucang['good_id']=$_GET['id'];
+        $map_shoucang['uid']=$vip['id'];
+        $sc_res=M('Collection')->where($map_shoucang)->select();
+        if($sc_res){
+            $this->assign('sfsc',1);
+        }
 
         //回头恢复
 		/*$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxc987766182edaaaf&secret=43f2122c03de556f4b3f837f3d13b2a3";
