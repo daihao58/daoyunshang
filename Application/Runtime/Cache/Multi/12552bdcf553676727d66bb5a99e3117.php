@@ -56,9 +56,10 @@
                 <!-- Navbar Barnd -->
                 <div class="navbar-header pull-left" style="text-align:center;margin-left: 10px; padding-top: 10px;">
                     <a href="javascript:void(0)" class="navbar-brand">
+                        <img src="/Public/App/images/logo2.png" width="60px" height="30px">
                         <small>
                         <!--<?php echo ($_SESSION["CMS"]["set"]["name"]); ?>-->
-                        WeMall分销管理
+                        东方道合
                         </small>
                     </a>
                 </div>

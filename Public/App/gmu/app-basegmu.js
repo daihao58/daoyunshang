@@ -52,7 +52,7 @@ function App_gmuMsg2(content,ok){
 function App_gmuMsg(content,ok){
 	var times=2;//倒计时秒数
 	var intval;
-	var content1=content+" ("+(times)+")";
+	var content1=content;
 	var opts={
 		content:content1,
 		closeBtn:false,
@@ -73,7 +73,7 @@ function App_gmuMsg(content,ok){
 			setTimeout(okfun,1);
 			alt.destroy();
 		} else {
-			$('#ui-dialog-content').text(content+" ("+(times-1)+")");
+			$('#ui-dialog-content').text(content);
 			times--;
 		}
 	}
