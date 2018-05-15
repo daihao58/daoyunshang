@@ -277,11 +277,11 @@
                                 <i class="menu-expand"></i>
                             </a>
                             <ul class="submenu">
-								<li>
+								<!--<li>
                                     <a href="<?php echo U('Multi/Wx/qrcodeBgEmpSet');?>" data-loader="App-loader" data-loadername="员工二维码背景设置">
                                         <span class="menu-text">员工二维码</span>
                                     </a>
-                                </li>
+                                </li>-->
                                 <li>
                                     <a href="<?php echo U('Multi/Employee/employeeList');?>" data-loader="App-loader" data-loadername="员工列表">
                                         <span class="menu-text">员工列表</span>
