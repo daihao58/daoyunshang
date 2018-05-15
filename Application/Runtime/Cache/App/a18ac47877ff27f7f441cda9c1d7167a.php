@@ -64,7 +64,7 @@
                 <p class="user-name"><?php echo ($data["nickname"]); ?></p>
                 <p class="user-level mt-12"><i class="iconfont icon-vip1"></i><span><?php echo ($data["fxname"]); ?></span></p>
             </div>
-            <a href="" class="iconfont icon-right"></a>
+            <!--<a href="" class="iconfont icon-right"></a>-->
         </div>
 
         <!-- 主要功能 -->
@@ -102,10 +102,14 @@
         <!-- 收藏 -->
         <div class="list-block media-list mt-20 borTop-0">
             <ul>
+                <a href="/App/Vip/bill/type/3">
                 <li class="item-content">
-                    <div class="item-media"><i class="iconfont icon-money" style="color: #ff4178"></i></div>
-                    <div class="item-title">现金币<span class="pull-right"><?php echo ($data["money"]); ?></span></div>
+
+                        <div class="item-media"><i class="iconfont icon-money" style="color: #ff4178"></i></div>
+                        <div class="item-title">现金币<span class="pull-right"><?php echo ($data["money"]); ?></span></div>
+
                 </li>
+                </a>
                 <li>
                     <a href="/App/Vip/bill/type/1" class="item-content">
                         <div class="item-media"><i class="iconfont icon-bill" style="color: #0fe4ff"></i></div>

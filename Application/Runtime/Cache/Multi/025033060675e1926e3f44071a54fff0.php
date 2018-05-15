@@ -57,11 +57,11 @@
                     </div> -->
                 </div>
                 <!-- /.col -->
-                <div class="col-xs-4">
+                <div class="col-xs-12">
                     <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
                 </div>
                 
-                <div style="color:red;margin-left: 16px;">
+               <!-- <div style="color:red;margin-left: 16px;">
                     超管后台地址：(体验账号/密码：admin/admin)
                     <a href="http://demo.wemallshop.com/wfx3/Admin/Public/login" class="text-center">
                         http://demo.wemallshop.com/wfx3/Admin
@@ -80,23 +80,23 @@
                     </a><br/>
                 </div>
                 <hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
-                <div style="color:red;margin-left: 16px;">客服 Q Q：2034210985</div>
+                <div style="color:red;margin-left: 16px;">客服 Q Q：2034210985</div>-->
                 <!-- /.col -->
             </div>
         </form>
         <!--<hr/>-->
-        <a href="<?php echo U('Multi/Login/register');?>" class="text-center">开始注册</a><br/>
-        <a href="<?php echo U('Multi/Login/forgetPassword');?>" class="text-center">忘记密码?</a>
+       <!-- <a href="<?php echo U('Multi/Login/register');?>" class="text-center">开始注册</a><br/>
+        <a href="<?php echo U('Multi/Login/forgetPassword');?>" class="text-center">忘记密码?</a>-->
 
         <!-- /.social-auth-links -->
     </div>
     <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
-<div class="common_footer">Powered by wemallshop | Copyright © <a href="http://www.wemallshop.com/"
+<!--<div class="common_footer">Powered by wemallshop | Copyright © <a href="http://www.wemallshop.com/"
                                                               target="_blank">www.wemallshop.com</a>
     All rights reserved.
-</div>
+</div>-->
 
 <!-- jQuery 2.1.4 -->
 <script src="/Public/login/plugins/jQuery/jQuery-2.1.4.min.js"></script>

@@ -101,7 +101,7 @@
 			<ul class="row">
 
 				<?php if(is_array($goods_list)): $i = 0; $__LIST__ = $goods_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="col-50 mt-12">
-						<a href="<?php echo U('App/Shop/goods',array('sid'=>0,'id'=>$vo['id'],'ppid'=>$_SESSION['WAP']['vipid']));?>" class="link-wrap">
+						<a href="<?php echo U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vo['id'],'ppid'=>$_SESSION['WAP']['vipid']));?>" class="link-wrap">
 							<div class="prod-img">
 								<img src="<?php echo ($vo["imgurl"]); ?>" alt="" width="125px" height="110px">
 							</div>
