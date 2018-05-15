@@ -26,42 +26,33 @@
     </header>
 
     <!-- 工具栏 -->
-    		<div class="insert1"></div>
-		<div class="ui-nav">
-			<!--<ul class="ui-navul ovflw">
-				<li><a href="<?php echo U('App/Shop/index',array('shopid'=>$shopid));?>" id="fthome"><span class="iconfont">&#xe6b8</span><p class="ui-navtt">首页</p></a></li>
-				<li><a href="<?php echo U('App/Shop/orderList',array('sid'=>0));?>" id="ftorder"><span class="iconfont">&#xe699</span><p class="ui-navtt">订单</p></a></li>
-				&lt;!&ndash; <li><a href="<?php echo U('App/Shop/basket',array('sid'=>0,'lasturl'=>$footlasturl));?>" id="ftbasket"><span class="iconfont">&#xe6af</span><p class="ui-navtt">购物车</p></a></li>&ndash;&gt;
-				<li><a href="tel:<?php echo ($service_tel); ?>" id="ftorder"><span class="iconfont">&#xe6ff</span><p class="ui-navtt">客服</p></a></li>
-				<li><a href="<?php echo U('App/Vip/index');?>" id="ftvip"><span class="iconfont">&#xe686</span><p class="ui-navtt">个人中心</p></a></li>
-			</ul>-->
-			<nav class="bar bar-nav">
-				<a href="/App/Shop/index" class="nav-item <?php if($moren_tb == "shouye" ): ?>cur<?php else: endif; ?> ">
-					<i class="iconfont icon-home-s"></i>
-					<span class="tab-label">首页</span>
-				</a>
-				<a href="/App/Shop/orderList/sid/0" class="nav-item <?php if($moren_tb == "dingdan" ): ?>cur<?php else: endif; ?> ">
-					<i class="iconfont icon-order"></i>
-					<span class="tab-label">订单</span>
-				</a>
-				<a href="<?php echo U('App/Shop/basket/',array('sid'=>0,'lasturl'=>$lasturl));?>" class="nav-item">
-					<i class="iconfont icon-cart"></i>
-					<span class="tab-label">购物车</span>
-				</a>
-				<a href="tel:<?php echo ($_SESSION['SHOP']['set']['phone']); ?>" class="nav-item">
-					<i class="iconfont icon-online"></i>
-					<span class="tab-label">客服</span>
-				</a>
-				<a href="/App/Vip/index" class="nav-item <?php if($moren_tb == "wode" ): ?>cur<?php else: endif; ?> ">
-					<i class="iconfont icon-user"></i>
-					<span class="tab-label">我的</span>
-				</a>
-			</nav>
-		</div>
-		<script type="text/javascript">
-			 var actname="<?php echo ($actname); ?>";
-			 $('#'+actname).css('color','#19a5f3');
-		</script>
+    
+		
+<nav class="bar bar-nav">
+	<a href="/App/Shop/index" class="nav-item <?php if($moren_tb == "shouye" ): ?>cur<?php else: endif; ?>">
+		<i class="iconfont <?php if($moren_tb == "shouye" ): ?>icon-home-s<?php else: ?>icon-home<?php endif; ?>"></i>
+		<span class="tab-label">首页</span>
+	</a>
+	<a href="/App/Shop/orderList/sid/0" class="nav-item <?php if($moren_tb == "dingdan" ): ?>cur<?php else: endif; ?>">
+		<i class="iconfont <?php if($moren_tb == "dingdan" ): ?>icon-order-s<?php else: ?>icon-order<?php endif; ?>"></i>
+		<span class="tab-label">订单</span>
+	</a>
+	<a href="<?php echo U('App/Shop/basket/',array('sid'=>0,'lasturl'=>$lasturl));?>" class="nav-item <?php if($moren_tb == "gouwuche" ): ?>cur<?php else: endif; ?>">
+		<i class="iconfont <?php if($moren_tb == "gouwuche" ): ?>icon-cart-s<?php else: ?>icon-cart<?php endif; ?>"></i>
+		<span class="tab-label">购物车</span>
+	</a>
+	<a href="tel:<?php echo ($_SESSION['SHOP']['set']['phone']); ?>" class="nav-item">
+		<i class="iconfont icon-online"></i>
+		<span class="tab-label">客服</span>
+	</a>
+	<a href="/App/Vip/index" class="nav-item <?php if($moren_tb == "wode" ): ?>cur<?php else: endif; ?>">
+		<i class="iconfont <?php if($moren_tb == "wode" ): ?>icon-user-s<?php else: ?>icon-user<?php endif; ?>"></i>
+		<span class="tab-label">我的</span>
+	</a>
+</nav>
+		
+
+
 
     <!--内容区-->
     <div class="content">
@@ -83,10 +74,10 @@
                     <i class="m-nav-icon"></i>
                     <p class="font-12">推荐码</p>
                 </li>
-                <li class="col-25 nav-jf">
-                    <p class="font-12">89ktrt</p>
+                <li class="col-25">
+                    <p class="font-12 mt-14">89ktrt</p>
                 </li>
-             <!--   <li class="col-25 nav-tyg">
+                <!--<li class="col-25 nav-tyg">
                     <a href="">
                         <i class="m-nav-icon"></i>
                         <p class="font-12">体验馆</p>
@@ -96,10 +87,10 @@
                     <i class="m-nav-icon"></i>
                     <p class="font-12">积分</p>
                 </li>
-                <li class="col-25 nav-jf">
-                    <p class="font-12"><?php echo ($data["score"]); ?></p>
+                <li class="col-25">
+                    <p class="font-12 mt-14"><?php echo ($data["score"]); ?></p>
                 </li>
-              <!--  <li class="col-25 nav-xjb">
+                <!--<li class="col-25 nav-xjb">
                     <a href="">
                         <i class="m-nav-icon"></i>
                         <p class="font-12">现金币</p>
@@ -111,61 +102,44 @@
         <!-- 收藏 -->
         <div class="list-block media-list mt-20 borTop-0">
             <ul>
-                <li>
-                    <a href="#" class="item-content">
-                        <div class="item-media"><i class="iconfont icon-bill" style="color: #ff4178"></i></div>
-                        <div class="item-title">现金币</div>
-                        <span style="display: inline-block; float: right"><?php echo ($data["money"]); ?></span>
-                    </a>
+                <li class="item-content">
+                    <div class="item-media"><i class="iconfont icon-money" style="color: #ff4178"></i></div>
+                    <div class="item-title">现金币<span class="pull-right"><?php echo ($data["money"]); ?></span></div>
                 </li>
-              <!--  <li>
-                    <a href="#" class="item-content">
-                        <div class="item-media"><i class="iconfont icon-bill" style="color: #ff4178"></i></div>
-                        <div class="item-title">体验馆</div>
-                        <span><?php echo ($data["experience_hall"]); ?></span>
-                    </a>
-                </li>-->
                 <li>
                     <a href="/App/Vip/bill/type/1" class="item-content">
-                        <div class="item-media"><i class="iconfont icon-bill" style="color: #ff4178"></i></div>
-                        <div class="item-title">账单查询</div>
-                        <i class="more-link"></i>
+                        <div class="item-media"><i class="iconfont icon-bill" style="color: #0fe4ff"></i></div>
+                        <div class="item-title">账单查询<i class="more-link pull-right"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="/App/Vip/collection" class="item-content">
-                        <div class="item-media"><i class="iconfont icon-addr" style="color: #10b8ff"></i></div>
-                        <div class="item-title">我的收藏</div>
-                        <i class="more-link"></i>
+                        <div class="item-media"><i class="iconfont icon-follow" style="color: #ffcb00"></i></div>
+                        <div class="item-title">我的收藏<i class="more-link pull-right"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="/App/Vip/address" class="item-content">
                         <div class="item-media"><i class="iconfont icon-addr" style="color: #10b8ff"></i></div>
-                        <div class="item-title">收货地址</div>
-                        <i class="more-link"></i>
+                        <div class="item-title">收货地址<i class="more-link pull-right"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="/App/Vip/feedback" class="item-content">
-                        <div class="item-media"><i class="iconfont icon-addr" style="color: #10b8ff"></i></div>
-                        <div class="item-title">客户服务</div>
-                        <i class="more-link"></i>
+                        <div class="item-media"><i class="iconfont icon-kefu" style="color: #ff8c44"></i></div>
+                        <div class="item-title">客户服务<i class="more-link pull-right"></i></div>
                     </a>
                 </li>
                 <?php if($data['experience_hall'] == 1): ?><li>
                         <a href="/App/Vip/agency" class="item-content">
-                            <div class="item-media"><i class="iconfont icon-agency" style="color: #ff8c44"></i></div>
-                            <div class="item-title">代理挂靠</div>
-                            <i class="more-link"></i>
+                            <div class="item-media"><i class="iconfont icon-agency" style="color: #37c25e"></i></div>
+                            <div class="item-title">代理挂靠<i class="more-link pull-right"></i></div>
                         </a>
                     </li>
                     <?php else: endif; ?>
-
             </ul>
         </div>
     </div>
 </div>
-<script type="text/javascript">
-</script>
 </body>
+</html>

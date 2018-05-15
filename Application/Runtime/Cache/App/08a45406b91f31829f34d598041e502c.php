@@ -31,6 +31,7 @@
 
     <!-- content -->
     <section class="content">
+
         <ul class="list-block mt-0 borTop-0">
             <li class="item-content">
                 <div class="item-title label">姓名</div>
@@ -40,20 +41,55 @@
                 <div class="item-title label">手机号</div>
                 <input type="text" value="" name="amobile" placeholder="请填写手机" class="item-input t-r">
             </li>
+            <li class="item-content">
+                <div class="item-title label">附件</div>
+                <form id="uploadform" enctype="multipart/form-data" method="post" >
+                <input type="file" value="" id="file" name="file" class="item-input t-r">
+                </form>
+            </li>
+            <input type="hidden" id="savename" value="">
+            <input type="hidden" id="savepath" value="">
    <!--         <li>
                 <textarea placeholder="请填写详细信息" rows="4"></textarea>
             </li>-->
         </ul>
+
         <!-- 提交 -->
         <div class="plr-14 ptb-30"><button class="button button-big sub">提交</button></div>
     </section>
 </div>
 
 <script>
+    $('input[type="file"]').on('change',doupload);
+    function doupload(){
+        var file = this.files[0];
+        var formData= new FormData($("#uploadform")[0]);
+        $.ajax({
+            url:"<?php echo U('App/Vip/agency_img_ajax');?>",
+            type:'post',
+            data:formData,
+            dataType: "json",
+            async: false,
+            cache:false,
+            contentType: false,
+            processData: false,
+            success: function(data){
+                $('#savename').val(data['file']['savename']);
+                $('#savepath').val(data['file']['savepath']);
+              // console.log(data);
+            },
+            /*   error:function (e) {
+             layer.msg('服务器出错啦,请稍后再试');
+             }*/
+        })
+    }
+
     $(".sub").click(function(){
         var aname = $("[name='aname']").val();
         var amobile = $("[name='amobile']").val();
-
+        var savename = $('#savename').val();
+        var savepath = $('#savepath').val();
+        //alert(savepath);die;
         if(aname==''){
             zbb_msg('请输入姓名');
         }else if(amobile==''){
@@ -67,6 +103,8 @@
                 data:{
                     aname:aname,
                     amobile:amobile,
+                    savename:savename,
+                    savepath:savepath,
                 },
                 type:'post',
                 dataType: "json",

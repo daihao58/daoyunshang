@@ -645,10 +645,23 @@ class VipController extends BaseController
         $this->display();
     }
 
+    public function agency_img_ajax(){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+        $upload->savePath  =     ''; // 设置附件上传（子）目录
+        // 上传文件
+        $info   =   $upload->upload();
+        $this->ajaxReturn($info);
+    }
+
     public function agency_ajax(){
         $user = self::$WAP['vip'];
         $aname=$_POST['aname'];
         $amobile=$_POST['amobile'];
+        $savename=$_POST['savename'];
+        $savepath=$_POST['savepath'];
 
         if($user['experience_hall']){
             if($amobile == $user['mobile']){
@@ -661,6 +674,7 @@ class VipController extends BaseController
                     $data['aid'] = $aid;
                     $data['aname'] = $aname;
                     $data['amobile'] = $amobile;
+                    $data['img'] = '/Uploads/'.$savepath.$savename;
                     $data['bid'] = $user['id'];
                     $data['bname'] = $user['nickname'];
                     $data['time'] = date("Y-m-d H:s:i");
@@ -677,7 +691,7 @@ class VipController extends BaseController
                     }
                 }else{
                     $result['state_code']=2;
-                    $result['msg']='次号码未注册';
+                    $result['msg']='此号码未注册';
                     $this->ajaxReturn($result);
                 }
             }

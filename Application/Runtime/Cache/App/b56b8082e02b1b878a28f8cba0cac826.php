@@ -40,9 +40,8 @@
 		<span class="tab-label">订单</span>
 	</a>
 	<a href="<?php echo U('App/Shop/basket/',array('sid'=>0,'lasturl'=>$lasturl));?>" class="nav-item <?php if($moren_tb == "gouwuche" ): ?>cur<?php else: endif; ?>">
-		<i class="iconfont <?php if($moren_tb == "wode" ): ?>icon-cart-s<?php else: ?>icon-cart<?php endif; ?>"></i>
+		<i class="iconfont <?php if($moren_tb == "gouwuche" ): ?>icon-cart-s<?php else: ?>icon-cart<?php endif; ?>"></i>
 		<span class="tab-label">购物车</span>
-
 	</a>
 	<a href="tel:<?php echo ($_SESSION['SHOP']['set']['phone']); ?>" class="nav-item">
 		<i class="iconfont icon-online"></i>
