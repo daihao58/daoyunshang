@@ -1525,30 +1525,34 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     display: none;
+    z-index: 999;
 }
 
 .info-cc {
     position: absolute;
-    top: 50px;
-    left: 10px;
-    right: 10px;
-    border: 1px solid #b6b4b2;
-    background: #fbf9f1;
-    
-    margin: 0 auto;
+    top: 20%;
+    left: 30px;
+    right: 30px;
+    background: #fff;
 }
 
 .info-chd {
-    line-height: 40px;
-    background: #19a5f3;
-    color: #FFFFFF;
-    padding: 0 10px;
+    height: 2rem;
+    padding: 0 14px;
+    line-height: 2rem;
+    background: #1eb4d2;
+    color: #fff;
+    
 }
 
 .info-ctt {
     width: 90%;
+    font-size: .8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .info-scroll {

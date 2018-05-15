@@ -23,14 +23,86 @@
     <script src="__PUBLIC__/login/dist/js/html5shiv.min.js"></script>
     <script src="__PUBLIC__/login/dist/js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .login-page {
+            background:url('__PUBLIC__/WallPage/bg.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .login-box {
+            width: 400px;
+            margin: 9% auto;
+        }
+
+        .login-box-body {
+            padding: 32px 42px;
+            background-color: #fff
+        }
+
+        .login-logo {
+            margin-bottom: 24px;
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #2f6dc7;
+        }
+
+        .login-logo img {
+            max-width: 40%;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-control {
+            height: 38px;
+            border-radius: 4px;
+        }
+
+        .btn.btn-flat {
+            border-radius: 4px;
+        }
+
+        .btn-block {
+            height: 40px;
+            line-height: 30px;
+        }
+
+        .btn-primary {
+            background-color: #2f6dc7;
+            border-color: #2f6dc7;
+        }
+
+        .verfiy-inp {
+            width: 70%;
+            float: left;
+            border-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .verifyImg {
+            width: 30%;
+            height: 38px;
+            border: 1px solid #ccc;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .verifyImg.btn {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    </style>
 </head>
-<body class="hold-transition login-page" style="background-image:url('{$wallpaper}');background-size: cover;">
+<body class="hold-transition login-page">
 <div class="login-box">
 
     <!-- /.login-logo -->
-    <div class="login-box-body" style="margin-top:-65px">
-        <div class="login-logo" style="margin: 30px 10px">
-            <img src="__PUBLIC__/login/dist/img/logo.png">
+    <div class="login-box-body">
+        <div class="login-logo">
+            <!-- <img src="__PUBLIC__/login/dist/img/logo.png" > -->
+            东方道合后台系统
         </div>
 
         <form action="{:U('Multi/login/register')}" method="post">
@@ -43,11 +115,8 @@
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="text" class="form-control" placeholder="邮箱验证码" name="smsVerify" 
-                       style="width: 70%;float: left">
-                <button class="btn btn-default" id="btnSendCode" onclick="sendemail()"
-                        style="width: 30%;border: 1px solid #ccc;border-radius:0px;height: 34px;border-left: 0px">发送验证码
-                </button>
+                <input type="text" class="form-control verfiy-inp" placeholder="邮箱验证码" name="smsVerify">
+                <button class="btn btn-default verifyImg" id="btnSendCode" onclick="sendemail()">发送验证码</button>
             </div>
             <div class="form-group has-feedback">
                 <input type="password" class="form-control" placeholder="密码" name="password" required>
@@ -57,18 +126,10 @@
                 <input type="password" class="form-control" placeholder="重复密码" name="password2" required>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
-            <div class="row">
-                <div class="col-xs-8">
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">注册</button>
-                </div>
-                <!-- /.col -->
-            </div>
+            <div><button type="submit" class="btn btn-primary btn-block btn-flat">注册</button></div>
         </form>
         <!--<hr/>-->
-        <a href="{:U('Multi/Public/login')}" class="text-center">开始登录</a>
+        <div class="text-center" style="margin-top: 16px"><a href="{:U('Multi/Public/login')}">开始登录</a></div>
 
         <!-- /.social-auth-links -->
     </div>
