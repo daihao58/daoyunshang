@@ -699,3 +699,36 @@
 .page-user-follow .item-title {
 	padding-left: .65rem;
 }
+
+/* 搜索 */
+.page-search .block-title .iconfont {
+	position: relative;
+	top: .05rem;
+	right: .2rem;
+	font-size: 120%;
+}
+
+.page-search .filter-list li {
+	float: left;
+	margin-bottom: .6rem;
+	margin-right: .5rem;
+}
+
+.page-search .filt-lk {
+	display: block;
+	padding: .4rem;
+	font-size: .65rem;
+	background-color: #f0f0f0;
+	border-radius: 2px;
+}
+
+.page-search .search-head {
+	display: inline-block;
+	margin-left: 0!important;
+	width: 12rem;
+}
+
+.page-search .bar-header form {
+	height: 100%;
+	overflow: hidden;
+}

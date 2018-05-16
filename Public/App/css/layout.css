@@ -582,6 +582,10 @@ em, i {
 	z-index: 20;
 }
 
+button.bar-btn {
+	background: none;
+}
+
 .bar-header .bar-btn.iconfont {
 	font-size: 1.1rem;
 }
