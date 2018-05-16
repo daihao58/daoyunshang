@@ -1534,3 +1534,25 @@ a.link-green {
 	line-height: 1.4rem;
 	padding: 0;
 }
+
+.upload {
+	position: relative;
+	overflow: hidden;
+}
+
+.upload input[type="file"] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 22;
+}
+
+.upload .icon-upload {
+	font-size: 1.6rem;
+	color: #1eb6d4;
+	line-height: 1
+}

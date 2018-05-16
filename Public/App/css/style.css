@@ -636,6 +636,15 @@
 	vertical-align: middle;
 }
 
+.page-user .user-level + .icon-shop {
+	display: inline-block;
+	margin-left: .4rem;
+	margin-top: .1rem;
+	color: #fff;
+	font-size: 1.1rem;
+	vertical-align: middle
+}
+
 .page-user .user-infor [class*="icon-vip"] {
 	display: inline-block;
 	vertical-align: middle;

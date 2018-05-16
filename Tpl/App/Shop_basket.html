@@ -170,7 +170,7 @@
 		<div class="bar bar-footer" style="bottom: 2.2rem">
 			<div class="nav-txt">
 				<span class="font-12 color-light">共 <b id="totalnum" class="color-dark font-16">{$totalnum}</b> 件商品</span>
-				<span class="pull-right font-12">合计：<b class="color-ora"><i>￥</i><em class="font-16" id="totalprice2">{$totalprice}</em></b></span>
+				<span class="pull-right font-12">合计：<b class="color-ora"><i>￥</i><em class="font-16" id="totalprice">{$totalprice}</em></b></span>
 			</div>
 			<a id="makeorder" class="nav-button">结算</a>
 		</div>
@@ -240,44 +240,45 @@
 			$('#guanbid').click(function () {
 				$('#kefudianhua').hide();
 			});
-			var totalprice1 = $('#totalprice1');
-			var totalprice2 = $('#totalprice2');
-			var totalnum = $('#totalnum');
-			var allgoods = $('#allgoods');
-			var goodsdec = $('.btn-minus');
-			var goodsadd = $('.btn-plus');
-			var goodsdel = $('.goodsdel');
+
+			var $totalprice = $('#totalprice');
+			var $totalnum = $('#totalnum');
+			var $allgoods = $('#allgoods');
+			var $goodsdec = $('.btn-minus');
+			var $goodsadd = $('.btn-plus');
 			var basketurl = "{$basketurl}";
 			var basketloginurl = "{$basketloginurl}";
 			var basketlasturl = "{$basketlasturl}";
 			var lasturlencode = "{$lasturlencode}";
-			$(goodsadd).on('click', function () {
-				var num = Number($(this).parent().find('.quant-num').val());
-				var left = Number($(this).parent().data('total'));
-				var total = (num + 1) <= left ? (num + 1) : left;
-				var item = $(this).parent();
-				$(this).parent().find('.quant-num').val(total);
-				$(item).data('num', total);
-				var pc = Number($(totalprice1).html()) + Number($(item).data('price'));
-				$(totalprice1).html(pc);
-				$(totalprice2).html(pc);
-				$(totalnum).html(Number($(totalnum).html()) + 1);
-				return false;
+
+			$goodsadd.on('click', function (e) {
+				e.preventDefault();
+
+				var $item = $(this).parent(),
+						num = Number($item.find('.quant-num').val()),
+						left = Number($item.data('total')),
+						total = (num + 1) <= left ? (num + 1) : left;
+
+				$item.find('.quant-num').val(total);
+				$item.data('num', total);
+
+				$totalprice.html(Number($totalprice.html()) + Number($item.data('price')));
+				$totalnum.html(Number($totalnum.html()) + 1);
 			});
-			$(goodsdec).on('click', function () {
-				var num = Number($(this).parent().find('.quant-num').val());
-				var total = (num - 1) >= 1 ? (num - 1) : 1;
-				var item = $(this).parent();
-				$(this).parent().find('.quant-num').val(total);
-				$(item).data('num', total);
-				if ((num - 1) >= 1) {
-					var pc = Number($(totalprice1).html()) - Number($(item).data('price'));
-					$(totalprice1).html(pc);
-					$(totalprice2).html(pc);
-					var nm = Number($(totalnum).html()) - 1;
-					$(totalnum).html(nm);
+			$goodsdec.on('click', function () {
+				e.preventDefault();
+
+				var $item = $(this).parent(),
+						num = Number($item.find('.quant-num').val()),
+						total = num > 1 ? (num - 1) : 1;
+
+				$item.find('.quant-num').val(total);
+				$item.data('num', total);
+
+				if (num > 1) {
+					$totalprice.html(Number($totalprice.html()) - Number($item.data('price')));
+					$totalnum.html(Number($totalnum.html()) - 1);
 				}
-				return false;
 			});
 			//购物车删除
 			$('.goodsdel').on('click', function () {
@@ -301,13 +302,12 @@
 						return false;
 					}
 				});
-
 			});
 			//购物车清空
 			$('#clearbasket').on('click', function (e) {
 				e.preventDefault();
 				var items = $('.quant-select');
-				if (!$(items).length) {
+				if (!$items.length) {
 					App_gmuMsg('您的购物车是空的，请先挑选商品!');
 					return false;
 				}
@@ -325,10 +325,9 @@
 							App_gmuMsg(info['msg'], fun);
 							return false;
 						} else if (info['status'] == 2) {
-							$(totalprice1).html(0);
-							$(totalprice2).html(0);
-							$(totalnum).html(0);
-							$(allgoods).remove();
+							$totalprice.html(0);
+							$totalnum.html(0);
+							$allgoods.remove();
 							App_gmuMsg(info['msg']);
 							return false;
 						} else {
