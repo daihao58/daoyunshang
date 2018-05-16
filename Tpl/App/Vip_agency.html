@@ -67,7 +67,11 @@
     function doupload(){
         var file = this.files[0];
         var formData= new FormData($("#uploadform")[0]);
+<<<<<<< 19cb83575c9f06f90083075ef234f42b4a88b519
         console.log($("#uploadform")[0])
+=======
+        //console.log($("#uploadform")[0])
+>>>>>>> '13'
         $.ajax({
             url:"{:U('App/Vip/agency_img_ajax')}",
             type:'post',
@@ -80,7 +84,7 @@
             success: function(data){
                 $('#savename').val(data['file']['savename']);
                 $('#savepath').val(data['file']['savepath']);
-              // console.log(data);
+                // console.log(data);
             },
             /*   error:function (e) {
              layer.msg('服务器出错啦,请稍后再试');
