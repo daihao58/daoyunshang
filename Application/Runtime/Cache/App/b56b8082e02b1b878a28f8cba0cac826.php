@@ -22,9 +22,9 @@
 <div class="page page-index">
     <!-- 标题栏 -->
     <header class="bar bar-header">
-        <form action="/App/Shop/goods_kind" method="get">
-            <a href="#" class="search-head"><i class="iconfont icon-search pr-4"></i><input type="text" name="search_key" placeholder="请输入关键词"></a>
-        </form>
+
+            <a href="/App/Shop/sousuolist" class="search-head"><i class="iconfont icon-search pr-4"></i><input type="text" name="search_key" placeholder="请输入关键词"></a>
+
     </header>
 
     <!-- 工具栏 -->

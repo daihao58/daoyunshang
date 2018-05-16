@@ -310,6 +310,10 @@ class ShopController extends BaseController
 		$this->ajaxReturn($data_msg,'JSON');
 	}
 
+    public function sousuolist(){
+        $this->display();
+    }
+
     public function goods_kind(){
         $search_key=$_GET['search_key'];
         $cid=$_GET['cid'];
