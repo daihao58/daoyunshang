@@ -67,11 +67,7 @@
     function doupload(){
         var file = this.files[0];
         var formData= new FormData($("#uploadform")[0]);
-<<<<<<< 19cb83575c9f06f90083075ef234f42b4a88b519
-        console.log($("#uploadform")[0])
-=======
         //console.log($("#uploadform")[0])
->>>>>>> '13'
         $.ajax({
             url:"{:U('App/Vip/agency_img_ajax')}",
             type:'post',
