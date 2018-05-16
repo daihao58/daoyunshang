@@ -44,12 +44,15 @@
             <li class="item-content">
                 <div class="item-title label">附件</div>
                 <form id="uploadform" enctype="multipart/form-data" method="post" >
-                <input type="file" value="" id="file" name="file" class="item-input t-r">
+                    <label class="upload">
+                        <i class="iconfont icon-upload"></i>
+                        <input type="file" value="" id="file" name="file">
+                    </label>
                 </form>
             </li>
             <input type="hidden" id="savename" value="">
             <input type="hidden" id="savepath" value="">
-   <!--         <li>
+            <!--<li>
                 <textarea placeholder="请填写详细信息" rows="4"></textarea>
             </li>-->
         </ul>
@@ -60,10 +63,11 @@
 </div>
 
 <script>
-    $('input[type="file"]').on('change',doupload);
+    $('#file').on('change', doupload);
     function doupload(){
         var file = this.files[0];
         var formData= new FormData($("#uploadform")[0]);
+        //console.log($("#uploadform")[0])
         $.ajax({
             url:"{:U('App/Vip/agency_img_ajax')}",
             type:'post',
@@ -76,7 +80,7 @@
             success: function(data){
                 $('#savename').val(data['file']['savename']);
                 $('#savepath').val(data['file']['savepath']);
-              // console.log(data);
+                // console.log(data);
             },
             /*   error:function (e) {
              layer.msg('服务器出错啦,请稍后再试');
