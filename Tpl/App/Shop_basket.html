@@ -265,7 +265,7 @@
 				$totalprice.html(Number($totalprice.html()) + Number($item.data('price')));
 				$totalnum.html(Number($totalnum.html()) + 1);
 			});
-			$goodsdec.on('click', function () {
+			$goodsdec.on('click', function (e) {
 				e.preventDefault();
 
 				var $item = $(this).parent(),

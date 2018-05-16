@@ -183,6 +183,14 @@
 		.fanhui {
 			left: 10px;
 		}
+
+		#shoucang.cur {
+			color: #f80
+		}
+
+		#shoucang.cur .icon-follow:before {
+			content: "\e8f8"
+		}
 	</style>
 </head>
 
@@ -199,7 +207,7 @@
 		<nav class="bar bar-nav">
 			<a href="#" class="nav-item <?php if($sfsc == 1): ?>cur<?php else: endif; ?>" id="shoucang">
 				<span class="iconfont icon-follow"></span>
-				<span class="tab-label" >收藏</span>
+				<span class="tab-label"><?php if($sfsc == 1): ?>已收藏<?php else: ?>收藏<?php endif; ?></span>
 			</a>
 			<a href="<?php echo U('App/Shop/basket/',array('sid'=>0,'lasturl'=>$lasturl));?>" id="basket" class="nav-item">
 				<span class="iconfont icon-cart"></span>
@@ -331,10 +339,12 @@
 	<!--收藏-->
 	<script type="text/javascript">
 		$("#shoucang").on('click', function () {
-			if($("#shoucang").hasClass("cur")){
-				$("#shoucang").removeClass('cur');
+			if($(this).hasClass("cur")){
+				$(this).removeClass('cur');
+				$(this).find('.tab-label').text('收藏')
 			}else{
-				$("#shoucang").addClass('cur');
+				$(this).addClass('cur');
+				$(this).find('.tab-label').text('已收藏')
 			}
 			var goodsid = "<?php echo ($cache["id"]); ?>";
 			$.ajax({
