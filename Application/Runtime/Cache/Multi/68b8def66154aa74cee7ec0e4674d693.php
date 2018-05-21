@@ -116,4 +116,32 @@
 			}
 		});
 	});
+
+	//删除图片
+	$(Jupdelall).on('click',function(){
+		var ids = $(Jupfindback).val();
+		var delimgurl="<?php echo U('Multi/Upload/delimgs/');?>";
+
+		$.ajax({
+			type:"post",
+			data:{'ids':ids},
+			dataType: "json",
+			url:delimgurl,
+			success:function(info){
+
+				if (info.status == 1) {
+					$.App.alert('success',info.msg);
+					$(Jupbody).empty().data('page',1);
+					$(Jupgetmore).trigger('click');
+					$(Jupfindback).val('');
+				} else {
+					$.App.alert('dange',info.msg);
+				}
+			},
+			error:function(x){
+				$.App.alert('dange','通讯失败！请重试！');
+			}
+		});
+
+	});
 </script>
