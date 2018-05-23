@@ -48,6 +48,12 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-lg-2 control-label">广告类型<sup>*</sup></label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="kind" placeholder="1:顶部图, 2:主体左边, 3主体右边上部, 4主体右边下部-左边, 5主体右边下部-右边" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["kind"]); ?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="col-lg-2 control-label">广告简介</label>
                         <div class="col-lg-4">
                             <textarea class="form-control" name="summary" rows="5"><?php echo ($cache["summary"]); ?></textarea>
