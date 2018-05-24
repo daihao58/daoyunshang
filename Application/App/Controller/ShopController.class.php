@@ -7,19 +7,21 @@ class ShopController extends BaseController
 
     public function _initialize()
     {
+        //$_SESSION['shop_id']=21;
         //你可以在此覆盖父类方法
         parent::_initialize();
-        // $shopset = M('Shop_set')->where('id='.session("shop_id"))->find();
-        // if ($shopset['pic']) {
-        //     $listpic = $this->getPic($shopset['pic']);
-        //     $shopset['sharepic'] = $listpic['imgurl'];
-        // }
-        // if ($shopset) {
-        //     self::$WAP['shopset'] = $_SESSION['WAP']['shopset'] = $shopset;
-        //     $this->assign('shopset', $shopset);
-        // } else {
-        //     $this->diemsg(0, '您还没有进行商城配置！');
-        // }
+//         $shopset = M('Shop_set')->where('id='.session("shop_id"))->find();
+/*         $shopset = M('Shop_set')->where('id=21')->find();
+         if ($shopset['pic']) {
+             $listpic = $this->getPic($shopset['pic']);
+             $shopset['sharepic'] = $listpic['imgurl'];
+         }
+         if ($shopset) {
+             self::$WAP['shopset'] = $_SESSION['WAP']['shopset'] = $shopset;
+             $this->assign('shopset', $shopset);
+         } else {
+             $this->diemsg(0, '您还没有进行商城配置！');
+         }*/
     }
 
 // 每日返现代码
@@ -84,7 +86,7 @@ class ShopController extends BaseController
 		$vip = session("WAP");
 		$vip = $vip['vip'];
         //回头恢复
-		/*$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxc987766182edaaaf&secret=43f2122c03de556f4b3f837f3d13b2a3";
+		$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx47bc6da551275a8f&secret=5f11fb9630dd5f5ffde1379d2d46946f";
 		$result_str = file_get_contents($url);
 		$web_access_token = json_decode($result_str, true);
 		if(!($web_access_token['errcode']=="0" || empty($web_access_token['errcode']))){
@@ -109,7 +111,7 @@ class ShopController extends BaseController
 		}
 		
 		$user_vip = M('vip')->where(" id='".$vip['id']."' ")->find();
-		$this->assign('is_yd', $user_vip['is_yd_1']);//是否引导*/
+		$this->assign('is_yd', $user_vip['is_yd_1']);//是否引导
 		
 	
         $shopId = 21;
@@ -401,7 +403,7 @@ class ShopController extends BaseController
         }
 
         //回头恢复
-		/*$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxc987766182edaaaf&secret=43f2122c03de556f4b3f837f3d13b2a3";
+		$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx47bc6da551275a8f&secret=5f11fb9630dd5f5ffde1379d2d46946f";
 		$result_str = file_get_contents($url);
 		$web_access_token = json_decode($result_str, true);
 		if(!($web_access_token['errcode']=="0" || empty($web_access_token['errcode']))){
@@ -423,7 +425,7 @@ class ShopController extends BaseController
 		}else{
 			//未关注
 			$this->assign('is_gz', 0);//是否关注
-		}*/
+		}
 		
 		$user_vip = M('vip')->where(" id='".$vip['id']."' ")->find();
 		$this->assign('is_yd', $user_vip['is_yd_2']);//是否引导

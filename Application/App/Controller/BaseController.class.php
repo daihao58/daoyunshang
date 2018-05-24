@@ -11,6 +11,7 @@ class BaseController extends Controller
     //微信缓存
     protected static $_wxappid;
     protected static $_wxappsecret;
+
     //授权Session
     protected static $_sqmode;//对应$_SESSION['sqmode']-wecha,-yicha,-wap
     //其他初始化
@@ -24,10 +25,10 @@ class BaseController extends Controller
         //dump($_SESSION);lo
         //die();
         //缓存全局SET
-        /*self::$SET = $_SESSION['SET'] = $this->checkSet();
+        self::$SET = $_SESSION['SET'] = $this->checkSet();
         self::$_wxappid = self::$SET['wxappid'];
         self::$_wxappsecret = self::$SET['wxappsecret'];
-
+        //var_dump(self::$_wxappsecret );die;
         //绑定高级鉴权返回地址和高级鉴权ppid
         $_SESSION['oappid'] = intval($_GET['ppid']) ? intval($_GET['ppid']) : 0;
         $_SESSION['oaemployee'] = intval($_GET['employee']) ? intval($_GET['employee']) : 0;
@@ -88,10 +89,8 @@ class BaseController extends Controller
                 $this->diemsg(0, '请使用微信浏览器访问本应用！');
             }
         }
-*/
+
         //检查是否存在VIP
-        $_SESSION['sqmode'] = 'wecha';
-        $_SESSION['sqopenid']='oAqURw-pNerSw5MwR3iRebhLg_QY';
         if ($_SESSION['sqmode'] && $_SESSION['sqopenid']) {
             $openid = $_SESSION['sqopenid'];
             $vip = M('Vip')->where(array('openid' => $openid))->find();
@@ -177,6 +176,7 @@ class BaseController extends Controller
         } else {
             //$map['id']=self::$WAP['vipid']=$_SESSION['WAP']['vipid'];
             //self::$WAP['vip']=$_SESSION['WAP']['vip']=M('vip')->where($map)->find();
+            //var_dump(self::$WAP['vip']);die;
             $levelname = M('Vip_level')->where('id=' . self::$WAP['vip']['levelid'])->getField('name');
             self::$WAP['vip']['levelname'] = $_SESSION['WAP']['vip']['levelname'] = $levelname;
             $this->checkMonthexp();
