@@ -86,7 +86,7 @@ class ShopController extends BaseController
 		$vip = session("WAP");
 		$vip = $vip['vip'];
         //回头恢复
-		$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx47bc6da551275a8f&secret=5f11fb9630dd5f5ffde1379d2d46946f";
+		/*$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx47bc6da551275a8f&secret=5f11fb9630dd5f5ffde1379d2d46946f";
 		$result_str = file_get_contents($url);
 		$web_access_token = json_decode($result_str, true);
 		if(!($web_access_token['errcode']=="0" || empty($web_access_token['errcode']))){
@@ -108,7 +108,7 @@ class ShopController extends BaseController
 		}else{
 			//未关注
 			$this->assign('is_gz', 0);//是否关注
-		}
+		}*/
 		
 		$user_vip = M('vip')->where(" id='".$vip['id']."' ")->find();
 		$this->assign('is_yd', $user_vip['is_yd_1']);//是否引导
@@ -403,7 +403,7 @@ class ShopController extends BaseController
         }
 
         //回头恢复
-		$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx47bc6da551275a8f&secret=5f11fb9630dd5f5ffde1379d2d46946f";
+		/*$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx47bc6da551275a8f&secret=5f11fb9630dd5f5ffde1379d2d46946f";
 		$result_str = file_get_contents($url);
 		$web_access_token = json_decode($result_str, true);
 		if(!($web_access_token['errcode']=="0" || empty($web_access_token['errcode']))){
@@ -425,7 +425,7 @@ class ShopController extends BaseController
 		}else{
 			//未关注
 			$this->assign('is_gz', 0);//是否关注
-		}
+		}*/
 		
 		$user_vip = M('vip')->where(" id='".$vip['id']."' ")->find();
 		$this->assign('is_yd', $user_vip['is_yd_2']);//是否引导

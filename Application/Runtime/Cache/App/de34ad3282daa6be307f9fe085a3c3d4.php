@@ -12,7 +12,6 @@
 	<meta name="description" content=" " />
 	<link rel="stylesheet" href="/Public/App/css/iconfont/iconfont.css">
 	<link rel="stylesheet" href="/Public/App/css/swiper-3.4.2.min.css">
-	<link rel="stylesheet" href="/Public/App/css/style2.css">
 	<link rel="stylesheet" href="/Public/App/css/layout.css">
 	<link rel="stylesheet" href="/Public/App/css/style.css" />
 </head>
@@ -69,7 +68,7 @@
 			zbb_msg('请输入密码');
 		}else{
 			var fun=function(){
-				window.location.href="http://daoyunshang.com/App/vip/index";
+				window.location.href="http://yunshang.czcaizi.com/App/vip/index";
 			}
 			$.ajax({
 				url:"<?php echo U('App/Vip/login_ajax');?>",

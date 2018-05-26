@@ -25,7 +25,7 @@ class BaseController extends Controller
         //dump($_SESSION);lo
         //die();
         //缓存全局SET
-        self::$SET = $_SESSION['SET'] = $this->checkSet();
+       /* self::$SET = $_SESSION['SET'] = $this->checkSet();
         self::$_wxappid = self::$SET['wxappid'];
         self::$_wxappsecret = self::$SET['wxappsecret'];
         //var_dump(self::$_wxappsecret );die;
@@ -125,7 +125,7 @@ class BaseController extends Controller
         } else {
             session(null);
             $this->diemsg(0, '未正常获取会员数据，请尝试重新访问！');
-        }
+        }*/
 
         //全局初始化完成
         //临时处理分享问题

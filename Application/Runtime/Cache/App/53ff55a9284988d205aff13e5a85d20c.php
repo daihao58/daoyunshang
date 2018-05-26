@@ -21,7 +21,7 @@
 	<!--不识别电话-->
 	<meta content="email=no" name="format-detection" />
 	<link rel="stylesheet" href="/Public/App/css/iconfont/iconfont.css" />
-	<link rel="stylesheet" href="/Public/App/css/layout.css" />
+	<link rel="stylesheet" href="/Public/App/css/layout2.css" />
 	<link rel="stylesheet" href="/Public/App/css/style2.css" />
 	<link rel="stylesheet" href="/Public/App/css/style.css" />
 	<link rel="stylesheet" href="/Public/App/css/appslider.css" />
@@ -204,7 +204,7 @@
 		</header>
 
 		<!-- 工具栏 -->
-		<nav class="bar bar-nav">
+		<nav class="bar bar-nav ">
 			<a href="#" class="nav-item <?php if($sfsc == 1): ?>cur<?php else: endif; ?>" id="shoucang">
 				<span class="iconfont icon-follow"></span>
 				<span class="tab-label"><?php if($sfsc == 1): ?>已收藏<?php else: ?>收藏<?php endif; ?></span>
