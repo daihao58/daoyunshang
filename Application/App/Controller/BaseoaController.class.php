@@ -189,7 +189,11 @@ class BaseoaController extends Controller
 
                         $data['pid'] = $old ? $old['id'] : 0;
                         $data['openid'] = $user['openid'];
-                        $data['nickname'] = $user['nickname'];
+                        $data['nickname'] = $this->filterEmoji($user['nickname']);
+
+
+
+                        //var_dump($data['nickname']);die;
                         $data['sex'] = $user['sex'];
                         $data['city'] = $user['city'];
                         $data['province'] = $user['province'];
@@ -267,7 +271,17 @@ class BaseoaController extends Controller
         }
 
     }
+    public function filterEmoji($str)
+    {
+        $str = preg_replace_callback(
+            '/./u',
+            function (array $match) {
+                return strlen($match[0]) >= 4 ? '' : $match[0];
+            },
+            $str);
 
+        return $str;
+    }
     public function index()
     {
         //目前什么都不做
