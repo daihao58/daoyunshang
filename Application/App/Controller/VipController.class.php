@@ -478,8 +478,15 @@ class VipController extends BaseController
             $data['plv']=$user_data['plv'];
             $data['path']=$user_data['path'];
             $data['recommend_code']=$user_data['recommend_code'];
+            if($user_data['recommend_code'] == 'df00001'){
+                $head_code='df';
+            }elseif($user_data['recommend_code'] == 'df00002'){
+                $head_code='llq';
+            }else{
+                $head_code='';
+            }
             if(empty($data['my_recommend_code'])){
-                $data['my_recommend_code'] = $this->getRandomString(6);
+                $data['my_recommend_code'] =$head_code.$this->getRandomString(6);
             }
 
             $res=M('Vip')->save($data);
