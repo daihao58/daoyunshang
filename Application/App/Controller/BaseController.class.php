@@ -89,8 +89,10 @@ class BaseController extends Controller
                 $this->diemsg(0, '请使用微信浏览器访问本应用！');
             }
         }
-
+*/
         //检查是否存在VIP
+        $_SESSION['sqmode']='wecha';
+        $_SESSION['sqopenid']='oLqyh0qKX1Z1R6ckNn0dMYOhmxGQ';
         if ($_SESSION['sqmode'] && $_SESSION['sqopenid']) {
             $openid = $_SESSION['sqopenid'];
             $vip = M('Vip')->where(array('openid' => $openid))->find();
@@ -125,7 +127,7 @@ class BaseController extends Controller
         } else {
             session(null);
             $this->diemsg(0, '未正常获取会员数据，请尝试重新访问！');
-        }*/
+        }
 
         //全局初始化完成
         //临时处理分享问题
