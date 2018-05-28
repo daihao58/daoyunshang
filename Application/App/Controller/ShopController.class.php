@@ -584,7 +584,7 @@ class ShopController extends BaseController
         foreach ($cache as $k => $v) {
             //sku模型
             $goods = $mgoods->where('id=' . $v['goodsid'])->find();
-            $pic = $this->getPic($goods['pic']);
+            $pic = $this->getPic($goods['listpic']);
             if ($v['sku']) {
                 //取商品数据				
                 if ($goods['issku'] && $goods['status']) {
@@ -1180,7 +1180,7 @@ class ShopController extends BaseController
                /* if($goods['ismy'] == 1){
                     $ismy = $ismy - 1;
                 }*/
-                $pic = $this->getPic($goods['pic']);
+                $pic = $this->getPic($goods['listpic']);
                 if ($v['sku']) {
                     //取商品数据				
                     if ($goods['issku'] && $goods['status']) {
