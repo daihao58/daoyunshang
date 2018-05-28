@@ -77,7 +77,7 @@ img {
 }
 
 .color3 {
-    color: #f7194d;
+    color: #ff8400;
 }
 
 .color4 {
@@ -665,7 +665,7 @@ img {
 }
 
 .dtl-prc2 {
-    color: #b6b5b5;
+    color: #999;
     text-decoration: line-through;
 }
 
@@ -715,14 +715,15 @@ img {
 .dtl_input{border:none; background:none;border-radius: 0;width: 17%;line-height: 24px;border: none;border: 1px solid #eeeeee;text-align: center;background-color: #FFFFFF;}*/
 .dtl_num a {
     display: block;
-    line-height: 20px;
+    height: 28px;
+    line-height: 18px;
     padding: 2px 0;
     width: 10%;
     float: left;
     text-align: center;
     border: 1px solid #eeeeee;
     font-size: 22px;
-    color: #000000;
+    color: #666;
     background: #fbfbfa;
 }
 
@@ -731,11 +732,13 @@ img {
     background: none;
     border-radius: 0;
     width: 17%;
+    height: 28px;
     line-height: 24px;
     border: none;
-    border: 1px solid #eeeeee;
+    border: 1px solid #c7c7c7;
     text-align: center;
     background-color: #FFFFFF;
+    color: #333;
 }
 
 .dtl_mar1 {
@@ -859,7 +862,7 @@ img {
 }
 
 .ads_orprice {
-    top: .75rem;
+    top: .8rem;
     position: absolute;
     right: 0;
 }
@@ -1163,24 +1166,26 @@ img {
 
 .home-cz, .home-rz{
     display: inline-block;
-    width: 80px;
-    height: 28px;
+    width: 88px;
+    height: 30px;
     margin-left: 4px;
     font-size: .65rem;
     line-height: 28px;
     text-align: center;
-    color: #fff;
-    border-radius: 4px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .home-cz {
-    background: #26b1fe;
+    border-color: #ccc;
+    color: #666;
 }
 
 .home-rz {
-    background: #f7194d;
+    border-color: #ff8400;
+    color: #ff8400
 }
-
 
 .home-lst2 {
     padding: 0 10px;

@@ -152,7 +152,22 @@
 		.btn-quxiao {
 			background: #aaa;
 		}
-	</style>
+		.icon-unchecked {
+			color: #666
+		}
+		.swipe-item {
+			position: relative;
+		}
+		.delete-btn {
+        position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				width: 68px;
+				color: white;
+        background-color: red;
+    }
+</style>
 
 </head>
 
@@ -176,32 +191,29 @@
 		</div>
 
 		<div class="content">
-			<ul class="list-block media-list mt-0" id="allgoods">
+			<ul class="list-block media-list mt-0 swipe-delete" id="allgoods">
 				<foreach name="cache" item="vo">
-					<li class="item-content">
-						<div class="item-media goodsdel" data-id="{$vo.id}">
-							<i class="iconfont icon-delete color-light"></i>
-						</div>
-						<div class="item-title">
-							<div class="bsk-img pull-left">
-								<img src="{$vo.pic}" />
+					<li class="swipe-item">
+						<a class="delete-btn goodsdel" data-id="{$vo.id}">删除</a>
+						<div class="item-content">
+							<div class="item-media" data-id="{$vo.id}">
+								<i class="iconfont icon-unchecked"></i>
 							</div>
-							<h3 class="t-e-2">{$vo.name}</h3>
-							<p class="color-light font-12">{$vo.skuattr}</p>
-							<p class="color-ora mt-12">￥<em>{$vo.price}</em></p>
-							<p class="color-light" style="visibility: hidden;">[库存：{$vo.total}]</p>
-							<!-- <div class="bsk-ipt ovflw">
-								<p class="quant-select" data-id="{$vo.id}" data-goodsid='{$vo.goodsid}' data-sku='{$vo.sku}' data-num='{$vo.num}' data-total='{$vo.total}'
-								    data-price='{$vo.price}' style="display: none;"></p>
-								<span class="fl text-c bsk-dec">-</span>
-								<input type="text" value="{$vo.num}" class="text-c fl bsk-total" disabled="disabled" />
-								<span class="fl text-c bsk-add">+</span>
-							</div> -->
-							<div class="quant-select" data-id="{$vo.id}" data-goodsid='{$vo.goodsid}' data-sku='{$vo.sku}' data-num='{$vo.num}' data-total='{$vo.total}'
-							data-price='{$vo.price}'>
-								<button class="quant-btn btn-minus">-</button>
-								<input type="text" value="{$vo.num}" class="quant-num" disabled="disabled" />
-								<button class="quant-btn btn-plus">+</button>
+							<div class="item-title">
+								<div class="bsk-img pull-left">
+									<img src="{$vo.pic}" />
+								</div>
+								<h3 class="t-e-2">{$vo.name}</h3>
+								<p class="color-light font-12">{$vo.skuattr}</p>
+								<p class="color-ora mt-12">￥<em>{$vo.price}</em></p>
+								<p class="color-light" style="visibility: hidden;">[库存：{$vo.total}]</p>
+								<!-- 数量添加 -->
+								<div class="quant-select" data-id="{$vo.id}" data-goodsid='{$vo.goodsid}' data-sku='{$vo.sku}' data-num='{$vo.num}' data-total='{$vo.total}'
+								data-price='{$vo.price}'>
+									<button class="quant-btn btn-minus">-</button>
+									<input type="text" value="{$vo.num}" class="quant-num" disabled="disabled" />
+									<button class="quant-btn btn-plus">+</button>
+								</div>
 							</div>
 						</div>
 					</li>
@@ -528,6 +540,55 @@
 					'json'
 				);
 			}
+		</script>
+		<script>
+/* 			function prevent_default(e) {
+					e.preventDefault();
+			} 
+
+			function disable_scroll() {
+					$(document).on('touchmove', prevent_default);
+			}
+
+			function enable_scroll() {
+					$(document).unbind('touchmove', prevent_default)
+			}
+
+			var x;
+			$('.swipe-item')
+					.on('touchstart', function(e) {
+							$('.item-content.open').css('left', '0px').removeClass('open') // close em all
+							$(e.currentTarget).addClass('open')
+							x = e.originalEvent.targetTouches[0].pageX // anchor point
+					})
+					.on('touchmove', function(e) {
+							var change = e.originalEvent.targetTouches[0].pageX - x
+							change = Math.min(Math.max(-100, change), 100) // restrict to -100px left, 0px right
+							e.currentTarget.style.left = change + 'px'
+							if (change < -10) disable_scroll() // disable scroll once we hit 10px horizontal slide
+					})
+					.on('touchend', function(e) {
+							var left = parseInt(e.currentTarget.style.left),
+									new_left;
+
+							if (left < -35) {
+									new_left = '-100px'
+							} else if (left > 35) {
+									new_left = '100px'
+							} else {
+									new_left = '0px'
+							}
+							// e.currentTarget.style.left = new_left
+							$(e.currentTarget).animate({left: new_left}, 200)
+							enable_scroll()
+					});
+
+			$('.delete-btn').on('touchend', function(e) {
+					e.preventDefault()
+					$(this).parents('li').slideUp('fast', function() {
+							$(this).remove()
+					})
+			}) */
 		</script>
 		<!--通用分享-->
 		<include file="./Tpl/App/Shop_share.html" />

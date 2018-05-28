@@ -36,7 +36,7 @@
 						<label for="" class="iconfont icon-mobile"></label>
 					</li>
 					<li>
-						<input type="text" class="inp" name="password" id="password" placeholder="请填输入密码">
+						<input type="password" class="inp" name="password" id="password" placeholder="请填输入密码">
 						<label for="" class="iconfont icon-password1"></label>
 					</li>
 					<li>
@@ -44,7 +44,7 @@
 						<label for="" class="iconfont icon-mobile"></label>
 					</li>
 					<li>
-						<input type="text" class="inp" name="code" id="code" placeholder="请填输入验证码">
+						<input type="password" class="inp" name="code" id="code" placeholder="请填输入验证码">
 						<label for="" class="iconfont icon-password"></label>
 						<a href="javascript:getSms()" class="btn-verfiy send_pwd">获取验证码</a>
 						<!-- <a class="btn-verfiy active">已发送(59)s</a> -->
@@ -83,7 +83,6 @@
 						code_id =data.id;
 						settime();
 					}else{
-						//alert(data.msg);
 						zbb_msg(data.msg);
 					}
 				},
@@ -91,7 +90,6 @@
 		}else{
 			zbb_msg("手机号码错误");
 		}
-
 	}
 
 	//验证码60秒

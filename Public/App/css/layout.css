@@ -836,6 +836,7 @@ a.search-head {
 	width: 100%;
 	padding-top: 0.7rem;
 	padding-bottom: 0.7rem;
+	background-color: #fff;
 	overflow: hidden;
 }
 
@@ -1298,7 +1299,7 @@ a.link-green {
 }
 
 .color-green {
-  color: #22cc76!important;
+  color: #0b9b53!important;
 }
 
 .color-red {

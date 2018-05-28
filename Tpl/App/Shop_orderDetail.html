@@ -57,106 +57,161 @@
 
 <body>
 	<div class="page page-orderDetail">
+		<header class="bar bar-header">
+			<a href="{:U('App/Shop/orderList/sid/0')}" class="iconfont icon-back bar-btn pull-left"></a>
+			<h1 class="title">订单信息</h1>
+			<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="iconfont icon-home-head bar-btn pull-right"></a>
+		</header>
+
 		<div class="content">
-			<div class="list-block mt-0">
-				<header class="bar bar-header">
-					<a href="{:U('App/Shop/orderList/sid/0')}" class="iconfont icon-back bar-btn pull-left"></a>
-					<h1 class="title">订单信息</h1>
-					<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="iconfont icon-home-head bar-btn pull-right"></a>
-				</header>
-				<div class="list-title">订单信息</div>
-				<ul class="font-12">
-					<li class="item-content">
-						<span class="color-gray">订单状态</span>
-						<em class="color3">
-							<switch name="cache.status">
-								<case value="0">已取消</case>
-								<case value="1">未支付</case>
-								<case value="2">已支付</case>
-								<case value="3">待出游</case>
-								<case value="4">退货中</case>
-								<case value="5">已完成-{$cache.etime|date="Y/m/d",###}</case>
-								<case value="6">已关闭-{$cache.closetime|date="Y/m/d",###}</case>
-							</switch>
-						</em>
-					</li>
-					<li class="item-content"><span class="color-gray">实付总额</span><em>{$cache.payprice}</em></li>
-					<li class="item-content"><span class="color-gray">订单编号</span><em>{$cache.oid}</em></li>
-					<li class="item-content"><span class="color-gray">创建时间</span><em>{$cache.ctime|date="Y/m/d H:i:s",###}</em></li>
-					<li class="item-content"><span class="color-gray">收件人</span><em>{$cache.vipname}</em></li>
-					<li class="item-content"><span class="color-gray">联系方式</span><em>{$cache.vipmobile}</em></li>
-					<li class="item-content"><span class="color-gray">收货地址</span><em>{$cache.vipaddress}</em></li>
-					<li class="item-content"><span class="color-gray">邮费</span><em>{$cache.yf}元</em></li>
-					<li class="item-content"><span class="color-gray">备注</span><em>{$cache.msg}</em></li>
-				</ul>
-			</div>
-			<div class="list-block">
-				<div class="list-title">订单进度</div>
-				<ul class="font-12">
-					<li class="item-content"><span class="color-gray">订单生成</span><span>{$cache.ctime|date="Y/m/d H:i",###}</span></li>
-					<eq name="cache.status" value="0">
-						<li class="item-content">
-							<em class="color3">订单已取消，不再跟踪状态。</em>
-						</li>
-					</eq>
-					<foreach name="log" item="vo">
-						<li class="item-content"><span class="color-gray">{$vo.msg}</span><span>{$vo.ctime|date="Y/m/d H:i",###}</span></li>
-					</foreach>
-				</ul>
-			</div>
-			<notempty name="cache.fahuokd">
-				<div class="list-block">
-					<div class="list-title">发货物流</div>
-					<ul>
-						<li class="item-content"><span class="color-gray">快递公司</span><em>{$cache.fahuokd}</em></li>
-						<li class="item-content"><span class="color-gray">快递单号</span><em>{$cache.fahuokdnum}</em></li>
-					</ul>
+			<!-- 物流信息 -->
+			<div class="list-block media-list mt-0">
+				<div class="item-content">
+					<i class="item-media iconfont icon-wuliu color-green"></i>
+					<div class="item-title">
+						<div class="color-green">{$cache.fahuokd}</div>
+						<p class="color-light font-12 mt-8">2018-05-28</p>
+					</div>
 				</div>
-			</notempty>
+				<div class="item-content">
+					<i class="item-media iconfont icon-addr2 color-gray"></i>
+					<div class="item-title color-gray">
+						<p>
+							<span>收件人：</span>
+							<em>{$cache.vipname}</em>
+							<span class="pull-right">{$cache.vipmobile}</span>
+						</p>
+						<p class="mt-8" style="text-align:justify; line-height: 1.5; white-space: normal;">
+							<span>收货地址：</span>
+							<em>{$cache.vipaddress}</em>
+						</p>
+					</div>
+				</div>
+			</div>
 			<div class="list-block media-list">
 				<div class="list-title">商品明细</div>
 				<volist name="cache.items" id="vt">
-					<ul>
+					<ul style="margin: 0 -.7rem;background-color: #fafafa;padding: 0 .7rem;">
 						<li class="item-content">
 							<div class="item-media prod-media">
 								<img src="{$vt.pic}"/>
 							</div>
 							<div class="item-title">
-									<h3 class="t-e-2">{$vt.name}</h3>
-									<notempty name="vt.skuattr">
-										<p class="color-light font-12 mt-4">{$vt.skuattr}</p>
-									</notempty>
+								<div class="pull-right t-r">
+									<p class="mt-6">
+										<em class="font-sm">￥</em>
+										<em>{$vt.price}</em>
+									</p>
+									<p class="dtl-prc2 mt-8">
+										<em class="font-sm">￥</em>
+										<em>156</em>
+									</p>
+									<p class="mt-12 color-light"><i class="font-sm">x</i>{$vt.num}</p>
+								</div>
+								<h3 class="t-e-2">{$vt.name}</h3>
+								<notempty name="vt.skuattr">
+									<p class="color-light font-12 mt-4">{$vt.skuattr}</p>
+								</notempty>
 							</div>
-						</li>
-						<li class="item-content">
-							<p>
-								<em class="font-sm">￥</em>
-								<em class="font-18">{$vt.price}</em>
-							</p>
-							<p><i class="font-sm">X</i>{$vt.num}</p>
 						</li>
 					</ul>
 				</volist>
-				<!-- 支付方式 -->
-				<div class="item-content font-12">
-					<span class="color-gray">共{$cache.totalnum}件商品</span>
+				<!-- 金额详情 -->
+				<div class="item-content">
+					<ul class="item-inner font-12 color-light">
+						<li>
+							<span>邮费</span>
+							<span class="pull-right"><em class="font-sm">￥</em>{$cache.yf}</span></li>
+						<li class="mt-12">
+							<span>订单总额</span>
+							<em class="pull-right">{$cache.payprice}</em></li>
+					</ul>
+				</div>
+				<div class="item-content">
+					<span class="font-12 color-light">共{$cache.totalnum}件商品</span>
 					<span>实付：
-						<em class="font-16">￥{$cache.payprice}</em>
+							￥<em class="font-16">{$cache.payprice}</em>
 					</span>
 				</div>
-				<neq name='cache.status' value='1'>
-					<div class="item-content">
-						<span></span>
-						<a href="{:U('App/Shop/orderList',array('sid'=>0))}" class="home-cz">返回列表</a>
-						<eq name="cache.status" value='1'>
-							<a href="{:U('App/Shop/orderCancel',array('sid'=>0,'orderid'=>$cache['id']))}" class="home-cz">取消订单</a>
-						</eq>
-						<eq name="cache.status" value='3'>
-							<!--a href="{:U('App/Shop/orderOK',array('sid'=>0,'orderid'=>$cache['id']))}" class="home-rz">确认收货</a-->
-						</eq>
-					</div>
-				</neq>
+				<eq name="cache.status" value='1'>
+					<div class="item-content"><a href="{:U('App/Shop/orderCancel',array('sid'=>0,'orderid'=>$cache['id']))}" class="home-cz">取消订单</a>
+				</eq>
+				<eq name="cache.status" value='3'>
+						<!-- <div class="item-content"><a href="{:U('App/Shop/orderOK',array('sid'=>0,'orderid'=>$cache['id']))}" class="home-rz">确认收货</a></div> -->
+				</eq>
 			</div>
+			<div class="list-block">
+				<div class="list-title">订单信息</div>
+				<div class="item-content">
+					<ul class="item-inner font-12 color-light">
+						<li>
+							<span>订单状态</span>
+							<em class="color3 pull-right">
+								<switch name="cache.status">
+									<case value="0">已取消</case>
+									<case value="1">未支付</case>
+									<case value="2">已支付</case>
+									<case value="3">待出游</case>
+									<case value="4">退货中</case>
+									<case value="5">已完成-{$cache.etime|date="Y/m/d",###}</case>
+									<case value="6">已关闭-{$cache.closetime|date="Y/m/d",###}</case>
+								</switch>
+							</em>
+						</li>
+						<li class="mt-12">
+							<span>订单编号</span>
+							<em class="pull-right">{$cache.oid}</em>
+						</li>
+						<li class="mt-12">
+							<span>创建时间</span>
+							<em class="pull-right">{$cache.ctime|date="Y/m/d H:i:s",###}</em>
+						</li>
+						<li class="mt-12">
+							<span>备注</span>
+							<em class="pull-right">{$cache.msg}</em>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="list-block">
+				<div class="list-title">订单进度</div>
+				<div class="item-content">
+					<ul class="item-inner font-12 color-light">
+						<li>
+							<span>订单生成</span>
+							<span class="pull-right">{$cache.ctime|date="Y/m/d H:i",###}</span></li>
+						<eq name="cache.status" value="0">
+							<li class="mt-12">
+								<em class="color3">订单已取消，不再跟踪状态。</em>
+							</li>
+						</eq>
+						<foreach name="log" item="vo">
+							<li class="mt-12">
+								<span>{$vo.msg}</span>
+								<span class="pull-right">{$vo.ctime|date="Y/m/d H:i",###}</span>
+							</li>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+			<notempty name="cache.fahuokd">
+				<div class="list-block">
+					<div class="list-title">发货物流</div>
+					<div class="item-content">
+						<ul class="item-inner font-12 color-light">
+							<li>
+								<span>快递公司</span>
+								<em class="pull-right">{$cache.fahuokd}</em>
+							</li>
+							<li class="mt-12">
+								<span>快递单号</span>
+								<em class="pull-right">{$cache.fahuokdnum}</em>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</notempty>
+
 			<eq name='cache.status' value='1'>
 				<div class="list-block">
 					<div class="list-title">更换支付方式</div>
