@@ -466,8 +466,8 @@
 		$('#backTop').on('click',function(e) {
 			e.preventDefault();
 			setTimeout(function() {
-				$('.content').scrollTop(0);
-			}, 200);
+				$('.content')[0].scrollTop = 0;
+			}, 100);
 		});
 
 		$('#telquxiao').click(function () {
