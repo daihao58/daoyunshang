@@ -53,7 +53,7 @@
 				<span <eq name='type' value='2'>class='active'</eq>>已支付</span>
 			</a>
 			<a href="{:U('App/Shop/orderList',array('sid'=>0,'type'=>3))}" class="fl text-c">
-				<span <eq name='type' value='3'>class='active'</eq>>待出游</span>
+				<span <eq name='type' value='3'>class='active'</eq>>待收货</span>
 			</a>
 		</div>
 		<div class="content">
@@ -65,7 +65,7 @@
 									<case value="0">已取消</case>
 									<case value="1">未支付</case>
 									<case value="2">已支付</case>
-									<case value="3">待出游</case>
+									<case value="3">待收货</case>
 									<case value="4">退货中</case>
 									<case value="5">已完成</case>
 									<case value="6">已关闭</case>
@@ -88,7 +88,7 @@
 									</p>
 									<p class="dtl-prc2 mt-8">
 										<em class="font-sm">￥</em>
-										<em>215</em>
+										<em>{$vt.cprice}</em>
 									</p>
 									<p class="mt-12 color-light">
 										<em class="font-sm">x</em>

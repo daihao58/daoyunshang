@@ -115,7 +115,7 @@
 										<em class="font-sm">￥</em>
 										<em class="font-18"><?php echo ($vo["price"]); ?></em>
 									</p>
-									<p><i class="font-sm">X</i><?php echo ($vo["num"]); ?></p>
+									<p><i class="font-sm">x</i><?php echo ($vo["num"]); ?></p>
 								</li>
 							</ul><?php endforeach; endif; ?>
 						<!--

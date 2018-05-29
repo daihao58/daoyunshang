@@ -172,13 +172,14 @@ class ShopController extends BaseController
         }
         $map['status'] = 1;
         $map['shop_id'] = $shopId;    
-        $cache = $m->where($map)->order('sorts desc')->limit('0,2')->select();
+        $map['istuisong'] = 1;
+        $cache = $m->where($map)->order('sorts desc')->select();
 
         foreach ($cache as $k => $v) {
             $listpic = $this->getPic($v['listpic']);
 
             if($vip['fx_level']==1){
-                $cache[$k]['price']=$cache[$k]['price_gold'];
+                $cache[$k]['price']=$cache[$k]['price'];
             }elseif($vip['fx_level']==2){
                 $cache[$k]['price']=$cache[$k]['price_ceo'];
             }elseif($vip['fx_level']==3){
@@ -373,7 +374,8 @@ class ShopController extends BaseController
         $user_vip = M('vip')->where(" id='".$vip['id']."' ")->find();
         if($user_vip['fx_level']==1){
             foreach($goods_list as $k => &$v){
-                $v['price']=$v['price_gold'];
+                $v['price']=$v['price'];
+//                $v['price']=$v['price'];
             }
         }elseif($user_vip['fx_level']==2){
             foreach($goods_list as $k => &$v){
@@ -469,7 +471,8 @@ class ShopController extends BaseController
         $user_vip = M('vip')->where(" id='".$vip['id']."' ")->find();
 
         if($user_vip['fx_level']==1){
-            $cache['price']=$cache['price_gold'];
+            $cache['price']=$cache['price'];
+//            $cache['price']=$cache['price'];
         }elseif($user_vip['fx_level']==2){
             $cache['price']=$cache['price_ceo'];
         }elseif($user_vip['fx_level']==3){
@@ -603,11 +606,11 @@ class ShopController extends BaseController
 
 
                             if($user_vip['fx_level']==1){
-                                $cache[$k]['price'] = $goods['price_gold'];
-                                $cache[$k]['total'] = $v['num'] * $goods['price_gold'];
-                                $totalprice = $totalprice + $goods['price_gold'] * $cache[$k]['num'];
+                                $cache[$k]['price'] = $goods['price'];
+                                $cache[$k]['total'] = $v['num'] * $goods['price'];
+                                $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
-                                $totalprice_bate = $totalprice_bate + $goods['price_gold_bate'] * $cache[$k]['num'];
+                                $totalprice_bate = $totalprice_bate + $goods['price_bate'] * $cache[$k]['num'];
                             }elseif($user_vip['fx_level']==2){
                                 $cache[$k]['price'] = $goods['price_ceo'];
                                 $cache[$k]['total'] = $v['num'] * $goods['price_ceo'];
@@ -660,11 +663,11 @@ class ShopController extends BaseController
 
 
                         if($user_vip['fx_level']==1){
-                            $cache[$k]['price'] = $goods['price_gold'];
-                            $cache[$k]['total'] = $v['num'] * $goods['price_gold'];
-                            $totalprice = $totalprice + $goods['price_gold'] * $cache[$k]['num'];
+                            $cache[$k]['price'] = $goods['price'];
+                            $cache[$k]['total'] = $v['num'] * $goods['price'];
+                            $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
-                            $totalprice_bate = $totalprice_bate + $goods['price_gold_bate'] * $cache[$k]['num'];
+                            $totalprice_bate = $totalprice_bate + $goods['price_bate'] * $cache[$k]['num'];
                         }elseif($user_vip['fx_level']==2){
                             $cache[$k]['price'] = $goods['price_ceo'];
                             $cache[$k]['total'] = $v['num'] * $goods['price_ceo'];
@@ -1200,12 +1203,12 @@ class ShopController extends BaseController
 
 
                                 if($user_vip['fx_level']==1){
-                                    $cache[$k]['price'] = $goods['price_gold'];
-                                    $cache[$k]['cprice'] = $goods['price_gold'];
-                                    $cache[$k]['total'] = $v['num'] * $goods['price_gold'];
-                                    $totalprice = $totalprice + $goods['price_gold'] * $cache[$k]['num'];
+                                    $cache[$k]['price'] = $goods['price'];
+                                    $cache[$k]['cprice'] = $goods['price'];
+                                    $cache[$k]['total'] = $v['num'] * $goods['price'];
+                                    $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
-                                    $totalprice_bate = $totalprice_bate + $goods['price_gold_bate'] * $cache[$k]['num'];
+                                    $totalprice_bate = $totalprice_bate + $goods['price_bate'] * $cache[$k]['num'];
                                 }elseif($user_vip['fx_level']==2){
                                     $cache[$k]['price'] = $goods['price_ceo'];
                                     $cache[$k]['cprice'] = $goods['price_ceo'];
@@ -1263,12 +1266,12 @@ class ShopController extends BaseController
 
 
                             if($user_vip['fx_level']==1){
-                                $cache[$k]['price'] = $goods['price_gold'];
-                                $cache[$k]['cprice'] = $goods['price_gold'];
-                                $cache[$k]['total'] = $v['num'] * $goods['price_gold'];
-                                $totalprice = $totalprice + $goods['price_gold'] * $cache[$k]['num'];
+                                $cache[$k]['price'] = $goods['price'];
+                                $cache[$k]['cprice'] = $goods['price'];
+                                $cache[$k]['total'] = $v['num'] * $goods['price'];
+                                $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
-                                $totalprice_bate = $totalprice_bate + $goods['price_gold_bate'] * $cache[$k]['num'];
+                                $totalprice_bate = $totalprice_bate + $goods['price_bate'] * $cache[$k]['num'];
                             }elseif($user_vip['fx_level']==2){
                                 $cache[$k]['price'] = $goods['price_ceo'];
                                 $cache[$k]['cprice'] = $goods['price_ceo'];

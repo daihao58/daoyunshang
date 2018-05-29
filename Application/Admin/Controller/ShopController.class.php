@@ -2077,7 +2077,7 @@ class ShopController extends BaseController
                 $tt = "已支付";
                 break;
             case 3:
-                $tt = "待出游";
+                $tt = "待收货";
                 break;
             case 4:
                 $tt = "退货中";
@@ -2116,7 +2116,7 @@ class ShopController extends BaseController
                     $data[$k]['status'] = "已支付";
                     break;
                 case 3:
-                    $data[$k]['status'] = "待出游";
+                    $data[$k]['status'] = "待收货";
                     break;
                 case 4:
                     $data[$k]['status'] = "退货中";

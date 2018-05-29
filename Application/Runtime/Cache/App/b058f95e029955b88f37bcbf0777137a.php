@@ -57,88 +57,145 @@
 
 <body>
 	<div class="page page-orderDetail">
+		<header class="bar bar-header">
+			<a href="<?php echo U('App/Shop/orderList/sid/0');?>" class="iconfont icon-back bar-btn pull-left"></a>
+			<h1 class="title">订单信息</h1>
+			<a href="<?php echo U('App/Shop/index',array('shopid'=>$shopid));?>" class="iconfont icon-home-head bar-btn pull-right"></a>
+		</header>
+
 		<div class="content">
-			<div class="list-block mt-0">
-				<header class="bar bar-header">
-					<a href="<?php echo U('App/Shop/orderList/sid/0');?>" class="iconfont icon-back bar-btn pull-left"></a>
-					<h1 class="title">订单信息</h1>
-					<a href="<?php echo U('App/Shop/index',array('shopid'=>$shopid));?>" class="iconfont icon-home-head bar-btn pull-right"></a>
-				</header>
-				<div class="list-title">订单信息</div>
-				<ul class="font-12">
-					<li class="item-content">
-						<span class="color-gray">订单状态</span>
-						<em class="color3">
-							<?php switch($cache["status"]): case "0": ?>已取消<?php break;?>
-								<?php case "1": ?>未支付<?php break;?>
-								<?php case "2": ?>已支付<?php break;?>
-								<?php case "3": ?>待出游<?php break;?>
-								<?php case "4": ?>退货中<?php break;?>
-								<?php case "5": ?>已完成-<?php echo (date("Y/m/d",$cache["etime"])); break;?>
-								<?php case "6": ?>已关闭-<?php echo (date("Y/m/d",$cache["closetime"])); break; endswitch;?>
-						</em>
-					</li>
-					<li class="item-content"><span class="color-gray">实付总额</span><em><?php echo ($cache["payprice"]); ?></em></li>
-					<li class="item-content"><span class="color-gray">订单编号</span><em><?php echo ($cache["oid"]); ?></em></li>
-					<li class="item-content"><span class="color-gray">创建时间</span><em><?php echo (date("Y/m/d H:i:s",$cache["ctime"])); ?></em></li>
-					<li class="item-content"><span class="color-gray">收件人</span><em><?php echo ($cache["vipname"]); ?></em></li>
-					<li class="item-content"><span class="color-gray">联系方式</span><em><?php echo ($cache["vipmobile"]); ?></em></li>
-					<li class="item-content"><span class="color-gray">收货地址</span><em><?php echo ($cache["vipaddress"]); ?></em></li>
-					<li class="item-content"><span class="color-gray">邮费</span><em><?php echo ($cache["yf"]); ?>元</em></li>
-					<li class="item-content"><span class="color-gray">备注</span><em><?php echo ($cache["msg"]); ?></em></li>
-				</ul>
+			<!-- 物流信息 -->
+			<div class="list-block media-list mt-0">
+				<?php if(!empty($cache["fahuokd"])): ?><div class="item-content">
+						<i class="item-media iconfont icon-wuliu color-green"></i>
+						<div class="item-title">
+							<div class="color-green"><?php echo ($cache["fahuokd"]); ?></div>
+							<p class="color-light font-12 mt-8"><?php echo ($cache["fahuokdnum"]); ?></p>
+						</div>
+					</div><?php endif; ?>
+				<div class="item-content">
+					<i class="item-media iconfont icon-addr2 color-gray"></i>
+					<div class="item-title color-gray">
+						<p>
+							<span>收件人：</span>
+							<em><?php echo ($cache["vipname"]); ?></em>
+							<span class="pull-right"><?php echo ($cache["vipmobile"]); ?></span>
+						</p>
+						<p class="mt-8" style="text-align:justify; line-height: 1.5; white-space: normal;">
+							<span>收货地址：</span>
+							<em><?php echo ($cache["vipaddress"]); ?></em>
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="list-block">
-				<div class="list-title">订单进度</div>
-				<ul class="font-12">
-					<li class="item-content"><span class="color-gray">订单生成</span><span><?php echo (date("Y/m/d H:i",$cache["ctime"])); ?></span></li>
-					<?php if(($cache["status"]) == "0"): ?><li class="item-content">
-							<em class="color3">订单已取消，不再跟踪状态。</em>
-						</li><?php endif; ?>
-					<?php if(is_array($log)): foreach($log as $key=>$vo): ?><li class="item-content"><span class="color-gray"><?php echo ($vo["msg"]); ?></span><span><?php echo (date("Y/m/d H:i",$vo["ctime"])); ?></span></li><?php endforeach; endif; ?>
-				</ul>
-			</div>
-			<?php if(!empty($cache["fahuokd"])): ?><div class="list-block">
-					<div class="list-title">发货物流</div>
-					<ul>
-						<li class="item-content"><span class="color-gray">快递公司</span><em><?php echo ($cache["fahuokd"]); ?></em></li>
-						<li class="item-content"><span class="color-gray">快递单号</span><em><?php echo ($cache["fahuokdnum"]); ?></em></li>
-					</ul>
-				</div><?php endif; ?>
 			<div class="list-block media-list">
 				<div class="list-title">商品明细</div>
-				<?php if(is_array($cache["items"])): $i = 0; $__LIST__ = $cache["items"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vt): $mod = ($i % 2 );++$i;?><ul>
+				<?php if(is_array($cache["items"])): $i = 0; $__LIST__ = $cache["items"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vt): $mod = ($i % 2 );++$i;?><ul style="margin: 0 -.7rem;background-color: #fafafa;padding: 0 .7rem;">
 						<li class="item-content">
 							<div class="item-media prod-media">
 								<img src="<?php echo ($vt["pic"]); ?>"/>
 							</div>
 							<div class="item-title">
-									<h3 class="t-e-2"><?php echo ($vt["name"]); ?></h3>
-									<?php if(!empty($vt["skuattr"])): ?><p class="color-light font-12 mt-4"><?php echo ($vt["skuattr"]); ?></p><?php endif; ?>
+								<div class="pull-right t-r">
+									<p class="mt-6">
+										<em class="font-sm">￥</em>
+										<em><?php echo ($vt["price"]); ?></em>
+									</p>
+									<p class="dtl-prc2 mt-8">
+										<em class="font-sm">￥</em>
+										<em>156</em>
+									</p>
+									<p class="mt-12 color-light"><i class="font-sm">x</i><?php echo ($vt["num"]); ?></p>
+								</div>
+								<h3 class="t-e-2"><?php echo ($vt["name"]); ?></h3>
+								<?php if(!empty($vt["skuattr"])): ?><p class="color-light font-12 mt-4"><?php echo ($vt["skuattr"]); ?></p><?php endif; ?>
 							</div>
 						</li>
-						<li class="item-content">
-							<p>
-								<em class="font-sm">￥</em>
-								<em class="font-18"><?php echo ($vt["price"]); ?></em>
-							</p>
-							<p><i class="font-sm">X</i><?php echo ($vt["num"]); ?></p>
-						</li>
 					</ul><?php endforeach; endif; else: echo "" ;endif; ?>
-				<!-- 支付方式 -->
-				<div class="item-content font-12">
-					<span class="color-gray">共<?php echo ($cache["totalnum"]); ?>件商品</span>
+				<!-- 金额详情 -->
+				<div class="item-content">
+					<ul class="item-inner font-12 color-light">
+						<li>
+							<span>邮费</span>
+							<span class="pull-right"><em class="font-sm">￥</em><?php echo ($cache["yf"]); ?></span></li>
+						<li class="mt-12">
+							<span>订单总额</span>
+							<em class="pull-right"><?php echo ($cache["payprice"]); ?></em></li>
+					</ul>
+				</div>
+				<div class="item-content">
+					<span class="font-12 color-light">共<?php echo ($cache["totalnum"]); ?>件商品</span>
 					<span>实付：
-						<em class="font-16">￥<?php echo ($cache["payprice"]); ?></em>
+							￥<em class="font-16"><?php echo ($cache["payprice"]); ?></em>
 					</span>
 				</div>
-				<?php if(($cache["status"]) != "1"): ?><div class="item-content">
-						<span></span>
-						<a href="<?php echo U('App/Shop/orderList',array('sid'=>0));?>" class="home-cz">返回列表</a>
-						<?php if(($cache["status"]) == "1"): ?><a href="<?php echo U('App/Shop/orderCancel',array('sid'=>0,'orderid'=>$cache['id']));?>" class="home-cz">取消订单</a><?php endif; ?>
-						<?php if(($cache["status"]) == "3"): ?><!--a href="<?php echo U('App/Shop/orderOK',array('sid'=>0,'orderid'=>$cache['id']));?>" class="home-rz">确认收货</a--><?php endif; ?>
-					</div><?php endif; ?>
+				<?php if(($cache["status"]) == "1"): ?><div class="item-content"><a href="<?php echo U('App/Shop/orderCancel',array('sid'=>0,'orderid'=>$cache['id']));?>" class="home-cz">取消订单</a><?php endif; ?>
+				<?php if(($cache["status"]) == "3"): ?><!-- <div class="item-content"><a href="<?php echo U('App/Shop/orderOK',array('sid'=>0,'orderid'=>$cache['id']));?>" class="home-rz">确认收货</a></div> --><?php endif; ?>
 			</div>
+			<div class="list-block">
+				<div class="list-title">订单信息</div>
+				<div class="item-content">
+					<ul class="item-inner font-12 color-light">
+						<li>
+							<span>订单状态</span>
+							<em class="color3 pull-right">
+								<?php switch($cache["status"]): case "0": ?>已取消<?php break;?>
+									<?php case "1": ?>未支付<?php break;?>
+									<?php case "2": ?>已支付<?php break;?>
+									<?php case "3": ?>待收货<?php break;?>
+									<?php case "4": ?>退货中<?php break;?>
+									<?php case "5": ?>已完成-<?php echo (date("Y/m/d",$cache["etime"])); break;?>
+									<?php case "6": ?>已关闭-<?php echo (date("Y/m/d",$cache["closetime"])); break; endswitch;?>
+							</em>
+						</li>
+						<li class="mt-12">
+							<span>订单编号</span>
+							<em class="pull-right"><?php echo ($cache["oid"]); ?></em>
+						</li>
+						<li class="mt-12">
+							<span>创建时间</span>
+							<em class="pull-right"><?php echo (date("Y/m/d H:i:s",$cache["ctime"])); ?></em>
+						</li>
+						<li class="mt-12">
+							<span>备注</span>
+							<em class="pull-right"><?php echo ($cache["msg"]); ?></em>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="list-block">
+				<div class="list-title">订单进度</div>
+				<div class="item-content">
+					<ul class="item-inner font-12 color-light">
+						<li>
+							<span>订单生成</span>
+							<span class="pull-right"><?php echo (date("Y/m/d H:i",$cache["ctime"])); ?></span></li>
+						<?php if(($cache["status"]) == "0"): ?><li class="mt-12">
+								<em class="color3">订单已取消，不再跟踪状态。</em>
+							</li><?php endif; ?>
+						<?php if(is_array($log)): foreach($log as $key=>$vo): ?><li class="mt-12">
+								<span><?php echo ($vo["msg"]); ?></span>
+								<span class="pull-right"><?php echo (date("Y/m/d H:i",$vo["ctime"])); ?></span>
+							</li><?php endforeach; endif; ?>
+					</ul>
+				</div>
+			</div>
+			<!--<?php if(!empty($cache["fahuokd"])): ?><div class="list-block">
+					<div class="list-title">发货物流</div>
+					<div class="item-content">
+						<ul class="item-inner font-12 color-light">
+							<li>
+								<span>快递公司</span>
+								<em class="pull-right"><?php echo ($cache["fahuokd"]); ?></em>
+							</li>
+							<li class="mt-12">
+								<span>快递单号</span>
+								<em class="pull-right"><?php echo ($cache["fahuokdnum"]); ?></em>
+							</li>
+						</ul>
+					</div>
+				</div><?php endif; ?>-->
+
 			<?php if(($cache["status"]) == "1"): ?><div class="list-block">
 					<div class="list-title">更换支付方式</div>
 					<ul>

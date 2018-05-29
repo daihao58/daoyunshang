@@ -191,6 +191,20 @@
 		#shoucang.cur .icon-follow:before {
 			content: "\e8f8"
 		}
+		#App-slider.fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0 ;
+			bottom: 0;
+			background: #000;
+			z-index: 9999;
+		}
+		#App-slider.fixed ul {
+			position: absolute;
+			left: 0;
+			top: 30%;
+		}
 	</style>
 </head>
 
@@ -222,25 +236,13 @@
 			<a href="" class="nav-button button-ora">
 				<span class="tab-label" id="fastbuy">立即购买</span>
 			</a>
-			<!-- <div class=" fl dtl-icon dtl-bck ovflw">
-					<a class="">
-						<i class="iconfont">&#xe679</i>
-					</a>
-					<a href="#" class="">收藏</a>
-				</div>
-				<div class=" fr dtl-icon ovflw dtl-shp">
-					<a href="<?php echo U('App/Shop/basket/',array('sid'=>0,'lasturl'=>$lasturl));?>" class="" id="basket">
-						<i class="iconfont">&#xe6af</i>
-						
-					</a>
-				</div> -->
 		</nav>
 
 		<div class="content">
 			<?php if(!empty($appalbum)): ?><div id="App-slider">
 					<ul>
 						<?php if(is_array($appalbum)): foreach($appalbum as $key=>$vo): ?><li>
-								<a href="#">
+								<a>
 									<img src="<?php echo ($vo["imgurl"]); ?>">
 								</a>
 							</li><?php endforeach; endif; ?>
@@ -333,6 +335,9 @@
 				}, function (i) {
 					$('#App-slider .dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
 				});
+				$('#App-slider').on('click', function () {
+					$(this).toggleClass('fixed');
+				})
 			});
 		</script><?php endif; ?>
 

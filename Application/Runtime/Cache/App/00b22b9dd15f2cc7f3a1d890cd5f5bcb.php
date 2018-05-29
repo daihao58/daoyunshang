@@ -79,7 +79,7 @@
 				<span <?php if(($type) == "2"): ?>class='active'<?php endif; ?>>已支付</span>
 			</a>
 			<a href="<?php echo U('App/Shop/orderList',array('sid'=>0,'type'=>3));?>" class="fl text-c">
-				<span <?php if(($type) == "3"): ?>class='active'<?php endif; ?>>待出游</span>
+				<span <?php if(($type) == "3"): ?>class='active'<?php endif; ?>>待收货</span>
 			</a>
 		</div>
 		<div class="content">
@@ -89,7 +89,7 @@
 								<?php switch($vo["status"]): case "0": ?>已取消<?php break;?>
 									<?php case "1": ?>未支付<?php break;?>
 									<?php case "2": ?>已支付<?php break;?>
-									<?php case "3": ?>待出游<?php break;?>
+									<?php case "3": ?>待收货<?php break;?>
 									<?php case "4": ?>退货中<?php break;?>
 									<?php case "5": ?>已完成<?php break;?>
 									<?php case "6": ?>已关闭<?php break;?>
@@ -104,9 +104,16 @@
 								<div class="ads_orprice">
 									<p>
 										<em class="font-sm">￥</em>
-										<em class=""><?php echo ($vt["price"]); ?></em>
+										<em><?php echo ($vt["price"]); ?></em>
 									</p>
-									<p class="mt-12 font-12 color-light">X<?php echo ($vt["num"]); ?></p>
+									<p class="dtl-prc2 mt-8">
+										<em class="font-sm">￥</em>
+										<em><?php echo ($vt["cprice"]); ?></em>
+									</p>
+									<p class="mt-12 color-light">
+										<em class="font-sm">x</em>
+										<em class="font-12"><?php echo ($vt["num"]); ?></em>
+									</p>
 								</div>
 							</div><?php endforeach; endif; else: echo "" ;endif; ?>
 						<div class="ptb-12 font-12 border-b1 clearfix">
@@ -130,5 +137,4 @@
 		</div>
 	</div>
 </body>
-
 </html>

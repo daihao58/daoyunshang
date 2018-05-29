@@ -456,7 +456,7 @@
                                 <li>
                                     <a href="<?php echo U('Admin/Shop/order',array('status'=>'3'));?>" data-loader="App-loader" data-loadername="订单管理-已发货订单">
                                         <i class="glyphicon glyphicon-export"></i>
-                                        <span class="menu-text">待出游</span>
+                                        <span class="menu-text">待收货</span>
                                     </a>
                                 </li>
                                 <li>
@@ -672,7 +672,7 @@
                                         <li>
                                             <a href="<?php echo U('Admin/Employee/orderCenter',array('status'=>'3'));?>" data-loader="App-loader" data-loadername="订单管理-已发货订单">
                                                 <i class="glyphicon glyphicon-export"></i>
-                                                <span class="menu-text">待出游</span>
+                                                <span class="menu-text">待收货</span>
                                             </a>
                                         </li>
                                         <li>

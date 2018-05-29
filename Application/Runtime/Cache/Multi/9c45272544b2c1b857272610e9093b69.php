@@ -91,7 +91,7 @@
 								<?php if(empty($status)): ?><td class=" "><?php switch($vo["status"]): case "0": ?>已取消<?php break;?>
 					<?php case "1": ?>未支付<?php break;?>
 					<?php case "2": ?>已支付<?php break;?>
-					<?php case "3": ?>待出游<?php break;?>
+					<?php case "3": ?>待收货<?php break;?>
 					<?php case "4": ?>退货中<?php break;?>
 					<?php case "5": ?>已完成<?php break;?>
 					<?php case "6": ?>已关闭<?php break;?>
