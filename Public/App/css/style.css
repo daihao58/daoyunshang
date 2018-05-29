@@ -1,5 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+#backTop {
+	display: none;
+	position: fixed;
+	bottom: 3.5rem;
+	right: .5rem;
+	opacity: .75;
+	font-size: 2rem;
+	z-index: 9999;
+}
 .bg-semiCir {
 	position: absolute;
 	top: 0;

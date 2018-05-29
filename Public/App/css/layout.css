@@ -490,18 +490,18 @@ em, i {
 
 .bd-1:before {
 	box-sizing: border-box;
-  	content: '';
-  	position: absolute;
-  	top: 0;
-  	left: 0;
-  	width: 200%;
- 	height: 200%;
- 	border-radius: .2rem;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+	border-radius: .2rem;
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
-  	border: 1px solid #ddd;   
-  	-webkit-transform-origin: left top;
-  	transform-origin: left top;  
+	border: 1px solid #ddd;
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
 }
 
 /* === Content ===*/
@@ -1136,7 +1136,9 @@ a.search-head {
 .mt-40 {
 	margin-top: 2rem!important;
 }
-
+.mb-0 {
+	margin-bottom: 0!important;
+}
 .mb-4 {
 	margin-bottom: .2rem;
 }

@@ -56,6 +56,12 @@
 
 <body>
 	<div class="page">
+		<!-- 标题栏 -->
+		<header class="bar bar-header">
+			<a href="{:U('App/Shop/goods_kind',array('shopid'=>$shopid,'cid'=>$cid))}" class="iconfont icon-back bar-btn pull-left"></a>
+			<h1 class="title">{$cache.name}</h1>
+			<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="iconfont icon-home-head bar-btn pull-right"></a>
+		</header>
 		<footer class="bar bar-footer">
 			<div class="nav-txt">
 				<span class="font-12">合计：</span>
@@ -68,18 +74,20 @@
 		</footer>
 		<div class="content">
 				<form action="" method="post" id="orderform">
-					<!-- 地址  -->
-					<div class="ads-line"></div>
-					<div class="list-block mt-0">
+					<!-- 地址 -->
+					<div class="list-block media-list mt-0 mb-0">
 						<a id="changeaddress" class="item-content">
-							<empty name="vip">
-								<p>请选择联系人</p>
-								<else/>
-								<div>
-									<p>联系人：{$vip.name}&nbsp;&nbsp;&nbsp;{$vip.mobile}</p>
-									<p class="font-12 color-light mt-12">收货地址：{$vip.address}</p>
-								</div>
-							</empty>
+							<i class="item-media iconfont icon-addr2"></i>
+							<div class="item-title" style="width: 84%">
+								<empty name="vip">
+									<p>请选择联系人</p>
+									<else/>
+									<div>
+										<p>联系人：{$vip.name}&nbsp;&nbsp;&nbsp;<span class="pull-right">{$vip.mobile}</span></p>
+										<p class="mt-12">收货地址：{$vip.address}</p>
+									</div>
+								</empty>
+							</div>
 							<i class="iconfont icon-right"></i>
 						</a>
 						<input type="hidden" name="sid" value="{$sid}">
@@ -98,12 +106,13 @@
 						<textarea name="items" style="display: none;">{$allitems}</textarea>
 						<input type="hidden" name="isyf" value="{$isyf}">
 					</div>
+					<div class="ads-line"></div>
 					<!-- 商品明细  -->
 					<div class="list-block media-list">
 						<div class="list-title">商品明细</div>
 						<foreach name="cache" item="vo">
 							<ul>
-								<li class="item-content">
+								<li class="item-content" style="min-width: 100%;width: auto;background-color: #fafafa;margin: 0 -.7rem;padding-left: .7rem;padding-right: .7rem">
 									<div class="item-media prod-media">
 										<!-- 图片大小为147*101 -->
 										<img src="{$vo.pic}" />
@@ -111,18 +120,15 @@
 									<div class="item-title">
 											<h3 class="t-e-2">{$vo.name}</h3>
 											<p class="olor-light font-12 mt-4">{$vo.skuattr}</p>
+											<p>
+												<span class="color-ora">￥<em class="font-16">{$vo.price}</em></span>
+												<span class="pull-right mt-4">x{$vo.num}</span>
+											</p>
 									</div>
-								</li>
-								<li class="item-content">
-									<p>
-										<em class="font-sm">￥</em>
-										<em class="font-18">{$vo.price}</em>
-									</p>
-									<p><i class="font-sm">x</i>{$vo.num}</p>
 								</li>
 							</ul>
 						</foreach>
-						<!--
+						  <!--
 								<p class="border-b1 ads_ortt3 fonts18 color3">&nbsp;使用代金卷<span class="fr"><select name="djqid" id="djqid" class="ads-sel"><option value="0" data-money="0">请选择有效代金卷</option><foreach name="djq" item="vo"><option value="{$vo.id}" data-money="{$vo.money}">{$vo.money}元代金卷</option></foreach></select></span></p>
 								<p class="border-b1 ads_ortt3 fonts85">&nbsp;邮费政策：<eq name="isyf" value="1">全场定邮{$yf}元，订单满{$yftop}元包邮。<else/>全场包邮</eq></p>
 							-->
