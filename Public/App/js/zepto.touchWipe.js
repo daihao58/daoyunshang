@@ -25,7 +25,6 @@
               var obj = this;
               initX = event.targetTouches[0].pageX;
               initY = event.targetTouches[0].pageY;
-              console.log(initX + ':' + initY);
               objX = (obj.style.WebkitTransform.replace(/translateX\(/g, "").replace(/px\)/g, "")) * 1;
               if (objX == 0) {
                   $(this).on('touchmove', function(event) {
