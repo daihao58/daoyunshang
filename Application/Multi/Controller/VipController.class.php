@@ -1337,7 +1337,7 @@ class VipController extends BaseController
             $this->assign('name', $name);
         }
 
-        $map['fx_level']=array('gt',1);
+        $map['bond_status']=1;
 
         $psize = self::$CMS['set']['pagesize'] ? self::$CMS['set']['pagesize'] : 20;
         $data = $m->where($map)->page($p, $psize)->select();
@@ -1347,11 +1347,11 @@ class VipController extends BaseController
         foreach($data as $k => &$v){
             $v['fx_level_name']=M('vip_level')->where('id=' . $v['fx_level'])->getField('name');
             $v['fx_level_money']=M('vip_level')->where('id=' . $v['fx_level'])->getField('exp');
-            if($v['bond_status']){
+           /* if($v['bond_status']){
                 $v['bond_ch']='已交';
             }else{
                 $v['bond_ch']='未交';
-            }
+            }*/
         }
         $this->assign('data',$data);
         $this->display();

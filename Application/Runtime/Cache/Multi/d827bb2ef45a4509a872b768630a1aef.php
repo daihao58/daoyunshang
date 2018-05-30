@@ -45,7 +45,7 @@
 							<th>账号</th>
 							<th>分销等级</th>
 							<th>保证金</th>
-							<th>状态</th>
+							<!--<th>状态</th>-->
 						<!--    <th>操作</th>-->
 						</tr>
 					</thead>
@@ -59,11 +59,11 @@
 	                                </div>
 								</td>
 								<td class=" sorting_1"><?php echo ($vo["id"]); ?></td>
-								<td class=" "><?php echo ($vo["name"]); ?></td>
+								<td class=" "><?php echo ($vo["nickname"]); ?></td>
 								<td class=" "><?php echo ($vo["mobile"]); ?></td>
 								<td class=" "><?php echo ($vo["fx_level_name"]); ?></td>
-								<td class=" "><?php echo ($vo["fx_level_money"]); ?></td>
-								<td class=" "><?php echo ($vo["bond_ch"]); ?></td>
+								<td class=" "><?php echo ($vo["bond_money"]); ?></td>
+								<!--<td class=" "><?php echo ($vo["bond_ch"]); ?></td>-->
 							<!--	<td class="center ">
 									<?php if(($vo["status"]) == "0"): ?><button class="btn btn-success btn-xs txordercancel" data-id = "<?php echo ($vo["id"]); ?>"><i class="glyphicon glyphicon-ok"></i> 同意申请</button><?php endif; ?>
 									<?php if(($vo["status"]) == "1"): ?>已通过<?php endif; ?>
