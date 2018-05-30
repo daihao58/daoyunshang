@@ -66,6 +66,16 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">保证金</label>
+                        <div class="col-lg-4">
+                            <select name="bond_status">
+                                <option value="0" <?php if($cache['bond_status'] == 0): ?>selected<?php endif; ?> >未交</option>
+                                <option value="1" <?php if($cache['bond_status'] == 1): ?>selected<?php endif; ?> >已交</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <!-- <div class="form-group">
                         <label class="col-lg-2 control-label">开启花股</label>
                         <div class="col-lg-4">
