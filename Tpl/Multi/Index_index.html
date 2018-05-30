@@ -296,11 +296,11 @@
                                         <span class="menu-text">员工列表</span>
                                     </a>
                                 </li>
-                                <li>
+                              <!--  <li>
                                     <a href="{:U('Multi/Employee/achievement')}" data-loader="App-loader" data-loadername="员工业绩">
                                         <span class="menu-text">业绩统计</span>
                                     </a>
-                                </li>
+                                </li>-->
                             </ul>
                         </li>
                     </in>
@@ -582,7 +582,21 @@
                             </ul>
                         </li>
                     </in>
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon glyphicon glyphicon-asterisk"></i>
+                            <span class="menu-text"> 客户服务 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{:U('Multi/Artical/feedback')}" data-loader="App-loader" data-loadername="文章管理">
+                                    <span class="menu-text">客户反馈</span>
+                                </a>
+                            </li>
 
+                        </ul>
+                    </li>
                     <!--插件管理-->
                     <!-- <in name="addon" value="$useroath">
                         <li>

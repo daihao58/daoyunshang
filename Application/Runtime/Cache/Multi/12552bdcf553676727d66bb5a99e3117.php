@@ -558,7 +558,21 @@
                                 </li>
                             </ul>
                         </li><?php endif; ?>
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon glyphicon glyphicon-asterisk"></i>
+                            <span class="menu-text"> 客户服务 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="<?php echo U('Multi/Artical/feedback');?>" data-loader="App-loader" data-loadername="文章管理">
+                                    <span class="menu-text">客户反馈</span>
+                                </a>
+                            </li>
 
+                        </ul>
+                    </li>
                     <!--插件管理-->
                     <!-- <?php if(in_array(($addon), is_array($useroath)?$useroath:explode(',',$useroath))): ?><li>
                             <a href="#" class="menu-dropdown">

@@ -566,7 +566,7 @@
 			}
 		</script>
 		<script>
-/* 			function prevent_default(e) {
+		/*function prevent_default(e) {
 					e.preventDefault();
 			} 
 
