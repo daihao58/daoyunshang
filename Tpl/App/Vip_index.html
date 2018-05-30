@@ -39,7 +39,11 @@
                 <p class="user-level mt-12">
                     <i class="iconfont icon-vip1"></i><span>{$data.fxname}</span>                    
                 </p>
-                <a href="#" class="iconfont icon-shop"></a>
+                <if condition="$data['experience_hall'] eq 1">
+                    <a href="#" class="iconfont icon-shop"></a>
+                <else />
+                </if>
+
             </div>
             
             <!--<a href="" class="iconfont icon-right"></a>-->

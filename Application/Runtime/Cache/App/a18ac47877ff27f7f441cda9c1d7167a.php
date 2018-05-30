@@ -62,8 +62,14 @@
             <div class="user-infor">
                 <span class="portrait" style="background-image: url(<?php echo ($data["headimgurl"]); ?>);"></span>
                 <p class="user-name"><?php echo ($data["nickname"]); ?></p>
-                <p class="user-level mt-12"><i class="iconfont icon-vip1"></i><span><?php echo ($data["fxname"]); ?></span></p>
+                <p class="user-level mt-12">
+                    <i class="iconfont icon-vip1"></i><span><?php echo ($data["fxname"]); ?></span>                    
+                </p>
+                <?php if($data['experience_hall'] == 1): ?><a href="#" class="iconfont icon-shop"></a>
+                <?php else: endif; ?>
+
             </div>
+            
             <!--<a href="" class="iconfont icon-right"></a>-->
         </div>
 
