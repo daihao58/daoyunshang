@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="/Public/App/css/appslider.css" />
 	<!--组件依赖js begin-->
 	<script src="/Public/App/js/zepto.min.js"></script>
+	<script src="/Public/App/js/fx.js"></script>
 	<!--组件依赖js end-->
 	<script type="text/javascript" src="/Public/App/gmu/gmu.min.js"></script>
 	<script type="text/javascript" src="/Public/App/gmu/app-basegmu.js"></script>
@@ -291,10 +292,10 @@
 				<span id="finalsku" data-sku="" data-skuattr="" style="display: none;"></span>
 				<div class="clr"></div>
 			</div>
-
 			<div class="dtl-prt back2 fonts9 border-t1">
 				<?php echo (htmlspecialchars_decode($cache["content"])); ?>
 			</div>
+			<a id="backTop"><i class="iconfont icon-backTop"></i></a>
 		</div>
 		<div id="kefudianhua" class="telnone">
 			<div class="order-foot">
@@ -423,16 +424,25 @@
 	</script>
 	<!--封装购物车-->
 	<script type="text/javascript">
-		$(window).scroll(function () {
-			if (window.document.body.scrollTop >= 100) {
-				$('#zuoleft').hide();
-				$('#youright').hide();
+		$('.content').scroll(function () {
+			if ($(this).scrollTop() >= 100) {
+				/* $('#zuoleft').hide();
+				$('#youright').hide(); */
+				$('#backTop').show();
+
 			} else {
-				$('#zuoleft').show();
-				$('#youright').show();
+				/* $('#zuoleft').show();
+				$('#youright').show(); */
+				$('#backTop').hide();
 			}
 		});
 
+		$('#backTop').on('click',function(e) {
+			e.preventDefault();
+			setTimeout(function() {
+				$('.content')[0].scrollTop = 0;
+			}, 100);
+		});
 
 		$('#telquxiao').click(function () {
 			$('#kefudianhua').hide();
@@ -713,6 +723,7 @@
 			);
 		}
 	</script>
+
 	<!--通用分享-->
 	<!--新版分享特效-->
 	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>

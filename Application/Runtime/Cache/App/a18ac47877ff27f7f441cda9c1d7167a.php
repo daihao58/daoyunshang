@@ -81,7 +81,7 @@
                     <p class="font-12">推荐码</p>
                 </li>
                 <li class="col-25">
-                    <p class="font-12 mt-14">89ktrt</p>
+                    <p class="font-12 mt-14"><?php echo ($data["my_recommend_code"]); ?></p>
                 </li>
                 <!--<li class="col-25 nav-tyg">
                     <a href="">
