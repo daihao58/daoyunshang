@@ -36,36 +36,36 @@
                     <thead class="bordered-darkorange">
                         <tr role="row">
                             <th>ID</th>
-                            <th>会员号</th>
+                            <!--<th>会员号</th>-->
                             <th>昵称</th>
                             <th>登陆名</th>
                             <th>手机号</th>
-                            <th>权重</th>
-                            <th>创建时间</th>
-                            <th>推荐码</th>
+                            <!--<th>权重</th>-->
+                            <!--<th>创建时间</th>-->
+                            <!--<th>推荐码</th>-->
                             <th>操作</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php if(is_array($cache)): $i = 0; $__LIST__ = $cache;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr id="item<?php echo ($vo["id"]); ?>">
                                 <td class=" sorting_1"><?php echo ($vo["id"]); ?></td>
-                                <td class=" "><?php echo ($vo["vipid"]); ?></td>
+                                <!--<td class=" "><?php echo ($vo["vipid"]); ?></td>-->
                                 <td class=" "><?php echo ($vo["nickname"]); ?></td>
                                 <td class=" "><?php echo ($vo["username"]); ?></td>
                                 <td class=" "><?php echo ($vo["mobile"]); ?></td>
-                                <td class=" "><?php echo ($vo["weight"]); ?></td>
-                                <td class=" "><?php echo ($vo["createtime"]); ?></td>
-                                <td class=" ">
+                                <!--<td class=" "><?php echo ($vo["weight"]); ?></td>-->
+                                <!--<td class=" "><?php echo ($vo["createtime"]); ?></td>-->
+                             <!--   <td class=" ">
                                     <?php if($vo["tuijianma"] != ''): echo ($vo["tuijianma"]); ?>
                                 <?php else: endif; ?>
-                                </td>
+                                </td>-->
                                 <td class="center ">
                                     <a href="<?php echo U('Multi/Employee/employeeSet/',array('id'=>$vo['id']));?>" class="btn btn-success btn-xs" data-loader="App-loader" data-loadername="员工设置"><i class="fa fa-edit"></i> 编辑</a>
                                     <a href="<?php echo U('Multi/Employee/employeeList/');?>" class="btn btn-danger btn-xs" data-type="del" data-ajax="<?php echo U('Multi/Employee/employeeDel',array('id'=>$vo['id']));?>"><i class="fa fa-trash-o"></i> 删除</a>
-                                    <?php if(($vo["vipid"]) == "0"): ?><a href="javascript:;" class="btn btn-info btn-xs" data-id="<?php echo ($vo["id"]); ?>" onclick="showQrcode(this);"><i class="glyphicon glyphicon-resize-small"></i> 绑定</a>
+                                    <!--<?php if(($vo["vipid"]) == "0"): ?><a href="javascript:;" class="btn btn-info btn-xs" data-id="<?php echo ($vo["id"]); ?>" onclick="showQrcode(this);"><i class="glyphicon glyphicon-resize-small"></i> 绑定</a>
                                         <?php else: ?>
                                         <a href="javascript:;" class="btn btn-info btn-xs" data-id="<?php echo ($vo["id"]); ?>" onclick="showQrcode(this);"><i class="glyphicon glyphicon-resize-small"></i> 重绑</a>
-                                        <a href="<?php echo U('Multi/Employee/employeeList/');?>" class="btn btn-warning btn-xs" data-type="del" data-content="确定解绑，解绑后需重新绑定" data-ajax="<?php echo U('Multi/Employee/unbindVip',array('eid'=>$vo['id']));?>"><i class="glyphicon glyphicon-resize-full"></i> 解绑</a><?php endif; ?>
+                                        <a href="<?php echo U('Multi/Employee/employeeList/');?>" class="btn btn-warning btn-xs" data-type="del" data-content="确定解绑，解绑后需重新绑定" data-ajax="<?php echo U('Multi/Employee/unbindVip',array('eid'=>$vo['id']));?>"><i class="glyphicon glyphicon-resize-full"></i> 解绑</a><?php endif; ?>-->
                                 </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </tbody>

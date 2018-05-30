@@ -42,12 +42,12 @@
                             <input type="text" class="form-control" name="mobile" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["mobile"]); ?>">
                         </div>
                     </div>
-                    <div class="form-group">
+                  <!--  <div class="form-group">
                         <label class="col-lg-2 control-label">权重（默认0）</label>
                         <div class="col-lg-4">
                             <input type="text" class="form-control" name="weight" placeholder="选填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["weight"]); ?>">
                         </div>
-                    </div>
+                    </div>-->
                     <?php if(empty($cache["id"])): ?><div class="form-group">
                             <label class="col-lg-2 control-label">员工登陆密码<sup>*</sup></label>
                             <div class="col-lg-4">

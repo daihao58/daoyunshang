@@ -34,14 +34,15 @@ class EmployeeController extends BaseController
         );
         $this->assign('breadhtml', $this->getBread($bread));
         //绑定搜索条件与分页
-        $m = M('employee');
+//        $m = M('employee');
+        $m = M('User');
         $p = $_GET['p'] ? $_GET['p'] : 1;
         $search = I('search') ? I('search') : '';
         if ($search) {
             $map['username'] = array('like', "%$search%");
             $this->assign('search', $search);
         }
-        $map['shop_id'] = session("homeShopId");
+        $map['jibie'] = 3;
         $psize = self::$CMS['set']['pagesize'] ? self::$CMS['set']['pagesize'] : 20;
         $cache = $m->where($map)->page($p, $psize)->select();
         $count = $m->where($map)->count();
@@ -136,7 +137,8 @@ class EmployeeController extends BaseController
     public function employeeSet()
     {
         $id = I('id');
-        $m = M('employee');
+//        $m = M('employee');
+        $m = M('User');
         //设置面包导航，主加载器请配置
         $bread = array(
             '0' => array(
@@ -149,7 +151,7 @@ class EmployeeController extends BaseController
         );
         $this->assign('breadhtml', $this->getBread($bread));
         //处理POST提交
-        if (IS_POST) {
+        /*if (IS_POST) {
             //die('aa');
             $data = I('post.');
             // 总权重不能超标
@@ -190,7 +192,50 @@ class EmployeeController extends BaseController
                     $info['status'] = 0;
                     $info['msg'] = '设置失败！';
                 }
+            }*/
+
+
+        if (IS_POST) {
+            //die('aa');
+            $data = I('post.');
+            // 总权重不能超标
+           /* $weight = $m->where(array('id' => array('neq', $id)))->sum('weight');
+            if ($weight + $data['weight'] > 100) {
+                $info['status'] = 0;
+                $info['msg'] = '所有员工总权重不可超过100！';
+                $this->ajaxReturn($info);
+            }*/
+            if ($id) {
+                if ($data['userpass']) {
+                    $data['userpass'] = md5($data['userpass']);
+                } else {
+                    unset($data['userpass']);
+                }
+                $re = $m->save($data);
+                if (FALSE !== $re) {
+                    $info['status'] = 1;
+                    $info['msg'] = '设置成功！';
+                } else {
+                    $info['status'] = 0;
+                    $info['msg'] = '设置失败！';
+                }
+            } else {
+                $data['userpass'] = md5($data['userpass']);
+                $data['oath'] = 'sys,wx,vip,shop,order,log,withdraw,card,emp,tree,normal,addon,score,artical,';
+                $data['type'] = '0';
+                $data['status'] = '1';
+                $data['jibie'] = '3';
+                $re = $m->add($data);
+                if ($re) {
+                    $info['status'] = 1;
+                    $info['msg'] = '设置成功！';
+                } else {
+                    $info['status'] = 0;
+                    $info['msg'] = '设置失败！';
+                }
             }
+
+
             $this->ajaxReturn($info);
         }
         // $oath = M('User_oath')->where(array('status' => 1))->select();
@@ -272,7 +317,8 @@ class EmployeeController extends BaseController
     public function employeeDel()
     {
         $id = $_GET['id'];//必须使用get方法
-        $m = M('Employee');
+//        $m = M('Employee');
+        $m = M('User');
         if (!$id) {
             $info['status'] = 0;
             $info['msg'] = 'ID不能为空!';
