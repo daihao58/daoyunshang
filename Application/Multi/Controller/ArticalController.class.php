@@ -99,6 +99,11 @@ class ArticalController extends BaseController
         $this->assign('url', "http://" . I("server.HTTP_HOST"));
         $this->display(); // 输出模板
 
+    }
 
+    public function feeddel()
+    {
+        M("Feedback")->where(array("id" => I("get.id")))->delete();
+        $this->redirect("Multi/Artical/feedback");
     }
 }

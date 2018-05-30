@@ -287,11 +287,11 @@
                                         <span class="menu-text">员工列表</span>
                                     </a>
                                 </li>
-                                <li>
+                              <!--  <li>
                                     <a href="<?php echo U('Multi/Employee/achievement');?>" data-loader="App-loader" data-loadername="员工业绩">
                                         <span class="menu-text">业绩统计</span>
                                     </a>
-                                </li>
+                                </li>-->
                             </ul>
                         </li><?php endif; ?>
                     <?php if(in_array(($tree), is_array($useroath)?$useroath:explode(',',$useroath))): ?><!--层级树-->
