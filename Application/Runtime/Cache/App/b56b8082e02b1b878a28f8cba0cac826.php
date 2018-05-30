@@ -22,9 +22,7 @@
 <div class="page page-index">
     <!-- 标题栏 -->
     <header class="bar bar-header">
-
-            <a href="/App/Shop/sousuolist" class="search-head"><i class="iconfont icon-search pr-4"></i><input type="text" name="search_key" placeholder="请输入关键词"></a>
-
+        <a href="/App/Shop/sousuolist" class="search-head"><i class="iconfont icon-search pr-4"></i><input type="text" name="search_key" placeholder="请输入关键词"></a>
     </header>
 
     <!-- 工具栏 -->
@@ -124,7 +122,7 @@
                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
         </div>
-        <br><br>
+        <a id="backTop"><i class="iconfont icon-backTop"></i></a>
     </section>
 </div>
 <script src="/Public/App/js/jquery-3.2.1.min.js"></script>
@@ -151,6 +149,19 @@
             autoplay: 2000,
             loop: true
         });
+
+        $('.content').scroll(function () {
+			if ($(this).scrollTop() >= 100) {
+			    $('#backTop').show();
+			} else {
+			    $('#backTop').hide();
+			}
+		});
+
+		$('#backTop').on('click',function(e) {
+			e.preventDefault();
+			$('.content').animate({scrollTop: 0},300);
+		});
     });
 </script>
 </body>
