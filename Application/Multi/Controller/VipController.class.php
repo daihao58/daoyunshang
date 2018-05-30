@@ -1196,7 +1196,7 @@ class VipController extends BaseController
             $mvip=M('Vip');
             $m_recharge_info=M('Recharge_info');
             $vip=$mvip->where(array('mobile'=>$mobile))->find();
-            $data['name']=$vip['name'];
+            $data['name']=$vip['nickname'];
             $data['mobile']=$mobile;
             $data['money']=$money;
             $data['time']=date("Y-m-d H:i:s");
@@ -1205,6 +1205,58 @@ class VipController extends BaseController
             if($res){
                 $info['status'] = 1;
                 $info['msg'] = '充值成功！';
+
+
+                $phone=18661109996;
+                $nickname=$vip['nickname'];
+
+
+                $sms_templateM=M('sms_template');
+                $yanzhengxinxi=$sms_templateM->where('type=2')->field('id,content,active_time')->find();
+                $yanzhengcontent=str_replace('[nickname]',$nickname,$yanzhengxinxi['content']);
+                $yanzhengcontent=str_replace('[money]',$money,$yanzhengcontent);
+
+
+                $http='http://message.4008289828.com/index.php?g=Message&m=Index&a=createSendNews_interface';
+                $para['app_id']=10;
+                $para['content']=$yanzhengcontent;
+                $para['type']=1;
+                $para['usage']=1;
+                $para['mobiles']=$phone;
+                $o = "";
+                foreach ( $para as $k => $v )
+                {
+                    $o.= "$k=" . urlencode( $v ). "&" ;
+                }
+                $para = substr($o,0,-1);
+
+                $sms_info_json=$this->request_post($http,$para);
+
+                //var_dump($sms_info_json);die;
+//                if($sms_info_json['status']==0){
+                    $sms_phone=M('sms_phone');
+                    $data['phone'] = $phone;
+                    $data['content'] = $yanzhengcontent;
+                    $data['create_time'] = date("Y-m-d H:i:s");
+                    $mm=5*60;
+                    $data['dead_time']=date("Y-m-d H:i:s",strtotime($data['create_time'])+$mm);
+                    $data['smstempid'] = 1;
+                    //$data['code'] = $code;
+                    $res=$sms_phone->add($data);
+                /*    if($res){
+                        $result['id']=$res;
+                        $result['state_code']=1;
+                        $result['msg']='发送成功';
+                        $this->ajaxReturn($result);
+                    }
+                }else{
+                    $result['state_code']=2;
+                    $result['msg']='发送失败';
+                    $this->ajaxReturn($result);
+                }*/
+
+
+
             }else{
                 $info['status'] = 0;
                 $info['msg'] = '充值失败！';
@@ -1213,6 +1265,23 @@ class VipController extends BaseController
         }
         $this->display();
     }
+
+
+    public function request_post($url = '', $post_data = array()) {
+        $ch = curl_init();//初始化curl
+        curl_setopt($ch, CURLOPT_URL,$url);//抓取指定网页
+        curl_setopt($ch, CURLOPT_HEADER, 0);//设置header
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);//要求结果为字符串且输出到屏幕上
+        curl_setopt($ch, CURLOPT_POST, 1);//post提交方式
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        $data = curl_exec($ch);//运行curl
+        curl_close($ch);
+        return $data;
+    }
+
+
 
     //充值明细
     public function recharge_info()
