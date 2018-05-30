@@ -224,11 +224,12 @@
 								<p class="color-light font-12">{$vo.skuattr}</p>
 								<p class="color-ora mt-12">￥<em>{$vo.price}</em></p>
 								<p class="color-light" style="visibility: hidden;">[库存：{$vo.total}]</p>
+								<p>{$vo.total}</p>
 								<!-- 数量添加 -->
-								<div class="quant-select" data-id="{$vo.id}" data-goodsid='{$vo.goodsid}' data-sku='{$vo.sku}' data-num='{$vo.num}' data-total='{$vo.total}' data-price='{$vo.price}'>
-									<button class="quant-btn btn-minus">-</button>
+								<div class="quant-select" data-id="{$vo.id}" data-id="{$vo.id}" data-goodsid='{$vo.goodsid}' data-sku='{$vo.sku}' data-num='{$vo.num}' data-total='{$vo.total}' data-price='{$vo.price}'>
+									<a class="quant-btn btn-minus">-</a>
 									<input type="text" value="{$vo.num}" class="quant-num" disabled="disabled" />
-									<button class="quant-btn btn-plus">+</button>
+									<a class="quant-btn btn-plus">+</a>
 								</div>
 							</div>
 						</div>
@@ -284,11 +285,16 @@
 
 				var $item = $(this).parent(),
 						num = Number($item.find('.quant-num').val()),
-						left = Number($item.data('total')),
-						total = (num + 1) <= left ? (num + 1) : left;
+						total = Number($item.data('total'));
 
-				$item.find('.quant-num').val(total);
-				$item.data('num', total);
+				if(num === total || total ===0) {
+					return;
+				}
+
+				num ++;
+
+				$item.find('.quant-num').val(num);
+				$item.data('num', num);
 
 				$totalprice.html(Number($totalprice.html()) + Number($item.data('price')));
 				$totalnum.html(Number($totalnum.html()) + 1);
@@ -297,16 +303,19 @@
 				e.preventDefault();
 
 				var $item = $(this).parent(),
-						num = Number($item.find('.quant-num').val()),
-						total = num > 1 ? (num - 1) : 1;
+						num = Number($item.find('.quant-num').val());
 
-				$item.find('.quant-num').val(total);
-				$item.data('num', total);
-
-				if (num > 1) {
-					$totalprice.html(Number($totalprice.html()) - Number($item.data('price')));
-					$totalnum.html(Number($totalnum.html()) - 1);
+				if(num === 1) {
+					return
 				}
+
+				num --;
+
+				$item.find('.quant-num').val(num);
+				$item.data('num', num);
+
+				$totalprice.html(Number($totalprice.html()) - Number($item.data('price')));
+				$totalnum.html(Number($totalnum.html()) - 1);
 			});
 			//购物车删除
 			$('.goodsdel').on('click', function (e) {
@@ -335,8 +344,8 @@
 			//购物车清空
 			$('#clearbasket').on('click', function (e) {
 				e.preventDefault();
-				var items = $('.quant-select');
-				if (!$items.length) {
+				var $items = $('.swipe-item');
+				if ($items.length === 0) {
 					App_gmuMsg('您的购物车是空的，请先挑选商品!');
 					return false;
 				}
@@ -369,7 +378,6 @@
 						return false;
 					}
 				});
-
 			});
 			// 勾选商品
 			$('.goodsChose').on('click', function(e) {

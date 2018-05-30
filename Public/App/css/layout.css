@@ -1516,7 +1516,7 @@ a.link-green {
 	background: none;
 	color: #666;
 	font-size: .75rem;
-	line-height: .9rem!important;
+	line-height: 1.4rem!important;
 }
 
 .quant-select .quant-btn:active {
