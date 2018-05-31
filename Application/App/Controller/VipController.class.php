@@ -684,6 +684,37 @@ class VipController extends BaseController
 
     }
 
+    public function userinfo(){
+        $data = self::$WAP['vip'];
+        $this->assign('nickname',$data['nickname']);
+        $this->display();
+    }
+
+    public function userinfo_ajax(){
+        $user = self::$WAP['vip'];
+
+
+        $savename=$_POST['savename'];
+        $savepath=$_POST['savepath'];
+        $data['nickname']=$_POST['nickname'];
+        $data['headimgurl'] = '/Uploads/'.$savepath.$savename;
+
+        $res=M('Vip')->where("id= {$user['id']}")->save($data);
+
+        if($res){
+            $result['state_code']=1;
+            $result['msg']='修改成功';
+            $this->ajaxReturn($result);
+        }else{
+            $result['state_code']=2;
+            $result['msg']='修改失败';
+            $this->ajaxReturn($result);
+        }
+
+
+
+    }
+
     public function logout()
     {
         session(null);
