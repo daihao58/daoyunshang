@@ -543,9 +543,11 @@
 				dataType: 'json',
 				data: dt,
 				success: function (info) {
-					if (info['status']) {
+					if (info['status'] ==1 ) {
 						App_gmuMsg(info['msg']);
 						$(basketnum).html(info['total']);
+					}else if(info['status'] ==5){
+						window.location.href = '/app/vip/login';
 					} else {
 						App_gmuMsg('发生未知错误,请重新尝试！');
 					}

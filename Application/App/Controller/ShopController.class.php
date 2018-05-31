@@ -777,6 +777,14 @@ class ShopController extends BaseController
     //添加购物车
     public function addtobasket()
     {
+        $vip = session("WAP");
+        $vip = $vip['vip'];
+        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+            $info['status'] = 5;
+            $this->ajaxReturn($info);
+            exit;
+        }
+
         if (IS_AJAX) {
             $m = M('Shop_basket');
             $data = I('post.');
