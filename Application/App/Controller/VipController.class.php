@@ -304,6 +304,8 @@ class VipController extends BaseController
     }
 
     public function reg(){
+        $tui_code=$_GET['tui_code'];
+        $this->assign('tui_code',$tui_code);
         $this->display();
     }
 

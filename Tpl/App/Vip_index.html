@@ -17,6 +17,7 @@
 </head>
 <script src="__PUBLIC__/App/js/jquery-3.2.1.min.js"></script>
 <script src="__PUBLIC__/App/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="__PUBLIC__/App/js/jquery.qrcode.min.js"></script>
 <body>
 <div class="page page-user page-current" id="page-user">
     <!-- 标题栏 -->
@@ -57,7 +58,7 @@
                     <p class="font-12">推荐码</p>
                 </li>
                 <li class="col-25">
-                    <p class="font-12 mt-14">{$data.my_recommend_code}</p>
+                    <p class="font-12 mt-14" onclick="erweima()">{$data.my_recommend_code}</p>
                 </li>
                 <!--<li class="col-25 nav-tyg">
                     <a href="">
@@ -127,7 +128,22 @@
                 </if>
             </ul>
         </div>
+        <div id="code"></div>
     </div>
 </div>
+
+<script>
+    function erweima(){
+        $("#code").qrcode({ //code_img是一个img标签的id
+            render: "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
+            text: "http://yunshang.czcaizi.com/App/Vip/reg/tui_code/{$data['my_recommend_code']}",   //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
+            width: 80,              //二维码的宽度
+            height: 80,
+            background: "#ffffff",       //二维码的后景色
+            foreground: "#000000",        //二维码的前景色
+            src: $('#image').attr('src')             //二维码中间的图片
+        });
+    }
+</script>
 </body>
 </html>
