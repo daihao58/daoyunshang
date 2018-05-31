@@ -328,7 +328,9 @@ class VipController extends BaseController
             }else{
                 $mvip=M('Vip');
                 $data['mobile'] = $phone;
+                $data['nickname'] = $phone;
                 $data['password'] = md5($password);
+                $data['headimgurl'] = '/Public/Common/img/moren.jpg';
                 $data['recommend_code'] = $recommend_code;
 
                 $puser= M('Vip')->where("my_recommend_code = {$recommend_code}")->find();
