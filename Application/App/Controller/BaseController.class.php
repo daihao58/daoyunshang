@@ -91,18 +91,22 @@ class BaseController extends Controller
         }
 */
         //检查是否存在VIP
+        //unset($_SESSION['sqopenid']);
         $_SESSION['sqmode']='wecha';
-        $_SESSION['sqopenid']='oLqyh0qKX1Z1R6ckNn0dMYOhmxGQ';
+        if($_SESSION['sqopenid']== ''){
+            $_SESSION['sqopenid']='15295121323';
+        }
+
         if ($_SESSION['sqmode'] && $_SESSION['sqopenid']) {
             $openid = $_SESSION['sqopenid'];
-            $vip = M('Vip')->where(array('openid' => $openid))->find();
+            $vip = M('Vip')->where(array('mobile' => $openid))->find();
 
-            if (!$vip) {
+            /*if (!$vip) {
                 $this->redirect('App/Baseoa/index');
-            }
+            }*/
             self::$WAP['vipid'] = $_SESSION['WAP']['vipid'] = $vip['id'];
             self::$WAP['vip'] = $_SESSION['WAP']['vip'] = $vip;
-
+            //var_dump(self::$WAP['vip']);die;
             //绑定底部链接
             if (strtolower(CONTROLLER_NAME) == 'shop') {
                 //默认底部链接

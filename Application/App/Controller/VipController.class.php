@@ -61,8 +61,8 @@ class VipController extends BaseController
         // $this->cashback();
         $vipid = self::$WAP['vipid'];
         $data = self::$WAP['vip'];
-
-        if(empty($data['mobile'])){
+        //var_dump($data);die;
+        if(empty($data['mobile']) || $data['mobile']=='15295121323' ){
             $this->redirect('App/vip/login');
         }else{
             $backurl = base64_encode(U('App/Vip/index'));
@@ -220,92 +220,7 @@ class VipController extends BaseController
         $this->ajaxReturn($info);
     }
 
-    public function reg()
-    {
-        if (IS_POST) {
-            $m = M('vip');
-            $post = I('post.');
-            //判断重复注册
-            if ($m->where('mobile=' . $post['mobile'])->find()) {
-                $info['status'] = 0;
-                $info['msg'] = '此手机号已注册过！';
-                $this->ajaxReturn($info, "json");
-            }
-            //判断验证码
-            if (self::$WAP['vipset']['isverify'] == 1) {
-                $last_ver = M('vip_log')->where('mobile=' . $post['mobile'] . ' and type=1')->order('ctime desc')->find();
-                if ($last_ver['code'] != $post['code']) {
-                    $info['status'] = 0;
-                    $info['msg'] = '验证码错误！';
-                    $this->ajaxReturn($info, "json");
-                }
-            }
-            $post['password'] = md5($post['password']);
-            $post['score'] = self::$WAP['vipset']['reg_score'];
-            $post['exp'] = self::$WAP['vipset']['reg_exp'];
-            $post['cur_exp'] = self::$WAP['vipset']['reg_exp'];
-            $level = $this->getLevel($post['exp']);
-            $post['levelid'] = $level['levelid'];
-            $post['ctime'] = time();
-            unset($post['code']);
-            $r = $m->add($post);
-            if ($r) {
-                //赠送操作
-                if (self::$WAP['vipset']['isgift']) {
-                    $gift = explode(",", self::$WAP['vipset']['gift_detail']);
-                    $cardnopwd = $this->getCardNoPwd();
-                    $data_card['type'] = $gift[0];
-                    $data_card['vipid'] = $r;
-                    $data_card['money'] = $gift[1];
-                    $data_card['usemoney'] = $gift[3];
-                    $data_card['cardno'] = $cardnopwd['no'];
-                    $data_card['cardpwd'] = $cardnopwd['pwd'];
-                    $data_card['status'] = 1;
-                    $data_card['stime'] = $data_card['ctime'] = time();
-                    $data_card['etime'] = time() + $gift[2] * 24 * 60 * 60;
-                    M('vip_card')->add($data_card);
 
-                    //发送赠送通知消息
-                    //					$data_msg['pids']=$r;
-                    //					$data_msg['title']="新人礼包";
-                    //					$data_msg['content']="新用户注册赠送新人礼包，内含代金券，请至个人中心查收！";
-                    //					$data_msg['ctime']=time();
-                    //					M('vip_message')->add($data_msg);
-                }
-                //记录日志
-                $data_log['ip'] = get_client_ip();
-                $data_log['vipid'] = $r['id'];
-                $data_log['ctime'] = time();
-                $data_log['event'] = "会员注册";
-                $data_log['score'] = $post['score'];
-                $data_log['exp'] = $post['exp'];
-                $data_log['type'] = 4;
-                M('vip_log')->add($data_log);
-
-                $info['status'] = 1;
-                $info['msg'] = '注册成功！马上去登陆';
-                $info['mobile'] = $post['mobile'];
-            } else {
-                $info['status'] = 0;
-                $info['msg'] = '注册失败！';
-            }
-            $this->ajaxReturn($info, "json");
-        } else {
-            if (self::$WAP['vipset']['isverify'] == 1) {
-                if ($_SESSION['mobile_tmp']) {
-                    $mobile = $_SESSION['mobile_tmp'];
-                    $last_ver = M('vip_log')->where('mobile=' . $mobile)->order('ctime desc')->find();
-                    $times = $last_ver['ctime'] + self::$WAP['vipset']['ver_interval'] * 60 - time();
-                }
-            }
-            $status = $times > 0 ? 0 : 1;
-            $times = $times > 0 ? $times : 0;
-            $this->assign('status', $status);
-            $this->assign('times', $times);
-            $this->assign('isverify', self::$WAP['vipset']['isverify']);
-            $this->display();
-        }
-    }
 
     private function getCardNoPwd()
     {
@@ -388,6 +303,10 @@ class VipController extends BaseController
         return $data;
     }
 
+    public function reg(){
+        $this->display();
+    }
+
     public function regist(){
         $phone = $_POST['phone'];
         $password = $_POST['password'];
@@ -417,6 +336,15 @@ class VipController extends BaseController
                     $data['pid']=$puser['id'];
                     $data['plv']=$puser['plv']+1;
                     $data['path']=$puser['path'].'-'.$puser['id'];
+                    if($recommend_code == 'df00001'){
+                        $head_code='df';
+                    }elseif($recommend_code == 'df00002'){
+                        $head_code='llq';
+                    }else{
+                        $head_code='';
+                    }
+                    $data['my_recommend_code'] =$head_code.$this->getRandomString(6);
+                    $data['ctime']=date('Y-m-d H:i:s');
                     $res=$mvip->add($data);
                     if($res){
                         $result['state_code']=1;
@@ -453,15 +381,55 @@ class VipController extends BaseController
         return $str;
     }
 
-
-
     public function login(){
-
+        unset($_SESSION['sqopenid']);
+        unset($_SESSION['WAP']['vip']);
         $this->display();
+    }
+
+
+
+    public function login_ajax(){
+        $map['mobile'] = $_POST['mobile'];
+        $map['password'] = md5($_POST['password']);
+
+        $user_data=M('Vip')->where($map)->find();
+        if($user_data){
+
+            $_SESSION['sqmode']='wecha';
+            $_SESSION['sqopenid']=$_POST['mobile'];
+            if ($_SESSION['sqmode'] && $_SESSION['sqopenid']) {
+                $openid = $_SESSION['sqopenid'];
+                $vip = M('Vip')->where(array('mobile' => $openid))->find();
+
+                /*if (!$vip) {
+                    $this->redirect('App/Baseoa/index');
+                }*/
+                self::$WAP['vipid'] = $_SESSION['WAP']['vipid'] = $vip['id'];
+                self::$WAP['vip'] = $_SESSION['WAP']['vip'] = $vip;
+
+
+                //注销高级鉴权缓存
+                unset($_SESSION['oappid']);
+                unset($_SESSION['oaurl']);
+            } else {
+                session(null);
+                $this->diemsg(0, '未正常获取会员数据，请尝试重新访问！');
+            }
+
+
+            $result['state_code']=1;
+            $result['msg']='登录成功';
+            $this->ajaxReturn($result);
+        }else{
+            $result['state_code']=2;
+            $result['msg']='用户不存在或密码错误';
+            $this->ajaxReturn($result);
+        }
 
     }
 
-    public function login_ajax(){
+    public function bingding(){
         $vipid = self::$WAP['vipid'];
         $data = self::$WAP['vip'];
 
@@ -504,8 +472,8 @@ class VipController extends BaseController
             $result['msg']='账号密码错误';
             $this->ajaxReturn($result);
         }
-
     }
+
     /*public function sendCode()
     {
         $m = M('vip_log');
