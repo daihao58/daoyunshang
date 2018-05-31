@@ -1193,8 +1193,10 @@ class ShopController extends BaseController
             $msku = M('Shop_goods_sku');
             $dhmap['sid'] = $sid;
             $dhmap['vipid'] = $_SESSION['WAP']['vipid'];
+            $dhmap['shop_id']= 0;
             if($dh){
                 $dhmap['id'] = array('in',$dh);
+                $dhmap['shop_id']= 21;
             }
 
 

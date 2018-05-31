@@ -160,7 +160,7 @@
 									<span>余额：</span>
 									<i class="color-ora" id='money' data-money='{$_SESSION[' WAP ']['vip ']['money ']}'>￥{$_SESSION['WAP']['vip']['money']}</i>
 								</p>
-								<p class="color-light font-12 mt-8">余额不足请充值</p>
+								<!--<p class="color-light font-12 mt-8">余额不足请充值</p>-->
 							</div>
 						</li>
 					</ul>
@@ -210,7 +210,7 @@
 				// $(this).find('span').css('color', ' #ff3000');
 				$paytype.val($(this).data('paytype'));
 			} else {
-				App_gmuMsg('请使用其它方式！');
+				App_gmuMsg('余额不足请充值！');
 			}
 		});
 		$('#orderconfirm').on('click', function () {
