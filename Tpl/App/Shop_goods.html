@@ -390,6 +390,8 @@
 					//console.log(data);
 					if (data.state_code == 1) {
 						zbb_msg(data.msg);
+					}else if(data.state_code == 5){
+						window.location.href = '/app/vip/login';
 					} else {
 						zbb_msg(data.msg);
 					}
@@ -623,8 +625,10 @@
 							dataType: 'json',
 							data: dt,
 							success: function (info) {
-								if (info['status']) {
+								if (info['status'] == 1) {
 									App_gmuMsg2(info['msg'], fun);
+								}else if(info['status'] ==5){
+									window.location.href = '/app/vip/login';
 								} else {
 									App_gmuMsg('发生未知错误,请重新尝试！');
 								}

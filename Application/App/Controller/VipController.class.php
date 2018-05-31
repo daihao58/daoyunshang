@@ -63,7 +63,7 @@ class VipController extends BaseController
         $data = self::$WAP['vip'];
         //var_dump($data);die;
         if(empty($data['mobile']) || $data['mobile']=='15295121323' ){
-            $this->redirect('App/vip/login');
+            $this->redirect('App/vip/login');exit;
         }else{
             $backurl = base64_encode(U('App/Vip/index'));
             $this->checkLogin($backurl);

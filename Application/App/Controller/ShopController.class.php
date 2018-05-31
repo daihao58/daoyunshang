@@ -543,6 +543,13 @@ class ShopController extends BaseController
 
     public function basket()
     {
+        $vip = session("WAP");
+        $vip = $vip['vip'];
+        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+            $this->redirect('App/vip/login');exit;
+        }
+
+
         $sid = I('sid') <> '' ? I('sid') : $this->diemsg(0, '缺少SID参数');//sid可以为0
         $lasturl = I('lasturl') ? I('lasturl') : '';
         $basketlasturl = base64_decode($lasturl);
@@ -579,8 +586,7 @@ class ShopController extends BaseController
         $totalnum = 0;
 
 
-        $vip = session("WAP");
-        $vip = $vip['vip'];
+
         $user_vip = M('vip')->where(" id='".$vip['id']."' ")->find();
 
 
@@ -725,6 +731,11 @@ class ShopController extends BaseController
     public function shoucang(){
         $vip = session("WAP");
         $vip = $vip['vip'];
+        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+            $result['state_code']=5;
+            $this->ajaxReturn($result);
+            exit;
+        }
 
         $good_id=$_POST['goodsid'];
         $good=M('Shop_goods')->find($good_id);
@@ -979,6 +990,14 @@ class ShopController extends BaseController
     //立刻购买逻辑
     public function fastbuy()
     {
+        $vip = session("WAP");
+        $vip = $vip['vip'];
+        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+            $info['status'] = 5;
+            $info['msg'] = '未获取数据，请重新尝试321';
+            $this->ajaxReturn($info);
+            exit;
+        }
         if (IS_AJAX) {
             $m = M('Shop_basket');
             $data = I('post.');
@@ -1155,10 +1174,24 @@ class ShopController extends BaseController
             //清空临时地址
             unset($_SESSION['WAP']['orderURL']);
             //已登陆
+
+
+            $dh=$_GET['dh'];
+
+
+
             $m = M('Shop_basket');
             $mgoods = M('Shop_goods');
             $msku = M('Shop_goods_sku');
-            $cache = $m->where(array('sid' => $sid, 'vipid' => $_SESSION['WAP']['vipid']))->select();
+            $dhmap['sid'] = $sid;
+            $dhmap['vipid'] = $_SESSION['WAP']['vipid'];
+            if($dh){
+                $dhmap['id'] = array('in',$dh);
+            }
+
+
+//            $cache = $m->where(array('sid' => $sid, 'vipid' => $_SESSION['WAP']['vipid']))->select();
+            $cache = $m->where($dhmap)->select();
 
             //错误标记
             $errflag = 0;
