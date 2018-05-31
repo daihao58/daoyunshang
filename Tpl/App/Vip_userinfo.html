@@ -38,7 +38,11 @@
 				<input type="text" value="{$nickname}" name="nickname" placeholder="请填写昵称" class="item-input t-r">
 			</li>
 			<li class="item-content">
-				<div class="item-title label">附件</div>
+				<div class="item-title label">用户名</div>
+				<span type="text" value="{$mobile}" name="mobile"  class="item-input t-r">{$mobile}</span>
+			</li>
+			<li class="item-content">
+				<div class="item-title label">头像</div>
 				<form id="uploadform" enctype="multipart/form-data" method="post" >
 					<label class="upload">
 						<i class="iconfont icon-upload"></i>
@@ -54,7 +58,7 @@
 		</ul>
 
 		<!-- 提交 -->
-		<div class="plr-14 ptb-30"><button class="button button-big tuichu">退出登录</button></div>
+		<div class="plr-14 ptb-30"><button class="button button-big sub">保存</button></div>
 	</section>
 </div>
 

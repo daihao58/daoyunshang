@@ -687,6 +687,7 @@ class VipController extends BaseController
     public function userinfo(){
         $data = self::$WAP['vip'];
         $this->assign('nickname',$data['nickname']);
+        $this->assign('mobile',$data['mobile']);
         $this->display();
     }
 
