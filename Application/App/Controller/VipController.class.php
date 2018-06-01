@@ -335,6 +335,37 @@ class VipController extends BaseController
         }
     }
 
+    public function editpwd(){
+        $phone=$_GET['phone'];
+
+        $this->assign('phone',$phone);
+        $this->display();
+    }
+
+    public function editpwd_ajax(){
+        $phone=$_POST['phone'];
+        $password=$_POST['password'];
+        $ppassword=$_POST['ppassword'];
+        if($password != $ppassword){
+            $result['state_code']=2;
+            $result['msg']='两次密码不一致';
+            $this->ajaxReturn($result);
+        }else{
+            $data['password']=md5($password);
+            $map['mobile']=$phone;
+            $res=M('Vip')->where($map)->save($data);
+            if($res){
+                $result['state_code']=1;
+                $result['msg']='密码设置成功';
+                $this->ajaxReturn($result);
+            }else{
+                $result['state_code']=2;
+                $result['msg']='密码设置失败';
+                $this->ajaxReturn($result);
+            }
+        }
+    }
+
     public function reset(){
         $phone=$_GET['phone'];
         $this->assign('phone',$phone);
