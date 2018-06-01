@@ -1423,6 +1423,12 @@ class ShopController extends BaseController
     //订单列表
     public function orderList()
     {
+        $vipid = self::$WAP['vipid'];
+        $data = self::$WAP['vip'];
+        //var_dump($data);die;
+        if(empty($data['mobile']) || $data['mobile']=='15295121323' ){
+            $this->redirect('App/vip/login');exit;
+        }
         $sid = I('sid') <> '' ? I('sid') : $this->diemsg(0, '缺少SID参数');//sid可以为0
         $type = I('type') ? I('type') : 4;
         $this->assign('type', $type);
