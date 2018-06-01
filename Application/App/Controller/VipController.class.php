@@ -436,7 +436,7 @@ class VipController extends BaseController
                 $data['headimgurl'] = '/Public/Common/img/moren.jpg';
                 $data['recommend_code'] = $recommend_code;
 
-                $puser= M('Vip')->where("my_recommend_code = {$recommend_code}")->find();
+                $puser= M('Vip')->where("my_recommend_code = '{$recommend_code}'")->find();
                 if($puser){
                     $data['pid']=$puser['id'];
                     $data['plv']=$puser['plv']+1;
