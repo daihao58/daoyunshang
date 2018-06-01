@@ -790,6 +790,7 @@ class VipController extends BaseController
         $this->assign('nickname',$data['nickname']);
         $this->assign('mobile',$data['mobile']);
         $this->assign('ercode',$data['my_recommend_code']);
+        //var_dump($data);die;
         $this->display();
     }
 
