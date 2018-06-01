@@ -303,6 +303,12 @@ class VipController extends BaseController
         return $data;
     }
 
+
+    public function ewm(){
+        $this->assign('ercode',$_GET['ercode']);
+        $this->display();
+    }
+
     public function retrieve(){
         $this->display();
     }
@@ -783,6 +789,7 @@ class VipController extends BaseController
         $data = self::$WAP['vip'];
         $this->assign('nickname',$data['nickname']);
         $this->assign('mobile',$data['mobile']);
+        $this->assign('ercode',$data['my_recommend_code']);
         $this->display();
     }
 
