@@ -218,9 +218,11 @@
 							</div>
 							<div class="item-title">
 								<div class="bsk-img pull-left">
-									<img src="{$vo.pic}" />
+									<a href="{:U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vo['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']))}"><img src="{$vo.pic}" /></a>
 								</div>
-								<h3 class="t-e-2">{$vo.name}</h3>
+								<a href="{:U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vo['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']))}">
+									<h3 class="t-e-2">{$vo.name}</h3>
+								<a/>
 								<p class="color-light font-12">{$vo.skuattr}</p>
 								<p class="color-ora mt-12">￥<em>{$vo.price}</em></p>
 								<p class="color-light" style="visibility: hidden;">[库存：{$vo.total}]</p>
