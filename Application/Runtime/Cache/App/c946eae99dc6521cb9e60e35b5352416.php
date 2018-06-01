@@ -56,6 +56,12 @@
 
 <body>
 	<div class="page">
+		<!-- 标题栏 -->
+		<header class="bar bar-header">
+			<a href="javascript:void(0)" onclick="history.go(-1)" class="iconfont icon-back bar-btn pull-left"></a>
+			<h1 class="title"><?php echo ($cache["name"]); ?></h1>
+			<a href="<?php echo U('App/Shop/index',array('shopid'=>$shopid));?>" class="iconfont icon-home-head bar-btn pull-right"></a>
+		</header>
 		<footer class="bar bar-footer">
 			<div class="nav-txt">
 				<span class="font-12">合计：</span>
@@ -68,16 +74,18 @@
 		</footer>
 		<div class="content">
 				<form action="" method="post" id="orderform">
-					<!-- 地址  -->
-					<div class="ads-line"></div>
-					<div class="list-block mt-0">
+					<!-- 地址 -->
+					<div class="list-block media-list mt-0 mb-0">
 						<a id="changeaddress" class="item-content">
-							<?php if(empty($vip)): ?><p>请选择联系人</p>
-								<?php else: ?>
-								<div>
-									<p>联系人：<?php echo ($vip["name"]); ?>&nbsp;&nbsp;&nbsp;<?php echo ($vip["mobile"]); ?></p>
-									<p class="font-12 color-light mt-12">收货地址：<?php echo ($vip["address"]); ?></p>
-								</div><?php endif; ?>
+							<i class="item-media iconfont icon-addr2"></i>
+							<div class="item-title" style="width: 84%">
+								<?php if(empty($vip)): ?><p>请选择联系人</p>
+									<?php else: ?>
+									<div>
+										<p>联系人：<?php echo ($vip["name"]); ?>&nbsp;&nbsp;&nbsp;<span class="pull-right"><?php echo ($vip["mobile"]); ?></span></p>
+										<p class="mt-12">收货地址：<?php echo ($vip["address"]); ?></p>
+									</div><?php endif; ?>
+							</div>
 							<i class="iconfont icon-right"></i>
 						</a>
 						<input type="hidden" name="sid" value="<?php echo ($sid); ?>">
@@ -96,11 +104,12 @@
 						<textarea name="items" style="display: none;"><?php echo ($allitems); ?></textarea>
 						<input type="hidden" name="isyf" value="<?php echo ($isyf); ?>">
 					</div>
+					<div class="ads-line"></div>
 					<!-- 商品明细  -->
 					<div class="list-block media-list">
 						<div class="list-title">商品明细</div>
 						<?php if(is_array($cache)): foreach($cache as $key=>$vo): ?><ul>
-								<li class="item-content">
+								<li class="item-content" style="min-width: 100%;width: auto;background-color: #fafafa;margin: 0 -.7rem;padding-left: .7rem;padding-right: .7rem">
 									<div class="item-media prod-media">
 										<!-- 图片大小为147*101 -->
 										<img src="<?php echo ($vo["pic"]); ?>" />
@@ -108,22 +117,19 @@
 									<div class="item-title">
 											<h3 class="t-e-2"><?php echo ($vo["name"]); ?></h3>
 											<p class="olor-light font-12 mt-4"><?php echo ($vo["skuattr"]); ?></p>
+											<p>
+												<span class="color-ora">￥<em class="font-16"><?php echo ($vo["price"]); ?></em></span>
+												<span class="pull-right mt-4">x<?php echo ($vo["num"]); ?></span>
+											</p>
 									</div>
 								</li>
-								<li class="item-content">
-									<p>
-										<em class="font-sm">￥</em>
-										<em class="font-18"><?php echo ($vo["price"]); ?></em>
-									</p>
-									<p><i class="font-sm">x</i><?php echo ($vo["num"]); ?></p>
-								</li>
 							</ul><?php endforeach; endif; ?>
-						<!--
+						  <!--
 								<p class="border-b1 ads_ortt3 fonts18 color3">&nbsp;使用代金卷<span class="fr"><select name="djqid" id="djqid" class="ads-sel"><option value="0" data-money="0">请选择有效代金卷</option><?php if(is_array($djq)): foreach($djq as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>" data-money="<?php echo ($vo["money"]); ?>"><?php echo ($vo["money"]); ?>元代金卷</option><?php endforeach; endif; ?></select></span></p>
 								<p class="border-b1 ads_ortt3 fonts85">&nbsp;邮费政策：<?php if(($isyf) == "1"): ?>全场定邮<?php echo ($yf); ?>元，订单满<?php echo ($yftop); ?>元包邮。<?php else: ?>全场包邮<?php endif; ?></p>
 							-->
 						<div class="item-content">
-							<input type="text" name="msg" class="item-input font-12" placeholder="给卖家留言，请输入出游日期" />
+							<input type="text" name="msg" class="item-input font-12" placeholder="给卖家留言" />
 						</div>
 						<div class="item-content font-12">
 							<span class="color-gray">共<?php echo ($totalnum); ?>件商品</span>
@@ -150,7 +156,7 @@
 									<span>余额：</span>
 									<i class="color-ora" id='money' data-money='<?php echo ($_SESSION[' WAP ']['vip ']['money ']); ?>'>￥<?php echo ($_SESSION['WAP']['vip']['money']); ?></i>
 								</p>
-								<p class="color-light font-12 mt-8">余额不足由其他方式支付</p>
+								<!--<p class="color-light font-12 mt-8">余额不足请充值</p>-->
 							</div>
 						</li>
 					</ul>
@@ -200,7 +206,7 @@
 				// $(this).find('span').css('color', ' #ff3000');
 				$paytype.val($(this).data('paytype'));
 			} else {
-				App_gmuMsg('请使用其它方式！');
+				App_gmuMsg('余额不足请充值！');
 			}
 		});
 		$('#orderconfirm').on('click', function () {
