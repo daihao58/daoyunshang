@@ -246,7 +246,7 @@ class VipController extends BaseController
 
         $sms_templateM=M('sms_template');
         $code=rand(100000,999999);
-        $yanzhengxinxi=$sms_templateM->where('type=1')->field('id,content,active_time')->find();
+        $yanzhengxinxi=$sms_templateM->where("type={$gettype}")->field('id,content,active_time')->find();
         $yanzhengcontent=str_replace('[code]',$code,$yanzhengxinxi['content']);
 
 
@@ -303,6 +303,69 @@ class VipController extends BaseController
         return $data;
     }
 
+    public function retrieve(){
+        $this->display();
+    }
+
+    public function retrieve_ajax(){
+        $phone = $_POST['phone'];
+        $code = $_POST['code'];
+
+        $sms_phone=M('sms_phone');
+        $where['phone'] = $phone;
+        $where['_string'] = 'dead_time > now()' ;
+        $yzm_code=$sms_phone->field('code')->where($where)->order("create_time desc")->find()['code'];
+
+        if($code == $yzm_code){
+            $res=M('vip')->where("mobile= {$phone}")->select();
+            if(!$res){
+                $result['state_code']=2;
+                $result['msg']='该用户不存在';
+                $this->ajaxReturn($result);
+            }else{
+
+                $result['state_code']=1;
+                $result['msg']='找回成功';
+                $this->ajaxReturn($result);
+            }
+        }else{
+            $result['state_code']=2;
+            $result['msg']='验证码错误';
+            $this->ajaxReturn($result);
+        }
+    }
+
+    public function reset(){
+        $phone=$_GET['phone'];
+        $this->assign('phone',$phone);
+        $this->display();
+    }
+
+    public function reset_ajax(){
+        $phone=$_POST['phone'];
+        $password=$_POST['password'];
+        $ppassword=$_POST['ppassword'];
+        if($password != $ppassword){
+            $result['state_code']=2;
+            $result['msg']='两次密码不一致';
+            $this->ajaxReturn($result);
+        }else{
+            $data['password']=md5($password);
+            $map['mobile']=$phone;
+            $res=M('Vip')->where($map)->save($data);
+            if($res){
+                $result['state_code']=1;
+                $result['msg']='密码设置成功';
+                $this->ajaxReturn($result);
+            }else{
+                $result['state_code']=2;
+                $result['msg']='密码设置失败';
+                $this->ajaxReturn($result);
+            }
+        }
+
+    }
+
     public function reg(){
         $tui_code=$_GET['tui_code'];
         $this->assign('tui_code',$tui_code);
@@ -321,6 +384,7 @@ class VipController extends BaseController
 //            $where['true_name'] = $true_name;
         $where['_string'] = 'dead_time > now()' ;
         $yzm_code=$sms_phone->field('code')->where($where)->order("create_time desc")->find()['code'];
+
 //var_dump($yzm_code);die;
         if($code == $yzm_code){
             if(M('vip')->where("mobile= {$phone}")->select()){
