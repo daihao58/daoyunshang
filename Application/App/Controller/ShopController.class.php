@@ -1179,6 +1179,7 @@ class ShopController extends BaseController
             //保存购物车加密地址，用于OrderMaker正常返回
             $this->assign('lasturlencode', $lasturl);
             $this->assign('sid', $sid);
+
             //清空临时地址
             unset($_SESSION['WAP']['orderURL']);
             //已登陆
@@ -1186,7 +1187,7 @@ class ShopController extends BaseController
 
             $dh=$_GET['dh'];
 
-
+            $this->assign('dh', $dh);
 
             $m = M('Shop_basket');
             $mgoods = M('Shop_goods');
@@ -1414,8 +1415,10 @@ class ShopController extends BaseController
     public function orderAddress()
     {
         $sid = I('sid');
+        $dh = I('dh');
+        //var_dump($dh);die;
         $lasturlencode = I('lasturl');
-        $backurl = U('App/Shop/orderMake', array('sid' => $sid, 'lasturl' => $lasturlencode));
+        $backurl = U('App/Shop/orderMake', array('sid' => $sid, 'lasturl' => $lasturlencode,'dh'=>$dh));
         $_SESSION['WAP']['orderURL'] = $backurl;
         $this->redirect('App/Vip/address');
     }

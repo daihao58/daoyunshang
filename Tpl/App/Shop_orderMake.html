@@ -194,11 +194,14 @@
 
 	<script type="text/javascript">
 		var sid = "{$sid}";
+		var dh ="{$dh}";
+		console.log(dh);
+		console.log(sid);
 		var lasturlencode = "{$lasturlencode}";
 		var $paytype = $('#paytype');
 		$('#changeaddress').on('click', function (e) {
 			e.preventDefault();
-			var tourl = "{:U('App/Shop/orderAddress',array('sid'=>$sid,'lasturl'=>$lasturlencode))}";
+			var tourl = "{:U('App/Shop/orderAddress',array('sid'=>$sid,'lasturl'=>$lasturlencode,'dh'=>$dh))}";
 			window.location.href = tourl;
 		});
 		$('.ads_pay').click(function () {
