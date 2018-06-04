@@ -1399,6 +1399,7 @@ class ShopController extends BaseController
 
                 $this->assign('isyf', 1);
                 $yf = $totalprice >= $_SESSION['SHOP']['set']['yftop'] ? 0 : $_SESSION['SHOP']['set']['yf'];
+                $allshop=$totalprice;
                 $totalprice=$totalprice+$yf;
                 //var_dump($yf);die;
                 $this->assign('yf', $yf);
@@ -1413,6 +1414,7 @@ class ShopController extends BaseController
             $this->assign('isyue', $isyue);
             //
             $this->assign('cache', $cache);
+            $this->assign('allshop', $allshop);
             $this->assign('totalprice', $totalprice);
             $this->assign('totalprice_bate', $totalprice_bate);
             $this->assign('totalnum', $totalnum);
