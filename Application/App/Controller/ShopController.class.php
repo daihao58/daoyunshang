@@ -173,7 +173,7 @@ class ShopController extends BaseController
         $map['status'] = 1;
         $map['shop_id'] = $shopId;    
         $map['istuisong'] = 1;
-        $cache = $m->where($map)->order('sorts desc')->select();
+        $cache = $m->where($map)->order('sorts asc')->select();
 
         foreach ($cache as $k => $v) {
             $listpic = $this->getPic($v['listpic']);
