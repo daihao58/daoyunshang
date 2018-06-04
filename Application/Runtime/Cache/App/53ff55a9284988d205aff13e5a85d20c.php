@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title><?php echo ($cache["name"]); ?></title>
+	<title>道合商城_品质生活，健康人生_健康养生平台</title>
 	<meta charset="utf-8" />
 	<!--页面优化-->
 	<meta name="MobileOptimized" content="320">
@@ -213,7 +213,7 @@
 	<div class="page page-prodDetails">
 		<!-- 标题栏 -->
 		<header class="bar bar-header">
-			<a href="<?php echo U('App/Shop/goods_kind',array('shopid'=>$shopid,'cid'=>$cid));?>" class="iconfont icon-back bar-btn pull-left"></a>
+			<a href="javascript:void(0)" onclick="history.go(-1)" class="iconfont icon-back bar-btn pull-left"></a>
 			<h1 class="title"><?php echo ($cache["name"]); ?></h1>
 			<a href="<?php echo U('App/Shop/index',array('shopid'=>$shopid));?>" class="iconfont icon-home-head bar-btn pull-right"></a>
 		</header>
@@ -364,6 +364,8 @@
 					//console.log(data);
 					if (data.state_code == 1) {
 						zbb_msg(data.msg);
+					}else if(data.state_code == 5){
+						window.location.href = '/app/vip/login';
 					} else {
 						zbb_msg(data.msg);
 					}
@@ -515,9 +517,11 @@
 				dataType: 'json',
 				data: dt,
 				success: function (info) {
-					if (info['status']) {
+					if (info['status'] ==1 ) {
 						App_gmuMsg(info['msg']);
 						$(basketnum).html(info['total']);
+					}else if(info['status'] ==5){
+						window.location.href = '/app/vip/login';
 					} else {
 						App_gmuMsg('发生未知错误,请重新尝试！');
 					}
@@ -597,8 +601,10 @@
 							dataType: 'json',
 							data: dt,
 							success: function (info) {
-								if (info['status']) {
+								if (info['status'] == 1) {
 									App_gmuMsg2(info['msg'], fun);
+								}else if(info['status'] ==5){
+									window.location.href = '/app/vip/login';
 								} else {
 									App_gmuMsg('发生未知错误,请重新尝试！');
 								}

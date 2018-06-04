@@ -96,7 +96,8 @@
 									<?php case "7": ?>退货完成<?php break; endswitch;?>
 							</span>
 						</p>
-						<?php if(is_array($vo["items"])): $i = 0; $__LIST__ = $vo["items"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vt): $mod = ($i % 2 );++$i;?><div class="ads_orinfol ptb-14 border-b1 clearfix">
+						<?php if(is_array($vo["items"])): $i = 0; $__LIST__ = $vo["items"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vt): $mod = ($i % 2 );++$i;?><a href="<?php echo U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vt['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']));?>">
+							<div class="ads_orinfol ptb-14 border-b1 clearfix">
 								<!-- 图片大小为147*101 -->
 								<img src="<?php echo ($vt["pic"]); ?>" class="ads_or_img pull-left" />
 								<h3><?php echo ($vt["name"]); ?></h3>
@@ -115,7 +116,8 @@
 										<em class="font-12"><?php echo ($vt["num"]); ?></em>
 									</p>
 								</div>
-							</div><?php endforeach; endif; else: echo "" ;endif; ?>
+							</div>
+							</a><?php endforeach; endif; else: echo "" ;endif; ?>
 						<div class="ptb-12 font-12 border-b1 clearfix">
 							<p class="color-light mt-4 pull-left">共<?php echo ($vo["totalnum"]); ?>件商品</p>
 							<p class="pull-right">实付：

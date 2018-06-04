@@ -74,6 +74,7 @@
 							</span>
 						</p>
 						<volist name="vo.items" id="vt">
+							<a href="{:U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vt['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']))}">
 							<div class="ads_orinfol ptb-14 border-b1 clearfix">
 								<!-- 图片大小为147*101 -->
 								<img src="{$vt.pic}" class="ads_or_img pull-left" />
@@ -96,6 +97,8 @@
 									</p>
 								</div>
 							</div>
+							</a>
+
 						</volist>
 						<div class="ptb-12 font-12 border-b1 clearfix">
 							<p class="color-light mt-4 pull-left">共{$vo.totalnum}件商品</p>

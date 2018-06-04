@@ -1060,8 +1060,15 @@ class ShopController extends BaseController
         if (IS_POST) {
             $morder = M('Shop_order');
             $data = I('post.');
-            //var_dump($data);die;
+
             $data['items'] = stripslashes(htmlspecialchars_decode($data['items']));
+            $gou_arr=unserialize($data['items']);
+            $gou_id='';
+            foreach($gou_arr as $k => $v){
+                $gou_id .= $v['goodsid'] .',';
+            }
+            //var_dump($gou_id);die;
+
             $data['ispay'] = 0;
             $data['status'] = 1;//订单成功，未付款
             $data['ctime'] = time();
@@ -1148,7 +1155,10 @@ class ShopController extends BaseController
                     $dlog['shop_id'] = 21;
                     $rlog = $mlog->add($dlog);
                     //清空购物车
-                    $rbask = M('Shop_basket')->where(array('sid' => $data['sid'], 'vipid' => $data['vipid']))->delete();
+                    $gou_map['sid']= $data['sid'];
+                    $gou_map['vipid']= $data['vipid'];
+                    $gou_map['goodsid']= array('in',$gou_id);
+                    $rbask = M('Shop_basket')->where($gou_map)->delete();
 //					$this->success('订单创建成功，转向支付界面!',U('App/Shop/pay/',array('sid'=>$data['sid'],'orderid'=>$re)));
                     $this->redirect('App/Shop/pay/', array('sid' => $data['sid'], 'orderid' => $re));
                 } else {
@@ -1426,6 +1436,12 @@ class ShopController extends BaseController
     //订单列表
     public function orderList()
     {
+        $vipid = self::$WAP['vipid'];
+        $data = self::$WAP['vip'];
+        //var_dump($data);die;
+        if(empty($data['mobile']) || $data['mobile']=='15295121323' ){
+            $this->redirect('App/vip/login');exit;
+        }
         $sid = I('sid') <> '' ? I('sid') : $this->diemsg(0, '缺少SID参数');//sid可以为0
         $type = I('type') ? I('type') : 4;
         $this->assign('type', $type);
