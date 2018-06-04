@@ -134,7 +134,8 @@ class ShopController extends BaseController
         if (IS_POST) {
             //die('aa');
             $data = I('post.');
-
+            $data['promotional']= $_POST['promotional'];
+//var_dump( $data['promotional']);
             $data['content'] = trimUE($data['content']);
             $data['cprice']=0;
             if ($id) {

@@ -46,13 +46,19 @@
                             <input type="text" class="form-control" name="name" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["name"]); ?>">
                         </div>
                     </div>
-                    <div class="form-group">
+                 <!--   <div class="form-group">
                         <label class="col-lg-2 control-label">促销简介</label>
                         <div class="col-lg-4">
                             <input type="text" class="form-control" name="promotional "  value="<?php echo ($cache["promotional"]); ?>">
                         </div>
-                    </div>
+                    </div>-->
                     <div class="form-group">
+                        <label class="col-lg-2 control-label">促销简介</label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="promotional"  value="<?php echo ($cache["promotional"]); ?>">
+                        </div>
+                    </div>
+                <!--    <div class="form-group">
                         <label class="col-lg-2 control-label">首页大图片</label>
                         <div class="col-lg-4">
                             <div class="input-group input-group-sm">
@@ -62,7 +68,7 @@
                             </span>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="form-group">
                         <label class="col-lg-2 control-label">首页列表图片</label>
                         <div class="col-lg-4">
@@ -74,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <label class="col-lg-2 control-label">商品图片</label>
                         <div class="col-lg-4">
                             <div class="input-group input-group-sm">
@@ -84,7 +90,7 @@
                             </span>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="form-group">
                         <label class="col-lg-2 control-label">商品图集</label>
                         <div class="col-lg-4">
@@ -96,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                   <!-- <div class="form-group">
                         <label class="col-lg-2 control-label">广告推广图片</label>
                         <div class="col-lg-4">
                             <div class="input-group input-group-sm">
@@ -106,7 +112,7 @@
                             </span>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
 
                     <div class="form-group">
@@ -122,7 +128,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                   <!-- <div class="form-group">
                         <label class="col-lg-2 control-label">金牌会员价格<sup>*</sup></label>
                         <div class="col-lg-4">
                             <input type="text" class="form-control" name="price_gold" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_gold"]); ?>">
@@ -133,7 +139,7 @@
                         <div class="col-lg-4">
                             <input type="text" class="form-control" name="price_gold_bate" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_gold_bate"]); ?>">
                         </div>
-                    </div>
+                    </div>-->
 
                     <div class="form-group">
                         <label class="col-lg-2 control-label">CEO代理价格<sup>*</sup></label>
@@ -216,6 +222,18 @@
                             </label>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">首页推送</label>
+                        <div class="col-lg-4">
+                            <label>
+                                <input type="hidden" name="istuisong" value="<?php echo ($cache["istuisong"]); ?>" id="istuisong">
+                                <input class="checkbox-slider slider-icon colored-darkorange" type="checkbox" id="istuisongbtn" <?php if(($cache["istuisong"]) == "1"): ?>checked="checked"<?php endif; ?>>
+                                <span class="text darkorange">&nbsp;&nbsp;&larr;重要：启用后将商品推送到首页。</span>
+                            </label>
+                        </div>
+                    </div>
+
                 <!--    <div class="form-group">
                         <label class="col-lg-2 control-label">是否免邮费</label>
                         <div class="col-lg-4">
@@ -226,7 +244,7 @@
                             </label>
                         </div>
                     </div>-->
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <label class="col-lg-2 control-label">开启自定义销量</label>
                         <div class="col-lg-4">
                             <label>
@@ -241,7 +259,7 @@
                         <div class="col-lg-4">
                             <input type="text" class="form-control" name="dissells" placeholder="填写自定义销量，此销量也会自动增长" value="<?php echo ($cache["dissells"]); ?>">
                         </div>
-                    </div>
+                    </div>-->
 
 
                     <!--<div class="form-group">-->
@@ -351,6 +369,10 @@ $('#AppForm').bootstrapValidator({
 $('#isskubtn').on('click', function() {
     var value = $(this).prop('checked') ? 1 : 0;
     $('#issku').val(value);
+});
+$('#istuisongbtn').on('click', function() {
+    var value = $(this).prop('checked') ? 1 : 0;
+    $('#istuisong').val(value);
 });
 $('#ismybtn').on('click', function() {
     var value = $(this).prop('checked') ? 1 : 0;

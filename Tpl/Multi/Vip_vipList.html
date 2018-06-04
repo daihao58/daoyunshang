@@ -65,7 +65,6 @@
                             <th width="100px">积分</th>
                             <!--<th width="100px">经验</th>-->
                             <th width="100px">注册时间</th>
-                            <th width="100px">最后访问</th>
                             <!--<th width="100px">状态</th>-->
                             <th width="">操作</th>
                         </tr>
@@ -93,8 +92,7 @@
                                 <td class=" ">{$vo.money}</td>
                                 <td class=" ">{$vo.score}</td>
                                 <!--<td class=" ">{$vo.cur_exp}</td>-->
-                                <td class=" ">{$vo.ctime|date='Y-m-d',###}</td>
-                                <td class=" ">{$vo.cctime|date='Y-m-d',###}</td>
+                                <td class=" ">{$vo.ctime}</td>
                                 <!--<td class=" ">{$vo.status}</td>-->
                                 <td class="center "><a href="{:U('Multi/Vip/vipSet/',array('id'=>$vo['id']))}" class="btn btn-success btn-xs" data-loader="App-loader" data-loadername="会员编辑"><i class="fa fa-edit"></i> 编辑</a>&nbsp;&nbsp;
                                     <button class="btn btn-sky btn-xs App-vippath" data-id="{$vo.id}" data-path="{$vo.path}"><i class="fa fa-eye"></i> 层级树</button>

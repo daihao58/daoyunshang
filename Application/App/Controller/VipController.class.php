@@ -435,7 +435,7 @@ class VipController extends BaseController
                 $data['password'] = md5($password);
                 $data['headimgurl'] = '/Public/Common/img/moren.jpg';
                 $data['recommend_code'] = $recommend_code;
-
+                $data['ctime'] = date("Y-m-d H:i:s");
                 $puser= M('Vip')->where("my_recommend_code = '{$recommend_code}'")->find();
                 if($puser){
                     $data['pid']=$puser['id'];
