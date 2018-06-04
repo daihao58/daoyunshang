@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="yes" name="apple-touch-fullscreen" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<title></title>
+	<meta name="keywords" content=" " />
+	<meta name="description" content=" " />
+	<link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" href="__PUBLIC__/App/css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="__PUBLIC__/App/css/layout.css">
+	<link rel="stylesheet" href="__PUBLIC__/App/css/style.css">
+	<style>
+		.icon-checked {
+			font-size: 32px;
+			color: #1eb4d2;
+		}
+		.button-big {
+			font-size: 14px!important;
+			border: 1px solid #ccc;
+			color: #666;
+			background: #fff;
+		}
+	</style>
+</head>
+
+<body>
+<div class="page page-userInfo">
+	<!-- 标题栏 -->
+	<header class="bar bar-header">
+		<!--<a href="javascript:void(0)" onclick="history.go(-1)" class="iconfont icon-back bar-btn pull-left"></a>-->
+		<h1 class="title">支付成功</h1>
+		<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="iconfont icon-home-head bar-btn pull-right"></a>
+	</header>
+
+	<div class="content">
+		<div class="content-block mt-0">
+			<div class="t-c">
+				<i class="iconfont icon-checked"></i>
+				<p class="mt-14">恭喜您！您的订单支付成功!</p>
+			</div>
+			<button class="button button-big mt-24"><a href="{:U('App/Shop/orderList', array('sid' => $sid, 'type' => '2'))}">查看订单</a></button>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

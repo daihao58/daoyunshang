@@ -2052,7 +2052,9 @@ class ShopController extends BaseController
                             $mlog = M('Shop_order_syslog');
                             $dlog['type'] = 2;
                             $rlog = $mlog->add($dlog);
-                            $this->success('余额付款成功！', U('App/Shop/orderList', array('sid' => $sid, 'type' => '2')));
+                            //$this->success('余额付款成功！', U('App/Shop/orderList', array('sid' => $sid, 'type' => '2')));
+
+                            $this->redirect(U('App/Shop/pay_success', array('sid' => $sid, 'type' => '2')));
 
                              // 插入订单支付成功模板消息=====================
                             $templateidshort = 'OPENTM200444326';
@@ -2130,6 +2132,12 @@ class ShopController extends BaseController
                 break;
         }
 
+    }
+
+    public function pay_success(){
+        $this->assign('sid',$_GET['sid']);
+        $this->assign('type',2);
+        $this->display();
     }
 
     //销量计算
