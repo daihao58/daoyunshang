@@ -32,30 +32,18 @@
 			<form action="">
 				<ul class="form-group">
 					<li>
-						<input type="text" class="inp" name="phone" id="phone" placeholder="请输入手机号">
-						<label for="" class="iconfont icon-mobile"></label>
-					</li>
-					<li>
-						<input type="password" class="inp" name="password" id="password" placeholder="请填输入密码">
+						<input type="password" class="inp" name="password" id="password" placeholder="请填输入新密码">
 						<label for="" class="iconfont icon-password1"></label>
 					</li>
 					<li>
-						<input type="text" class="inp" name="recommend_code" id="recommend_code" value="{$tui_code}" placeholder="请输入推荐码">
-						<label for="" class="iconfont icon-mobile"></label>
+						<input type="password" class="inp" name="ppassword" id="ppassword" placeholder="请填确认新密码">
+						<label for="" class="iconfont icon-password1"></label>
 					</li>
-					<li>
-						<input type="password" class="inp" name="code" id="code" placeholder="请填输入验证码">
-						<label for="" class="iconfont icon-password"></label>
-						<a href="javascript:getSms()" class="btn-verfiy send_pwd">获取验证码</a>
-						<!-- <a class="btn-verfiy active">已发送(59)s</a> -->
-					</li>
+						<input type="hidden" name="phone" value="{$phone}">
 					<li class="mt-40">
-						<input type="button" class="button sub" value="注册">
+						<input type="button" class="button sub" value="确定">
 					</li>
-					<li class="font-12 color-light t-c">
-						已有账号，
-						<a href="{:U('App/vip/login')}" class="color-blue">马上登录</a>
-					</li>
+
 				</ul>
 			</form>
 		</div>
@@ -63,80 +51,29 @@
 	</div>
 </div>
 <script type="text/javascript">
-	var code_id='';
-	//获得手机动态验证码
-	function getSms(){
-		var phone = $("[name='phone']").val();
-		var re = /^1\d{10}$/;
-		if(re.test(phone)){
-			$.ajax({
-				url:"{:U('App/Vip/sendmsg')}",
-				data:{
-					phone: phone,
-					gettype:1,
-				},
-				type:'post',
-				dataType: "json",
-				success: function(data){
-					//console.log(data);
-					if(data.state_code==1){
-						code_id =data.id;
-						settime();
-					}else{
-						zbb_msg(data.msg);
-					}
-				},
-			})
-		}else{
-			zbb_msg("手机号码错误");
-		}
-	}
-
-	//验证码60秒
-	var countdown=60;
-	function settime() {
-		if (countdown == 0) {
-			$(".send_pwd").attr("href",'javascript:getSms()');
-			$(".send_pwd").text("获取验证码");
-			countdown = 60;
-			return ;
-		} else {
-			$(".send_pwd").attr("href", 'javascript:void(0)');
-			$(".send_pwd").text("重新发送(" + countdown + ")");
-			countdown--;
-		}
-		setTimeout(function() {
-			settime()
-		},1000)
-	}
 
 
 	$(".sub").click(function(){
-		var phone = $("[name='phone']").val();
 		var password = $("[name='password']").val();
-		var recommend_code = $("[name='recommend_code']").val();
-		var code = $("[name='code']").val();
+		var ppassword = $("[name='ppassword']").val();
+		var phone = $("[name='phone']").val();
 
 		if(password==''){
-			zbb_msg('请输入密码');
-		}else if(phone==''){
-			zbb_msg('请输入手机号');
-		}else if(recommend_code==''){
-			zbb_msg('请输入推荐码');
-		}else if(code==''){
-			zbb_msg('请输入验证码');
+			zbb_msg('请输入新密码');
+		}else if(ppassword==''){
+			zbb_msg('请输入确认密码');
+		}else if(password !=ppassword){
+			zbb_msg('两次密码不一致');
 		}else{
 			var fun=function(){
 				window.location.href="/App/vip/login";
 			}
 			$.ajax({
-				url:"{:U('App/Vip/regist')}",
+				url:"{:U('App/Vip/reset_ajax')}",
 				data:{
 					phone:phone,
 					password:password,
-					code_id:code_id,
-					code:code,
-					recommend_code:recommend_code,
+					ppassword:ppassword,
 				},
 				type:'post',
 				dataType: "json",

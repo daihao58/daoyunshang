@@ -58,7 +58,7 @@
 	<div class="page">
 		<!-- 标题栏 -->
 		<header class="bar bar-header">
-			<a href="{:U('App/Shop/goods_kind',array('shopid'=>$shopid,'cid'=>$cid))}" class="iconfont icon-back bar-btn pull-left"></a>
+			<a href="javascript:" onclick="self.location=document.referrer;" class="iconfont icon-back bar-btn pull-left"></a>
 			<h1 class="title">{$cache.name}</h1>
 			<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="iconfont icon-home-head bar-btn pull-right"></a>
 		</header>
@@ -139,7 +139,7 @@
 							<span class="color-gray">共{$totalnum}件商品</span>
 							<p>
 								<span>商品：</span>
-								<span class="color-ora"><i>￥</i><b class="totalprice font-16">{$totalprice}</b></span>
+								<span class="color-ora"><i>￥</i><b class="totalprice font-16">{$allshop}</b></span>
 								<span>&nbsp;&nbsp;&nbsp;&nbsp;邮费：</span>
 								<span class="color-ora"><i>￥</i><b class="font-16">{$yf}</b></span>
 							</p>
@@ -160,7 +160,7 @@
 									<span>余额：</span>
 									<i class="color-ora" id='money' data-money='{$_SESSION[' WAP ']['vip ']['money ']}'>￥{$_SESSION['WAP']['vip']['money']}</i>
 								</p>
-								<p class="color-light font-12 mt-8">余额不足请充值</p>
+								<!--<p class="color-light font-12 mt-8">余额不足请充值</p>-->
 							</div>
 						</li>
 					</ul>
@@ -194,11 +194,14 @@
 
 	<script type="text/javascript">
 		var sid = "{$sid}";
+		var dh ="{$dh}";
+		console.log(dh);
+		console.log(sid);
 		var lasturlencode = "{$lasturlencode}";
 		var $paytype = $('#paytype');
 		$('#changeaddress').on('click', function (e) {
 			e.preventDefault();
-			var tourl = "{:U('App/Shop/orderAddress',array('sid'=>$sid,'lasturl'=>$lasturlencode))}";
+			var tourl = "{:U('App/Shop/orderAddress',array('sid'=>$sid,'lasturl'=>$lasturlencode,'dh'=>$dh))}";
 			window.location.href = tourl;
 		});
 		$('.ads_pay').click(function () {
@@ -210,7 +213,7 @@
 				// $(this).find('span').css('color', ' #ff3000');
 				$paytype.val($(this).data('paytype'));
 			} else {
-				App_gmuMsg('请使用其它方式！');
+				App_gmuMsg('余额不足请充值！');
 			}
 		});
 		$('#orderconfirm').on('click', function () {
@@ -231,7 +234,8 @@
 				okfun();
 			} else {
 				//App_gmuAlert('确认？','您选择使用代金卷，生成订单后此代金卷将立刻作废，不可再次使用！确认现在生成订单并付款吗？',false,okfun);
-				okfun();
+				 App_gmuAlert('确认？','确认现在生成订单并付款吗？',false,okfun);
+				 //okfun();
 			}
 
 		});

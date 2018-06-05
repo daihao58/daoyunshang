@@ -214,13 +214,15 @@
 						<a class="delete-btn goodsdel" data-id="{$vo.id}">删除</a>
 						<div class="item-content">
 							<div class="item-media" data-id="{$vo.id}">
-								<a class="goodsChose checkbox"><i class="iconfont icon-unchecked"></i></a>
+								<a class="goodsChose checkbox checked" data-id="{$vo.id}" data-num='{$vo.num}' data-total='{$vo.total}'><i class="iconfont icon-unchecked"></i></a>
 							</div>
 							<div class="item-title">
 								<div class="bsk-img pull-left">
-									<img src="{$vo.pic}" />
+									<a href="{:U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vo['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']))}"><img src="{$vo.pic}" /></a>
 								</div>
-								<h3 class="t-e-2">{$vo.name}</h3>
+								<a href="{:U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vo['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']))}">
+									<h3 class="t-e-2">{$vo.name}</h3>
+								<a/>
 								<p class="color-light font-12">{$vo.skuattr}</p>
 								<p class="color-ora mt-12">￥<em>{$vo.price}</em></p>
 								<p class="color-light" style="visibility: hidden;">[库存：{$vo.total}]</p>
@@ -381,14 +383,22 @@
 			});
 			// 勾选商品
 			$('.goodsChose').on('click', function(e) {
+				if($(this).hasClass('checked')){
+					$totalprice.html(Number($totalprice.html()) - Number($(this).data('total')));
+					$totalnum.html(Number($totalnum.html()) - Number($(this).data('num')));
+				}else{
+					$totalprice.html(Number($totalprice.html()) + Number($(this).data('total')));
+					$totalnum.html(Number($totalnum.html()) + Number($(this).data('num')));
+				}
 				e.preventDefault();
 				$(this).toggleClass('checked');
 			})
-			
+
 			//生成订单
 			$('#makeorder').on('click', function (e) {
 				e.preventDefault();
 				var items = $('.quant-select');
+
 				//var dt=new Array();
 				//var dt='';
 				var dt = new Object();
@@ -445,8 +455,17 @@
 										App_gmuMsg(info['msg'], fun);
 										return false;
 									} else if (info['status'] == 1) {
+
+										var dh='';
+										var dhch= $('.checked');
+										$(dhch).each(function () {
+											var id = $(this).data('id');
+											dh += id+',';
+										});
+
+
 										var fun = function () {
-											window.location.href = orderurl;
+											window.location.href = orderurl+'/dh/'+dh;
 										}
 										App_gmuMsg(info['msg'], fun);
 										return false;

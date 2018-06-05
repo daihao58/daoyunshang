@@ -58,8 +58,7 @@
                             <th width="100px">账户金额</th>
                             <th width="100px">积分</th>
                             <!--<th width="100px">经验</th>-->
-                            <th width="100px">注册时间</th>
-                            <th width="100px">最后访问</th>
+                            <th width="200px">注册时间</th>
                             <!--<th width="100px">状态</th>-->
                             <th width="">操作</th>
                         </tr>
@@ -86,8 +85,7 @@
                                 <td class=" "><?php echo ($vo["money"]); ?></td>
                                 <td class=" "><?php echo ($vo["score"]); ?></td>
                                 <!--<td class=" "><?php echo ($vo["cur_exp"]); ?></td>-->
-                                <td class=" "><?php echo (date('Y-m-d',$vo["ctime"])); ?></td>
-                                <td class=" "><?php echo (date('Y-m-d',$vo["cctime"])); ?></td>
+                                <td class=" "><?php echo ($vo["ctime"]); ?></td>
                                 <td class="center "><a href="<?php echo U('Multi/Vip/vipSet/',array('id'=>$vo['id']));?>" class="btn btn-success btn-xs" data-loader="App-loader" data-loadername="会员编辑"><i class="fa fa-edit"></i> 编辑</a>&nbsp;&nbsp;
 
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>

@@ -40,9 +40,10 @@ class NormalController extends BaseController
             $map['_logic'] = 'OR';*/
             $this->assign('search', $search);
         }
-        $map['mobile'] = array('exp','is not null');
+        $map['_string'] ="mobile <>''";
         $psize = self::$CMS['set']['pagesize'] ? self::$CMS['set']['pagesize'] : 20;
         $cache = $m->where($map)->page($p, $psize)->select();
+        //echo $m->getLastSql();die;
         foreach ($cache as $k => $v) {
 
             if ($v['fx_level']) {

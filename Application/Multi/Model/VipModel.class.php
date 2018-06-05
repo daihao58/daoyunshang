@@ -83,7 +83,7 @@ class VipModel extends Model
     public function getChildren($id = 0)
     {
         $where['pid']=$id;
-        $where['mobile']=array('exp','is not null');
+        $where['_string'] ="mobile <>''";
         $vips = $this->where($where)->select();
         $morder = M('Shop_order');
         // 获取vips

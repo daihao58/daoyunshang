@@ -28,6 +28,7 @@
 	<!--组件依赖js end-->
 	<script type="text/javascript" src="/Public/App/gmu/gmu.min.js"></script>
 	<script type="text/javascript" src="/Public/App/gmu/app-basegmu.js"></script>
+	<script type="text/javascript" src="/Public/App/js/zepto.touchWipe.js"></script>
 	<style>
 		.dtl-shp {
 			position: relative;
@@ -152,21 +153,37 @@
 		.btn-quxiao {
 			background: #aaa;
 		}
-		.icon-unchecked {
-			color: #666
+		.swipe-delete {
+			padding: 0;
+			overflow: hidden;
 		}
 		.swipe-item {
 			position: relative;
+			padding: 0 .7rem;
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
 		}
 		.delete-btn {
         position: absolute;
 				top: 0;
 				bottom: 0;
-				right: 0;
-				width: 68px;
+				right: -3.5rem;
+				width: 3.5rem;
+				text-align: center;
+				padding-top: 2.5rem;
 				color: white;
-        background-color: red;
+        background-color: #fd2c4b;
+				z-index: 22;
     }
+		.checkbox .iconfont {
+			color: #999;
+		}
+		.checkbox.checked .iconfont {
+			color: #1eb4d2;
+		}
+		.checkbox.checked .iconfont:before {
+			content: "\e604";
+		}
 </style>
 
 </head>
@@ -222,22 +239,24 @@
 						<a class="delete-btn goodsdel" data-id="<?php echo ($vo["id"]); ?>">删除</a>
 						<div class="item-content">
 							<div class="item-media" data-id="<?php echo ($vo["id"]); ?>">
-								<i class="iconfont icon-unchecked"></i>
+								<a class="goodsChose checkbox checked" data-id="<?php echo ($vo["id"]); ?>" data-num='<?php echo ($vo["num"]); ?>' data-total='<?php echo ($vo["total"]); ?>'><i class="iconfont icon-unchecked"></i></a>
 							</div>
 							<div class="item-title">
 								<div class="bsk-img pull-left">
-									<img src="<?php echo ($vo["pic"]); ?>" />
+									<a href="<?php echo U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vo['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']));?>"><img src="<?php echo ($vo["pic"]); ?>" /></a>
 								</div>
-								<h3 class="t-e-2"><?php echo ($vo["name"]); ?></h3>
+								<a href="<?php echo U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vo['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']));?>">
+									<h3 class="t-e-2"><?php echo ($vo["name"]); ?></h3>
+								<a/>
 								<p class="color-light font-12"><?php echo ($vo["skuattr"]); ?></p>
 								<p class="color-ora mt-12">￥<em><?php echo ($vo["price"]); ?></em></p>
 								<p class="color-light" style="visibility: hidden;">[库存：<?php echo ($vo["total"]); ?>]</p>
+
 								<!-- 数量添加 -->
-								<div class="quant-select" data-id="<?php echo ($vo["id"]); ?>" data-goodsid='<?php echo ($vo["goodsid"]); ?>' data-sku='<?php echo ($vo["sku"]); ?>' data-num='<?php echo ($vo["num"]); ?>' data-total='<?php echo ($vo["total"]); ?>'
-								data-price='<?php echo ($vo["price"]); ?>'>
-									<button class="quant-btn btn-minus">-</button>
+								<div class="quant-select" data-id="<?php echo ($vo["id"]); ?>" data-id="<?php echo ($vo["id"]); ?>" data-goodsid='<?php echo ($vo["goodsid"]); ?>' data-sku='<?php echo ($vo["sku"]); ?>' data-num='<?php echo ($vo["num"]); ?>' data-total='<?php echo ($vo["total"]); ?>' data-price='<?php echo ($vo["price"]); ?>'>
+									<a class="quant-btn btn-minus">-</a>
 									<input type="text" value="<?php echo ($vo["num"]); ?>" class="quant-num" disabled="disabled" />
-									<button class="quant-btn btn-plus">+</button>
+									<a class="quant-btn btn-plus">+</a>
 								</div>
 							</div>
 						</div>
@@ -292,11 +311,16 @@
 
 				var $item = $(this).parent(),
 						num = Number($item.find('.quant-num').val()),
-						left = Number($item.data('total')),
-						total = (num + 1) <= left ? (num + 1) : left;
+						total = Number($item.data('total'));
 
-				$item.find('.quant-num').val(total);
-				$item.data('num', total);
+				if(num === total || total ===0) {
+					return;
+				}
+
+				num ++;
+
+				$item.find('.quant-num').val(num);
+				$item.data('num', num);
 
 				$totalprice.html(Number($totalprice.html()) + Number($item.data('price')));
 				$totalnum.html(Number($totalnum.html()) + 1);
@@ -305,19 +329,23 @@
 				e.preventDefault();
 
 				var $item = $(this).parent(),
-						num = Number($item.find('.quant-num').val()),
-						total = num > 1 ? (num - 1) : 1;
+						num = Number($item.find('.quant-num').val());
 
-				$item.find('.quant-num').val(total);
-				$item.data('num', total);
-
-				if (num > 1) {
-					$totalprice.html(Number($totalprice.html()) - Number($item.data('price')));
-					$totalnum.html(Number($totalnum.html()) - 1);
+				if(num === 1) {
+					return
 				}
+
+				num --;
+
+				$item.find('.quant-num').val(num);
+				$item.data('num', num);
+
+				$totalprice.html(Number($totalprice.html()) - Number($item.data('price')));
+				$totalnum.html(Number($totalnum.html()) - 1);
 			});
 			//购物车删除
-			$('.goodsdel').on('click', function () {
+			$('.goodsdel').on('click', function (e) {
+				e.preventDefault();
 				var tourl = "<?php echo U('App/Shop/delbasket',array('sid'=>0));?>";
 				var dt = $(this).data('id');
 				var tt = $(this);
@@ -342,8 +370,8 @@
 			//购物车清空
 			$('#clearbasket').on('click', function (e) {
 				e.preventDefault();
-				var items = $('.quant-select');
-				if (!$items.length) {
+				var $items = $('.swipe-item');
+				if ($items.length === 0) {
 					App_gmuMsg('您的购物车是空的，请先挑选商品!');
 					return false;
 				}
@@ -376,12 +404,25 @@
 						return false;
 					}
 				});
-
 			});
+			// 勾选商品
+			$('.goodsChose').on('click', function(e) {
+				if($(this).hasClass('checked')){
+					$totalprice.html(Number($totalprice.html()) - Number($(this).data('total')));
+					$totalnum.html(Number($totalnum.html()) - Number($(this).data('num')));
+				}else{
+					$totalprice.html(Number($totalprice.html()) + Number($(this).data('total')));
+					$totalnum.html(Number($totalnum.html()) + Number($(this).data('num')));
+				}
+				e.preventDefault();
+				$(this).toggleClass('checked');
+			})
+
 			//生成订单
 			$('#makeorder').on('click', function (e) {
 				e.preventDefault();
 				var items = $('.quant-select');
+
 				//var dt=new Array();
 				//var dt='';
 				var dt = new Object();
@@ -438,8 +479,17 @@
 										App_gmuMsg(info['msg'], fun);
 										return false;
 									} else if (info['status'] == 1) {
+
+										var dh='';
+										var dhch= $('.checked');
+										$(dhch).each(function () {
+											var id = $(this).data('id');
+											dh += id+',';
+										});
+
+
 										var fun = function () {
-											window.location.href = orderurl;
+											window.location.href = orderurl+'/dh/'+dh;
 										}
 										App_gmuMsg(info['msg'], fun);
 										return false;
@@ -566,53 +616,7 @@
 			}
 		</script>
 		<script>
-		/*function prevent_default(e) {
-					e.preventDefault();
-			} 
-
-			function disable_scroll() {
-					$(document).on('touchmove', prevent_default);
-			}
-
-			function enable_scroll() {
-					$(document).unbind('touchmove', prevent_default)
-			}
-
-			var x;
-			$('.swipe-item')
-					.on('touchstart', function(e) {
-							$('.item-content.open').css('left', '0px').removeClass('open') // close em all
-							$(e.currentTarget).addClass('open')
-							x = e.originalEvent.targetTouches[0].pageX // anchor point
-					})
-					.on('touchmove', function(e) {
-							var change = e.originalEvent.targetTouches[0].pageX - x
-							change = Math.min(Math.max(-100, change), 100) // restrict to -100px left, 0px right
-							e.currentTarget.style.left = change + 'px'
-							if (change < -10) disable_scroll() // disable scroll once we hit 10px horizontal slide
-					})
-					.on('touchend', function(e) {
-							var left = parseInt(e.currentTarget.style.left),
-									new_left;
-
-							if (left < -35) {
-									new_left = '-100px'
-							} else if (left > 35) {
-									new_left = '100px'
-							} else {
-									new_left = '0px'
-							}
-							// e.currentTarget.style.left = new_left
-							$(e.currentTarget).animate({left: new_left}, 200)
-							enable_scroll()
-					});
-
-			$('.delete-btn').on('touchend', function(e) {
-					e.preventDefault()
-					$(this).parents('li').slideUp('fast', function() {
-							$(this).remove()
-					})
-			}) */
+			$('.swipe-item').touchWipe({ itemDelete: '.delete-btn' });
 		</script>
 		<!--通用分享-->
 		<script type="text/javascript">

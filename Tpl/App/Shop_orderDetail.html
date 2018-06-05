@@ -94,6 +94,7 @@
 				<div class="list-title">商品明细</div>
 				<volist name="cache.items" id="vt">
 					<ul style="margin: 0 -.7rem;background-color: #fafafa;padding: 0 .7rem;">
+						<a href="{:U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vt['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']))}">
 						<li class="item-content">
 							<div class="item-media prod-media">
 								<img src="{$vt.pic}"/>
@@ -116,6 +117,7 @@
 								</notempty>
 							</div>
 						</li>
+						</a>
 					</ul>
 				</volist>
 				<!-- 金额详情 -->

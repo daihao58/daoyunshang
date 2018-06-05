@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>道合商城_品质生活，健康人生_健康养生平台</title>
+    <meta name="keywords" content="道合商城,东方道合,东方道合国际,保健产品,生殖美疗,保健食品,美容护肤,日化产品,酒水系列,健康器械,资产配置,医疗美容,隆力奇" />
+    <meta name="description" content="东方道合，致力于为全球家庭提供健康美丽的生活方式，提供品质高端的养生健康产品，专业为您的健康美丽保驾护航！ " />
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <link rel="stylesheet" href="__PUBLIC__/App/css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/style2.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/layout.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/style.css" >
+</head>
+<script src="__PUBLIC__/App/js/jquery-3.2.1.min.js"></script>
+<script src="__PUBLIC__/App/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="__PUBLIC__/App/js/jquery.qrcode.min.js"></script>
+
+<style>
+    .er{
+        margin-top: 10%;
+       margin-left: 19%;
+
+    }
+    .c1{
+        display: none;
+    }
+</style>
+<body>
+<div class="page page-bill">
+    <!-- 标题栏 -->
+    <header class="bar bar-header">
+        <a href="javascript:void(0)" onclick="history.go(-1)" class="iconfont icon-back bar-btn pull-left"></a>
+        <h1 class="title">二维码</h1>
+        <a href="/App/Shop/index" class="iconfont icon-home-head bar-btn pull-right"></a>
+    </header>
+
+    <!-- content -->
+    <section class="content">
+
+        <ul class="list-block mt-0 borTop-0">
+            <li class="item-content">
+                <div class="item-title label">推荐码</div>
+                <span type="text"   class="item-input t-r">{$ercode}</span>
+            </li>
+
+        </ul>
+        <div id="code" class="er "></div>
+    </section>
+</div>
+
+<script>
+   $(function(){
+       $("#code").qrcode({ //code_img是一个img标签的id
+           render: "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
+           text: "http://yunshang.czcaizi.com/App/Vip/reg/tui_code/{$ercode}",   //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
+           width: 250,              //二维码的宽度
+           height: 250,
+           background: "#ffffff",       //二维码的后景色
+           foreground: "#000000",        //二维码的前景色
+           src: $('#image').attr('src')             //二维码中间的图片
+       });
+   })
+</script>
+
+</body>
+</html>

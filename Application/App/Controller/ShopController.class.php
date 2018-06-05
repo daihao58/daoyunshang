@@ -548,6 +548,13 @@ class ShopController extends BaseController
 
     public function basket()
     {
+        $vip = session("WAP");
+        $vip = $vip['vip'];
+        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+            $this->redirect('App/vip/login');exit;
+        }
+
+
         $sid = I('sid') <> '' ? I('sid') : $this->diemsg(0, '缺少SID参数');//sid可以为0
         $lasturl = I('lasturl') ? I('lasturl') : '';
         $basketlasturl = base64_decode($lasturl);
@@ -584,8 +591,7 @@ class ShopController extends BaseController
         $totalnum = 0;
 
 
-        $vip = session("WAP");
-        $vip = $vip['vip'];
+
         $user_vip = M('vip')->where(" id='".$vip['id']."' ")->find();
 
 
@@ -730,6 +736,11 @@ class ShopController extends BaseController
     public function shoucang(){
         $vip = session("WAP");
         $vip = $vip['vip'];
+        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+            $result['state_code']=5;
+            $this->ajaxReturn($result);
+            exit;
+        }
 
         $good_id=$_POST['goodsid'];
         $good=M('Shop_goods')->find($good_id);
@@ -771,6 +782,14 @@ class ShopController extends BaseController
     //添加购物车
     public function addtobasket()
     {
+        $vip = session("WAP");
+        $vip = $vip['vip'];
+        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+            $info['status'] = 5;
+            $this->ajaxReturn($info);
+            exit;
+        }
+
         if (IS_AJAX) {
             $m = M('Shop_basket');
             $data = I('post.');
@@ -984,6 +1003,14 @@ class ShopController extends BaseController
     //立刻购买逻辑
     public function fastbuy()
     {
+        $vip = session("WAP");
+        $vip = $vip['vip'];
+        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+            $info['status'] = 5;
+            $info['msg'] = '未获取数据，请重新尝试321';
+            $this->ajaxReturn($info);
+            exit;
+        }
         if (IS_AJAX) {
             $m = M('Shop_basket');
             $data = I('post.');
@@ -1038,8 +1065,15 @@ class ShopController extends BaseController
         if (IS_POST) {
             $morder = M('Shop_order');
             $data = I('post.');
-            //var_dump($data);die;
+
             $data['items'] = stripslashes(htmlspecialchars_decode($data['items']));
+            $gou_arr=unserialize($data['items']);
+            $gou_id='';
+            foreach($gou_arr as $k => $v){
+                $gou_id .= $v['goodsid'] .',';
+            }
+            //var_dump($gou_id);die;
+
             $data['ispay'] = 0;
             $data['status'] = 1;//订单成功，未付款
             $data['ctime'] = time();
@@ -1126,7 +1160,10 @@ class ShopController extends BaseController
                     $dlog['shop_id'] = 21;
                     $rlog = $mlog->add($dlog);
                     //清空购物车
-                    $rbask = M('Shop_basket')->where(array('sid' => $data['sid'], 'vipid' => $data['vipid']))->delete();
+                    $gou_map['sid']= $data['sid'];
+                    $gou_map['vipid']= $data['vipid'];
+                    $gou_map['goodsid']= array('in',$gou_id);
+                    $rbask = M('Shop_basket')->where($gou_map)->delete();
 //					$this->success('订单创建成功，转向支付界面!',U('App/Shop/pay/',array('sid'=>$data['sid'],'orderid'=>$re)));
                     $this->redirect('App/Shop/pay/', array('sid' => $data['sid'], 'orderid' => $re));
                 } else {
@@ -1157,13 +1194,30 @@ class ShopController extends BaseController
             //保存购物车加密地址，用于OrderMaker正常返回
             $this->assign('lasturlencode', $lasturl);
             $this->assign('sid', $sid);
+
             //清空临时地址
             unset($_SESSION['WAP']['orderURL']);
             //已登陆
+
+
+            $dh=$_GET['dh'];
+
+            $this->assign('dh', $dh);
+
             $m = M('Shop_basket');
             $mgoods = M('Shop_goods');
             $msku = M('Shop_goods_sku');
-            $cache = $m->where(array('sid' => $sid, 'vipid' => $_SESSION['WAP']['vipid']))->select();
+            $dhmap['sid'] = $sid;
+            $dhmap['vipid'] = $_SESSION['WAP']['vipid'];
+            $dhmap['shop_id']= 0;
+            if($dh){
+                $dhmap['id'] = array('in',$dh);
+                $dhmap['shop_id']= 21;
+            }
+
+
+//            $cache = $m->where(array('sid' => $sid, 'vipid' => $_SESSION['WAP']['vipid']))->select();
+            $cache = $m->where($dhmap)->select();
 
             //错误标记
             $errflag = 0;
@@ -1350,6 +1404,7 @@ class ShopController extends BaseController
 
                 $this->assign('isyf', 1);
                 $yf = $totalprice >= $_SESSION['SHOP']['set']['yftop'] ? 0 : $_SESSION['SHOP']['set']['yf'];
+                $allshop=$totalprice;
                 $totalprice=$totalprice+$yf;
                 //var_dump($yf);die;
                 $this->assign('yf', $yf);
@@ -1364,6 +1419,7 @@ class ShopController extends BaseController
             $this->assign('isyue', $isyue);
             //
             $this->assign('cache', $cache);
+            $this->assign('allshop', $allshop);
             $this->assign('totalprice', $totalprice);
             $this->assign('totalprice_bate', $totalprice_bate);
             $this->assign('totalnum', $totalnum);
@@ -1376,8 +1432,10 @@ class ShopController extends BaseController
     public function orderAddress()
     {
         $sid = I('sid');
+        $dh = I('dh');
+        //var_dump($dh);die;
         $lasturlencode = I('lasturl');
-        $backurl = U('App/Shop/orderMake', array('sid' => $sid, 'lasturl' => $lasturlencode));
+        $backurl = U('App/Shop/orderMake', array('sid' => $sid, 'lasturl' => $lasturlencode,'dh'=>$dh));
         $_SESSION['WAP']['orderURL'] = $backurl;
         $this->redirect('App/Vip/address');
     }
@@ -1385,6 +1443,12 @@ class ShopController extends BaseController
     //订单列表
     public function orderList()
     {
+        $vipid = self::$WAP['vipid'];
+        $data = self::$WAP['vip'];
+        //var_dump($data);die;
+        if(empty($data['mobile']) || $data['mobile']=='15295121323' ){
+            $this->redirect('App/vip/login');exit;
+        }
         $sid = I('sid') <> '' ? I('sid') : $this->diemsg(0, '缺少SID参数');//sid可以为0
         $type = I('type') ? I('type') : 4;
         $this->assign('type', $type);
@@ -1995,7 +2059,9 @@ class ShopController extends BaseController
                             $mlog = M('Shop_order_syslog');
                             $dlog['type'] = 2;
                             $rlog = $mlog->add($dlog);
-                            $this->success('余额付款成功！', U('App/Shop/orderList', array('sid' => $sid, 'type' => '2')));
+                            //$this->success('余额付款成功！', U('App/Shop/orderList', array('sid' => $sid, 'type' => '2')));
+
+                            $this->redirect(U('App/Shop/pay_success', array('sid' => $sid, 'type' => '2')));
 
                              // 插入订单支付成功模板消息=====================
                             $templateidshort = 'OPENTM200444326';
@@ -2073,6 +2139,12 @@ class ShopController extends BaseController
                 break;
         }
 
+    }
+
+    public function pay_success(){
+        $this->assign('sid',$_GET['sid']);
+        $this->assign('type',2);
+        $this->display();
     }
 
     //销量计算
