@@ -21,20 +21,22 @@
                     <div class="form-group">
                         <label class="col-lg-2 control-label">会员账号<sup>*</sup></label>
                         <div class="col-lg-4">
-                            <input type="text" name="mobile" class="form-control" value="{$cache.score}">
+                            <input onblur="selectBalance()" type="text" id="mobile" name="mobile" class="form-control" value="{$cache.score}">
+                        </div>
+                        <div class="col-lg-4" style="width:400px;vertical-align: middle;color:rgb(64, 42, 99);font-weight: bold">
+                            <label id="userInfo"></label>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label class="col-lg-2 control-label">充值金额<sup>*</sup></label>
                         <div class="col-lg-4">
-                            <input type="text" name="money" class="form-control" value="{$cache.money}">
+                            <input type="text"  name="money" class="form-control" value="{$cache.money}">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-4">
-                            <button class="btn btn-primary btn-lg" type="submit">保存</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-primary btn-lg" type="submit">充值</button>&nbsp;&nbsp;&nbsp;&nbsp;
                             <button class="btn btn-palegreen btn-lg" type="reset">重填</button>
                         </div>
                     </div>
@@ -75,5 +77,38 @@ $('#isfxgdbtn').on('click', function() {
     var value = $(this).prop('checked') ? 1 : 0;
     $('#isfxgd').val(value);
 });
+
+
+// 充值输入手机号码 查询余额和积分 
+  function selectBalance() {
+
+// 余额:33455  积分:234 
+
+            var mobile = $("#mobile").val();
+            if (mobile.length <=0) {
+                $.App.alert('danger', '请输入会员账号!');
+                return false;
+            }
+            $.ajax({
+                type: "post",
+                url: "/Multi/Vip/getUserInfo",
+                data: {
+                    'mobile': mobile
+                },
+                dataType: "json",
+                success: function(data) {
+                    if (data.state_code == "1") {
+                        $("#userInfo").html("姓名:"+data.msg[0].nickname+"&nbsp;&nbsp;余额:"+data.msg[0].money+"&nbsp;&nbsp;积分:"+data.msg[0].exp);
+                    }
+                    else{
+                        $("#userInfo").html(data.msg);
+                    }
+                },
+                error: function(xhr) {
+                    $("#userInfo").html("通讯失败！请重试!");
+                }
+            });
+            return false;
+        }
 </script>
 <!--/表单验证与提交封装-->

@@ -173,8 +173,10 @@ class ShopController extends BaseController
         $map['status'] = 1;
         $map['shop_id'] = $shopId;    
         $map['istuisong'] = 1;
-        $cache = $m->where($map)->order('sorts desc')->select();
 
+        // Louis 20180605 update 首页推荐产品无需排序,将排序号调整到类目
+        // $cache = $m->where($map)->order('sorts desc')->select();
+        $cache = $m->where($map)->select();
         foreach ($cache as $k => $v) {
             $listpic = $this->getPic($v['listpic']);
 
@@ -279,10 +281,10 @@ class ShopController extends BaseController
             if(!empty($employee['mobile'])){
                 $service_tel= $employee['mobile'];
             }else{
-                $service_tel='051988980188';
+                $service_tel='18015885851';
             }
         }else{
-            $service_tel='051988980188';
+            $service_tel='18015885851';
         }
         $this->assign('service_tel', $service_tel);
         $this->assign('shopid', session("shop_id"));
@@ -337,13 +339,16 @@ class ShopController extends BaseController
             }
             $order_num=2;
         }
-        $this->assign('price_order',$price_order);
-
-        if(!empty($_GET['time'])){
-            $paixu="id desc";
+        else if(!empty($_GET['time'])){
+            $paixu="sorts desc,id desc";
             $order_num=3;
         }
-        if(!empty($_GET['comprehensive'])){
+        // else if(!empty($_GET['comprehensive'])){
+        //     $paixu="sorts desc";
+        //     $order_num=1;
+        // }
+        else{
+            $paixu="sorts desc";
             $order_num=1;
         }
 

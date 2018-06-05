@@ -1182,16 +1182,34 @@ class VipController extends BaseController
             $money= I('money');
             if(empty($money)){
                 $info['status'] = 0;
-                $info['msg'] = '未获取充值金额！';
+                $info['msg'] = '请填写充值金额！';
                 $this->ajaxReturn($info);
+                return;
             }
             if(empty($mobile)){
                 $info['status'] = 0;
-                $info['msg'] = '未获取会员账号！';
+                $info['msg'] = '请填写会员账号！';
                 $this->ajaxReturn($info);
+                return;
             }
+            $map['mobile'] = $mobile;
+            $user_data=M('Vip')->where($map)->find();
+            if(empty($user_data)){
+                $info['status'] = 0;
+                $info['msg'] = '此会员账号不存在！';
+                $this->ajaxReturn($info);
+                return;
+            }
+
             $map['mobile']=$mobile;
-            $res= $m->where($map)->setInc('money',$money);
+
+            if($money > 0){
+                $res= $m->where($map)->setInc('money',$money);
+            }
+
+            if($money <= 0){
+                $res= $m->where($map)->setDec('money',$money * -1);
+            }
 
             $mvip=M('Vip');
             $m_recharge_info=M('Recharge_info');
@@ -1206,11 +1224,8 @@ class VipController extends BaseController
                 $info['status'] = 1;
                 $info['msg'] = '充值成功！';
 
-
                 $phone=18661109996;
                 $nickname=$vip['nickname'];
-
-
                 $sms_templateM=M('sms_template');
                 $yanzhengxinxi=$sms_templateM->where('type=2')->field('id,content,active_time')->find();
                 $yanzhengcontent=str_replace('[nickname]',$nickname,$yanzhengxinxi['content']);
@@ -1219,7 +1234,7 @@ class VipController extends BaseController
 
                 $http='http://message.4008289828.com/index.php?g=Message&m=Index&a=createSendNews_interface';
                 $para['app_id']=10;
-                $para['content']=$yanzhengcontent;
+                $para['content']=$yanzhengcontent;?
                 $para['type']=1;
                 $para['usage']=1;
                 $para['mobiles']=$phone;
@@ -1232,7 +1247,7 @@ class VipController extends BaseController
 
                 $sms_info_json=$this->request_post($http,$para);
 
-                //var_dump($sms_info_json);die;
+                // var_dump($sms_info_json);die;
 //                if($sms_info_json['status']==0){
                     $sms_phone=M('sms_phone');
                     $data['phone'] = $phone;
@@ -1254,9 +1269,6 @@ class VipController extends BaseController
                     $result['msg']='发送失败';
                     $this->ajaxReturn($result);
                 }*/
-
-
-
             }else{
                 $info['status'] = 0;
                 $info['msg'] = '充值失败！';
@@ -1548,7 +1560,7 @@ class VipController extends BaseController
      * @param $title   excel的第一行标题,一个数组,如果为空则没有标题
      * @param $filename 下载的文件名
      * @examlpe
-    $stu = M ('User');
+     *$stu = M ('User');
      * $arr = $stu -> select();
      * exportexcel($arr,array('id','账户','密码','昵称'),'文件名!');
      */
@@ -1579,6 +1591,30 @@ class VipController extends BaseController
             echo implode("\n", $data);
         }
 
+    }
+
+    //获取用户信息
+    public function getUserInfo(){
+
+        $map['mobile'] = $_POST['mobile'];
+        
+        if(empty($map['mobile'])){
+            $result['state_code']=0;
+            $result['msg']='手机号不能为空!';
+            $this->ajaxReturn($result);
+        }
+
+        $user_data = M('Vip')->where($map)->field("exp,money,mobile,my_recommend_code,nickname")->select();
+        
+        if($user_data){
+            $result['state_code'] = 1;
+            $result['msg']= $user_data;
+        }
+        else{
+            $result['state_code'] = 0;
+            $result['msg'] = '此会员用户不存在!';
+        }
+        $this->ajaxReturn($result);
     }
 
 }
