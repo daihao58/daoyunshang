@@ -446,6 +446,11 @@ class VipController extends BaseController
                         $head_code='df';
                     }elseif($recommend_code == 'df00002'){
                         $head_code='llq';
+                        $data['fx_level'] = '2';
+                        $data['score'] = '3000';
+                        $data['exp'] = '3000';
+                        $data['cur_exp'] = '3000';
+                        $data['levelid'] = '2';
                     }else{
                         $head_code='';
                     }
