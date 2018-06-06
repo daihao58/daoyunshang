@@ -35,7 +35,7 @@
     <!-- 标题栏 -->
     <header class="bar bar-header">
         <h1 class="title">我的</h1>
-        <a href="/App/Vip/message" class="iconfont icon-msg bar-btn pull-right"></a>
+        <a id="messageIcon" href="/App/Vip/message" class="iconfont icon-msg bar-btn pull-right"></a>
     </header>
 
     <!-- 工具栏 -->
@@ -183,7 +183,7 @@
         if(i==1){
             $("#code").qrcode({ //code_img是一个img标签的id
                 render: "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
-                text: "http://yunshang.czcaizi.com/App/Vip/reg/tui_code/<?php echo ($data['my_recommend_code']); ?>",   //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
+                text: "/App/Vip/reg/tui_code/<?php echo ($data['my_recommend_code']); ?>",   //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
                 width: 200,              //二维码的宽度
                 height: 200,
                 background: "#ffffff",       //二维码的后景色
@@ -203,6 +203,26 @@
     $(".tuichu").click(function(){
         window.location.href="/App/vip/logout";
     });
+
+    // 短信是否读取过
+  function isReadMessage() {
+            $.ajax({
+                type: "post",
+                url: "/App/Vip/isReadMessage",
+                dataType: "json",
+                success: function(data) {
+                    if (data.status == "1") {
+                       $("#messageIcon").removeClass("icon-msg").addClass("");
+                    }
+                },
+                error: function(xhr) {
+                   
+                }
+            });
+        }
+        $(function(){
+            isReadMessage();
+        });
 </script>
 </body>
 </html>

@@ -41,7 +41,7 @@
 									<select name="province" class="sel" id="province">
 										<if condition="$province eq ''"><option value="0">请选择</option><else /></if>
 										<volist name="provinceRs" id="provinceRs">
-											<option value="{$provinceRs.id}" <if condition="$province eq $provinceRs['id']">selected<else /></if> >{$provinceRs.name}</option>
+											<option value="{$provinceRs.id}"  <if condition="$province eq $provinceRs['id']">selected<else /></if> >{$provinceRs.name}</option>
 										</volist>
 									</select>
 								</div>
@@ -49,8 +49,9 @@
 							<li class="item-content"><div class="item-title label">所在城市</div>
 								<div class="regiona2 wbox-1">
 									<select name="city" class="sel" id="city">
+										<if condition="$city eq ''"><option value="0">请选择</option><else /></if>
 										<volist name="cityRs" id="cityRs">
-											<option value="{$cityRs.id}">{$cityRs.name}</option>
+											<option value="{$cityRs.id}" <if condition="$city eq $cityRs['id']">selected<else /></if> >{$cityRs.name}</option>
 										</volist>
 									</select>
 								</div>
@@ -58,8 +59,9 @@
 							<li class="item-content"><div class="item-title label">所在区县</div>
 								<div class="regiona2 wbox-1">
 									<select name="area" class="sel" id="area">
+										<if condition="$area eq ''"><option value="0">请选择</option><else /></if>
 										<volist name="areaRs" id="areaRs">
-											<option value="{$areaRs.id}">{$areaRs.name}</option>
+											<option value="{$areaRs.id}" <if condition="$area eq $areaRs['id']">selected<else /></if> >{$areaRs.name}</option>
 										</volist>
 									</select>
 								</div>
@@ -83,6 +85,10 @@
 	$('.ads-btn').click(function(){
 		var id=$('#id').val();
 		var xqid=1;//取消小区ID
+		var province=$('#province').val();
+		var city=$('#city').val();
+		var area=$('#area').val();
+		//alert(province);
 		var address=$('#address').val();
 		var name=$('#name').val();
 		var mobile=$('#mobile').val();
@@ -102,7 +108,7 @@
 		}
 		$.ajax({
 			type:'post',
-			data:{'id':id,'xqid':xqid,'address':address,'name':name,'mobile':mobile},
+			data:{'id':id,'xqid':xqid,'address':address,'name':name,'mobile':mobile,'province':province,'city':city,'area':area,},
 			url:"{:U('Vip/addressSet')}",
 			dataType:'json',
 			success:function(e){
@@ -153,23 +159,22 @@
 						'pid':$(this).val(),
 					},
 					function(data){
-					console.log(data);
-						if(data.status){
-							console.log(11);
-							var length = data.info.length;
-							console.log(length);
-							var option = '';
-							var firstCityId;
-							for(var i=0;i<length;i++){
-								if(i == 0){
-									firstCityId = data.info[i]['id'];
-								}
-								option +='<option value="'+data.info[i]['id']+'">'+data.info[i]['name']+'</option>';
+						data=JSON.parse(data);
+						//console.log(data);
+						var length = data.length;
+						//console.log(length);
+						var option = '<option value="0">请选择</option>';
+						var firstCityId;
+						for(var i=0;i<length;i++){
+							if(i == 0){
+								firstCityId = data[i]['id'];
 							}
-							$("#city").html(option);
-							console.log(firstCityId);
-							city(firstCityId);
+							option +='<option value="'+data[i]['id']+'">'+data[i]['name']+'</option>';
 						}
+						$("#city").html(option);
+						//console.log(firstCityId);
+						city(firstCityId);
+
 					}
 			);
 		});
@@ -188,9 +193,6 @@
 								option +='<option value="'+data.info[i]['id']+'">'+data.info[i]['name']+'</option>';
 							}
 							$("#area").html(option);
-						}else{
-
-							$(window).showErrMessage(data.info);
 						}
 					}
 			);
@@ -202,18 +204,15 @@
 						'pid':$(this).val(),
 					},
 					function(data){
+						data=JSON.parse(data);
 
-						if(data.status){
-							var length = data.info.length;
-							var option = '';
-							for(var i=0;i<length;i++){
-								option +='<option value="'+data.info[i]['id']+'">'+data.info[i]['name']+'</option>';
-							}
-							$("#area").html(option);
-						}else{
-
-							$(window).showErrMessage(data.info);
+						var length = data.length;
+						var option = '<option value="0">请选择</option>';;
+						for(var i=0;i<length;i++){
+							option +='<option value="'+data[i]['id']+'">'+data[i]['name']+'</option>';
 						}
+						$("#area").html(option);
+
 					}
 			);
 		});

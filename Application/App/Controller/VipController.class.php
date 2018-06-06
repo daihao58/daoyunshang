@@ -1095,6 +1095,9 @@ class VipController extends BaseController
                 $city		= $data['city'];
                 $area		= $data['area'];
 
+                $provinceRs = M('City')->where("parent_id= 1")->select();
+                $cityRs = M('City')->where("parent_id= '{$province}'")->select();
+                $areaRs = M('City')->where("parent_id= '{$city}'")->select();
 
             }else{
                 $provinceRs = M('City')->where("parent_id= 1")->select();
@@ -1103,7 +1106,9 @@ class VipController extends BaseController
             $this->assign('province',$province);
             $this->assign('provinceRs',$provinceRs);
             $this->assign('city',$city);
+            $this->assign('cityRs',$cityRs);
             $this->assign('area',$area);
+            $this->assign('areaRs',$areaRs);
 
             $this->assign('data', $data);
             $this->display();
