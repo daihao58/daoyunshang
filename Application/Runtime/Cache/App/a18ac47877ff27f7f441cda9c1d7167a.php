@@ -90,8 +90,11 @@
         <div class="card-block">
             <ul class="menu-nav row">
                 <li class="col-25 nav-tjm">
+                        <a href="/app/vip/ewm/ercode/<?php echo ($data["my_recommend_code"]); ?>">
                     <i class="m-nav-icon"></i>
+                
                     <p class="font-12">推荐码</p>
+                </a>
                 </li>
                 <li class="col-25">
                     <a href="/app/vip/ewm/ercode/<?php echo ($data["my_recommend_code"]); ?>"><p class="font-12 mt-14"><?php echo ($data["my_recommend_code"]); ?></p></a>
@@ -161,9 +164,9 @@
                     </li>
                     <?php else: endif; ?>
                 <li>
-                    <a href="/App/Vip/editpwd/phone/<?php echo ($data["mobile"]); ?>" class="item-content">
+                    <a href="/App/Vip/tuiguang" class="item-content">
                         <div class="item-media"><i class="iconfont icon-kefu" style="color: #ff8c44"></i></div>
-                        <div class="item-title">修改密码<i class="more-link pull-right"></i></div>
+                        <div class="item-title">我的推广<i class="more-link pull-right"></i></div>
                     </a>
                 </li>
                 <li>
