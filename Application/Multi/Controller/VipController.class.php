@@ -1224,7 +1224,7 @@ class VipController extends BaseController
                 $info['status'] = 1;
                 $info['msg'] = '充值成功！';
 
-                $phone=18661109996;
+                $phone="18661109996,".$mobile;
                 $nickname=$vip['nickname'];
                 $sms_templateM=M('sms_template');
                 $yanzhengxinxi=$sms_templateM->where('type=2')->field('id,content,active_time')->find();
