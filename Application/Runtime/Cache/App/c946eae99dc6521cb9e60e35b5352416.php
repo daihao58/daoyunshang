@@ -58,7 +58,7 @@
 	<div class="page">
 		<!-- 标题栏 -->
 		<header class="bar bar-header">
-			<a href="javascript:void(0)" onclick="history.go(-1)" class="iconfont icon-back bar-btn pull-left"></a>
+			<a href="javascript:" onclick="self.location=document.referrer;" class="iconfont icon-back bar-btn pull-left"></a>
 			<h1 class="title"><?php echo ($cache["name"]); ?></h1>
 			<a href="<?php echo U('App/Shop/index',array('shopid'=>$shopid));?>" class="iconfont icon-home-head bar-btn pull-right"></a>
 		</header>
@@ -135,7 +135,7 @@
 							<span class="color-gray">共<?php echo ($totalnum); ?>件商品</span>
 							<p>
 								<span>商品：</span>
-								<span class="color-ora"><i>￥</i><b class="totalprice font-16"><?php echo ($totalprice); ?></b></span>
+								<span class="color-ora"><i>￥</i><b class="totalprice font-16"><?php echo ($allshop); ?></b></span>
 								<span>&nbsp;&nbsp;&nbsp;&nbsp;邮费：</span>
 								<span class="color-ora"><i>￥</i><b class="font-16"><?php echo ($yf); ?></b></span>
 							</p>
@@ -190,11 +190,14 @@
 
 	<script type="text/javascript">
 		var sid = "<?php echo ($sid); ?>";
+		var dh ="<?php echo ($dh); ?>";
+		console.log(dh);
+		console.log(sid);
 		var lasturlencode = "<?php echo ($lasturlencode); ?>";
 		var $paytype = $('#paytype');
 		$('#changeaddress').on('click', function (e) {
 			e.preventDefault();
-			var tourl = "<?php echo U('App/Shop/orderAddress',array('sid'=>$sid,'lasturl'=>$lasturlencode));?>";
+			var tourl = "<?php echo U('App/Shop/orderAddress',array('sid'=>$sid,'lasturl'=>$lasturlencode,'dh'=>$dh));?>";
 			window.location.href = tourl;
 		});
 		$('.ads_pay').click(function () {
@@ -227,7 +230,8 @@
 				okfun();
 			} else {
 				//App_gmuAlert('确认？','您选择使用代金卷，生成订单后此代金卷将立刻作废，不可再次使用！确认现在生成订单并付款吗？',false,okfun);
-				okfun();
+				 App_gmuAlert('确认？','确认现在生成订单并付款吗？',false,okfun);
+				 //okfun();
 			}
 
 		});
