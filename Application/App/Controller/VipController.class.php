@@ -1,6 +1,7 @@
 <?php
 // 本类由系统自动生成，仅供测试用途
 namespace App\Controller;
+use Think\Model;
 
 class VipController extends BaseController
 {
@@ -669,6 +670,21 @@ class VipController extends BaseController
         }
 
         $this->assign('data_pay',$data_pay);
+        $this->display();
+    }
+
+    public function tuiguang(){
+
+        $my_recommend_code = self::$WAP['vip']['my_recommend_code'];
+        if(!empty($my_recommend_code)){
+            $my_recommend_code = "df00001";
+        }
+        $Model = new Model(); 
+        $sql = "select a.nickname,a.exp,b.name as gradename from wfx_vip a left join wfx_vip_level";
+        $sql .= " b on a.fx_level = b.id where a.recommend_code = 'df00001' order by a.exp desc"; 
+        $user_list = $Model->query($sql);
+
+        $this->assign('user_list',$user_list);
         $this->display();
     }
 

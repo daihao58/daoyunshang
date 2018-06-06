@@ -1234,7 +1234,7 @@ class VipController extends BaseController
 
                 $http='http://message.4008289828.com/index.php?g=Message&m=Index&a=createSendNews_interface';
                 $para['app_id']=10;
-                $para['content']=$yanzhengcontent;?
+                $para['content']=$yanzhengcontent;
                 $para['type']=1;
                 $para['usage']=1;
                 $para['mobiles']=$phone;
