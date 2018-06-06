@@ -1182,6 +1182,52 @@ class ShopController extends BaseController
         $this->display();
     }
 
+ // 商品报表导出
+ public function goodsReportExport()
+ {
+        $id = I('id');
+        $map['shop_id'] = session("homeShopId");
+        if ($id) {
+            $map['id'] = array('in', in_parse_str($id));
+        } 
+        $data = M('Shop_goods')->where($map)->field("id,name,unit,num,price,sells")->select();
+
+        // var_dump($data);
+        // exit;
+        $title = array('ID', '商品名称', '单位', '库存', '单价', '销量');
+        $this->exportexcel($data, $title, $tt . '商品' . date('Y-m-d H:i:s', time()));
+ }
+
+public function goodsReport(){
+      //设置面包导航，主加载器请配置
+      $bread = array(
+        '0' => array(
+            'name' => '商城首页',
+            'url' => U('Multi/Shop/index'),
+        ),
+        '1' => array(
+            'name' => '财务管理',
+            'url' => U('Multi/Shop/goodsReport'),
+        ),
+    );
+    $this->assign('breadhtml', $this->getBread($bread));
+    //绑定搜索条件与分页
+    $m = M('Shop_goods');
+    $p = $_GET['p'] ? $_GET['p'] : 1;
+    $name = I('name') ? I('name') : '';
+    if ($name) {
+        $map['name'] = array('like', "%$name%");
+        $this->assign('name', $name);
+    }
+    $map['shop_id'] = session("homeShopId");
+    $psize = self::$CMS['set']['pagesize'] ? self::$CMS['set']['pagesize'] : 20;
+    $cache = $m->where($map)->page($p, $psize)->select();
+    $count = $m->where($map)->count();
+    $this->getPage($count, $psize, 'App-loader', '商品管理', 'App-search');
+    $this->assign('cache', $cache);
+    $this->display();
+}
+
     //CMS后台Order详情
     public function orderDetail()
     {
@@ -2203,7 +2249,7 @@ class ShopController extends BaseController
      * @param $title   excel的第一行标题,一个数组,如果为空则没有标题
      * @param $filename 下载的文件名
      * @examlpe
-    $stu = M ('User');
+     * $stu = M ('User');
      * $arr = $stu -> select();
      * exportexcel($arr,array('id','账户','密码','昵称'),'文件名!');
      */
@@ -2218,7 +2264,7 @@ class ShopController extends BaseController
         //导出xls 开始
         if (!empty($title)) {
             foreach ($title as $k => $v) {
-                $title[$k] = iconv("UTF-8", "GB2312", $v);
+                $title[$k] = iconv("UTF-8", "GB2312//IGNORE", $v);
             }
             $title = implode("\t", $title);
             echo "$title\n";
@@ -2226,7 +2272,7 @@ class ShopController extends BaseController
         if (!empty($data)) {
             foreach ($data as $key => $val) {
                 foreach ($val as $ck => $cv) {
-                    $data[$key][$ck] = iconv("UTF-8", "GB2312", $cv);
+                    $data[$key][$ck] = iconv("UTF-8", "GB2312//IGNORE", $cv);
                 }
                 $data[$key] = implode("\t", $data[$key]);
 

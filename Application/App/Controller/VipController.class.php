@@ -678,20 +678,38 @@ class VipController extends BaseController
         $this->display();
     }
 
+    //我的下级
     public function tuiguang(){
 
         $my_recommend_code = self::$WAP['vip']['my_recommend_code'];
-        if(!empty($my_recommend_code)){
-            $my_recommend_code = "df00001";
-        }
+
         $Model = new Model(); 
         $sql = "select a.nickname,a.exp,b.name as gradename from wfx_vip a left join wfx_vip_level";
-        $sql .= " b on a.fx_level = b.id where a.recommend_code = 'df00001' order by a.exp desc"; 
+        $sql .= " b on a.fx_level = b.id where a.recommend_code = '".my_recommend_code."' order by a.exp desc"; 
         $user_list = $Model->query($sql);
 
         $this->assign('user_list',$user_list);
         $this->display();
     }
+
+    //检测是否有未读站内信
+    public function isReadMessage(){
+
+        $vipid = self::$WAP['vipid'];
+
+        $sql = "select a.id,a.pids,a.title,a.content,b.opid from wfx_vip_message a left join ";
+        $sql .= "wfx_vip_log b on a.id = b.opid where a.pids like '%".$vipid."%' and b.opid is null"; 
+
+        $Model = new Model(); 
+        $message_list = $Model->query($sql);
+
+        $data["status"]=0;
+        if(count($message_list)>=0){
+            $data["status"]=1;
+        }
+        $this->ajaxReturn($data);
+    }
+
 
     public function feedback(){
         $this->display();
@@ -901,7 +919,6 @@ class VipController extends BaseController
         $data = $m->where('id=' . $id)->find();
         $info['data'] = $data;
         $this->ajaxReturn($info);
-
     }
 
     public function info()
