@@ -1089,9 +1089,32 @@ class VipController extends BaseController
             if (I('id')) {
                 $data = $m->where('id=' . I('id'))->find();
             }
+
+            if($data['province']){
+                $province = $data['province'];
+                $city		= $data['city'];
+                $area		= $data['area'];
+
+
+            }else{
+                $provinceRs = M('City')->where("parent_id= 1")->select();
+            }
+
+            $this->assign('province',$province);
+            $this->assign('provinceRs',$provinceRs);
+            $this->assign('city',$city);
+            $this->assign('area',$area);
+
             $this->assign('data', $data);
             $this->display();
         }
+    }
+
+    public function getCityByPid(){
+        $pid=$_POST['pid'];
+        $data=M('City')->where("parent_id= '{$pid}'")->select();
+        //return $data;
+        $this->ajaxReturn($data);
     }
 
     public function addressDel()

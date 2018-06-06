@@ -57,7 +57,7 @@
 <div class="page page-prodList">
 	<!-- 标题栏 -->
 	<header class="bar bar-header">
-		<a href="<?php echo U('App/Shop/index',array('shopid'=>21));?>" class="iconfont icon-back bar-btn pull-left"></a>
+		<a href="javascript:void(0);" onclick="javascript:history.go(-1);" class="iconfont icon-back bar-btn pull-left"></a>
 		<h1 class="title">分类</h1>
 		<a href="<?php echo U('App/Shop/index',array('shopid'=>21));?>" class="iconfont icon-home-head bar-btn pull-right"></a>
 	</header>

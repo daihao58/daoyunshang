@@ -37,7 +37,7 @@
 <body>
     <div class="page">
         <header class="bar bar-header">
-            <a href="<?php echo U('App/Vip/index');?>" class="iconfont icon-back bar-btn pull-left"></a>
+            <a href="javascript:void(0)" onclick="history.go(-1)" class="iconfont icon-back bar-btn pull-left"></a>
             <h1 class="title"></h1>
             <a href="<?php echo U('App/Shop/index',array('shopid'=>$shopid));?>" class="iconfont icon-home-head bar-btn pull-right"></a>
         </header>
