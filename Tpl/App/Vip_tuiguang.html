@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>道合商城_品质生活，健康人生_健康养生平台</title>
+    <meta name="keywords" content="道合商城,东方道合,东方道合国际,保健产品,生殖美疗,保健食品,美容护肤,日化产品,酒水系列,健康器械,资产配置,医疗美容,隆力奇" />
+    <meta name="description" content="东方道合，致力于为全球家庭提供健康美丽的生活方式，提供品质高端的养生健康产品，专业为您的健康美丽保驾护航！ " />
+    <link rel="stylesheet" href="__PUBLIC__/App/css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/layout.css">
+    <link rel="stylesheet" href="__PUBLIC__/App/css/style.css">
+</head>
+
+<body>
+<div class="page page-bill">
+    <!-- 标题栏 -->
+    <header class="bar bar-header">
+        <a href="/App/Vip/index" class="iconfont icon-back bar-btn pull-left"></a>
+        <h1 class="title">我的推广</h1>
+        <a href="/App/Shop/index" class="iconfont icon-home-head bar-btn pull-right"></a>
+    </header>
+    <!-- content -->
+    <section class="content">
+        <div class="rank-block">
+            <ul class="row">
+                <li class="col-33" id="comprehensive">
+                    <a href="javascript:void(0);" class="rank-item">姓名</a>
+                </li>
+                <li class="col-33" id="price">
+                    <a href="javascript:void(0);" class="rank-item">级别</i></a>
+                </li>
+                <li class="col-33" id="time">
+                    <a href="javascript:void(0);" class="rank-item">积分</a>
+                </li>
+            </ul>
+        </div>
+        <div class="list-block mt-0">
+                <ul>
+                    <volist name="user_list" id="vo">
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="t-e">{$vo.nickname}</div>
+                                <div class="t-e">{$vo.gradename}</div>
+                                <div class="mt-12 color-light font-12">{$vo.exp}</div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+        </div>
+    </section>
+</div>
+</body>
+
+</html>
