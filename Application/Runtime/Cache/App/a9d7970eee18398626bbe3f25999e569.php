@@ -239,7 +239,7 @@
 						<a class="delete-btn goodsdel" data-id="<?php echo ($vo["id"]); ?>">删除</a>
 						<div class="item-content">
 							<div class="item-media" data-id="<?php echo ($vo["id"]); ?>">
-								<a class="goodsChose checkbox checked" data-id="<?php echo ($vo["id"]); ?>" data-num='<?php echo ($vo["num"]); ?>' data-total='<?php echo ($vo["total"]); ?>'><i class="iconfont icon-unchecked"></i></a>
+								<a class="goodsChose checkbox checked" data-id="<?php echo ($vo["id"]); ?>" data-id="<?php echo ($vo["id"]); ?>" data-goodsid='<?php echo ($vo["goodsid"]); ?>' data-sku='<?php echo ($vo["sku"]); ?>' data-num='<?php echo ($vo["num"]); ?>' data-total='<?php echo ($vo["total"]); ?>' data-price='<?php echo ($vo["price"]); ?>'><i class="iconfont icon-unchecked"></i></a>
 							</div>
 							<div class="item-title">
 								<div class="bsk-img pull-left">
@@ -309,8 +309,9 @@
 			$goodsadd.on('click', function (e) {
 				e.preventDefault();
 
-				var $item = $(this).parent(),
-						num = Number($item.find('.quant-num').val()),
+				var $item = $(this).parent().parent().prev().children();
+				var $item2 = $(this).parent();
+						num = Number($item2.find('.quant-num').val()),
 						total = Number($item.data('total'));
 
 				if(num === total || total ===0) {
@@ -319,17 +320,21 @@
 
 				num ++;
 
-				$item.find('.quant-num').val(num);
+				$item2.find('.quant-num').val(num);
+				$item2.data('num', num);
 				$item.data('num', num);
+				if($item.hasClass('checked')){
+					$totalprice.html(Number($totalprice.html()) + Number($item.data('price')));
+					$totalnum.html(Number($totalnum.html()) + 1);
+				}
 
-				$totalprice.html(Number($totalprice.html()) + Number($item.data('price')));
-				$totalnum.html(Number($totalnum.html()) + 1);
+
 			});
 			$goodsdec.on('click', function (e) {
 				e.preventDefault();
-
-				var $item = $(this).parent(),
-						num = Number($item.find('.quant-num').val());
+				var $item = $(this).parent().parent().prev().children();
+				var $item2 = $(this).parent(),
+						num = Number($item2.find('.quant-num').val());
 
 				if(num === 1) {
 					return
@@ -337,11 +342,23 @@
 
 				num --;
 
-				$item.find('.quant-num').val(num);
+				$item2.find('.quant-num').val(num);
+				$item2.data('num', num);
 				$item.data('num', num);
 
-				$totalprice.html(Number($totalprice.html()) - Number($item.data('price')));
-				$totalnum.html(Number($totalnum.html()) - 1);
+				var dhpirce=Number($totalprice.html()) - Number($item.data('price'));
+				if(dhpirce < 0){
+					dhpirce =0
+				}
+				var dhnum=Number($totalnum.html()) - 1;
+				if(dhnum < 0){
+					dhnum =0
+				}
+				if($item.hasClass('checked')){
+					$totalprice.html(dhpirce);
+					$totalnum.html(dhnum);
+				}
+
 			});
 			//购物车删除
 			$('.goodsdel').on('click', function (e) {
@@ -408,10 +425,10 @@
 			// 勾选商品
 			$('.goodsChose').on('click', function(e) {
 				if($(this).hasClass('checked')){
-					$totalprice.html(Number($totalprice.html()) - Number($(this).data('total')));
+					$totalprice.html(Number($totalprice.html()) -   Number($(this).data('price')) *  Number($(this).data('num')) );
 					$totalnum.html(Number($totalnum.html()) - Number($(this).data('num')));
 				}else{
-					$totalprice.html(Number($totalprice.html()) + Number($(this).data('total')));
+					$totalprice.html(Number($totalprice.html()) + Number($(this).data('price')) *  Number($(this).data('num')));
 					$totalnum.html(Number($totalnum.html()) + Number($(this).data('num')));
 				}
 				e.preventDefault();

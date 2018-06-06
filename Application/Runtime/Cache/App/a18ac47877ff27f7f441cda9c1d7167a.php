@@ -7,9 +7,9 @@
     <meta content="yes" name="apple-touch-fullscreen" />
     <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <meta content="telephone=no" name="format-detection" />
-    <title></title>
-    <meta name="keywords" content=" " />
-    <meta name="description" content=" " />
+    <title>道合商城_品质生活，健康人生_健康养生平台</title>
+    <meta name="keywords" content="道合商城,东方道合,东方道合国际,保健产品,生殖美疗,保健食品,美容护肤,日化产品,酒水系列,健康器械,资产配置,医疗美容,隆力奇" />
+    <meta name="description" content="东方道合，致力于为全球家庭提供健康美丽的生活方式，提供品质高端的养生健康产品，专业为您的健康美丽保驾护航！ " />
     <link rel="stylesheet" href="/Public/App/css/iconfont/iconfont.css">
     <link rel="stylesheet" href="/Public/App/css/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="/Public/App/css/layout.css">
@@ -17,6 +17,19 @@
 </head>
 <script src="/Public/App/js/jquery-3.2.1.min.js"></script>
 <script src="/Public/App/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="/Public/App/js/jquery.qrcode.min.js"></script>
+
+<style>
+    .er{
+        position: absolute;
+        top:30%;
+        left: 25%;
+        z-index: 999;
+    }
+    .c1{
+        display: none;
+    }
+</style>
 <body>
 <div class="page page-user page-current" id="page-user">
     <!-- 标题栏 -->
@@ -70,7 +83,7 @@
 
             </div>
             
-            <a href="" class="iconfont icon-right"></a>
+            <a href="/app/vip/userinfo" class="iconfont icon-right"></a>
         </div>
 
         <!-- 主要功能 -->
@@ -81,7 +94,7 @@
                     <p class="font-12">推荐码</p>
                 </li>
                 <li class="col-25">
-                    <p class="font-12 mt-14"><?php echo ($data["my_recommend_code"]); ?></p>
+                    <a href="/app/vip/ewm/ercode/<?php echo ($data["my_recommend_code"]); ?>"><p class="font-12 mt-14"><?php echo ($data["my_recommend_code"]); ?></p></a>
                 </li>
                 <!--<li class="col-25 nav-tyg">
                     <a href="">
@@ -147,9 +160,46 @@
                         </a>
                     </li>
                     <?php else: endif; ?>
+                <li>
+                    <a href="/App/Vip/editpwd/phone/<?php echo ($data["mobile"]); ?>" class="item-content">
+                        <div class="item-media"><i class="iconfont icon-kefu" style="color: #ff8c44"></i></div>
+                        <div class="item-title">修改密码<i class="more-link pull-right"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <div class=""><button class="button button-big tuichu">退出登录</button></div>
+                </li>
             </ul>
         </div>
     </div>
 </div>
+<div id="code" class="er "></div>
+<script>
+    var i=1;
+    function erweima(){
+        if(i==1){
+            $("#code").qrcode({ //code_img是一个img标签的id
+                render: "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
+                text: "http://yunshang.czcaizi.com/App/Vip/reg/tui_code/<?php echo ($data['my_recommend_code']); ?>",   //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
+                width: 200,              //二维码的宽度
+                height: 200,
+                background: "#ffffff",       //二维码的后景色
+                foreground: "#000000",        //二维码的前景色
+                src: $('#image').attr('src')             //二维码中间的图片
+            });
+            i++
+        }else{
+            $('.er').removeClass("c1");
+        }
+
+    }
+    $('.er').click(function(){
+        $(this).addClass("c1");
+    })
+
+    $(".tuichu").click(function(){
+        window.location.href="/App/vip/logout";
+    });
+</script>
 </body>
 </html>

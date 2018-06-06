@@ -213,7 +213,7 @@
 	<div class="page page-prodDetails">
 		<!-- 标题栏 -->
 		<header class="bar bar-header">
-			<a href="javascript:void(0)" onclick="history.go(-1)" class="iconfont icon-back bar-btn pull-left"></a>
+			<a href="javascript:" onclick="self.location=document.referrer;"  class="iconfont icon-back bar-btn pull-left"></a>
 			<h1 class="title">{$cache.name}</h1>
 			<a href="{:U('App/Shop/index',array('shopid'=>$shopid))}" class="iconfont icon-home-head bar-btn pull-right"></a>
 		</header>
