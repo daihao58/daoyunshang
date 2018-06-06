@@ -880,6 +880,10 @@ a.search-head {
 	flex-shrink: 1;
 }
 
+.list-block .item-title + .item-input {
+	width: 70%;
+}
+
 .list-block textarea {
 	resize: none;
 	line-height: 1.4;
