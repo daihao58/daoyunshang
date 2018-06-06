@@ -91,6 +91,7 @@
 			<div class="list-block media-list">
 				<div class="list-title">商品明细</div>
 				<?php if(is_array($cache["items"])): $i = 0; $__LIST__ = $cache["items"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vt): $mod = ($i % 2 );++$i;?><ul style="margin: 0 -.7rem;background-color: #fafafa;padding: 0 .7rem;">
+						<a href="<?php echo U('App/Shop/goods',array('sid'=>0,'cid'=>$cid,'id'=>$vt['goodsid'],'ppid'=>$_SESSION['WAP']['vipid']));?>">
 						<li class="item-content">
 							<div class="item-media prod-media">
 								<img src="<?php echo ($vt["pic"]); ?>"/>
@@ -111,6 +112,7 @@
 								<?php if(!empty($vt["skuattr"])): ?><p class="color-light font-12 mt-4"><?php echo ($vt["skuattr"]); ?></p><?php endif; ?>
 							</div>
 						</li>
+						</a>
 					</ul><?php endforeach; endif; else: echo "" ;endif; ?>
 				<!-- 金额详情 -->
 				<div class="item-content">

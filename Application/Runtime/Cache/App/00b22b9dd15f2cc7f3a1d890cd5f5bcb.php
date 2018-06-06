@@ -73,10 +73,10 @@
 				<span <?php if(($type) == "4"): ?>class='active'<?php endif; ?>>全部</span>
 			</a>
 			<a href="<?php echo U('App/Shop/orderList',array('sid'=>0,'type'=>1));?>" class="fl text-c ">
-				<span <?php if(($type) == "1"): ?>class='active'<?php endif; ?>>未支付</span>
+				<span <?php if(($type) == "1"): ?>class='active'<?php endif; ?>>待付款</span>
 			</a>
 			<a href="<?php echo U('App/Shop/orderList',array('sid'=>0,'type'=>2));?>" class="fl text-c">
-				<span <?php if(($type) == "2"): ?>class='active'<?php endif; ?>>已支付</span>
+				<span <?php if(($type) == "2"): ?>class='active'<?php endif; ?>>待发货</span>
 			</a>
 			<a href="<?php echo U('App/Shop/orderList',array('sid'=>0,'type'=>3));?>" class="fl text-c">
 				<span <?php if(($type) == "3"): ?>class='active'<?php endif; ?>>待收货</span>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>WeMall分销管理</title>
+    <title>东方道合科技后台管理系统</title>
     <meta name="description" content="blank page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -226,11 +226,11 @@
                                         <span class="menu-text">商城分类</span>
                                     </a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="<?php echo U('Multi/Shop/group');?>" data-loader="App-loader" data-loadername="商城分组">
                                         <span class="menu-text">商城分组</span>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="<?php echo U('Multi/Shop/skuattr');?>" data-loader="App-loader" data-loadername="SKU属性（商品规格属性）">
                                         <span class="menu-text">SKU属性</span>
@@ -407,6 +407,12 @@
                                         <span class="menu-text">返利明细</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="<?php echo U('Multi/Shop/goodsReport');?>" data-loader="App-loader" data-loadername="商品报表">
+                                        <i class="glyphicon glyphicon-usd"></i>
+                                        <span class="menu-text">商品报表</span>
+                                    </a>
+                                </li>
                                 <!-- <li>
                                      <a href="<?php echo U('Multi/Vip/txorder',array('status'=>'2'));?>" data-loader="App-loader" data-loadername="提现订单管理-提现完成">
                                          <i class="glyphicon glyphicon-ok"></i>
@@ -455,13 +461,13 @@
                                 <li>
                                     <a href="<?php echo U('Multi/Shop/order',array('status'=>'1'));?>" data-loader="App-loader" data-loadername="订单管理-未支付订单">
                                         <i class="glyphicon glyphicon-heart-empty"></i>
-                                        <span class="menu-text">未支付</span>
+                                        <span class="menu-text">待付款</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="<?php echo U('Multi/Shop/order',array('status'=>'2'));?>" data-loader="App-loader" data-loadername="订单管理-已支付订单">
                                         <i class="glyphicon glyphicon-usd"></i>
-                                        <span class="menu-text">已支付</span>
+                                        <span class="menu-text">待发货</span>
                                     </a>
                                 </li>
                                 <li>
@@ -470,7 +476,7 @@
                                         <span class="menu-text">待收货</span>
                                     </a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="<?php echo U('Multi/Shop/order',array('status'=>'4'));?>" data-loader="App-loader" data-loadername="订单管理-退货中订单">
                                         <i class="glyphicon glyphicon-import"></i>
                                         <span class="menu-text">退货中</span>
@@ -481,7 +487,7 @@
                                         <i class="glyphicon glyphicon-saved"></i>
                                         <span class="menu-text">退货完成</span>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="<?php echo U('Multi/Shop/order',array('status'=>'5'));?>" data-loader="App-loader" data-loadername="订单管理-交易完成">
                                         <i class="glyphicon glyphicon-ok"></i>

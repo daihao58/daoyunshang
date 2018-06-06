@@ -163,7 +163,7 @@
                         </div>
                     </div>
 
-                   <!-- <div class="form-group">
+                    <div class="form-group">
                         <label class="col-lg-2 control-label">开启退货</label>
                         <div class="col-lg-4">
                             <label>
