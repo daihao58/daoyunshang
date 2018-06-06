@@ -685,9 +685,8 @@ class VipController extends BaseController
 
         $Model = new Model(); 
         $sql = "select a.nickname,a.exp,b.name as gradename from wfx_vip a left join wfx_vip_level";
-        $sql .= " b on a.fx_level = b.id where a.recommend_code = '".my_recommend_code."' order by a.exp desc"; 
-        var_dump($sql);
-        exit;
+        $sql .= " b on a.fx_level = b.id where a.recommend_code = '".$my_recommend_code."' order by a.exp desc"; 
+    
              
         $user_list = $Model->query($sql);
 
