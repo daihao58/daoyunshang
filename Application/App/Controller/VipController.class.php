@@ -702,11 +702,12 @@ class VipController extends BaseController
         $sql = "select a.id,a.pids,a.title,a.content,b.opid from wfx_vip_message a left join ";
         $sql .= "wfx_vip_log b on a.id = b.opid where a.pids like '%".$vipid."%' and b.opid is null"; 
 
+
         $Model = new Model(); 
         $message_list = $Model->query($sql);
 
         $data["status"]=0;
-        if(count($message_list)>=0){
+        if(count($message_list)>0){
             $data["status"]=1;
         }
         $this->ajaxReturn($data);
