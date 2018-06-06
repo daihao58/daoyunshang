@@ -40,21 +40,23 @@
 								<div class="regiona2 wbox-1">
 									<select name="province" class="sel" id="province">
 										<?php if($province == ''): ?><option value="0">请选择</option><?php else: endif; ?>
-										<?php if(is_array($provinceRs)): $i = 0; $__LIST__ = $provinceRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$provinceRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($provinceRs["id"]); ?>" <?php if($province == $provinceRs['id']): ?>selected<?php else: endif; ?> ><?php echo ($provinceRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+										<?php if(is_array($provinceRs)): $i = 0; $__LIST__ = $provinceRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$provinceRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($provinceRs["id"]); ?>"  <?php if($province == $provinceRs['id']): ?>selected<?php else: endif; ?> ><?php echo ($provinceRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 									</select>
 								</div>
 							</li>
 							<li class="item-content"><div class="item-title label">所在城市</div>
 								<div class="regiona2 wbox-1">
 									<select name="city" class="sel" id="city">
-										<?php if(is_array($cityRs)): $i = 0; $__LIST__ = $cityRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cityRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($cityRs["id"]); ?>"><?php echo ($cityRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+										<?php if($city == ''): ?><option value="0">请选择</option><?php else: endif; ?>
+										<?php if(is_array($cityRs)): $i = 0; $__LIST__ = $cityRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cityRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($cityRs["id"]); ?>" <?php if($city == $cityRs['id']): ?>selected<?php else: endif; ?> ><?php echo ($cityRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 									</select>
 								</div>
 							</li>
 							<li class="item-content"><div class="item-title label">所在区县</div>
 								<div class="regiona2 wbox-1">
 									<select name="area" class="sel" id="area">
-										<?php if(is_array($areaRs)): $i = 0; $__LIST__ = $areaRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$areaRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($areaRs["id"]); ?>"><?php echo ($areaRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+										<?php if($area == ''): ?><option value="0">请选择</option><?php else: endif; ?>
+										<?php if(is_array($areaRs)): $i = 0; $__LIST__ = $areaRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$areaRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($areaRs["id"]); ?>" <?php if($area == $areaRs['id']): ?>selected<?php else: endif; ?> ><?php echo ($areaRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 									</select>
 								</div>
 							</li>
@@ -77,6 +79,10 @@
 	$('.ads-btn').click(function(){
 		var id=$('#id').val();
 		var xqid=1;//取消小区ID
+		var province=$('#province').val();
+		var city=$('#city').val();
+		var area=$('#area').val();
+		//alert(province);
 		var address=$('#address').val();
 		var name=$('#name').val();
 		var mobile=$('#mobile').val();
@@ -96,7 +102,7 @@
 		}
 		$.ajax({
 			type:'post',
-			data:{'id':id,'xqid':xqid,'address':address,'name':name,'mobile':mobile},
+			data:{'id':id,'xqid':xqid,'address':address,'name':name,'mobile':mobile,'province':province,'city':city,'area':area,},
 			url:"<?php echo U('Vip/addressSet');?>",
 			dataType:'json',
 			success:function(e){
@@ -147,23 +153,22 @@
 						'pid':$(this).val(),
 					},
 					function(data){
-					console.log(data);
-						if(data.status){
-							console.log(11);
-							var length = data.info.length;
-							console.log(length);
-							var option = '';
-							var firstCityId;
-							for(var i=0;i<length;i++){
-								if(i == 0){
-									firstCityId = data.info[i]['id'];
-								}
-								option +='<option value="'+data.info[i]['id']+'">'+data.info[i]['name']+'</option>';
+						data=JSON.parse(data);
+						//console.log(data);
+						var length = data.length;
+						//console.log(length);
+						var option = '<option value="0">请选择</option>';
+						var firstCityId;
+						for(var i=0;i<length;i++){
+							if(i == 0){
+								firstCityId = data[i]['id'];
 							}
-							$("#city").html(option);
-							console.log(firstCityId);
-							city(firstCityId);
+							option +='<option value="'+data[i]['id']+'">'+data[i]['name']+'</option>';
 						}
+						$("#city").html(option);
+						//console.log(firstCityId);
+						city(firstCityId);
+
 					}
 			);
 		});
@@ -182,9 +187,6 @@
 								option +='<option value="'+data.info[i]['id']+'">'+data.info[i]['name']+'</option>';
 							}
 							$("#area").html(option);
-						}else{
-
-							$(window).showErrMessage(data.info);
 						}
 					}
 			);
@@ -196,18 +198,15 @@
 						'pid':$(this).val(),
 					},
 					function(data){
+						data=JSON.parse(data);
 
-						if(data.status){
-							var length = data.info.length;
-							var option = '';
-							for(var i=0;i<length;i++){
-								option +='<option value="'+data.info[i]['id']+'">'+data.info[i]['name']+'</option>';
-							}
-							$("#area").html(option);
-						}else{
-
-							$(window).showErrMessage(data.info);
+						var length = data.length;
+						var option = '<option value="0">请选择</option>';;
+						for(var i=0;i<length;i++){
+							option +='<option value="'+data[i]['id']+'">'+data[i]['name']+'</option>';
 						}
+						$("#area").html(option);
+
 					}
 			);
 		});

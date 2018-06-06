@@ -1383,9 +1383,20 @@ class ShopController extends BaseController
             $vipadd = I('vipadd');
             if ($vipadd) {
                 $vip = M('Vip_address')->where('id=' . $vipadd)->find();
+
+                $vip['sheng']=M('City')->where("id = '{$vip['province']}'")->find()['name'];
+                $vip['shi']=M('City')->where("id = '{$vip['city']}'")->find()['name'];
+                $vip['qu']=M('City')->where("id = '{$vip['area']}'")->find()['name'];
+                $vip['address']=$vip['sheng'].$vip['shi']. $vip['qu'].$vip['address'];
+
             } else {
                 $vip = M('Vip_address')->where('vipid=' . $_SESSION['WAP']['vipid'])->find();
+                $vip['sheng']=M('City')->where("id = '{$vip['province']}'")->find()['name'];
+                $vip['shi']=M('City')->where("id = '{$vip['city']}'")->find()['name'];
+                $vip['qu']=M('City')->where("id = '{$vip['area']}'")->find()['name'];
+                $vip['address']=$vip['sheng'].$vip['shi']. $vip['qu'].$vip['address'];
             }
+            //var_dump($vip);die;
             $this->assign('vip', $vip);
             //可用代金卷
             $mdjq = M('Vip_card');
