@@ -727,7 +727,7 @@ a.search-head {
 	transform: scale(.9);
 }
 
-.bar-nav .nav-item .badge {
+.badge {
 	position: absolute;
 	top: .1rem;
 	left: 50%;
@@ -1562,4 +1562,11 @@ a.link-green {
 	font-size: 1.6rem;
 	color: #1eb6d4;
 	line-height: 1
+}
+
+.portrait {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 50%;
 }

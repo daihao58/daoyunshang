@@ -27,13 +27,13 @@
     </header>
     <!-- content -->
     <section class="content">
-        <div class="rank-block">
+        <div class="rank-block" style="background-color: #fff;">
             <ul class="row">
                 <li class="col-33" id="comprehensive">
                     <a href="javascript:void(0);" class="rank-item">姓名</a>
                 </li>
                 <li class="col-33" id="price">
-                    <a href="javascript:void(0);" class="rank-item">级别</i></a>
+                    <a href="javascript:void(0);" class="rank-item">级别</a>
                 </li>
                 <li class="col-33" id="time">
                     <a href="javascript:void(0);" class="rank-item">积分</a>
@@ -44,11 +44,8 @@
                 <ul>
                     <volist name="user_list" id="vo">
                         <li class="item-content">
-                            <div class="item-inner">
-                                <div class="t-e">{$vo.nickname}</div>
-                                <div class="t-e">{$vo.gradename}</div>
-                                <div class="mt-12 color-light font-12">{$vo.exp}</div>
-                            </div>
+                            <div class="item-title">{$vo.nickname} {$vo.gradename}</div>
+                            <div class="color-light font-12">{$vo.exp}</div>
                         </li>
                     </volist>
                 </ul>
