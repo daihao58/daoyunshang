@@ -46,7 +46,7 @@
                     <volist name="data_pay" id="vo">
                         <li class="item-content">
                             <div class="item-inner">
-                                <span class="pull-right font-16">-{$vo.totalprice}</span>
+                                <span class="pull-right font-16">{$vo.totalprice}</span>
                                 <div class="t-e">购买-订单:{$vo.oid}</div>
                                 <div class="mt-12 color-light font-12"><?php echo date('Y-m-d H:i:s',$vo['paytime']) ?></div>
                             </div>
@@ -59,7 +59,7 @@
                     <volist name="data_pay" id="vo">
                         <li class="item-content">
                             <div class="item-inner">
-                                <span class="pull-right font-16">+{$vo.rebate_money}</span>
+                                <span class="pull-right font-16">{$vo.rebate_money}</span>
                                 <div class="t-e">{$vo.content}</div>
                                 <div class="mt-12 color-light font-12">{$vo.time}</div>
                             </div>
@@ -72,7 +72,7 @@
                     <volist name="data_pay" id="vo">
                         <li class="item-content">
                             <div class="item-inner">
-                                <span class="pull-right font-16">+{$vo.money}</span>
+                                <span class="pull-right font-16">{$vo.money}</span>
                                 <div class="t-e">充值-账号:{$vo.mobile}</div>
                                 <div class="mt-12 color-light font-12">{$vo.time}</div>
                             </div>
