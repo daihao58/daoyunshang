@@ -1421,6 +1421,7 @@ class ShopController extends BaseController
                 $this->assign('yf', $yf);
                 $this->assign('yftop', $youfei['yftop']);
             } else {
+                $allshop=$totalprice;
                 $this->assign('isyf', 0);
                 $this->assign('yf', 0);
             }           
