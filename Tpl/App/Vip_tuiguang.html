@@ -27,28 +27,29 @@
     </header>
     <!-- content -->
     <section class="content">
-        <div class="rank-block" style="background-color: #fff;">
-            <ul class="row">
+        <div class="rank-block" style="background-color: #fff; padding: 0 .7rem;">
+            <ul class="row color-blue font-b">
                 <li class="col-33" id="comprehensive">
-                    <a href="javascript:void(0);" class="rank-item">姓名</a>
+                    <a href="javascript:void(0);" class="rank-item font-13">姓名</a>
                 </li>
                 <li class="col-33" id="price">
-                    <a href="javascript:void(0);" class="rank-item">级别</a>
+                    <a href="javascript:void(0);" class="rank-item font-13">级别</a>
                 </li>
                 <li class="col-33" id="time">
-                    <a href="javascript:void(0);" class="rank-item">积分</a>
+                    <a href="javascript:void(0);" class="rank-item font-13">积分</a>
                 </li>
             </ul>
         </div>
         <div class="list-block mt-0">
-                <ul>
-                    <volist name="user_list" id="vo">
-                        <li class="item-content">
-                            <div class="item-title">{$vo.nickname} {$vo.gradename}</div>
-                            <div class="color-light font-12">{$vo.exp}</div>
-                        </li>
-                    </volist>
-                </ul>
+            <ul>
+                <volist name="user_list" id="vo">
+                    <li class="item-content font-12 t-c">
+                    	<span style="flex: 1;">{$vo.nickname}</span>
+                    	<span style="flex: 1;">{$vo.gradename}</span>
+                    	<span style="flex: 1;">{$vo.exp}</span>
+                    </li>
+                </volist>
+            </ul>
         </div>
     </section>
 </div>
