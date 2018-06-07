@@ -1143,8 +1143,9 @@ class ShopController extends BaseController
             }*/
 
 
-
-
+            $vip = session("WAP");
+            $vip = $vip['vip'];
+            $data['vipopenid']=$vip['mobile'];
             $data['yf'] = $data['yf'];
             //var_dump($data['yf']);die;
             $re = $morder->add($data);
@@ -1986,8 +1987,9 @@ class ShopController extends BaseController
 
 
             //第一次购买
-            if($pid && $_SESSION['WAP']['vip']['one_buy_status'] == 0){
-                $vipopenid=$_SESSION['WAP']['vip']['openid'];
+            //var_dump($_SESSION['WAP']['vip']['one_buy_status']);die;
+            if($_SESSION['WAP']['vip']['one_buy_status'] == 0){
+                $vipopenid=$_SESSION['WAP']['vip']['mobile'];
                 $onemap['vipopenid']=$vipopenid;
                 $onedata=M('Shop_order')->where($onemap)->order('paytime asc')->limit(1)->select()[0];
                 if($onedata['id'] == $cache['id']){
