@@ -3975,7 +3975,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0128s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0169s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0311s ]
 SQL: SHOW COLUMNS FROM `wfx_recharge_info` [ RunTime:0.0288s ]
-SQL: SELECT * FROM `wfx_recharge_info` WHERE ( mobile = 15295121323 ) ORDER BY time desc  [ RunTime:0.0288s ]
+SQL: SELECT * FROM `wfx_recharge_info` WHERE ( mobile =   ) ORDER BY time desc  [ RunTime:0.0288s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
@@ -4196,7 +4196,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0119s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0124s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0136s ]
 SQL: SHOW COLUMNS FROM `wfx_recharge_info` [ RunTime:0.0119s ]
-SQL: SELECT * FROM `wfx_recharge_info` WHERE ( mobile = 15295121323 ) ORDER BY time desc  [ RunTime:0.0264s ]
+SQL: SELECT * FROM `wfx_recharge_info` WHERE ( mobile =   ) ORDER BY time desc  [ RunTime:0.0264s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
@@ -6372,7 +6372,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0126s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0130s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0125s ]
 SQL: SHOW COLUMNS FROM `wfx_recharge_info` [ RunTime:0.0132s ]
-SQL: SELECT * FROM `wfx_recharge_info` WHERE ( mobile = 15295121323 ) ORDER BY time desc  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wfx_recharge_info` WHERE ( mobile =   ) ORDER BY time desc  [ RunTime:0.0120s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]

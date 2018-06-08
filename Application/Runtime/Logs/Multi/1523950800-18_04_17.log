@@ -15690,7 +15690,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
 NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php ç¬¬ 1263 è¡Œ.
-ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ERR: SQLSTATE[HY000] [2002] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½È·ï¿½ð¸´»ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð·ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½Ê§ï¿½Ü¡ï¿½
 
 
 [ 2018-04-17T15:06:38+08:00 ] 127.0.0.1 /Multi/Shop/goods
@@ -23792,7 +23792,7 @@ INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001331s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.002800s ]
 SQL: SELECT SUM(weight) AS tp_sum FROM `wfx_employee` WHERE `id` <> '' LIMIT 1   [ RunTime:0.0130s ]
 SQL: SELECT * FROM `wfx_employee` WHERE ( tuijianma="195637" ) LIMIT 1   [ RunTime:0.0131s ]
-SQL: INSERT INTO `wfx_employee` (`id`,`nickname`,`username`,`mobile`,`weight`,`userpass`,`shop_id`,`type`,`tuijianma`) VALUES ('0','æˆ´æ˜Š','daihao','15295121323','0','e10adc3949ba59abbe56e057f20f883e','21','1','195637') [ RunTime:0.0146s ]
+SQL: INSERT INTO `wfx_employee` (`id`,`nickname`,`username`,`mobile`,`weight`,`userpass`,`shop_id`,`type`,`tuijianma`) VALUES ('0','æˆ´æ˜Š','daihao',' ','0','e10adc3949ba59abbe56e057f20f883e','21','1','195637') [ RunTime:0.0146s ]
 
 [ 2018-04-17T15:35:02+08:00 ] 127.0.0.1 /Multi/Index/index
 INFO: [ app_init ] --START--

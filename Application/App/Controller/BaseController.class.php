@@ -92,10 +92,10 @@ class BaseController extends Controller
 */
         //检查是否存在VIP
         //unset($_SESSION['sqopenid']);
-        $_SESSION['sqmode']='wecha';
+      /*  $_SESSION['sqmode']='wecha';
         if($_SESSION['sqopenid']== ''){
-            $_SESSION['sqopenid']='15295121323';
-        }
+            $_SESSION['sqopenid']='';
+        }*/
 
         if ($_SESSION['sqmode'] && $_SESSION['sqopenid']) {
             $openid = $_SESSION['sqopenid'];
@@ -128,10 +128,10 @@ class BaseController extends Controller
             //注销高级鉴权缓存
             unset($_SESSION['oappid']);
             unset($_SESSION['oaurl']);
-        } else {
+        } /*else {
             session(null);
             $this->diemsg(0, '未正常获取会员数据，请尝试重新访问！');
-        }
+        }*/
 
         //全局初始化完成
         //临时处理分享问题

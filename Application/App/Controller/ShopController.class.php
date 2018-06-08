@@ -550,7 +550,7 @@ class ShopController extends BaseController
     {
         $vip = session("WAP");
         $vip = $vip['vip'];
-        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+        if(empty($vip['mobile']) /*|| $vip['mobile']==' '*/ ){
             $this->redirect('App/vip/login');exit;
         }
 
@@ -736,7 +736,7 @@ class ShopController extends BaseController
     public function shoucang(){
         $vip = session("WAP");
         $vip = $vip['vip'];
-        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+        if(empty($vip['mobile']) /*|| $vip['mobile']==' '*/ ){
             $result['state_code']=5;
             $this->ajaxReturn($result);
             exit;
@@ -784,7 +784,7 @@ class ShopController extends BaseController
     {
         $vip = session("WAP");
         $vip = $vip['vip'];
-        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+        if(empty($vip['mobile']) /*|| $vip['mobile']==' '*/ ){
             $info['status'] = 5;
             $this->ajaxReturn($info);
             exit;
@@ -1005,7 +1005,7 @@ class ShopController extends BaseController
     {
         $vip = session("WAP");
         $vip = $vip['vip'];
-        if(empty($vip['mobile']) || $vip['mobile']=='15295121323' ){
+        if(empty($vip['mobile']) /*|| $vip['mobile']==' '*/ ){
             $info['status'] = 5;
             $info['msg'] = '未获取数据，请重新尝试321';
             $this->ajaxReturn($info);
@@ -1459,7 +1459,7 @@ class ShopController extends BaseController
         $vipid = self::$WAP['vipid'];
         $data = self::$WAP['vip'];
         //var_dump($data);die;
-        if(empty($data['mobile']) || $data['mobile']=='15295121323' ){
+        if(empty($data['mobile']) /*|| $data['mobile']==' '*/ ){
             $this->redirect('App/vip/login');exit;
         }
         $sid = I('sid') <> '' ? I('sid') : $this->diemsg(0, '缺少SID参数');//sid可以为0

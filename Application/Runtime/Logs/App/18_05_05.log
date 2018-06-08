@@ -655,7 +655,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003080s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.003418s ]
 NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php Г╛╛ 1263 Х║▄.
-ERR: SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+ERR: SQLSTATE[HY000] [2002] О©╫О©╫О©╫О©╫д©О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫э╬О©╫О©╫О©╫О©╫ч╥О©╫О©╫О©╫О©╫с║О©╫
 
 
 [ 2018-05-05T13:08:38+08:00 ] 127.0.0.1 /App/Vip/index
@@ -666,7 +666,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001756s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001911s ]
 NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php Г╛╛ 1263 Х║▄.
-ERR: SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+ERR: SQLSTATE[HY000] [2002] О©╫О©╫О©╫О©╫д©О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫э╬О©╫О©╫О©╫О©╫ч╥О©╫О©╫О©╫О©╫с║О©╫
 
 
 [ 2018-05-05T13:08:46+08:00 ] 127.0.0.1 /App/Vip/index
@@ -677,7 +677,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003284s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.003506s ]
 NOTIC: [8] A session had already been started - ignoring session_start() E:\wamp64\www\daoyunshang\ThinkPHP\Common\functions.php Г╛╛ 1263 Х║▄.
-ERR: SQLSTATE[HY000] [2002] сисзд©╠Й╪фкЦ╩З╩Щ╪╚╬э╬Ьё╛нч╥╗а╛╫с║ё
+ERR: SQLSTATE[HY000] [2002] О©╫О©╫О©╫О©╫д©О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫э╬О©╫О©╫О©╫О©╫ч╥О©╫О©╫О©╫О©╫с║О©╫
 
 
 [ 2018-05-05T13:09:38+08:00 ] 127.0.0.1 /App/Vip/index
@@ -1587,7 +1587,7 @@ SQL: SELECT `name` FROM `wfx_vip_level` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000
 SQL: SHOW COLUMNS FROM `wfx_vip_monthexp` [ RunTime:0.0076s ]
 SQL: SELECT * FROM `wfx_vip_monthexp` WHERE `month` = '2018-4' AND `vipid` = 964 LIMIT 1   [ RunTime:0.0005s ]
 SQL: SHOW COLUMNS FROM `wfx_vip_address` [ RunTime:0.0012s ]
-SQL: INSERT INTO `wfx_vip_address` (`id`,`xqid`,`address`,`name`,`mobile`,`vipid`) VALUES ('0','1','И≤©Х░╗Е╬╥Ф▓▓Е╓╖','dhh','15295121323','964') [ RunTime:0.0006s ]
+SQL: INSERT INTO `wfx_vip_address` (`id`,`xqid`,`address`,`name`,`mobile`,`vipid`) VALUES ('0','1','И≤©Х░╗Е╬╥Ф▓▓Е╓╖','dhh',' ','964') [ RunTime:0.0006s ]
 
 [ 2018-05-05T14:09:39+08:00 ] 127.0.0.1 /App/Vip/address
 INFO: [ app_init ] --START--

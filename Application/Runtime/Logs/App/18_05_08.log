@@ -2013,7 +2013,7 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002679s ]
 INFO: Run Behavior\CronRunBehavior [ RunTime:0.006120s ]
 INFO: [ app_end ] --END-- [ RunTime:0.009122s ]
 
-[ 2018-05-08T15:18:23+08:00 ] 127.0.0.1 /App/Vip/reg?mobile=15295121323&password=&recommend_code=&code=
+[ 2018-05-08T15:18:23+08:00 ] 127.0.0.1 /App/Vip/reg?mobile= &password=&recommend_code=&code=
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
@@ -2067,7 +2067,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0141s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0132s ]
 ERR: Think\Controller:request_post方法不存在！
 
-[ 2018-05-08T15:20:23+08:00 ] 127.0.0.1 /App/Vip/reg?mobile=15295121323&password=&recommend_code=&code=
+[ 2018-05-08T15:20:23+08:00 ] 127.0.0.1 /App/Vip/reg?mobile= &password=&recommend_code=&code=
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
@@ -2102,7 +2102,7 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004230s ]
 INFO: Run Behavior\CronRunBehavior [ RunTime:0.006032s ]
 INFO: [ app_end ] --END-- [ RunTime:0.010641s ]
 
-[ 2018-05-08T15:20:24+08:00 ] 127.0.0.1 /App/Vip/reg?mobile=15295121323&password=&recommend_code=&code=
+[ 2018-05-08T15:20:24+08:00 ] 127.0.0.1 /App/Vip/reg?mobile= &password=&recommend_code=&code=
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
@@ -2191,7 +2191,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0130s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0126s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0129s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`smstempid`,`code`) VALUES ('15295121323','','2018-05-08 15:20:35','1','645169') [ RunTime:0.0211s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`smstempid`,`code`) VALUES (' ','','2018-05-08 15:20:35','1','645169') [ RunTime:0.0211s ]
 
 [ 2018-05-08T15:24:22+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--
@@ -2282,7 +2282,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0132s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0125s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0129s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`smstempid`,`code`) VALUES ('15295121323','','2018-05-08 15:24:29','1','192477') [ RunTime:0.0152s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`smstempid`,`code`) VALUES (' ','','2018-05-08 15:24:29','1','192477') [ RunTime:0.0152s ]
 
 [ 2018-05-08T15:25:22+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--
@@ -2373,7 +2373,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0164s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0202s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0197s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`smstempid`,`code`) VALUES ('15295121323','尊敬的用户，您好，您的短信验证码是：898431','2018-05-08 15:25:28','1','898431') [ RunTime:0.0156s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`smstempid`,`code`) VALUES (' ','尊敬的用户，您好，您的短信验证码是：898431','2018-05-08 15:25:28','1','898431') [ RunTime:0.0156s ]
 
 [ 2018-05-08T15:27:01+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--
@@ -2464,7 +2464,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0135s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0139s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0136s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`smstempid`,`code`) VALUES ('15295121323','尊敬的用户，您好，您的短信验证码是：160260','2018-05-08 15:27:10','1','160260') [ RunTime:0.0180s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`smstempid`,`code`) VALUES (' ','尊敬的用户，您好，您的短信验证码是：160260','2018-05-08 15:27:10','1','160260') [ RunTime:0.0180s ]
 
 [ 2018-05-08T15:40:41+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--
@@ -2798,7 +2798,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0460s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0444s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0429s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES ('15295121323','尊敬的用户，您好，您的短信验证码是：679281','2018-05-08 16:01:24','2018-05-08 16:06:24','1','679281') [ RunTime:0.0427s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES (' ','尊敬的用户，您好，您的短信验证码是：679281','2018-05-08 16:01:24','2018-05-08 16:06:24','1','679281') [ RunTime:0.0427s ]
 
 [ 2018-05-08T16:02:57+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--
@@ -2907,7 +2907,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0128s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0131s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0127s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES ('15295121323','尊敬的用户，您好，您的短信验证码是：876074','2018-05-08 16:05:34','2018-05-08 16:10:34','1','876074') [ RunTime:0.0145s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES (' ','尊敬的用户，您好，您的短信验证码是：876074','2018-05-08 16:05:34','2018-05-08 16:10:34','1','876074') [ RunTime:0.0145s ]
 
 [ 2018-05-08T16:06:22+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -2925,7 +2925,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0126s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0141s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0130s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0135s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0128s ]
 
 [ 2018-05-08T16:06:28+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -2943,7 +2943,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0125s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0124s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0121s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0123s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0118s ]
 
 [ 2018-05-08T16:06:30+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -2961,7 +2961,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0134s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0138s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0131s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0129s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0134s ]
 
 [ 2018-05-08T16:06:32+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -2979,7 +2979,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0133s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0135s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0155s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0133s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0157s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0157s ]
 
 [ 2018-05-08T16:06:41+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -2997,8 +2997,8 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0126s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0131s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0130s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0135s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0123s ]
-SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`) VALUES ('15295121323','e10adc3949ba59abbe56e057f20f883e','654321') [ RunTime:0.0154s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`) VALUES (' ','e10adc3949ba59abbe56e057f20f883e','654321') [ RunTime:0.0154s ]
 
 [ 2018-05-08T16:08:26+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -3016,8 +3016,8 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0132s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0228s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0126s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0125s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0223s ]
-SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`) VALUES ('15295121323','e10adc3949ba59abbe56e057f20f883e','654321') [ RunTime:0.0144s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0223s ]
+SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`) VALUES (' ','e10adc3949ba59abbe56e057f20f883e','654321') [ RunTime:0.0144s ]
 
 [ 2018-05-08T16:08:38+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--
@@ -3070,7 +3070,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0129s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0132s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0160s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0131s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0141s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0141s ]
 
 [ 2018-05-08T16:09:21+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--
@@ -3123,7 +3123,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0142s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0123s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0132s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0126s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0118s ]
 
 [ 2018-05-08T16:09:43+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -3141,8 +3141,8 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0137s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0172s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0137s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0150s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0163s ]
-SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`) VALUES ('15295121323','e10adc3949ba59abbe56e057f20f883e','654321') [ RunTime:0.0164s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0163s ]
+SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`) VALUES (' ','e10adc3949ba59abbe56e057f20f883e','654321') [ RunTime:0.0164s ]
 
 [ 2018-05-08T16:09:46+08:00 ] 127.0.0.1 /App/vip/login
 INFO: [ app_init ] --START--
@@ -3266,7 +3266,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0126s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0154s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0128s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES ('15295121323','尊敬的用户，您好，您的短信验证码是：881155','2018-05-08 16:11:40','2018-05-08 16:16:40','1','881155') [ RunTime:0.0149s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES (' ','尊敬的用户，您好，您的短信验证码是：881155','2018-05-08 16:11:40','2018-05-08 16:16:40','1','881155') [ RunTime:0.0149s ]
 
 [ 2018-05-08T16:11:57+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -3300,7 +3300,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0127s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0122s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0115s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0121s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0138s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0138s ]
 
 [ 2018-05-08T16:12:19+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -3318,7 +3318,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0156s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0157s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0131s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0128s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0127s ]
 
 [ 2018-05-08T16:12:49+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -3336,7 +3336,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0130s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0136s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0136s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0137s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0128s ]
 
 [ 2018-05-08T16:13:21+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -3354,7 +3354,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0173s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0140s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0141s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0141s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND `id` = 15921 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND `id` = 15921 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0133s ]
 
 [ 2018-05-08T16:13:37+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -3372,8 +3372,8 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0135s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0141s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0145s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0136s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND `id` = 15921 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0138s ]
-SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`) VALUES ('15295121323','e10adc3949ba59abbe56e057f20f883e','123') [ RunTime:0.0176s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND `id` = 15921 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0138s ]
+SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`) VALUES (' ','e10adc3949ba59abbe56e057f20f883e','123') [ RunTime:0.0176s ]
 
 [ 2018-05-08T16:13:39+08:00 ] 127.0.0.1 /App/vip/login
 INFO: [ app_init ] --START--
@@ -4655,9 +4655,9 @@ SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0126s ]
 SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0128s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0128s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0136s ]
-SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = '15295121323' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = ' ' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0142s ]
 SQL: SELECT * FROM `wfx_vip` WHERE `id` = 985  [ RunTime:0.0124s ]
-SQL: UPDATE `wfx_vip` SET `pid`=NULL,`plv`=NULL,`path`=NULL,`mobile`='15295121323',`password`='e10adc3949ba59abbe56e057f20f883e',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0149s ]
+SQL: UPDATE `wfx_vip` SET `pid`=NULL,`plv`=NULL,`path`=NULL,`mobile`=' ',`password`='e10adc3949ba59abbe56e057f20f883e',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0149s ]
 
 [ 2018-05-08T16:56:55+08:00 ] 127.0.0.1 /App/vip/index
 INFO: [ app_init ] --START--
@@ -4806,9 +4806,9 @@ SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0124s ]
 SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0126s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0125s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0124s ]
-SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = '15295121323' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0143s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = ' ' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0143s ]
 SQL: DELETE FROM `wfx_vip` WHERE `id` = 985 [ RunTime:0.0137s ]
-SQL: UPDATE `wfx_vip` SET `pid`=NULL,`plv`=NULL,`path`=NULL,`mobile`='15295121323',`password`='e10adc3949ba59abbe56e057f20f883e',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0149s ]
+SQL: UPDATE `wfx_vip` SET `pid`=NULL,`plv`=NULL,`path`=NULL,`mobile`=' ',`password`='e10adc3949ba59abbe56e057f20f883e',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0149s ]
 
 [ 2018-05-08T16:58:41+08:00 ] 127.0.0.1 /App/vip/index
 INFO: [ app_init ] --START--
@@ -4957,9 +4957,9 @@ SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0135s ]
 SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0134s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0134s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0137s ]
-SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = '15295121323' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0183s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = ' ' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0183s ]
 SQL: DELETE FROM `wfx_vip` WHERE `id` = 982 [ RunTime:0.0149s ]
-SQL: UPDATE `wfx_vip` SET `pid`='0',`plv`='1',`path`='0',`mobile`='15295121323',`password`='e10adc3949ba59abbe56e057f20f883e',`my_recommend_code`='HU2T',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0154s ]
+SQL: UPDATE `wfx_vip` SET `pid`='0',`plv`='1',`path`='0',`mobile`=' ',`password`='e10adc3949ba59abbe56e057f20f883e',`my_recommend_code`='HU2T',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0154s ]
 
 [ 2018-05-08T17:13:39+08:00 ] 127.0.0.1 /App/vip/index
 INFO: [ app_init ] --START--
@@ -5116,7 +5116,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0137s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0130s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0131s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES ('15295121323','尊敬的用户，您好，您的短信验证码是：408166','2018-05-08 17:17:45','2018-05-08 17:22:45','1','408166') [ RunTime:0.0151s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES (' ','尊敬的用户，您好，您的短信验证码是：408166','2018-05-08 17:17:45','2018-05-08 17:22:45','1','408166') [ RunTime:0.0151s ]
 
 [ 2018-05-08T17:18:13+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -5134,9 +5134,9 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0132s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0160s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0132s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0164s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND `id` = 15922 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0153s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND `id` = 15922 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0153s ]
 SQL: SELECT * FROM `wfx_vip` WHERE ( my_recommend_code = 654321 ) LIMIT 1   [ RunTime:0.0152s ]
-SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`,`pid`,`plv`,`path`) VALUES ('15295121323','e10adc3949ba59abbe56e057f20f883e','654321','980','2','0-980') [ RunTime:0.0146s ]
+SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`,`pid`,`plv`,`path`) VALUES (' ','e10adc3949ba59abbe56e057f20f883e','654321','980','2','0-980') [ RunTime:0.0146s ]
 
 [ 2018-05-08T17:18:16+08:00 ] 127.0.0.1 /App/vip/login
 INFO: [ app_init ] --START--
@@ -5219,9 +5219,9 @@ SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0134s ]
 SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0122s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0135s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0124s ]
-SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = '15295121323' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = ' ' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0186s ]
 SQL: DELETE FROM `wfx_vip` WHERE `id` = 987 [ RunTime:0.0180s ]
-SQL: UPDATE `wfx_vip` SET `pid`='980',`plv`='2',`path`='0-980',`mobile`='15295121323',`password`='e10adc3949ba59abbe56e057f20f883e',`my_recommend_code`='KAWQ',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0150s ]
+SQL: UPDATE `wfx_vip` SET `pid`='980',`plv`='2',`path`='0-980',`mobile`=' ',`password`='e10adc3949ba59abbe56e057f20f883e',`my_recommend_code`='KAWQ',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0150s ]
 
 [ 2018-05-08T17:19:17+08:00 ] 127.0.0.1 /App/vip/index
 INFO: [ app_init ] --START--
@@ -5443,7 +5443,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0132s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0162s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0145s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0130s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND `id` = 0 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND `id` = 0 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0140s ]
 
 [ 2018-05-08T17:27:01+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -5461,7 +5461,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0140s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0140s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0137s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0137s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND `id` = 0 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0143s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND `id` = 0 AND ( dead_time > now() ) LIMIT 1   [ RunTime:0.0143s ]
 
 [ 2018-05-08T17:28:56+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--
@@ -5514,7 +5514,7 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0130s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0130s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0127s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0125s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) ORDER BY create_time desc LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) ORDER BY create_time desc LIMIT 1   [ RunTime:0.0127s ]
 
 [ 2018-05-08T17:29:40+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -5532,9 +5532,9 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0141s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0143s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0140s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0141s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) ORDER BY create_time desc LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) ORDER BY create_time desc LIMIT 1   [ RunTime:0.0140s ]
 SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0147s ]
-SQL: SELECT * FROM `wfx_vip` WHERE ( mobile= 15295121323 )  [ RunTime:0.0158s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( mobile=   )  [ RunTime:0.0158s ]
 
 [ 2018-05-08T17:29:54+08:00 ] 127.0.0.1 /App/Vip/regist
 INFO: [ app_init ] --START--
@@ -5552,9 +5552,9 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0147s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0151s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0162s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0150s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) ORDER BY create_time desc LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) ORDER BY create_time desc LIMIT 1   [ RunTime:0.0136s ]
 SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0141s ]
-SQL: SELECT * FROM `wfx_vip` WHERE ( mobile= 15295121323 )  [ RunTime:0.0153s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( mobile=   )  [ RunTime:0.0153s ]
 SQL: SELECT * FROM `wfx_vip` WHERE ( my_recommend_code = 11111 ) LIMIT 1   [ RunTime:0.0151s ]
 
 [ 2018-05-08T17:30:11+08:00 ] 127.0.0.1 /App/Vip/regist
@@ -5573,11 +5573,11 @@ SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0139s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0142s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0145s ]
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0144s ]
-SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = '15295121323' AND ( dead_time > now() ) ORDER BY create_time desc LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT `code` FROM `wfx_sms_phone` WHERE `phone` = ' ' AND ( dead_time > now() ) ORDER BY create_time desc LIMIT 1   [ RunTime:0.0133s ]
 SQL: SHOW COLUMNS FROM `wfx_vip` [ RunTime:0.0146s ]
-SQL: SELECT * FROM `wfx_vip` WHERE ( mobile= 15295121323 )  [ RunTime:0.0164s ]
+SQL: SELECT * FROM `wfx_vip` WHERE ( mobile=   )  [ RunTime:0.0164s ]
 SQL: SELECT * FROM `wfx_vip` WHERE ( my_recommend_code = 654321 ) LIMIT 1   [ RunTime:0.0160s ]
-SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`,`pid`,`plv`,`path`) VALUES ('15295121323','e10adc3949ba59abbe56e057f20f883e','654321','980','2','0-980') [ RunTime:0.0155s ]
+SQL: INSERT INTO `wfx_vip` (`mobile`,`password`,`recommend_code`,`pid`,`plv`,`path`) VALUES (' ','e10adc3949ba59abbe56e057f20f883e','654321','980','2','0-980') [ RunTime:0.0155s ]
 
 [ 2018-05-08T17:30:14+08:00 ] 127.0.0.1 /App/vip/login
 INFO: [ app_init ] --START--
@@ -5660,9 +5660,9 @@ SQL: SHOW COLUMNS FROM `wfx_vip_set` [ RunTime:0.0123s ]
 SQL: SELECT * FROM `wfx_vip_set` LIMIT 1   [ RunTime:0.0121s ]
 SQL: SHOW COLUMNS FROM `wfx_shop_set` [ RunTime:0.0129s ]
 SQL: SELECT * FROM `wfx_shop_set` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0121s ]
-SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = '15295121323' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0147s ]
+SQL: SELECT * FROM `wfx_vip` WHERE `mobile` = ' ' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0147s ]
 SQL: DELETE FROM `wfx_vip` WHERE `id` = 988 [ RunTime:0.0183s ]
-SQL: UPDATE `wfx_vip` SET `pid`='980',`plv`='2',`path`='0-980',`mobile`='15295121323',`password`='e10adc3949ba59abbe56e057f20f883e',`my_recommend_code`='XPNEV0',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0142s ]
+SQL: UPDATE `wfx_vip` SET `pid`='980',`plv`='2',`path`='0-980',`mobile`=' ',`password`='e10adc3949ba59abbe56e057f20f883e',`my_recommend_code`='XPNEV0',`recommend_code`='654321',`name`='dhh',`email`=NULL,`money`='7374.00',`anchored_id`='980',`bond_status`=NULL,`fx_level`='2',`score`='5066',`exp`='5066',`cur_exp`='5066',`levelid`='2',`openid`='oAqURw-pNerSw5MwR3iRebhLg_QY',`nickname`='HaO',`sex`='1',`city`='Changzhou',`province`='Jiangsu',`country`='CN',`language`=NULL,`headimgurl`='http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errfmzvw1zng5Tqf9jibSh1kMOEJmMtInK1CfwtzyveM2AU700Hcng7FrZO32kicsZW3sJTpxnMiaGgw/132',`subscribe`=NULL,`subscribe_time`=NULL,`remark`=NULL,`status`='1',`ctime`='1517468167',`cctime`='1517468167',`sign`='0',`signtime`=NULL,`isfx`='1',`isfxgd`='0',`total_buy`='22',`total_yj`='0',`total_xxyj`='0',`total_xxlink`='0',`total_xxsub`='0',`total_xxunsub`='0',`total_xxbuy`='0',`txname`=NULL,`txmobile`=NULL,`txyh`=NULL,`txfh`=NULL,`txszd`=NULL,`txcard`=NULL,`employee`='6',`ticket`=NULL,`continue_sign`='0',`is_yd_1`='0',`is_yd_2`='0',`one_buy_status`='1' WHERE `id` = 964 [ RunTime:0.0142s ]
 
 [ 2018-05-08T17:31:58+08:00 ] 127.0.0.1 /App/vip/index
 INFO: [ app_init ] --START--
@@ -5819,7 +5819,7 @@ SQL: SHOW COLUMNS FROM `wfx_sms_template` [ RunTime:0.0148s ]
 SQL: SELECT `id`,`content`,`active_time` FROM `wfx_sms_template` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.0139s ]
 NOTIC: [2] Illegal string offset 'status' E:\wamp64\www\daoyunshang\Application\App\Controller\VipController.class.php 第 352 行.
 SQL: SHOW COLUMNS FROM `wfx_sms_phone` [ RunTime:0.0137s ]
-SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES ('15295121323','尊敬的用户，您好，您的短信验证码是：439202','2018-05-08 17:33:47','2018-05-08 17:38:47','1','439202') [ RunTime:0.0160s ]
+SQL: INSERT INTO `wfx_sms_phone` (`phone`,`content`,`create_time`,`dead_time`,`smstempid`,`code`) VALUES (' ','尊敬的用户，您好，您的短信验证码是：439202','2018-05-08 17:33:47','2018-05-08 17:38:47','1','439202') [ RunTime:0.0160s ]
 
 [ 2018-05-08T17:37:08+08:00 ] 127.0.0.1 /App/Vip/reg
 INFO: [ app_init ] --START--

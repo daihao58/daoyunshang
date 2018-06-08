@@ -29,6 +29,23 @@
     .c1{
         display: none;
     }
+    
+    #messageIcon .badge {
+    	top: .25rem;
+    	transform-origin: 50% 50%;
+    	transition: all .3s;
+    	-webkit-animation: msgBlink .5s infinite;
+    	animation: msgBlink .5s infinite;
+    }
+    
+    @keyframes msgBlink{
+    	from{
+    		transform: scale(.5);
+    	}
+    	to{
+    		transform: scale(.7);
+    	}
+    }
 </style>
 <body>
 <div class="page page-user page-current" id="page-user">
@@ -37,7 +54,6 @@
         <h1 class="title">我的</h1>
         <a id="messageIcon" href="/App/Vip/message" class="iconfont icon-msg bar-btn pull-right"></a>
     </header>
-
     <!-- 工具栏 -->
     
 		
@@ -165,7 +181,7 @@
                     <?php else: endif; ?>
                 <li>
                     <a href="/App/Vip/tuiguang" class="item-content">
-                        <div class="item-media"><i class="iconfont icon-kefu" style="color: #ff8c44"></i></div>
+                        <div class="item-media"><i class="iconfont icon-tuiguang" style="color: #f01493"></i></div>
                         <div class="item-title">我的推广<i class="more-link pull-right"></i></div>
                     </a>
                 </li>
@@ -212,11 +228,11 @@
                 dataType: "json",
                 success: function(data) {
                     if (data.status == "1") {
-                       $("#messageIcon").removeClass("icon-msg").addClass("");
+                       $("#messageIcon").append('<i class="badge"></i>');
                     }
                 },
                 error: function(xhr) {
-                   
+                   console.log(xhr)
                 }
             });
         }
