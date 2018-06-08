@@ -1705,13 +1705,15 @@ class ShopController extends BaseController
             // $fx3rate=self::$WAP['shopset']['fx3rate']/100;
             $fxtmp = array();//缓存3级数组
 
-            if($_SESSION['WAP']['vip']['recommend_code'] == 'df00002'){
-                if($_SESSION['WAP']['vip']['bond_status'] == 1){
-                    if ($pid && $_SESSION['WAP']['vip']['fx_level']>1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
+            $p_user=M('Vip')->where("id = '{$pid}' ")->find();
+            //var_dump($p_user['recommend_code']);die;
+            if($p_user['recommend_code'] == 'df00002' && $p_user['bond_status'] == 1) {
+
+                    if ($pid && $_SESSION['WAP']['vip']['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
                         //第一层分销
                         $fx1 = $mvip->where('id=' . $pid)->find();
                         if ($fx1['isfx']) {
-                            $fxlog['fxyj'] = round($cache['totalprice_bate'] ) * $_SESSION['SHOP']['set']['fx1baifenbi']/100;
+                            $fxlog['fxyj'] = round($cache['totalprice_bate']) * $_SESSION['SHOP']['set']['fx1baifenbi'] / 100;
                             //var_dump($fxlog['fxyj']);die;
                             $fx1['money'] = $fx1['money'] + $fxlog['fxyj'];
                             $fx1['total_xxbuy'] = $fx1['total_xxbuy'] + 1;//下线中购买产品总次数
@@ -1719,13 +1721,13 @@ class ShopController extends BaseController
 
                             $rfx = $mvip->save($fx1);
 
-                            $rebate_data['pid']=$pid;
-                            $rebate_data['order_id']=$cache['id'];
-                            $rebate_data['buyid']=$_SESSION['WAP']['vip']['id'];
-                            $rebate_data['rebate_money']=$fxlog['fxyj'];
-                            $rebate_data['content']='返利';
-                            $rebate_data['time']=date("Y-m-d H:i:s");
-                            $rebate_res=M('Rebate')->add($rebate_data);
+                            $rebate_data['pid'] = $pid;
+                            $rebate_data['order_id'] = $cache['id'];
+                            $rebate_data['buyid'] = $_SESSION['WAP']['vip']['id'];
+                            $rebate_data['rebate_money'] = $fxlog['fxyj'];
+                            $rebate_data['content'] = '返利';
+                            $rebate_data['time'] = date("Y-m-d H:i:s");
+                            $rebate_res = M('Rebate')->add($rebate_data);
 
                             $fxlog['from'] = $_SESSION['WAP']['vipid'];
                             $fxlog['fromname'] = $_SESSION['WAP']['vip']['nickname'];
@@ -1747,19 +1749,19 @@ class ShopController extends BaseController
                         if ($fx1['pid']) {
                             $fx2 = $mvip->where('id=' . $fx1['pid'])->find();
                             if ($fx2['isfx']) {
-                                $fxlog['fxyj'] = round($cache['totalprice_bate'] ) * $_SESSION['SHOP']['set']['fx2baifenbi']/100;
+                                $fxlog['fxyj'] = round($cache['totalprice_bate']) * $_SESSION['SHOP']['set']['fx2baifenbi'] / 100;
                                 $fx2['money'] = $fx2['money'] + $fxlog['fxyj'];
                                 $fx2['total_xxbuy'] = $fx2['total_xxbuy'] + 1;//下线中购买产品人数计数
                                 $fx2['total_xxyj'] = $fx2['total_xxyj'] + $fxlog['fxyj'];//下线贡献佣金
                                 $rfx = $mvip->save($fx2);
 
-                                $rebate_data['pid']=$fx1['pid'];
-                                $rebate_data['order_id']=$cache['id'];
-                                $rebate_data['buyid']=$_SESSION['WAP']['vip']['id'];
-                                $rebate_data['rebate_money']=$fxlog['fxyj'];
-                                $rebate_data['content']='返利';
-                                $rebate_data['time']=date("Y-m-d H:i:s");
-                                $rebate_res=M('Rebate')->add($rebate_data);
+                                $rebate_data['pid'] = $fx1['pid'];
+                                $rebate_data['order_id'] = $cache['id'];
+                                $rebate_data['buyid'] = $_SESSION['WAP']['vip']['id'];
+                                $rebate_data['rebate_money'] = $fxlog['fxyj'];
+                                $rebate_data['content'] = '返利';
+                                $rebate_data['time'] = date("Y-m-d H:i:s");
+                                $rebate_res = M('Rebate')->add($rebate_data);
 
 
                                 $fxlog['from'] = $_SESSION['WAP']['vipid'];
@@ -1844,13 +1846,12 @@ class ShopController extends BaseController
                         }*/
 
                     }
-                }
-            }else{
-                if ($pid && $_SESSION['WAP']['vip']['fx_level']>1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
+            }elseif($p_user['recommend_code'] != 'df00002'){
+                if ($pid && $_SESSION['WAP']['vip']['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
                     //第一层分销
                     $fx1 = $mvip->where('id=' . $pid)->find();
                     if ($fx1['isfx']) {
-                        $fxlog['fxyj'] = round($cache['totalprice_bate'] ) * $_SESSION['SHOP']['set']['fx1baifenbi']/100;
+                        $fxlog['fxyj'] = round($cache['totalprice_bate']) * $_SESSION['SHOP']['set']['fx1baifenbi'] / 100;
                         //var_dump($fxlog['fxyj']);die;
                         $fx1['money'] = $fx1['money'] + $fxlog['fxyj'];
                         $fx1['total_xxbuy'] = $fx1['total_xxbuy'] + 1;//下线中购买产品总次数
@@ -1858,13 +1859,13 @@ class ShopController extends BaseController
 
                         $rfx = $mvip->save($fx1);
 
-                        $rebate_data['pid']=$pid;
-                        $rebate_data['order_id']=$cache['id'];
-                        $rebate_data['buyid']=$_SESSION['WAP']['vip']['id'];
-                        $rebate_data['rebate_money']=$fxlog['fxyj'];
-                        $rebate_data['content']='返利';
-                        $rebate_data['time']=date("Y-m-d H:i:s");
-                        $rebate_res=M('Rebate')->add($rebate_data);
+                        $rebate_data['pid'] = $pid;
+                        $rebate_data['order_id'] = $cache['id'];
+                        $rebate_data['buyid'] = $_SESSION['WAP']['vip']['id'];
+                        $rebate_data['rebate_money'] = $fxlog['fxyj'];
+                        $rebate_data['content'] = '返利';
+                        $rebate_data['time'] = date("Y-m-d H:i:s");
+                        $rebate_res = M('Rebate')->add($rebate_data);
 
                         $fxlog['from'] = $_SESSION['WAP']['vipid'];
                         $fxlog['fromname'] = $_SESSION['WAP']['vip']['nickname'];
@@ -1886,19 +1887,19 @@ class ShopController extends BaseController
                     if ($fx1['pid']) {
                         $fx2 = $mvip->where('id=' . $fx1['pid'])->find();
                         if ($fx2['isfx']) {
-                            $fxlog['fxyj'] = round($cache['totalprice_bate'] ) * $_SESSION['SHOP']['set']['fx2baifenbi']/100;
+                            $fxlog['fxyj'] = round($cache['totalprice_bate']) * $_SESSION['SHOP']['set']['fx2baifenbi'] / 100;
                             $fx2['money'] = $fx2['money'] + $fxlog['fxyj'];
                             $fx2['total_xxbuy'] = $fx2['total_xxbuy'] + 1;//下线中购买产品人数计数
                             $fx2['total_xxyj'] = $fx2['total_xxyj'] + $fxlog['fxyj'];//下线贡献佣金
                             $rfx = $mvip->save($fx2);
 
-                            $rebate_data['pid']=$fx1['pid'];
-                            $rebate_data['order_id']=$cache['id'];
-                            $rebate_data['buyid']=$_SESSION['WAP']['vip']['id'];
-                            $rebate_data['rebate_money']=$fxlog['fxyj'];
-                            $rebate_data['content']='返利';
-                            $rebate_data['time']=date("Y-m-d H:i:s");
-                            $rebate_res=M('Rebate')->add($rebate_data);
+                            $rebate_data['pid'] = $fx1['pid'];
+                            $rebate_data['order_id'] = $cache['id'];
+                            $rebate_data['buyid'] = $_SESSION['WAP']['vip']['id'];
+                            $rebate_data['rebate_money'] = $fxlog['fxyj'];
+                            $rebate_data['content'] = '返利';
+                            $rebate_data['time'] = date("Y-m-d H:i:s");
+                            $rebate_res = M('Rebate')->add($rebate_data);
 
 
                             $fxlog['from'] = $_SESSION['WAP']['vipid'];
@@ -1984,7 +1985,6 @@ class ShopController extends BaseController
 
                 }
             }
-
 
             //第一次购买
             //var_dump($_SESSION['WAP']['vip']['one_buy_status']);die;
