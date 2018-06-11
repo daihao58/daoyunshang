@@ -1847,6 +1847,7 @@ class ShopController extends BaseController
 
                     }
             }elseif($p_user['recommend_code'] != 'df00002'){
+                //var_dump(1);die;
                 if ($pid && $_SESSION['WAP']['vip']['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
                     //第一层分销
                     $fx1 = $mvip->where('id=' . $pid)->find();
@@ -1989,10 +1990,11 @@ class ShopController extends BaseController
             //第一次购买
             //var_dump($_SESSION['WAP']['vip']['one_buy_status']);die;
             if($_SESSION['WAP']['vip']['one_buy_status'] == 0){
+                //var_dump(2);die;
                 $vipopenid=$_SESSION['WAP']['vip']['mobile'];
                 $onemap['vipopenid']=$vipopenid;
                 $onedata=M('Shop_order')->where($onemap)->order('paytime asc')->limit(1)->select()[0];
-                if($onedata['id'] == $cache['id']){
+                //if($onedata['id'] == $cache['id']){
                     if($cache['totalprice']>=3000){
                         $pid_fx_level=M('Vip')->where("id = {$pid}")->getField('fx_level');
                         if($pid_fx_level>1){
@@ -2013,8 +2015,11 @@ class ShopController extends BaseController
                                 $rebate_res=M('Rebate')->add($rebate_data);
                             }
                         }
+                    }else{
+                        //var_dump(3);die;
+                        M('Vip')->where("id = {$_SESSION['WAP']['vip']['id']}")->setField('one_buy_status',1);
                     }
-                }
+                //}
             }
 
             //挂靠人奖励

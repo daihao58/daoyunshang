@@ -32,10 +32,10 @@ class CommissionModel
                     $fxrate = $goods[$vvv['goodsid']][$type];
                     // 计算
                     $total += ($vvv['total']-$vvv['cprice']) * ($fxrate / 100);*/
-                    $shop_cid=M('Shop_goods')->where("id={$vvv['goodsid']}")->getField('cid');
-                    if($shop_cid==12){
+                  /*  $shop_cid=M('Shop_goods')->where("id={$vvv['goodsid']}")->getField('cid');
+                    if($shop_cid==12){*/
                         $total += $vvv['price']*$vvv['num'];
-                    }
+                   /* }*/
                 }
             }
         }
