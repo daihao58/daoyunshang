@@ -25,9 +25,15 @@
 
 	<!--内容区-->
 	<div class="content">
-		<div class="title-logo">
-			<img src="__PUBLIC__/App/images/logo.png" alt="东方合道">
+		<div style="float:right;margin-right:10px;padding-top:10px;">
+			<a href="{:U('App/Shop/index',array('shopid'=>21))}" class="iconfont icon-home-head" style="font-size: 1.1rem;color: white;"></a>
 		</div>
+		<div class="title-logo">
+
+			<img src="__PUBLIC__/App/images/logo.png" alt="东方合道">
+
+		</div>
+
 		<div class="content-block borTop-0 borBot-0">
 			<form action="">
 				<ul class="form-group">
@@ -49,8 +55,8 @@
 						<input type="button" class="button sub" value="登录">
 					</li>
 					<li class="font-12 color-light">
-						<a href="{:U('App/Vip/reg')}" class="pull-right">注册账号</a>
 						<a href="{:U('App/Vip/retrieve')}" class="pull-left">找回密码</a>
+						<a href="{:U('App/Vip/reg')}" class="pull-right" >注册账号</a>
 					</li>
 				</ul>
 			</form>
