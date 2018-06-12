@@ -24,7 +24,15 @@
 		<link rel="stylesheet" href="/Public/App/css/style2.css" />
 		<script type="text/javascript" src="/Public/App/js/zepto.min.js"></script>
 		<script type="text/javascript" src="/Public/App/gmu/gmu.min.js"></script>
-    <script type="text/javascript" src="/Public/App/gmu/app-basegmu.js"></script>
+    	<script type="text/javascript" src="/Public/App/gmu/app-basegmu.js"></script>
+    	<style type="text/css">
+    		/*.wbox-1 select {
+    			text-align-last: right;
+    		}
+    		.wbox-1 option {
+    			direction: rtl;
+    		}*/
+    	</style>
 	</head>
 	<body>
 		<div class="page">
@@ -36,24 +44,28 @@
 
 				<div class="content">
 						<ul class="list-block mt-0">
-							<li class="item-content"><div class="item-title label">所在省份</div>
-								<div class="regiona2 wbox-1">
+							<li class="item-content">
+								<div class="item-title label">所在省份</div>
+								
+								<div class="regiona2 wbox-1 item-input">
 									<select name="province" class="sel" id="province">
 										<?php if($province == ''): ?><option value="0">请选择</option><?php else: endif; ?>
 										<?php if(is_array($provinceRs)): $i = 0; $__LIST__ = $provinceRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$provinceRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($provinceRs["id"]); ?>"  <?php if($province == $provinceRs['id']): ?>selected<?php else: endif; ?> ><?php echo ($provinceRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 									</select>
 								</div>
 							</li>
-							<li class="item-content"><div class="item-title label">所在城市</div>
-								<div class="regiona2 wbox-1">
+							<li class="item-content">
+								<div class="item-title label">所在城市</div>
+								<div class="regiona2 wbox-1 item-input">
 									<select name="city" class="sel" id="city">
 										<?php if($city == ''): ?><option value="0">请选择</option><?php else: endif; ?>
 										<?php if(is_array($cityRs)): $i = 0; $__LIST__ = $cityRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cityRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($cityRs["id"]); ?>" <?php if($city == $cityRs['id']): ?>selected<?php else: endif; ?> ><?php echo ($cityRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 									</select>
 								</div>
 							</li>
-							<li class="item-content"><div class="item-title label">所在区县</div>
-								<div class="regiona2 wbox-1">
+							<li class="item-content">
+								<div class="item-title label">所在区县</div>
+								<div class="regiona2 wbox-1 item-input">
 									<select name="area" class="sel" id="area">
 										<?php if($area == ''): ?><option value="0">请选择</option><?php else: endif; ?>
 										<?php if(is_array($areaRs)): $i = 0; $__LIST__ = $areaRs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$areaRs): $mod = ($i % 2 );++$i;?><option value="<?php echo ($areaRs["id"]); ?>" <?php if($area == $areaRs['id']): ?>selected<?php else: endif; ?> ><?php echo ($areaRs["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -61,9 +73,9 @@
 								</div>
 							</li>
 
-							<li class="item-content"><div class="item-title label">收货地址</div><input class="item-input t-r" type="text" placeholder="输入收货地址" value="<?php echo ($data["address"]); ?>" id="address"/></li>
-							<li class="item-content"><div class="item-title label">联系人</div><input class="item-input t-r" type="text" value="<?php echo ($data["name"]); ?>" id="name"/></li>
-							<li class="item-content"><div class="item-title label">手机号码</div><input class="item-input t-r" type="text" value="<?php echo ($data["mobile"]); ?>" id="mobile"/></li>
+							<li class="item-content"><div class="item-title label">收货地址</div><input class="item-input" type="text" placeholder="请输入收货地址" value="<?php echo ($data["address"]); ?>" id="address"/></li>
+							<li class="item-content"><div class="item-title label">联系人</div><input class="item-input" type="text" value="<?php echo ($data["name"]); ?>" placeholder="请输入联系人" id="name"/></li>
+							<li class="item-content"><div class="item-title label">手机号码</div><input class="item-input" type="text" value="<?php echo ($data["mobile"]); ?>" placeholder="请输入手机号码" id="mobile"/></li>
 						</ul>
 						<div class="plr-14 color3 font-12">注：请仔细填写联系人信息。</div>
 						<div class="button-group mt-28">

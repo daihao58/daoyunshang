@@ -21294,7 +21294,7 @@ INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002153s ]
 INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002164s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.004570s ]
 NOTIC: [8] Undefined index: content E:\wamp64\www\daoyunshang\Application\Multi\Controller\ShopController.class.php 第 138 行.
-SQL: INSERT INTO `wfx_shop_goods` (`id`,`cid`,`name`,`indexpic`,`listpic`,`pic`,`album`,`adpic`,`unit`,`price`,`price_gold`,`price_gold_bate`,`price_ceo`,`price_ceo_bate`,`price_center`,`price_center_bate`,`oprice`,`fx1rate`,`fx2rate`,`fx3rate`,`num`,`issku`,`ismy`,`issells`,`dissells`,`sorts`,`summary`,`content`,`cprice`,`shop_id`) VALUES ('0','5','123','','','','','','123','123','123','123','123','123','123','123','123','0','0','0','123','0','0','0','0','123','','','0','21') [ RunTime:0.0166s ]
+SQL: INSERT INTO `wfx_shop_goods` (`id`,`cid`,`name`,`indexpic`,`listpic`,`pic`,`album`,`adpic`,`unit`,`price`,`price_gold`,`price_gold_bate`,`price_ceo`,`price_ceo_bate`,`price_center`,`price_ceo_bate`,`oprice`,`fx1rate`,`fx2rate`,`fx3rate`,`num`,`issku`,`ismy`,`issells`,`dissells`,`sorts`,`summary`,`content`,`cprice`,`shop_id`) VALUES ('0','5','123','','','','','','123','123','123','123','123','123','123','123','123','0','0','0','123','0','0','0','0','123','','','0','21') [ RunTime:0.0166s ]
 
 [ 2018-04-18T17:22:55+08:00 ] 127.0.0.1 /Multi/Index/index
 INFO: [ app_init ] --START--

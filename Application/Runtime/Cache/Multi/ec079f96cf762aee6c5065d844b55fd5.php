@@ -140,19 +140,19 @@
                             <input type="text" class="form-control" name="price_gold_bate" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_gold_bate"]); ?>">
                         </div>
                     </div>-->
-
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">积分<sup>*</sup></label>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="price_ceo_bate" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_ceo_bate"]); ?>">
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label class="col-lg-2 control-label">CEO代理价格<sup>*</sup></label>
                         <div class="col-lg-4">
                             <input type="text" class="form-control" name="price_ceo" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_ceo"]); ?>">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-lg-2 control-label">CEO代理返利价格<sup>*</sup></label>
-                        <div class="col-lg-4">
-                            <input type="text" class="form-control" name="price_ceo_bate" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_ceo_bate"]); ?>">
-                        </div>
-                    </div>
+
 
                     <div class="form-group">
                         <label class="col-lg-2 control-label">服务中心价格<sup>*</sup></label>
@@ -160,12 +160,12 @@
                             <input type="text" class="form-control" name="price_center" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_center"]); ?>">
                         </div>
                     </div>
-                    <div class="form-group">
+                 <!--   <div class="form-group">
                         <label class="col-lg-2 control-label">服务中心返利价格<sup>*</sup></label>
                         <div class="col-lg-4">
-                            <input type="text" class="form-control" name="price_center_bate" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_center_bate"]); ?>">
+                            <input type="text" class="form-control" name="price_ceo_bate" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="<?php echo ($cache["price_ceo_bate"]); ?>">
                         </div>
-                    </div>
+                    </div>-->
 
                     <div class="form-group">
                         <label class="col-lg-2 control-label">商品原价<sup>*</sup></label>

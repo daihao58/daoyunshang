@@ -621,7 +621,7 @@ class ShopController extends BaseController
                                 $cache[$k]['total'] = $v['num'] * $goods['price'];
                                 $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
-                                $totalprice_bate = $totalprice_bate + $goods['price_bate'] * $cache[$k]['num'];
+                                $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
                             }elseif($user_vip['fx_level']==2){
                                 $cache[$k]['price'] = $goods['price_ceo'];
                                 $cache[$k]['total'] = $v['num'] * $goods['price_ceo'];
@@ -633,7 +633,7 @@ class ShopController extends BaseController
                                 $cache[$k]['total'] = $v['num'] * $goods['price_center'];
                                 $totalprice = $totalprice + $goods['price_center'] * $cache[$k]['num'];
 
-                                $totalprice_bate = $totalprice_bate + $goods['price_center_bate'] * $cache[$k]['num'];
+                                $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
                             }else{
                                 $cache[$k]['price'] = $goods['price'];
                                 $cache[$k]['total'] = $v['num'] *$goods['price'];;
@@ -678,7 +678,7 @@ class ShopController extends BaseController
                             $cache[$k]['total'] = $v['num'] * $goods['price'];
                             $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
-                            $totalprice_bate = $totalprice_bate + $goods['price_bate'] * $cache[$k]['num'];
+                            $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
                         }elseif($user_vip['fx_level']==2){
                             $cache[$k]['price'] = $goods['price_ceo'];
                             $cache[$k]['total'] = $v['num'] * $goods['price_ceo'];
@@ -690,7 +690,7 @@ class ShopController extends BaseController
                             $cache[$k]['total'] = $v['num'] * $goods['price_center'];
                             $totalprice = $totalprice + $goods['price_center'] * $cache[$k]['num'];
 
-                            $totalprice_bate = $totalprice_bate + $goods['price_center_bate'] * $cache[$k]['num'];
+                            $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
                         }else{
                             $cache[$k]['price'] = $goods['price'];
                             $cache[$k]['total'] = $v['num'] *$goods['price'];;
@@ -1268,7 +1268,8 @@ class ShopController extends BaseController
                                     $cache[$k]['total'] = $v['num'] * $goods['price'];
                                     $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
-                                    $totalprice_bate = $totalprice_bate + $goods['price_bate'] * $cache[$k]['num'];
+                                    $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
+                                    $cache[$k]['price_ceo_bate']=$goods['price_ceo_bate'];
                                 }elseif($user_vip['fx_level']==2){
                                     $cache[$k]['price'] = $goods['price_ceo'];
                                     $cache[$k]['cprice'] = $goods['price_ceo'];
@@ -1276,13 +1277,15 @@ class ShopController extends BaseController
                                     $totalprice = $totalprice + $goods['price_ceo'] * $cache[$k]['num'];
 
                                     $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
+                                    $cache[$k]['price_ceo_bate']=$goods['price_ceo_bate'];
                                 }elseif($user_vip['fx_level']==3){
                                     $cache[$k]['price'] = $goods['price_center'];
                                     $cache[$k]['cprice'] = $goods['price_center'];
                                     $cache[$k]['total'] = $v['num'] * $goods['price_center'];
                                     $totalprice = $totalprice + $goods['price_center'] * $cache[$k]['num'];
 
-                                    $totalprice_bate = $totalprice_bate + $goods['price_center_bate'] * $cache[$k]['num'];
+                                    $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
+                                    $cache[$k]['price_ceo_bate']=$goods['price_ceo_bate'];
                                 }else{
                                     $cache[$k]['price'] = $goods['price'];
                                     $cache[$k]['cprice'] = $goods['price'];
@@ -1290,7 +1293,7 @@ class ShopController extends BaseController
                                     $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
                                     $totalprice_bate = $totalprice_bate + $goods['price'] * $cache[$k]['num'];
-
+                                    $cache[$k]['price_ceo_bate']=$goods['price_ceo_bate'];
                                 }
 
 
@@ -1331,7 +1334,8 @@ class ShopController extends BaseController
                                 $cache[$k]['total'] = $v['num'] * $goods['price'];
                                 $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
-                                $totalprice_bate = $totalprice_bate + $goods['price_bate'] * $cache[$k]['num'];
+                                $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
+                                $cache[$k]['price_ceo_bate']=$goods['price_ceo_bate'];
                             }elseif($user_vip['fx_level']==2){
                                 $cache[$k]['price'] = $goods['price_ceo'];
                                 $cache[$k]['cprice'] = $goods['price_ceo'];
@@ -1339,13 +1343,15 @@ class ShopController extends BaseController
                                 $totalprice = $totalprice + $goods['price_ceo'] * $cache[$k]['num'];
 
                                 $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
+                                $cache[$k]['price_ceo_bate']=$goods['price_ceo_bate'];
                             }elseif($user_vip['fx_level']==3){
                                 $cache[$k]['price'] = $goods['price_center'];
                                 $cache[$k]['cprice'] = $goods['price_center'];
                                 $cache[$k]['total'] = $v['num'] * $goods['price_center'];
                                 $totalprice = $totalprice + $goods['price_center'] * $cache[$k]['num'];
 
-                                $totalprice_bate = $totalprice_bate + $goods['price_center_bate'] * $cache[$k]['num'];
+                                $totalprice_bate = $totalprice_bate + $goods['price_ceo_bate'] * $cache[$k]['num'];
+                                $cache[$k]['price_ceo_bate']=$goods['price_ceo_bate'];
                             }else{
                                 $cache[$k]['price'] = $goods['price'];
                                 $cache[$k]['cprice'] = $goods['price'];
@@ -1353,7 +1359,7 @@ class ShopController extends BaseController
                                 $totalprice = $totalprice + $goods['price'] * $cache[$k]['num'];
 
                                 $totalprice_bate = $totalprice_bate + $goods['price'] * $cache[$k]['num'];
-
+                                $cache[$k]['price_ceo_bate']=$goods['price_ceo_bate'];
                             }
 
 
@@ -1665,8 +1671,8 @@ class ShopController extends BaseController
             $data_vip['id'] = $cache['vipid'];
             $data_vip['score'] = array('exp', 'score+' . $commission->ordersCommission('fx1rate', $orderids));
             $data_vip['exp'] = array('exp', 'exp+' .$commission->ordersCommission('fx1rate', $orderids));
-            $data_vip['cur_exp'] = array('exp', 'cur_exp+' . $commission->ordersCommission('fx1rate', $orderids));
-            $level = $this->getLevel(self::$WAP['vip']['cur_exp'] + $commission->ordersCommission('fx1rate', $orderids));
+            $data_vip['cur_exp'] = array('exp', 'cur_exp+' . $commission->ordersCommission2('fx1rate', $orderids));
+            $level = $this->getLevel(self::$WAP['vip']['cur_exp'] + $commission->ordersCommission2('fx1rate', $orderids));
             $data_vip['levelid'] = $level['levelid'];
             $data_vip['fx_level'] = $level['levelid'];
             //会员分销统计字段
@@ -1709,7 +1715,7 @@ class ShopController extends BaseController
             //var_dump($p_user['recommend_code']);die;
             if($p_user['recommend_code'] == 'df00002' && $p_user['bond_status'] == 1) {
 
-                    if ($pid && $_SESSION['WAP']['vip']['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
+                    if ($pid && $p_user['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
                         //第一层分销
                         $fx1 = $mvip->where('id=' . $pid)->find();
                         if ($fx1['isfx']) {
@@ -1728,6 +1734,10 @@ class ShopController extends BaseController
                             $rebate_data['content'] = '返利';
                             $rebate_data['time'] = date("Y-m-d H:i:s");
                             $rebate_res = M('Rebate')->add($rebate_data);
+                            if($fxlog['fxyj']>0){
+                                $this->sendmsg2($fx1['nickname'],$cache['oid'],$fx1['mobile'],$fxlog['fxyj'],4);
+                            }
+
 
                             $fxlog['from'] = $_SESSION['WAP']['vipid'];
                             $fxlog['fromname'] = $_SESSION['WAP']['vip']['nickname'];
@@ -1748,7 +1758,7 @@ class ShopController extends BaseController
                         //第二层分销
                         if ($fx1['pid']) {
                             $fx2 = $mvip->where('id=' . $fx1['pid'])->find();
-                            if ($fx2['isfx']) {
+                            if ($fx2['isfx'] && $fx2['fx_level'] > 1) {
                                 $fxlog['fxyj'] = round($cache['totalprice_bate']) * $_SESSION['SHOP']['set']['fx2baifenbi'] / 100;
                                 $fx2['money'] = $fx2['money'] + $fxlog['fxyj'];
                                 $fx2['total_xxbuy'] = $fx2['total_xxbuy'] + 1;//下线中购买产品人数计数
@@ -1762,6 +1772,10 @@ class ShopController extends BaseController
                                 $rebate_data['content'] = '返利';
                                 $rebate_data['time'] = date("Y-m-d H:i:s");
                                 $rebate_res = M('Rebate')->add($rebate_data);
+
+                                if($fxlog['fxyj']>0){
+                                    $this->sendmsg2($fx2['nickname'],$cache['oid'],$fx2['mobile'],$fxlog['fxyj'],4);
+                                }
 
 
                                 $fxlog['from'] = $_SESSION['WAP']['vipid'];
@@ -1848,7 +1862,7 @@ class ShopController extends BaseController
                     }
             }elseif($p_user['recommend_code'] != 'df00002'){
                 //var_dump(1);die;
-                if ($pid && $_SESSION['WAP']['vip']['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
+                if ($pid && $p_user['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
                     //第一层分销
                     $fx1 = $mvip->where('id=' . $pid)->find();
                     if ($fx1['isfx']) {
@@ -1867,6 +1881,10 @@ class ShopController extends BaseController
                         $rebate_data['content'] = '返利';
                         $rebate_data['time'] = date("Y-m-d H:i:s");
                         $rebate_res = M('Rebate')->add($rebate_data);
+
+                        if($fxlog['fxyj']>0){
+                            $this->sendmsg2($fx1['nickname'],$cache['oid'],$fx1['mobile'],$fxlog['fxyj'],4);
+                        }
 
                         $fxlog['from'] = $_SESSION['WAP']['vipid'];
                         $fxlog['fromname'] = $_SESSION['WAP']['vip']['nickname'];
@@ -1887,7 +1905,7 @@ class ShopController extends BaseController
                     //第二层分销
                     if ($fx1['pid']) {
                         $fx2 = $mvip->where('id=' . $fx1['pid'])->find();
-                        if ($fx2['isfx']) {
+                        if ($fx2['isfx'] && $fx2['fx_level'] > 1) {
                             $fxlog['fxyj'] = round($cache['totalprice_bate']) * $_SESSION['SHOP']['set']['fx2baifenbi'] / 100;
                             $fx2['money'] = $fx2['money'] + $fxlog['fxyj'];
                             $fx2['total_xxbuy'] = $fx2['total_xxbuy'] + 1;//下线中购买产品人数计数
@@ -1902,6 +1920,9 @@ class ShopController extends BaseController
                             $rebate_data['time'] = date("Y-m-d H:i:s");
                             $rebate_res = M('Rebate')->add($rebate_data);
 
+                            if($fxlog['fxyj']>0){
+                                $this->sendmsg2($fx2['nickname'],$cache['oid'],$fx2['mobile'],$fxlog['fxyj'],4);
+                            }
 
                             $fxlog['from'] = $_SESSION['WAP']['vipid'];
                             $fxlog['fromname'] = $_SESSION['WAP']['vip']['nickname'];
@@ -1997,6 +2018,7 @@ class ShopController extends BaseController
                 //if($onedata['id'] == $cache['id']){
                     if($cache['totalprice']>=3000){
                         $pid_fx_level=M('Vip')->where("id = {$pid}")->getField('fx_level');
+                        $p_user=M('Vip')->where("id = {$pid}")->find();
                         if($pid_fx_level>1){
                             if($cache['totalprice']>=3000 && $cache['totalprice']<10000){
                                 $one_reward=$_SESSION['SHOP']['set']['first_one'];
@@ -2013,6 +2035,8 @@ class ShopController extends BaseController
                                 $rebate_data['content']='首次购买奖励';
                                 $rebate_data['time']=date("Y-m-d H:i:s");
                                 $rebate_res=M('Rebate')->add($rebate_data);
+
+                                $this->sendmsg2($p_user['nickname'],$cache['oid'],$p_user['mobile'],$one_reward,5);
                             }
                         }
                     }else{
@@ -2028,6 +2052,7 @@ class ShopController extends BaseController
             if($anchored_id){
                 $anchored_reward= round($cache['totalprice_bate']) * $_SESSION['SHOP']['set']['gkbaifenbi']/100;
                 $anchored_res=M('Vip')->where("id = {$anchored_id}")->setInc('money',$anchored_reward);
+                $anchored_info=M('Vip')->where("id = {$anchored_id}")->find();
                 if($anchored_res){
                     $rebate_data['pid']=$anchored_id;
                     $rebate_data['order_id']=$cache['id'];
@@ -2036,6 +2061,8 @@ class ShopController extends BaseController
                     $rebate_data['content']='被挂靠人奖励';
                     $rebate_data['time']=date("Y-m-d H:i:s");
                     $rebate_res=M('Rebate')->add($rebate_data);
+
+                    $this->sendmsg2($anchored_info['nickname'],$cache['oid'],$anchored_info['mobile'],$anchored_reward,6);
                 }
             }
 
@@ -2067,6 +2094,72 @@ class ShopController extends BaseController
             $this->error('确认收货失败，请重新尝试！');
         }
     }
+
+
+    //发送短信
+    public function sendmsg2($nickname,$oid,$mobile,$money,$gettype){
+        $phone=$mobile;
+        $money=$money;
+        $gettype=$gettype;
+
+        $sms_templateM=M('sms_template');
+        $yanzhengxinxi=$sms_templateM->where("type={$gettype}")->field('id,content,active_time')->find();
+        $yanzhengcontent=str_replace('[money]',$money,$yanzhengxinxi['content']);
+        $yanzhengcontent=str_replace('[nickname]',$nickname,$yanzhengcontent);
+        $yanzhengcontent=str_replace('[oid]',$oid,$yanzhengcontent);
+
+
+        $http='http://message.4008289828.com/index.php?g=Message&m=Index&a=createSendNews_interface';
+        $para['app_id']=10;
+        $para['content']=$yanzhengcontent;
+        $para['type']=1;
+        $para['usage']=1;
+        $para['mobiles']=$phone;
+        $o = "";
+        foreach ( $para as $k => $v )
+        {
+            $o.= "$k=" . urlencode( $v ). "&" ;
+        }
+        $para = substr($o,0,-1);
+
+        $sms_info_json=$this->request_post($http,$para);
+
+        //var_dump($sms_info_json);die;
+        if($sms_info_json['status']==0){
+            $sms_phone=M('sms_phone');
+            $data['phone'] = $phone;
+            $data['content'] = $yanzhengcontent;
+            $data['create_time'] = date("Y-m-d H:i:s");
+            $mm=5*60;
+            $data['dead_time']=date("Y-m-d H:i:s",strtotime($data['create_time'])+$mm);
+            $data['smstempid'] = 1;
+//            $data['code'] = $code;
+            $res=$sms_phone->add($data);
+
+        }else{
+            $result['state_code']=2;
+            $result['msg']='发送失败';
+            $this->ajaxReturn($result);
+        }
+    }
+
+    public function request_post($url = '', $post_data = array()) {
+        $ch = curl_init();//初始化curl
+        curl_setopt($ch, CURLOPT_URL,$url);//抓取指定网页
+        curl_setopt($ch, CURLOPT_HEADER, 0);//设置header
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);//要求结果为字符串且输出到屏幕上
+        curl_setopt($ch, CURLOPT_POST, 1);//post提交方式
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        $data = curl_exec($ch);//运行curl
+        curl_close($ch);
+        return $data;
+    }
+
+
+
+
 
     //订单退货
     public function orderTuihuo()

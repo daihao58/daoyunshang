@@ -47,16 +47,13 @@
                                 </div>
                             </th>
                             <th>ID</th>
-                            <th>SPU</th>
-                            <th>分类名称</th>
                             <th>商品名称</th>
-                            <th>商品单位</th>
-                            <th>商品库存</th>
-                            <th>商品单价</th>
-                            <th>商品原价</th>
-                            <!--<th>商品销售价</th>-->
+                            <th>单位</th>
+                            <th>库存</th>
+                            <th>单价</th>
+                            <th>原价</th>
                             <th>商品点击</th>
-                            <th>商品销量</th>
+                            <th>销量</th>
                             <th>商品排序</th>
                             <th>上下架</th>
                             <th>SKU管理</th>
@@ -74,8 +71,6 @@
                                     </div>
                                 </td>
                                 <td class=" sorting_1"><?php echo ($vo["id"]); ?></td>
-                                <td class=" "><?php echo ($vo["spu"]); ?></td>
-                                <td class=" "><?php echo ($vo["cid"]); ?></td>
                                 <td class=" "><?php echo ($vo["name"]); ?></td>
                                 <td class=" "><?php echo ($vo["unit"]); ?></td>
                                 <td class=" "><?php echo ($vo["num"]); ?></td>

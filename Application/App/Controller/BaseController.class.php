@@ -193,7 +193,7 @@ class BaseController extends Controller
     //检查上月是否已保存每月经验
     public function checkMonthexp()
     {
-        $vipid = self::$WAP['vipid'];
+        /*$vipid = self::$WAP['vipid'];
         $m = M('vip_monthexp');
         $last_month = getdate(strtotime("-1 month"));
         $map['month'] = $last_month['year'] . "-" . $last_month['mon'];
@@ -230,7 +230,7 @@ class BaseController extends Controller
                 self::$WAP['vip']['levelid'] = $_SESSION['WAP']['vip']['levelid'] = $level['levelid'];
                 self::$WAP['vip']['levelname'] = $_SESSION['WAP']['vip']['levelname'] = $level['levelname'];
             }
-        }
+        }*/
     }
 
 //	public function getLevel($exp) {

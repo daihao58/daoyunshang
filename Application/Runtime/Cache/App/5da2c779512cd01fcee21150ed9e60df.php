@@ -7,14 +7,14 @@
 	<meta content="yes" name="apple-touch-fullscreen" />
 	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
 	<meta content="telephone=no" name="format-detection" />
-	<title></title>
-	<meta name="keywords" content=" " />
-	<meta name="description" content=" " />
+	<title>道合商城_品质生活，健康人生_健康养生平台</title>
+	<meta name="keywords" content="道合商城,东方道合,东方道合国际,保健产品,生殖美疗,保健食品,美容护肤,日化产品,酒水系列,健康器械,资产配置,医疗美容,隆力奇" />
+	<meta name="description" content="东方道合，致力于为全球家庭提供健康美丽的生活方式，提供品质高端的养生健康产品，专业为您的健康美丽保驾护航！ " />
 	<link rel="stylesheet" href="/Public/App/css/iconfont/iconfont.css">
 	<link rel="stylesheet" href="/Public/App/css/swiper-3.4.2.min.css">
 	<link rel="stylesheet" href="/Public/App/css/style2.css">
 	<link rel="stylesheet" href="/Public/App/css/layout.css">
-	<link rel="stylesheet" href="/Public/App/css/style.css" />
+	<link rel="stylesheet" href="/Public/App/css/style.css" >
 </head>
 
 <script type="text/javascript" src="/Public/App/js/zepto.min.js"></script>
@@ -36,15 +36,15 @@
 						<label for="" class="iconfont icon-mobile"></label>
 					</li>
 					<li>
-						<input type="text" class="inp" name="password" id="password" placeholder="请填输入密码">
+						<input type="password" class="inp" name="password" id="password" placeholder="请填输入密码">
 						<label for="" class="iconfont icon-password1"></label>
 					</li>
 					<li>
-						<input type="text" class="inp" name="recommend_code" id="recommend_code" placeholder="请输入推荐码">
+						<input type="text" class="inp" name="recommend_code" id="recommend_code" value="<?php echo ($tui_code); ?>" placeholder="请输入推荐码">
 						<label for="" class="iconfont icon-mobile"></label>
 					</li>
 					<li>
-						<input type="text" class="inp" name="code" id="code" placeholder="请填输入验证码">
+						<input type="password" class="inp" name="code" id="code" placeholder="请填输入验证码">
 						<label for="" class="iconfont icon-password"></label>
 						<a href="javascript:getSms()" class="btn-verfiy send_pwd">获取验证码</a>
 						<!-- <a class="btn-verfiy active">已发送(59)s</a> -->
@@ -83,7 +83,6 @@
 						code_id =data.id;
 						settime();
 					}else{
-						//alert(data.msg);
 						zbb_msg(data.msg);
 					}
 				},
@@ -91,7 +90,6 @@
 		}else{
 			zbb_msg("手机号码错误");
 		}
-
 	}
 
 	//验证码60秒
@@ -129,7 +127,7 @@
 			zbb_msg('请输入验证码');
 		}else{
 			var fun=function(){
-				window.location.href="http://daoyunshang.com/App/vip/login";
+				window.location.href="/App/vip/login";
 			}
 			$.ajax({
 				url:"<?php echo U('App/Vip/regist');?>",
