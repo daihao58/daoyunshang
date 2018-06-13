@@ -1672,6 +1672,7 @@ class ShopController extends BaseController
             $data_vip['score'] = array('exp', 'score+' . $commission->ordersCommission('fx1rate', $orderids));
             $data_vip['exp'] = array('exp', 'exp+' .$commission->ordersCommission('fx1rate', $orderids));
             $data_vip['cur_exp'] = array('exp', 'cur_exp+' . $commission->ordersCommission2('fx1rate', $orderids));
+            //var_dump($commission->ordersCommission2('fx1rate', $orderids));die;
             $level = $this->getLevel(self::$WAP['vip']['cur_exp'] + $commission->ordersCommission2('fx1rate', $orderids));
             $data_vip['levelid'] = $level['levelid'];
             $data_vip['fx_level'] = $level['levelid'];
