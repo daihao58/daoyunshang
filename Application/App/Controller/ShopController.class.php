@@ -1713,10 +1713,11 @@ class ShopController extends BaseController
             $fxtmp = array();//缓存3级数组
 
             $p_user=M('Vip')->where("id = '{$pid}' ")->find();
+            $dailiqu_price = $commission->ordersCommission2('fx1rate', $orderids);
             //var_dump($p_user['recommend_code']);die;
-            if($p_user['recommend_code'] == 'df00002' && $p_user['bond_status'] == 1) {
+            if($p_user['recommend_code'] == 'df00002' && $p_user['bond_status'] == 1  ) {
 
-                    if ($pid && $p_user['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
+                    if ($pid && $p_user['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0  || ($_SESSION['WAP']['vip']['one_buy_status'] == 0 && $dailiqu_price<3000)) {
                         //第一层分销
                         $fx1 = $mvip->where('id=' . $pid)->find();
                         if ($fx1['isfx']) {
@@ -1863,7 +1864,7 @@ class ShopController extends BaseController
                     }
             }elseif($p_user['recommend_code'] != 'df00002'){
                 //var_dump(1);die;
-                if ($pid && $p_user['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0) {
+                if ($pid && $p_user['fx_level'] > 1 && $_SESSION['WAP']['vip']['one_buy_status'] > 0 || ($_SESSION['WAP']['vip']['one_buy_status'] == 0 && $dailiqu_price<3000)) {
                     //第一层分销
                     $fx1 = $mvip->where('id=' . $pid)->find();
                     if ($fx1['isfx']) {
@@ -2011,19 +2012,21 @@ class ShopController extends BaseController
 
             //第一次购买
             //var_dump($_SESSION['WAP']['vip']['one_buy_status']);die;
+
             if($_SESSION['WAP']['vip']['one_buy_status'] == 0){
                 //var_dump(2);die;
                 $vipopenid=$_SESSION['WAP']['vip']['mobile'];
                 $onemap['vipopenid']=$vipopenid;
                 $onedata=M('Shop_order')->where($onemap)->order('paytime asc')->limit(1)->select()[0];
                 //if($onedata['id'] == $cache['id']){
-                    if($cache['totalprice']>=3000){
+
+                    if($dailiqu_price >=3000){
                         $pid_fx_level=M('Vip')->where("id = {$pid}")->getField('fx_level');
                         $p_user=M('Vip')->where("id = {$pid}")->find();
                         if($pid_fx_level>1){
-                            if($cache['totalprice']>=3000 && $cache['totalprice']<10000){
+                            if($dailiqu_price >=3000 && $dailiqu_price<10000){
                                 $one_reward=$_SESSION['SHOP']['set']['first_one'];
-                            }elseif($cache['totalprice'] >=10000){
+                            }elseif($dailiqu_price >=10000){
                                 $one_reward=$_SESSION['SHOP']['set']['first_two'];
                             }
                             $one_res=M('Vip')->where("id = {$pid}")->setInc('money',$one_reward);
@@ -2039,6 +2042,8 @@ class ShopController extends BaseController
 
                                 $this->sendmsg2($p_user['nickname'],$cache['oid'],$p_user['mobile'],$one_reward,5);
                             }
+                        }else{
+                            M('Vip')->where("id = {$_SESSION['WAP']['vip']['id']}")->setField('one_buy_status',1);
                         }
                     }else{
                         //var_dump(3);die;
