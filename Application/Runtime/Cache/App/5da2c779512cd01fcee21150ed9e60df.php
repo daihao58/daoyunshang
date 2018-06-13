@@ -25,6 +25,9 @@
 
 	<!--内容区-->
 	<div class="content">
+		<div style="float:right;margin-right:10px;padding-top:10px;">
+			<a href="<?php echo U('App/Shop/index',array('shopid'=>21));?>" class="iconfont icon-home-head" style="font-size: 1.1rem;color: black;"></a>
+		</div>
 		<div class="title-logo">
 			<img src="/Public/App/images/logo2.png" alt="东方合道">
 		</div>

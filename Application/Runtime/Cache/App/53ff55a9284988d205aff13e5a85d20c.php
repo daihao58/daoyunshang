@@ -263,6 +263,7 @@
 						<i id="goods-price" class="font-20"><?php echo ($cache["price"]); ?></i>
 					</em>
 					<em class="dtl-prc2">&nbsp;&nbsp;￥<?php echo ($cache["oprice"]); ?></em>
+					<em style="color: #999;" class="dtl-prc3">&nbsp;&nbsp;返积分:<?php echo ($cache["price_ceo_bate"]); ?></em>
 					<em class="pull-right font-12 color-light mt-4">已售
 						<?php if(($cache["issells"]) == "1"): echo ($cache["dissells"]); ?>
 							<?php else: echo ($cache["sells"]); endif; ?>
