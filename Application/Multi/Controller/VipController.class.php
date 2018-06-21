@@ -1384,7 +1384,8 @@ class VipController extends BaseController
         $name = I('name') ? I('name') : '';
         if ($name) {
             //搜索
-            $map['name'] = array('like', "%$name%");
+            $search_id=M('Vip')->where("nickname = '{$name}'")->getField('id');
+            $map['pid|buyid'] = array('eq',$search_id);
             $this->assign('name', $name);
         }
         $m=M('Rebate');
