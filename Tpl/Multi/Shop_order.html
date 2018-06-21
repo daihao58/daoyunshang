@@ -52,6 +52,18 @@
 							<label style="margin-bottom: 0px;">
 								<input name="oid" type="search" class="form-control input-sm" value="{$oid}" placeholder="输入订单号搜索">
 							</label>
+							<label style="margin-bottom: 0px;">
+								<select name="status">
+									<option value="10" <if condition="$status eq 10">selected<else /></if> >全部</option>
+									<option value="1" <if condition="$status eq 1">selected<else /></if> >待付款</option>
+									<option value="2" <if condition="$status eq 2">selected<else /></if> >待发货</option>
+									<option value="3" <if condition="$status eq 3">selected<else /></if> >待收货</option>
+									<option value="5" <if condition="$status eq 5">selected<else /></if> >交易完成</option>
+									<option value="6" <if condition="$status eq 6">selected<else /></if> >交易关闭</option>
+									<option value="0" <if condition="$status eq 0">selected<else /></if> >交易取消</option>
+									<option value="8" <if condition="$status eq 8">selected<else /></if> >满7天</option>
+								</select>
+							</label>
 							<a href="{:U('Multi/Shop/order/')}" class="btn btn-success" data-loader="App-loader" data-loadername="商城订单" data-search="App-search">
 								<i class="fa fa-search"></i>搜索
 							</a>

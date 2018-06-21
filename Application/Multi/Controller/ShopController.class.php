@@ -1097,7 +1097,7 @@ class ShopController extends BaseController
         );
         $this->assign('breadhtml', $this->getBread($bread));
         $status = I('status');
-        if ($status || $status == '0') {
+        if (($status && $status != 10) || $status == '0' ) {
             $map['status'] = $status;
             //交易满7天
             if ($status == 8) {
@@ -1120,6 +1120,7 @@ class ShopController extends BaseController
         $name = I('name') ? I('name') : '';
         $timeRanges = I('timeRange') ? I('timeRange') : '';
         $oid = I('oid') ? I('oid') : '';
+        $status = I('status') ? I('status') : '';
         if($timeRanges){
             //时间段搜索
             $timeRange = explode(" --- ", $timeRanges);
@@ -1139,6 +1140,7 @@ class ShopController extends BaseController
             $map['_logic'] = 'OR';
             $this->assign('name', $name);
         }
+
         $map['shop_id'] = session("homeShopId");
         $psize = self::$CMS['set']['pagesize'] ? self::$CMS['set']['pagesize'] : 20;
         $cache = $m->where($map)->page($p, $psize)->order('ctime desc')->select();
