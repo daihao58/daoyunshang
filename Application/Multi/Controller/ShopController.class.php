@@ -1466,6 +1466,20 @@ public function goodsReport(){
         $this->ajaxReturn($info);
     }
 
+    public function request_post($url = '', $post_data = array()) {
+        $ch = curl_init();//初始化curl
+        curl_setopt($ch, CURLOPT_URL,$url);//抓取指定网页
+        curl_setopt($ch, CURLOPT_HEADER, 0);//设置header
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);//要求结果为字符串且输出到屏幕上
+        curl_setopt($ch, CURLOPT_POST, 1);//post提交方式
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        $data = curl_exec($ch);//运行curl
+        curl_close($ch);
+        return $data;
+    }
+
     //订单发货
     public function orderDeliver()
     {
@@ -1475,6 +1489,53 @@ public function goodsReport(){
             $info['msg'] = '未正常获取ID数据！';
         }
         $re = M('Shop_order')->where('id=' . $id)->setField('status', 3);
+        $fahuo_res=M('Shop_order')->where('id=' . $id)->find();
+
+
+        $phone=$fahuo_res['vipmobile'];
+        $name=$fahuo_res['vipname'];
+        $orderid=$fahuo_res['oid'];
+        $time=date("Y-m-d H:s:i");
+        $kuaidi=$fahuo_res['fahuokd'];
+        $kuaididan=$fahuo_res['fahuokdnum'];
+
+        $sms_templateM=M('sms_template');
+        $yanzhengxinxi=$sms_templateM->where('type=7')->field('id,content,active_time')->find();
+        $yanzhengcontent=str_replace('[name]',$name,$yanzhengxinxi['content']);
+        $yanzhengcontent=str_replace('[orderid]',$orderid,$yanzhengcontent);
+        $yanzhengcontent=str_replace('[time]',$time,$yanzhengcontent);
+        $yanzhengcontent=str_replace('[kuaidi]',$kuaidi,$yanzhengcontent);
+        $yanzhengcontent=str_replace('[kuaididan]',$kuaididan,$yanzhengcontent);
+
+
+        $http='http://message.4008289828.com/index.php?g=Message&m=Index&a=createSendNews_interface';
+        $para['app_id']=10;
+        $para['content']=$yanzhengcontent;
+        $para['type']=1;
+        $para['usage']=1;
+        $para['mobiles']=$phone;
+        $o = "";
+        foreach ( $para as $k => $v )
+        {
+            $o.= "$k=" . urlencode( $v ). "&" ;
+        }
+        $para = substr($o,0,-1);
+
+        $sms_info_json=$this->request_post($http,$para);
+
+        $sms_phone=M('sms_phone');
+        $data['phone'] = $phone;
+        $data['content'] = $yanzhengcontent;
+        $data['create_time'] = date("Y-m-d H:i:s");
+        $mm=5*60;
+        $data['dead_time']=date("Y-m-d H:i:s",strtotime($data['create_time'])+$mm);
+        $data['smstempid'] = 1;
+        //$data['code'] = $code;
+        $res=$sms_phone->add($data);
+
+
+
+
         $mlog = M('Shop_order_log');
         $mslog = M('Shop_order_syslog');
         $dwechat = D('Wechat');
