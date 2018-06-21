@@ -150,54 +150,13 @@ class EmployeeController extends BaseController
             ),
         );
         $this->assign('breadhtml', $this->getBread($bread));
-        //处理POST提交
-        /*if (IS_POST) {
-            //die('aa');
-            $data = I('post.');
-            // 总权重不能超标
-            $weight = $m->where(array('id' => array('neq', $id)))->sum('weight');
-            if ($weight + $data['weight'] > 100) {
-                $info['status'] = 0;
-                $info['msg'] = '所有员工总权重不可超过100！';
-                $this->ajaxReturn($info);
-            }
-            if ($id) {
-                if ($data['userpass']) {
-                    $data['userpass'] = md5($data['userpass']);
-                } else {
-                    unset($data['userpass']);
-                }
-                $yanzheng=M('employee')->where('id='.$id.'')->find();
-                if($yanzheng['tuijianma'] ==''){
-                    $data['tuijianma']=$this->yanzheng();
-                }
-                $re = $m->save($data);
-                if (FALSE !== $re) {
-                    $info['status'] = 1;
-                    $info['msg'] = '设置成功！';
-                } else {
-                    $info['status'] = 0;
-                    $info['msg'] = '设置失败！';
-                }
-            } else {
-                $data['userpass'] = md5($data['userpass']);
-                $data['shop_id'] = session("homeShopId");
-                $data['type'] = '1';
-                $data['tuijianma']=$this->yanzheng();
-                $re = $m->add($data);
-                if ($re) {
-                    $info['status'] = 1;
-                    $info['msg'] = '设置成功！';
-                } else {
-                    $info['status'] = 0;
-                    $info['msg'] = '设置失败！';
-                }
-            }*/
+
 
 
         if (IS_POST) {
             //die('aa');
             $data = I('post.');
+            //var_dump($data['oath']);die;
             // 总权重不能超标
            /* $weight = $m->where(array('id' => array('neq', $id)))->sum('weight');
             if ($weight + $data['weight'] > 100) {
@@ -211,6 +170,7 @@ class EmployeeController extends BaseController
                 } else {
                     unset($data['userpass']);
                 }
+                $data['oath']=implode(',',$data['oath']);
                 $re = $m->save($data);
                 if (FALSE !== $re) {
                     $info['status'] = 1;

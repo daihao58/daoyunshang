@@ -1,3 +1,4 @@
+
 <div class="row">
     <div class="col-xs-12 col-xs-12">
         <div class="widget radius-bordered">
@@ -42,12 +43,49 @@
                             <input type="text" class="form-control" name="mobile" placeholder="必填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="{$cache.mobile}">
                         </div>
                     </div>
-                  <!--  <div class="form-group">
-                        <label class="col-lg-2 control-label">权重（默认0）</label>
-                        <div class="col-lg-4">
-                            <input type="text" class="form-control" name="weight" placeholder="选填" data-bv-notempty="true" data-bv-notempty-message="不能为空" value="{$cache.weight}">
+                    <style>
+                        input[type=checkbox], input[type=radio]{
+                            opacity: 1;
+                            position: absolute;
+                            cursor: pointer;
+                        }
+                    </style>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">权重</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="oath[]" value="sys" <?php if(strpos($cache['oath'],'sys')!==false){echo 'checked';}else{echo 1;} ?> >系统设置权限
+                            </label>
+                            <label>
+                                <input type="checkbox" name="oath[]" value="shop" <?php if(strpos($cache['oath'],'shop')!==false){echo 'checked';}else{echo 1;} ?> >商城权限
+                            </label>
+                            <label>
+                                <input type="checkbox" name="oath[]" value="emp" <?php if(strpos($cache['oath'],'emp')!==false){echo 'checked';}else{echo 1;} ?> >员工模块
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="oath[]" value="tree"  <?php if(strpos($cache['oath'],'tree')!==false){echo 'checked';}else{echo 1;} ?> >层级树
+                            </label>
+                            <label>
+                                <input type="checkbox" name="oath[]" value="normal" <?php if(strpos($cache['oath'],'normal')!==false){echo 'checked';}else{echo 1;} ?> >会员权限
+                            </label>
+                            <label>
+                                <input type="checkbox" name="oath[]" value="vip" <?php if(strpos($cache['oath'],'vip')!==false){echo 'checked';}else{echo 1;} ?> >通知管理
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="oath[]" value="withdraw" <?php if(strpos($cache['oath'],'withdraw')!==false){echo 'checked';}else{echo 1;} ?> >财务权限
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="oath[]" value="order" <?php if(strpos($cache['oath'],'order')!==false){echo 'checked';}else{echo 1;} ?> >订单权限
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="oath[]" value="artical" <?php if(strpos($cache['oath'],'artical')!==false){echo 'checked';}else{echo 1;} ?> >文章权限
+                            </label>
                         </div>
-                    </div>-->
+                    </div>
                     <empty name="cache.id">
                         <div class="form-group">
                             <label class="col-lg-2 control-label">员工登陆密码<sup>*</sup></label>
