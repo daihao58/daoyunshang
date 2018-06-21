@@ -799,6 +799,7 @@ class VipController extends BaseController
                     $data['img'] = '/Uploads/'.$savepath.$savename;
                     $data['bid'] = $user['id'];
                     $data['bname'] = $user['nickname'];
+                    $data['bmobile'] = $user['mobile'];
                     $data['time'] = date("Y-m-d H:s:i");
                     $data['status'] = 0;
                     $res=M('Anchored')->add($data);
