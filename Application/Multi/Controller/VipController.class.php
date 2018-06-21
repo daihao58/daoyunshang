@@ -1394,8 +1394,8 @@ class VipController extends BaseController
         $this->getPage($count, $psize, 'App-loader', '保证金', 'App-search');
 
         foreach($data as $k => &$v){
-            $v['buyname'] = M('Vip')->find($v['buyid'])['name'];
-            $v['pname'] = M('Vip')->find($v['pid'])['name'];
+            $v['buyname'] = M('Vip')->find($v['buyid'])['nickname'];
+            $v['pname'] = M('Vip')->find($v['pid'])['nickname'];
         }
         $this->assign('data',$data);
         $this->display();
