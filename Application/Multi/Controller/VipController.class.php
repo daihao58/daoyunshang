@@ -1618,4 +1618,30 @@ class VipController extends BaseController
         $this->ajaxReturn($result);
     }
 
+    public function editpwd(){
+        $m=M('User');
+        $userid = $_SESSION['CMS']['user']['id'];
+        if (IS_POST) {
+            //die('aa');
+            $pwd = I('post.');
+
+            if ($pwd['pwd'] == $pwd['qpwd']) {
+                $data['userpass'] = md5($pwd['pwd']);
+                $re = $m->where("id = {$userid}")->save($data);
+                if (FALSE !== $re) {
+                    $info['status'] = 1;
+                    $info['msg'] = '设置成功！';
+                } else {
+                    $info['status'] = 0;
+                    $info['msg'] = '设置失败！';
+                }
+            }else{
+                $info['status'] = 0;
+                $info['msg'] = '两次密码不一致！';
+            }
+            $this->ajaxReturn($info);
+        }
+        $this->display();
+    }
+
 }
